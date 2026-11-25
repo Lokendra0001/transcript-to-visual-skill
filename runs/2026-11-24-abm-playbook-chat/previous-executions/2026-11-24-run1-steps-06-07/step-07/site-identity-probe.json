@@ -1,0 +1,245 @@
+{
+  "AI Ark": {
+    "url": "https://ai-ark.com",
+    "final": "https://ai-ark.com",
+    "status": 200,
+    "title": "AI Ark | B2B Data Center Powered With AI",
+    "icons": [
+      "<link href=\"https://framerusercontent.com/images/dJI8UbuMnaAQmSRWnFGM7BW4x4.png\" rel=\"icon\" media=\"(prefers-color-scheme: light)\">",
+      "<link href=\"https://framerusercontent.com/images/dJI8UbuMnaAQmSRWnFGM7BW4x4.png\" rel=\"icon\" media=\"(prefers-color-scheme: dark)\">",
+      "<link rel=\"icon\" href=\"https://framerusercontent.com/images/dJI8UbuMnaAQmSRWnFGM7BW4x4.png\" type=\"image/png\">"
+    ]
+  },
+  "Clay": {
+    "url": "https://www.clay.com",
+    "final": "https://www.clay.com",
+    "status": 200,
+    "title": "Clay | Build systems to grow revenue",
+    "icons": [
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab841a6313dc068fb8_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"32x32\" media=\"(prefers-color-scheme: light)\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab841a6313dc068fb8_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"32x32\" media=\"(prefers-color-scheme: dark)\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab03ef81bab42cb009_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"48x48\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab3c92c9caa6245619_dot-com_favicon_2026_512.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92abeec5075ebf511920_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"192x192\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"512x512\"/>"
+    ]
+  },
+  "Findymail": {
+    "url": "https://www.findymail.com",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "Ocean.io": {
+    "url": "https://www.ocean.io",
+    "final": "https://www.ocean.io",
+    "status": 200,
+    "title": "Ocean.io: contextual intelligence for go-to-market | Ocean.io",
+    "icons": [
+      "<link\n      rel=\"icon\"\n      type=\"image/x-icon\"\n      href=\"https://cdn.ocean.io/assets/images/favicon/favicon.ico\"\n    >",
+      "<link\n      rel=\"icon\"\n      href=\"https://cdn.ocean.io/assets/images/favicon/favicon.svg\"\n      type=\"image/svg+xml\"\n    >",
+      "<link\n      rel=\"apple-touch-icon\"\n      href=\"https://cdn.ocean.io/assets/images/favicon/apple-touch-icon.png\"\n    >"
+    ]
+  },
+  "DiscoLike": {
+    "url": "https://discolike.com",
+    "final": "https://discolike.com",
+    "status": 200,
+    "title": "Find Companies and People That Fit Your ICP | DiscoLike",
+    "icons": [
+      "<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon-light.png\" media=\"(prefers-color-scheme: light)\">",
+      "<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon-dark.png\" media=\"(prefers-color-scheme: dark)\">"
+    ]
+  },
+  "Landbase": {
+    "url": "https://www.landbase.com",
+    "final": "https://www.landbase.com",
+    "status": 200,
+    "title": "The World&#x27;s GTM Data Inside Your AI",
+    "icons": [
+      "<link href=\"https://cdn.prod.website-files.com/663db35157fcd223250841ff/66bc5d7ad6af7a822c18b452_favicon-32x32.png\" rel=\"shortcut icon\" type=\"image/x-icon\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/663db35157fcd223250841ff/665df6511f919f2ee06412ee_webclip-landbase.png\" rel=\"apple-touch-icon\"/>"
+    ]
+  },
+  "Sumble": {
+    "url": "https://sumble.com",
+    "final": "https://sumble.com",
+    "status": 200,
+    "title": "Know your accounts like you work there. | Sumble",
+    "icons": [
+      "<link rel=\"icon\" href=\"/logo512.png\" nonce=\"19de3e4f8bbb8fec47920b2de4c2877d\"/>"
+    ]
+  },
+  "Tavily": {
+    "url": "https://www.tavily.com",
+    "final": "https://www.tavily.com",
+    "status": 200,
+    "title": "Tavily",
+    "icons": [
+      "<link rel=\"icon\" href=\"/favicon.ico?favicon.2g4zufckijhyn.ico\" sizes=\"48x48\" type=\"image/x-icon\"/>",
+      "<link rel=\"icon\" href=\"/icon.svg?icon.0v6b1ltlljvdd.svg\" sizes=\"any\" type=\"image/svg+xml\"/>",
+      "<link rel=\"icon\" href=\"/icon1.png?icon1.428i2ox1h5bmx.png\" sizes=\"96x96\" type=\"image/png\"/>",
+      "<link rel=\"apple-touch-icon\" href=\"/apple-icon.png?apple-icon.2rsjznomrsf77.png\" sizes=\"180x180\" type=\"image/png\"/>"
+    ]
+  },
+  "Freckle": {
+    "url": "https://www.freckle.io",
+    "final": "https://www.freckle.io",
+    "status": 200,
+    "title": "Freckle \u2013 Run GTM workflows from your terminal",
+    "icons": [
+      "<link href=\"https://framerusercontent.com/images/377ZWOuBiMhhOgHK9KNCf6fZR0.png\" rel=\"icon\" media=\"(prefers-color-scheme: light)\">",
+      "<link href=\"https://framerusercontent.com/images/377ZWOuBiMhhOgHK9KNCf6fZR0.png\" rel=\"icon\" media=\"(prefers-color-scheme: dark)\">",
+      "<link rel=\"apple-touch-icon\" href=\"https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png\">"
+    ]
+  },
+  "BetterContact": {
+    "url": "https://bettercontact.rocks",
+    "final": "https://bettercontact.rocks",
+    "status": 200,
+    "title": "BetterContact - Smart Waterfall Email &amp; Phone Finder",
+    "icons": [
+      "<link rel=\"icon\" href=\"/assets/bettercontact-mark.png\"/>"
+    ]
+  },
+  "HubSpot": {
+    "url": "https://www.hubspot.com",
+    "final": "https://www.hubspot.com",
+    "status": 200,
+    "title": "HubSpot | Software &amp; Tools for your Business - Homepage",
+    "icons": [
+      "<link rel=\"shortcut icon\" href=\"https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png\">"
+    ]
+  },
+  "Salesforce": {
+    "url": "https://www.salesforce.com",
+    "final": "https://www.salesforce.com/in/?ir=1&bc=OTH",
+    "status": 200,
+    "title": "Salesforce: The #1 AI CRM | Salesforce IN",
+    "icons": [
+      "<link rel=\"icon\" type=\"image/x-icon\" href=\"/c2/public/app/favicon.ico\">"
+    ]
+  },
+  "Gmail": {
+    "url": "https://workspace.google.com/products/gmail/",
+    "final": "https://workspace.google.com/products/gmail/",
+    "status": 200,
+    "title": "Gmail: Private &amp; Secure Email for Personal or Business | Google Workspace",
+    "icons": [
+      "<link href=\"https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png\" rel=\"shortcut icon\" type=\"image/png\">"
+    ]
+  },
+  "LinkedIn": {
+    "url": "https://www.linkedin.com",
+    "final": "https://www.linkedin.com",
+    "status": 200,
+    "title": "LinkedIn: Log In or Sign Up",
+    "icons": [
+      "<link rel=\"icon\" href=\"https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca\">"
+    ]
+  },
+  "Meta": {
+    "url": "https://www.meta.com",
+    "final": "https://www.meta.com/in/",
+    "status": 200,
+    "title": "Meta: Shop AI Glasses, Meta Glasses &amp; Quest Headsets (en-IN)",
+    "icons": [
+      "<link data-default-icon=\"https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico\" rel=\"icon\" href=\"https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico\" sizes=\"32x32\" />",
+      "<link rel=\"icon\" href=\"https://static.xx.fbcdn.net/rsrc.php/yf/r/-7pQO6hUGK_.svg\" type=\"image/svg+xml\" />",
+      "<link rel=\"apple-touch-icon\" href=\"https://static.xx.fbcdn.net/rsrc.php/yQ/r/0eWKxz9kEoF.webp\" />"
+    ]
+  },
+  "Google": {
+    "url": "https://www.google.com",
+    "final": "https://www.google.com",
+    "status": 200,
+    "title": "Google",
+    "icons": []
+  },
+  "YouTube": {
+    "url": "https://www.youtube.com",
+    "final": "https://www.youtube.com",
+    "status": 200,
+    "title": "YouTube",
+    "icons": [
+      "<link rel=\"shortcut icon\" href=\"https://www.youtube.com/s/desktop/db37c5a5/img/favicon.ico\" type=\"image/x-icon\">",
+      "<link rel=\"icon\" href=\"https://www.youtube.com/s/desktop/db37c5a5/img/favicon_32x32.png\" sizes=\"32x32\">",
+      "<link rel=\"icon\" href=\"https://www.youtube.com/s/desktop/db37c5a5/img/favicon_48x48.png\" sizes=\"48x48\">",
+      "<link rel=\"icon\" href=\"https://www.youtube.com/s/desktop/db37c5a5/img/favicon_96x96.png\" sizes=\"96x96\">",
+      "<link rel=\"icon\" href=\"https://www.youtube.com/s/desktop/db37c5a5/img/favicon_144x144.png\" sizes=\"144x144\">"
+    ]
+  },
+  "X": {
+    "url": "https://x.com",
+    "final": "https://x.com",
+    "status": 200,
+    "title": "X. It\u2019s what\u2019s happening / X",
+    "icons": [
+      "<link rel=\"apple-touch-icon\" sizes=\"192x192\" href=\"https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png\"/>",
+      "<link rel=\"icon\" href=\"https://abs.twimg.com/favicons/twitter.3.ico\"/>"
+    ]
+  },
+  "Webflow": {
+    "url": "https://webflow.com",
+    "final": "https://webflow.com",
+    "status": 200,
+    "title": "Webflow: The agentic web platform for modern businesses",
+    "icons": [
+      "<link href=\"https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/686d53ceda66a40cb6b6d546_favicon.png\" rel=\"shortcut icon\" type=\"image/x-icon\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/686d53d0446d4237b2f38c5f_webclip.png\" rel=\"apple-touch-icon\"/>"
+    ]
+  },
+  "Slack": {
+    "url": "https://slack.com",
+    "final": "https://slack.com/intl/en-in/",
+    "status": 200,
+    "title": "Slack | AI work platform and productivity tools",
+    "icons": [
+      "<link id=\"favicon\" rel=\"shortcut icon\" href=\"https://a.slack-edge.com/9cc0056/img/icons/favicon-32.png\" sizes=\"16x16 32x32 48x48\" type=\"image/png\">"
+    ]
+  },
+  "Sales Navigator": {
+    "url": "https://business.linkedin.com/sales-solutions/sales-navigator",
+    "final": "https://business.linkedin.com/sell/sales-navigator",
+    "status": 200,
+    "title": "Sales Tool | LinkedIn Sales Navigator",
+    "icons": [
+      "<link rel=\"icon\" id=\"favicon-svg\" type=\"image/svg+xml\" href=\"https://content.linkedin.com/lem/static/etc.clientlibs/linkedin-experience-manager/clientlibs/clientlib-site/resources/icons/favicon.svg\"/>",
+      "<link rel=\"alternate icon\" id=\"favicon-png\" sizes=\"any\" href=\"https://content.linkedin.com/lem/static/etc.clientlibs/linkedin-experience-manager/clientlibs/clientlib-site/resources/icons/favicon.png\"/>",
+      "<link rel=\"alternate icon\" id=\"favicon-ico\" sizes=\"any\" href=\"https://content.linkedin.com/lem/static/etc.clientlibs/linkedin-experience-manager/clientlibs/clientlib-site/resources/icons/favicon.ico\"/>"
+    ]
+  },
+  "Claygent": {
+    "url": "https://www.clay.com/claygent",
+    "final": "https://www.clay.com/claygent",
+    "status": 200,
+    "title": "Claygent \u2014 AI Agents for GTM | Clay.com",
+    "icons": [
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab841a6313dc068fb8_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"32x32\" media=\"(prefers-color-scheme: light)\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab841a6313dc068fb8_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"32x32\" media=\"(prefers-color-scheme: dark)\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab03ef81bab42cb009_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"48x48\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab3c92c9caa6245619_dot-com_favicon_2026_512.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92abeec5075ebf511920_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"192x192\"/>",
+      "<link href=\"https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png\" rel=\"icon\" type=\"image/png\" sizes=\"512x512\"/>"
+    ]
+  },
+  "Codex": {
+    "url": "https://openai.com/codex/",
+    "final": "https://openai.com/codex/",
+    "status": 200,
+    "title": "Codex | AI Coding Partner from OpenAI | OpenAI",
+    "icons": [
+      "<link rel=\"icon\" href=\"/favicon.svg\" type=\"image/svg+xml\"/>",
+      "<link rel=\"icon\" href=\"/favicon.ico?favicon.1ui9v3a-0dgo4.ico\" sizes=\"48x48\" type=\"image/x-icon\"/>",
+      "<link rel=\"apple-touch-icon\" href=\"/apple-icon.png?apple-icon.3o0tf8iy4mx7y.png\" sizes=\"180x180\" type=\"image/png\"/>"
+    ]
+  },
+  "Claude Code": {
+    "url": "https://www.anthropic.com/claude-code",
+    "final": "https://claude.com/product/claude-code",
+    "status": 200,
+    "title": "Claude Code by Anthropic | AI coding agent and assistant",
+    "icons": [
+      "<link rel=\"icon\" href=\"/icon.png\" type=\"image/png\" sizes=\"192x192\"/>",
+      "<link rel=\"icon\" href=\"/icon.svg\" type=\"image/svg+xml\" sizes=\"any\"/>"
+    ]
+  }
+}

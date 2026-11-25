@@ -1,0 +1,7 @@
+{
+  "review_version": "2.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "reviewed_artifacts": {"svg": "step-08/infographic.svg", "preview": "step-08/preview.png", "reference_template": "references/templates/T01-modular-gtm.png", "quality_benchmark": "references/visual-quality/abm-playbook-concept.png"},
+  "iterations": [{"iteration": 1, "result": "Refined the earlier dashboard into a T01-aligned portrait composition."}, {"iteration": 2, "result": "Resolved header collision, signal-card density, tier-label duplication, and Step 6 asset-tile overlap."}],
+  "final_assessment": {"reference_fidelity": "pass", "evidence": "The final portrait uses T01's warm dotted field, prominent violet title band, heavy black typography, angled numbered tabs, asymmetric modular grid, compact icon-forward tiles, nested signal groups, outlined cards, and green closed-won terminus. It does not retain reference copy, brands, watermark, or forbidden branch content.", "legibility": "pass", "semantic_accuracy": "pass", "asset_presentation": "pass", "connectors": "pass", "decision": "approved_for_handoff"}
+}

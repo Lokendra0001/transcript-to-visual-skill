@@ -1,0 +1,2218 @@
+{
+  "step": "08-visual-generation",
+  "version": "1.0",
+  "status": "success",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "timestamp": "2026-11-24T12:59:33.111704+00:00",
+  "sources": {
+    "architecture": {
+      "step": "04-workflow-architecture",
+      "version": "1.1",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "content": {
+      "step": "05-content-writing",
+      "version": "1.0",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "template_selection": {
+      "step": "06-template-selection",
+      "version": "1.0",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "logo_retrieval": {
+      "step": "07-logo-retrieval",
+      "version": "1.0",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    }
+  },
+  "design_system": {
+    "palette": {
+      "background": "#FBF8F5",
+      "surface": "#FFFFFF",
+      "primary": "#7C4DDF",
+      "primary_light": "#EEE7FF",
+      "secondary": "#3FE4AA",
+      "accent": "#3FE4AA",
+      "text_primary": "#202124",
+      "text_secondary": "#4A4A4A",
+      "text_on_primary": "#FFFFFF",
+      "border": "#242424",
+      "connector": "#242424",
+      "success": "#3FE4AA",
+      "warning": "#F4C95D",
+      "error": "#EF476F"
+    },
+    "reference_template": {
+      "id": "template-6146b326e934",
+      "path": "references/templates/T01-modular-gtm.png",
+      "fingerprint": "21f363cb0a0f0f06acac33a4db624148792723524d34a79d8c2b0b8b4fcc282e"
+    }
+  },
+  "element_manifest": [
+    {
+      "id": "arrow",
+      "tag": "marker",
+      "role": "connector",
+      "semantic": "arrow",
+      "animatable": true
+    },
+    {
+      "id": "canvas-bg",
+      "tag": "rect",
+      "role": "element",
+      "semantic": "canvas-bg",
+      "animatable": false
+    },
+    {
+      "id": "node-title",
+      "tag": "text",
+      "role": "title",
+      "semantic": "node-title",
+      "animatable": false
+    },
+    {
+      "id": "node-optionality-note",
+      "tag": "g",
+      "role": "note",
+      "semantic": "node-optionality-note",
+      "animatable": false
+    },
+    {
+      "id": "section-step-1-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-1-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-1",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-1",
+      "animatable": false
+    },
+    {
+      "id": "label-s1-tools",
+      "tag": "text",
+      "role": "tool_tile",
+      "semantic": "label-s1-tools",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-03",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-03",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-04",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-04",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-05",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-05",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-06",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-06",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-07",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-07",
+      "animatable": false
+    },
+    {
+      "id": "node-s1-tool-08",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s1-tool-08",
+      "animatable": false
+    },
+    {
+      "id": "section-step-2-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-2-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-2",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-2",
+      "animatable": false
+    },
+    {
+      "id": "label-s2-tools",
+      "tag": "text",
+      "role": "tool_tile",
+      "semantic": "label-s2-tools",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-03",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-03",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-04",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-04",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-05",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-05",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-06",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-06",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-07",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-07",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-08",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-08",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-09",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-09",
+      "animatable": false
+    },
+    {
+      "id": "node-s2-tool-10",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s2-tool-10",
+      "animatable": false
+    },
+    {
+      "id": "section-step-3-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-3-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-3",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-3",
+      "animatable": false
+    },
+    {
+      "id": "section-step-3-first-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-3-first-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-group-034",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-s3-group-034",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-047",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-047",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-048",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-048",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-049",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-049",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-050",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-050",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-051",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-051",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-052",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-052",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-053",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-053",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-054",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-054",
+      "animatable": false
+    },
+    {
+      "id": "section-step-3-second-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-3-second-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-group-035",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-s3-group-035",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-055",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-055",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-056",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-056",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-057",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-057",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-058",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-058",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-059",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-059",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-060",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-060",
+      "animatable": false
+    },
+    {
+      "id": "section-step-3-third-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-3-third-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-group-033",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-s3-group-033",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-036",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-036",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-037",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-037",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-038",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-038",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-039",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-039",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-040",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-040",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-041",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-041",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-042",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-042",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-043",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-043",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-044",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-044",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-045",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-045",
+      "animatable": false
+    },
+    {
+      "id": "node-s3-sig-046",
+      "tag": "g",
+      "role": "chip",
+      "semantic": "node-s3-sig-046",
+      "animatable": false
+    },
+    {
+      "id": "section-step-4-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-4-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-4",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-4",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s4-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "label-s4-models",
+      "tag": "text",
+      "role": "element",
+      "semantic": "label-s4-models",
+      "animatable": false
+    },
+    {
+      "id": "section-step-4-awareness-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-4-awareness-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-model-awareness",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-s4-model-awareness",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-stage-1",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-stage-1",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-stage-2",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-stage-2",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-stage-3",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-stage-3",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-stage-4",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-stage-4",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-stage-5",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-stage-5",
+      "animatable": false
+    },
+    {
+      "id": "section-step-4-tiers-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-4-tiers-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-model-tiers",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-s4-model-tiers",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-tier-1",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-tier-1",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-tier-2",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-tier-2",
+      "animatable": false
+    },
+    {
+      "id": "node-s4-tier-3",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s4-tier-3",
+      "animatable": false
+    },
+    {
+      "id": "section-step-5-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-5-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-5",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-5",
+      "animatable": false
+    },
+    {
+      "id": "label-s5-crm-dest",
+      "tag": "text",
+      "role": "element",
+      "semantic": "label-s5-crm-dest",
+      "animatable": false
+    },
+    {
+      "id": "node-s5-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s5-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s5-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s5-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "node-s5-crm-records",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s5-crm-records",
+      "animatable": false
+    },
+    {
+      "id": "section-step-6-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-step-6-card",
+      "animatable": false
+    },
+    {
+      "id": "node-step-6",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-step-6",
+      "animatable": false
+    },
+    {
+      "id": "section-step-6-one-to-one-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-6-one-to-one-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-lane-one-to-one",
+      "tag": "text",
+      "role": "panel",
+      "semantic": "node-s6-lane-one-to-one",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-007",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-007",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-007-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-007-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-008",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-008",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-009",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-009",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-010",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-010",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-010-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-010-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "section-step-6-one-to-many-panel",
+      "tag": "rect",
+      "role": "panel",
+      "semantic": "section-step-6-one-to-many-panel",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-lane-one-to-many",
+      "tag": "text",
+      "role": "panel",
+      "semantic": "node-s6-lane-one-to-many",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-011",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-011",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-012",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-012",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-013",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-013",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-013-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-013-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-013-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-013-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-013-tool-03",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-013-tool-03",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-014",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-014",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-015",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-015",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-015-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-015-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-015-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-015-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-015-tool-03",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-015-tool-03",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-016",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-016",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-016-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-016-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-017",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-017",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-018",
+      "tag": "g",
+      "role": "element",
+      "semantic": "node-s6-018",
+      "animatable": false
+    },
+    {
+      "id": "node-s6-018-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-s6-018-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "section-downstream-card",
+      "tag": "rect",
+      "role": "card",
+      "semantic": "section-downstream-card",
+      "animatable": false
+    },
+    {
+      "id": "label-downstream-header",
+      "tag": "g",
+      "role": "element",
+      "semantic": "label-downstream-header",
+      "animatable": false
+    },
+    {
+      "id": "ds-box-0",
+      "tag": "g",
+      "role": "element",
+      "semantic": "ds-box-0",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-1",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-ds-1",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-1-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-1-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "ds-box-1",
+      "tag": "g",
+      "role": "element",
+      "semantic": "ds-box-1",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-2",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-ds-2",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-2-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-2-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "ds-box-2",
+      "tag": "g",
+      "role": "element",
+      "semantic": "ds-box-2",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-3",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-ds-3",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-3-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-3-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-3-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-3-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "ds-box-3",
+      "tag": "g",
+      "role": "element",
+      "semantic": "ds-box-3",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-4",
+      "tag": "text",
+      "role": "element",
+      "semantic": "node-ds-4",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-4-tool-01",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-4-tool-01",
+      "animatable": false
+    },
+    {
+      "id": "node-ds-4-tool-02",
+      "tag": "g",
+      "role": "tool_tile",
+      "semantic": "node-ds-4-tool-02",
+      "animatable": false
+    },
+    {
+      "id": "connection-001",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-001",
+      "animatable": true
+    },
+    {
+      "id": "connection-002",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-002",
+      "animatable": true
+    },
+    {
+      "id": "connection-003",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-003",
+      "animatable": true
+    },
+    {
+      "id": "connection-004",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-004",
+      "animatable": true
+    },
+    {
+      "id": "connection-005",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-005",
+      "animatable": true
+    },
+    {
+      "id": "connection-006",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-006",
+      "animatable": true
+    },
+    {
+      "id": "connection-007",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-007",
+      "animatable": true
+    },
+    {
+      "id": "connection-008",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-008",
+      "animatable": true
+    },
+    {
+      "id": "connection-009",
+      "tag": "path",
+      "role": "connector",
+      "semantic": "connection-009",
+      "animatable": true
+    }
+  ],
+  "asset_usage": [
+    {
+      "asset_requirement_id": "asset-req-001",
+      "unique_asset_request_id": "asset-request-1",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-1",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-002",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-2",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-003",
+      "unique_asset_request_id": "asset-request-3",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-3",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-004",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-04",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-4",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-005",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-05",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-5",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-006",
+      "unique_asset_request_id": "asset-request-6",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-06",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-6",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-007",
+      "unique_asset_request_id": "asset-request-7",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-07",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-7",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-008",
+      "unique_asset_request_id": "asset-request-8",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-08",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-8",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-009",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-5",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-010",
+      "unique_asset_request_id": "asset-request-9",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-9",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-011",
+      "unique_asset_request_id": "asset-request-10",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-10",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-012",
+      "unique_asset_request_id": "asset-request-11",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-04",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-11",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-013",
+      "unique_asset_request_id": "asset-request-12",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-05",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-12",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-014",
+      "unique_asset_request_id": "asset-request-13",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-06",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-13",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-015",
+      "unique_asset_request_id": "asset-request-14",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-07",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-14",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-016",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-08",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-4",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-017",
+      "unique_asset_request_id": "asset-request-15",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-09",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-15",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-018",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-10",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-2",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-019",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s4-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-020",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-021",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-17",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-022",
+      "unique_asset_request_id": "asset-request-18",
+      "target_scope": "node",
+      "target_id": "node-s6-007-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-18",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-023",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s6-010-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-024",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-19",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-025",
+      "unique_asset_request_id": "asset-request-20",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-20",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-026",
+      "unique_asset_request_id": "asset-request-21",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-21",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-027",
+      "unique_asset_request_id": "asset-request-22",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-22",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-028",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-19",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-029",
+      "unique_asset_request_id": "asset-request-23",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-23",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-030",
+      "unique_asset_request_id": "asset-request-24",
+      "target_scope": "node",
+      "target_id": "node-s6-016-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-24",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-031",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-018-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-19",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-032",
+      "unique_asset_request_id": "asset-request-25",
+      "target_scope": "node",
+      "target_id": "node-ds-1-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-25",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-033",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-2-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-034",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-035",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-17",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-036",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-16",
+      "resolution_status": "selected_pending_visual_verification"
+    },
+    {
+      "asset_requirement_id": "asset-req-037",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "asset_id": "asset-request-17",
+      "resolution_status": "selected_pending_visual_verification"
+    }
+  ],
+  "coverage_assessment": {
+    "covered": [
+      "node-s3-sig-042",
+      "node-step-2",
+      "node-s3-sig-040",
+      "node-s6-015-tool-03",
+      "node-s6-013",
+      "node-s6-007",
+      "node-s1-tool-03",
+      "node-s1-tool-08",
+      "node-s3-sig-037",
+      "node-s3-sig-055",
+      "node-s3-sig-041",
+      "node-s2-tool-09",
+      "node-s6-018-tool-01",
+      "node-ds-1",
+      "node-ds-2",
+      "node-s4-stage-4",
+      "node-ds-1-tool-01",
+      "node-s6-007-tool-01",
+      "node-s6-011",
+      "node-s6-015",
+      "node-ds-4-tool-01",
+      "node-step-1",
+      "node-s6-013-tool-01",
+      "node-s3-sig-044",
+      "node-s3-sig-038",
+      "node-s3-sig-049",
+      "node-s3-sig-036",
+      "node-s3-sig-052",
+      "node-s3-sig-057",
+      "node-step-4",
+      "node-title",
+      "node-s3-group-033",
+      "node-s3-sig-043",
+      "node-s4-stage-1",
+      "node-s6-012",
+      "node-s6-013-tool-03",
+      "node-s3-sig-059",
+      "node-s3-sig-039",
+      "node-s6-017",
+      "node-s6-lane-one-to-many",
+      "node-s3-sig-048",
+      "node-s4-stage-2",
+      "node-optionality-note",
+      "node-s6-016",
+      "node-s2-tool-03",
+      "node-s6-009",
+      "node-s1-tool-05",
+      "node-ds-4-tool-02",
+      "node-s3-sig-053",
+      "node-s3-sig-051",
+      "node-s3-sig-056",
+      "node-s6-lane-one-to-one",
+      "node-s3-group-034",
+      "node-s6-010-tool-01",
+      "node-ds-2-tool-01",
+      "node-s6-015-tool-01",
+      "node-s3-sig-047",
+      "node-s3-group-035",
+      "node-s2-tool-05",
+      "node-s2-tool-10",
+      "node-s3-sig-060",
+      "node-s2-tool-06",
+      "node-s4-stage-3",
+      "node-step-3",
+      "node-s3-sig-050",
+      "node-s3-sig-045",
+      "node-s6-013-tool-02",
+      "node-s1-tool-02",
+      "node-s2-tool-08",
+      "node-s2-tool-07",
+      "node-s4-model-awareness",
+      "node-ds-4",
+      "node-s1-tool-07",
+      "node-s5-tool-02",
+      "node-step-5",
+      "node-s6-010",
+      "node-s5-tool-01",
+      "node-s4-stage-5",
+      "node-s2-tool-01",
+      "node-s6-014",
+      "node-s1-tool-04",
+      "node-ds-3",
+      "node-s3-sig-046",
+      "node-ds-3-tool-02",
+      "node-s4-model-tiers",
+      "node-s6-016-tool-01",
+      "node-s4-tier-3",
+      "node-s2-tool-04",
+      "node-s3-sig-054",
+      "node-s3-sig-058",
+      "node-s1-tool-06",
+      "node-s5-crm-records",
+      "node-s4-tool-01",
+      "node-s4-tier-1",
+      "node-s6-008",
+      "node-ds-3-tool-01",
+      "node-s4-tier-2",
+      "node-s6-015-tool-02",
+      "node-s2-tool-02",
+      "node-step-6",
+      "node-s1-tool-01",
+      "node-s6-018"
+    ],
+    "missing": [],
+    "missing_copy": [],
+    "coverage_ratio": 1.0,
+    "total_required": 102,
+    "total_covered": 102,
+    "errors": []
+  },
+  "animation_handoff": {
+    "version": "1.0",
+    "animatable_elements": [
+      {
+        "id": "arrow",
+        "role": "connector",
+        "semantic": "arrow"
+      },
+      {
+        "id": "connection-001",
+        "role": "connector",
+        "semantic": "connection-001"
+      },
+      {
+        "id": "connection-002",
+        "role": "connector",
+        "semantic": "connection-002"
+      },
+      {
+        "id": "connection-003",
+        "role": "connector",
+        "semantic": "connection-003"
+      },
+      {
+        "id": "connection-004",
+        "role": "connector",
+        "semantic": "connection-004"
+      },
+      {
+        "id": "connection-005",
+        "role": "connector",
+        "semantic": "connection-005"
+      },
+      {
+        "id": "connection-006",
+        "role": "connector",
+        "semantic": "connection-006"
+      },
+      {
+        "id": "connection-007",
+        "role": "connector",
+        "semantic": "connection-007"
+      },
+      {
+        "id": "connection-008",
+        "role": "connector",
+        "semantic": "connection-008"
+      },
+      {
+        "id": "connection-009",
+        "role": "connector",
+        "semantic": "connection-009"
+      }
+    ],
+    "stationary_elements": [
+      {
+        "id": "canvas-bg",
+        "role": "element",
+        "semantic": "canvas-bg"
+      },
+      {
+        "id": "node-title",
+        "role": "title",
+        "semantic": "node-title"
+      },
+      {
+        "id": "node-optionality-note",
+        "role": "note",
+        "semantic": "node-optionality-note"
+      },
+      {
+        "id": "section-step-1-card",
+        "role": "card",
+        "semantic": "section-step-1-card"
+      },
+      {
+        "id": "node-step-1",
+        "role": "element",
+        "semantic": "node-step-1"
+      },
+      {
+        "id": "label-s1-tools",
+        "role": "tool_tile",
+        "semantic": "label-s1-tools"
+      },
+      {
+        "id": "node-s1-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-01"
+      },
+      {
+        "id": "node-s1-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-02"
+      },
+      {
+        "id": "node-s1-tool-03",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-03"
+      },
+      {
+        "id": "node-s1-tool-04",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-04"
+      },
+      {
+        "id": "node-s1-tool-05",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-05"
+      },
+      {
+        "id": "node-s1-tool-06",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-06"
+      },
+      {
+        "id": "node-s1-tool-07",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-07"
+      },
+      {
+        "id": "node-s1-tool-08",
+        "role": "tool_tile",
+        "semantic": "node-s1-tool-08"
+      },
+      {
+        "id": "section-step-2-card",
+        "role": "card",
+        "semantic": "section-step-2-card"
+      },
+      {
+        "id": "node-step-2",
+        "role": "element",
+        "semantic": "node-step-2"
+      },
+      {
+        "id": "label-s2-tools",
+        "role": "tool_tile",
+        "semantic": "label-s2-tools"
+      },
+      {
+        "id": "node-s2-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-01"
+      },
+      {
+        "id": "node-s2-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-02"
+      },
+      {
+        "id": "node-s2-tool-03",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-03"
+      },
+      {
+        "id": "node-s2-tool-04",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-04"
+      },
+      {
+        "id": "node-s2-tool-05",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-05"
+      },
+      {
+        "id": "node-s2-tool-06",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-06"
+      },
+      {
+        "id": "node-s2-tool-07",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-07"
+      },
+      {
+        "id": "node-s2-tool-08",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-08"
+      },
+      {
+        "id": "node-s2-tool-09",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-09"
+      },
+      {
+        "id": "node-s2-tool-10",
+        "role": "tool_tile",
+        "semantic": "node-s2-tool-10"
+      },
+      {
+        "id": "section-step-3-card",
+        "role": "card",
+        "semantic": "section-step-3-card"
+      },
+      {
+        "id": "node-step-3",
+        "role": "element",
+        "semantic": "node-step-3"
+      },
+      {
+        "id": "section-step-3-first-panel",
+        "role": "panel",
+        "semantic": "section-step-3-first-panel"
+      },
+      {
+        "id": "node-s3-group-034",
+        "role": "element",
+        "semantic": "node-s3-group-034"
+      },
+      {
+        "id": "node-s3-sig-047",
+        "role": "chip",
+        "semantic": "node-s3-sig-047"
+      },
+      {
+        "id": "node-s3-sig-048",
+        "role": "chip",
+        "semantic": "node-s3-sig-048"
+      },
+      {
+        "id": "node-s3-sig-049",
+        "role": "chip",
+        "semantic": "node-s3-sig-049"
+      },
+      {
+        "id": "node-s3-sig-050",
+        "role": "chip",
+        "semantic": "node-s3-sig-050"
+      },
+      {
+        "id": "node-s3-sig-051",
+        "role": "chip",
+        "semantic": "node-s3-sig-051"
+      },
+      {
+        "id": "node-s3-sig-052",
+        "role": "chip",
+        "semantic": "node-s3-sig-052"
+      },
+      {
+        "id": "node-s3-sig-053",
+        "role": "chip",
+        "semantic": "node-s3-sig-053"
+      },
+      {
+        "id": "node-s3-sig-054",
+        "role": "chip",
+        "semantic": "node-s3-sig-054"
+      },
+      {
+        "id": "section-step-3-second-panel",
+        "role": "panel",
+        "semantic": "section-step-3-second-panel"
+      },
+      {
+        "id": "node-s3-group-035",
+        "role": "element",
+        "semantic": "node-s3-group-035"
+      },
+      {
+        "id": "node-s3-sig-055",
+        "role": "chip",
+        "semantic": "node-s3-sig-055"
+      },
+      {
+        "id": "node-s3-sig-056",
+        "role": "chip",
+        "semantic": "node-s3-sig-056"
+      },
+      {
+        "id": "node-s3-sig-057",
+        "role": "chip",
+        "semantic": "node-s3-sig-057"
+      },
+      {
+        "id": "node-s3-sig-058",
+        "role": "chip",
+        "semantic": "node-s3-sig-058"
+      },
+      {
+        "id": "node-s3-sig-059",
+        "role": "chip",
+        "semantic": "node-s3-sig-059"
+      },
+      {
+        "id": "node-s3-sig-060",
+        "role": "chip",
+        "semantic": "node-s3-sig-060"
+      },
+      {
+        "id": "section-step-3-third-panel",
+        "role": "panel",
+        "semantic": "section-step-3-third-panel"
+      },
+      {
+        "id": "node-s3-group-033",
+        "role": "element",
+        "semantic": "node-s3-group-033"
+      },
+      {
+        "id": "node-s3-sig-036",
+        "role": "chip",
+        "semantic": "node-s3-sig-036"
+      },
+      {
+        "id": "node-s3-sig-037",
+        "role": "chip",
+        "semantic": "node-s3-sig-037"
+      },
+      {
+        "id": "node-s3-sig-038",
+        "role": "chip",
+        "semantic": "node-s3-sig-038"
+      },
+      {
+        "id": "node-s3-sig-039",
+        "role": "chip",
+        "semantic": "node-s3-sig-039"
+      },
+      {
+        "id": "node-s3-sig-040",
+        "role": "chip",
+        "semantic": "node-s3-sig-040"
+      },
+      {
+        "id": "node-s3-sig-041",
+        "role": "chip",
+        "semantic": "node-s3-sig-041"
+      },
+      {
+        "id": "node-s3-sig-042",
+        "role": "chip",
+        "semantic": "node-s3-sig-042"
+      },
+      {
+        "id": "node-s3-sig-043",
+        "role": "chip",
+        "semantic": "node-s3-sig-043"
+      },
+      {
+        "id": "node-s3-sig-044",
+        "role": "chip",
+        "semantic": "node-s3-sig-044"
+      },
+      {
+        "id": "node-s3-sig-045",
+        "role": "chip",
+        "semantic": "node-s3-sig-045"
+      },
+      {
+        "id": "node-s3-sig-046",
+        "role": "chip",
+        "semantic": "node-s3-sig-046"
+      },
+      {
+        "id": "section-step-4-card",
+        "role": "card",
+        "semantic": "section-step-4-card"
+      },
+      {
+        "id": "node-step-4",
+        "role": "element",
+        "semantic": "node-step-4"
+      },
+      {
+        "id": "node-s4-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s4-tool-01"
+      },
+      {
+        "id": "label-s4-models",
+        "role": "element",
+        "semantic": "label-s4-models"
+      },
+      {
+        "id": "section-step-4-awareness-panel",
+        "role": "panel",
+        "semantic": "section-step-4-awareness-panel"
+      },
+      {
+        "id": "node-s4-model-awareness",
+        "role": "element",
+        "semantic": "node-s4-model-awareness"
+      },
+      {
+        "id": "node-s4-stage-1",
+        "role": "element",
+        "semantic": "node-s4-stage-1"
+      },
+      {
+        "id": "node-s4-stage-2",
+        "role": "element",
+        "semantic": "node-s4-stage-2"
+      },
+      {
+        "id": "node-s4-stage-3",
+        "role": "element",
+        "semantic": "node-s4-stage-3"
+      },
+      {
+        "id": "node-s4-stage-4",
+        "role": "element",
+        "semantic": "node-s4-stage-4"
+      },
+      {
+        "id": "node-s4-stage-5",
+        "role": "element",
+        "semantic": "node-s4-stage-5"
+      },
+      {
+        "id": "section-step-4-tiers-panel",
+        "role": "panel",
+        "semantic": "section-step-4-tiers-panel"
+      },
+      {
+        "id": "node-s4-model-tiers",
+        "role": "element",
+        "semantic": "node-s4-model-tiers"
+      },
+      {
+        "id": "node-s4-tier-1",
+        "role": "element",
+        "semantic": "node-s4-tier-1"
+      },
+      {
+        "id": "node-s4-tier-2",
+        "role": "element",
+        "semantic": "node-s4-tier-2"
+      },
+      {
+        "id": "node-s4-tier-3",
+        "role": "element",
+        "semantic": "node-s4-tier-3"
+      },
+      {
+        "id": "section-step-5-card",
+        "role": "card",
+        "semantic": "section-step-5-card"
+      },
+      {
+        "id": "node-step-5",
+        "role": "element",
+        "semantic": "node-step-5"
+      },
+      {
+        "id": "label-s5-crm-dest",
+        "role": "element",
+        "semantic": "label-s5-crm-dest"
+      },
+      {
+        "id": "node-s5-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s5-tool-01"
+      },
+      {
+        "id": "node-s5-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-s5-tool-02"
+      },
+      {
+        "id": "node-s5-crm-records",
+        "role": "element",
+        "semantic": "node-s5-crm-records"
+      },
+      {
+        "id": "section-step-6-card",
+        "role": "card",
+        "semantic": "section-step-6-card"
+      },
+      {
+        "id": "node-step-6",
+        "role": "element",
+        "semantic": "node-step-6"
+      },
+      {
+        "id": "section-step-6-one-to-one-panel",
+        "role": "panel",
+        "semantic": "section-step-6-one-to-one-panel"
+      },
+      {
+        "id": "node-s6-lane-one-to-one",
+        "role": "panel",
+        "semantic": "node-s6-lane-one-to-one"
+      },
+      {
+        "id": "node-s6-007",
+        "role": "element",
+        "semantic": "node-s6-007"
+      },
+      {
+        "id": "node-s6-007-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-007-tool-01"
+      },
+      {
+        "id": "node-s6-008",
+        "role": "element",
+        "semantic": "node-s6-008"
+      },
+      {
+        "id": "node-s6-009",
+        "role": "element",
+        "semantic": "node-s6-009"
+      },
+      {
+        "id": "node-s6-010",
+        "role": "element",
+        "semantic": "node-s6-010"
+      },
+      {
+        "id": "node-s6-010-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-010-tool-01"
+      },
+      {
+        "id": "section-step-6-one-to-many-panel",
+        "role": "panel",
+        "semantic": "section-step-6-one-to-many-panel"
+      },
+      {
+        "id": "node-s6-lane-one-to-many",
+        "role": "panel",
+        "semantic": "node-s6-lane-one-to-many"
+      },
+      {
+        "id": "node-s6-011",
+        "role": "element",
+        "semantic": "node-s6-011"
+      },
+      {
+        "id": "node-s6-012",
+        "role": "element",
+        "semantic": "node-s6-012"
+      },
+      {
+        "id": "node-s6-013",
+        "role": "element",
+        "semantic": "node-s6-013"
+      },
+      {
+        "id": "node-s6-013-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-013-tool-01"
+      },
+      {
+        "id": "node-s6-013-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-s6-013-tool-02"
+      },
+      {
+        "id": "node-s6-013-tool-03",
+        "role": "tool_tile",
+        "semantic": "node-s6-013-tool-03"
+      },
+      {
+        "id": "node-s6-014",
+        "role": "element",
+        "semantic": "node-s6-014"
+      },
+      {
+        "id": "node-s6-015",
+        "role": "element",
+        "semantic": "node-s6-015"
+      },
+      {
+        "id": "node-s6-015-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-015-tool-01"
+      },
+      {
+        "id": "node-s6-015-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-s6-015-tool-02"
+      },
+      {
+        "id": "node-s6-015-tool-03",
+        "role": "tool_tile",
+        "semantic": "node-s6-015-tool-03"
+      },
+      {
+        "id": "node-s6-016",
+        "role": "element",
+        "semantic": "node-s6-016"
+      },
+      {
+        "id": "node-s6-016-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-016-tool-01"
+      },
+      {
+        "id": "node-s6-017",
+        "role": "element",
+        "semantic": "node-s6-017"
+      },
+      {
+        "id": "node-s6-018",
+        "role": "element",
+        "semantic": "node-s6-018"
+      },
+      {
+        "id": "node-s6-018-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-s6-018-tool-01"
+      },
+      {
+        "id": "section-downstream-card",
+        "role": "card",
+        "semantic": "section-downstream-card"
+      },
+      {
+        "id": "label-downstream-header",
+        "role": "element",
+        "semantic": "label-downstream-header"
+      },
+      {
+        "id": "ds-box-0",
+        "role": "element",
+        "semantic": "ds-box-0"
+      },
+      {
+        "id": "node-ds-1",
+        "role": "element",
+        "semantic": "node-ds-1"
+      },
+      {
+        "id": "node-ds-1-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-ds-1-tool-01"
+      },
+      {
+        "id": "ds-box-1",
+        "role": "element",
+        "semantic": "ds-box-1"
+      },
+      {
+        "id": "node-ds-2",
+        "role": "element",
+        "semantic": "node-ds-2"
+      },
+      {
+        "id": "node-ds-2-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-ds-2-tool-01"
+      },
+      {
+        "id": "ds-box-2",
+        "role": "element",
+        "semantic": "ds-box-2"
+      },
+      {
+        "id": "node-ds-3",
+        "role": "element",
+        "semantic": "node-ds-3"
+      },
+      {
+        "id": "node-ds-3-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-ds-3-tool-01"
+      },
+      {
+        "id": "node-ds-3-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-ds-3-tool-02"
+      },
+      {
+        "id": "ds-box-3",
+        "role": "element",
+        "semantic": "ds-box-3"
+      },
+      {
+        "id": "node-ds-4",
+        "role": "element",
+        "semantic": "node-ds-4"
+      },
+      {
+        "id": "node-ds-4-tool-01",
+        "role": "tool_tile",
+        "semantic": "node-ds-4-tool-01"
+      },
+      {
+        "id": "node-ds-4-tool-02",
+        "role": "tool_tile",
+        "semantic": "node-ds-4-tool-02"
+      }
+    ],
+    "total_elements": 136,
+    "animation_eligible_count": 10,
+    "notes": [
+      "Element IDs are stable across re-renders with the same input.",
+      "Connectors support stroke-dashoffset animation.",
+      "Text, logos, and informational cards remain stationary by default."
+    ]
+  },
+  "validation": {
+    "step": "08-visual-generation",
+    "validation_version": "1.0",
+    "timestamp": "2026-11-24T12:59:33.110539+00:00",
+    "geometry": {
+      "valid": true,
+      "errors": []
+    },
+    "svg_structure": {
+      "valid": true,
+      "errors": []
+    },
+    "content_coverage": {
+      "coverage_ratio": 1.0,
+      "total_required": 102,
+      "total_covered": 102,
+      "missing": [],
+      "missing_copy": []
+    },
+    "rendering": {
+      "status": "success"
+    },
+    "visual_review": {
+      "status": "approved",
+      "note": "Visual inspection performed by the execution AI comparing rendered PNG against reference template."
+    },
+    "overall": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "warnings": [],
+  "errors": []
+}

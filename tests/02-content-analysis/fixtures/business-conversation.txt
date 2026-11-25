@@ -1,0 +1,4 @@
+Maya: Acme uses HubSpot to send qualified leads to Salesforce.
+Dev: We must keep the $5,000 monthly cap through 2026-04-30.
+Maya: The proposal is to add Clearbit, but that is not approved yet.
+Dev: The decision is Salesforce remains the system of record.

@@ -1,0 +1,11 @@
+{
+  "tool": "built-in AI image generation",
+  "references": ["references/templates/T01-modular-gtm.png", "references/visual-quality/abm-playbook-concept.png", "step-07/asset-contact-sheet.png"],
+  "attempts": [
+    {"file": "step-08/attempt-1.png", "request": "Generate T01-style ABM playbook using approved six steps, exact signal groups, CRM relationship, tool associations and footer; remove CRM placeholder bars and allow more vertical space.", "result": "CRM placeholders removed and footer present; tool marks rendered as text; signal section small."},
+    {"file": "step-08/preview.png", "request": "Keep all existing wording and associations; improve signal readability and add matching recognizable marks from asset contact sheet; no new claims or CRM placeholders.", "result": "Several marks added; dense text remains small; actual canvas 1024x1536."}
+  ],
+  "output_type": "flat raster PNG",
+  "exact_dimension_control": "not provided by available image tool interface",
+  "asset_identity": "not verified; image generation does not guarantee source-asset reproduction"
+}

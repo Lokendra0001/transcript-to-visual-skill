@@ -1,0 +1,4823 @@
+{
+  "step": "05-content-writing",
+  "version": "1.0",
+  "status": "success",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "sources": {
+    "architecture": {
+      "step": "04-workflow-architecture",
+      "version": "1.1",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "verification_only": {
+      "content_analysis": {
+        "step": "02-content-analysis",
+        "version": "2.0"
+      },
+      "content_classification": {
+        "step": "03-content-classification",
+        "version": "1.0"
+      }
+    }
+  },
+  "writing_strategy": {
+    "voice": "Concise, professional B2B playbook labels; first-person plural only in the confirmed title.",
+    "casing": "Title Case for steps, group labels, categories, activities and downstream items; brand names verbatim.",
+    "principles": [
+      "Labels name things; they do not explain them. Explanatory copy limited to the slots Step 04 defined.",
+      "Canonical names, corrected names and corrected orders used exactly (constraints 008, 009).",
+      "Tool optionality stated once globally; tool chips carry names only (constraint-001).",
+      "No numbers beyond step numbers, tier names and confirmed counts; no scores (constraint-006).",
+      "Every item stays within its max_words_hint because overall density is very high."
+    ],
+    "optional_policy": "Optional count labels generated (confirmed Step 02 facts that aid scanning). Optional gloss, role hint and placement note omitted for consistency and density; reasons recorded."
+  },
+  "visual_units": [
+    {
+      "id": "visual-unit-001",
+      "title_item_id": "content-item-001",
+      "subtitle_item_id": "content-item-103",
+      "objective": "Our 6-Step ABM Playbook: end-to-end path from TAM and stakeholder mapping to closed-won, with optional tools per step."
+    }
+  ],
+  "content_items": [
+    {
+      "id": "content-item-001",
+      "content_requirement_id": "content-req-001",
+      "target_scope": "node",
+      "target_refs": [
+        "node-title"
+      ],
+      "content_type": "title_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "entity-001",
+        "decision-001"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Our 6-Step ABM Playbook",
+      "status": "generated",
+      "length_metrics": {
+        "words": 4,
+        "characters": 23
+      },
+      "max_words_hint": 5
+    },
+    {
+      "id": "content-item-002",
+      "content_requirement_id": "content-req-002",
+      "target_scope": "node",
+      "target_refs": [
+        "node-optionality-note"
+      ],
+      "content_type": "global_note_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "topic-002",
+        "decision-002",
+        "fact-023",
+        "requirement-002",
+        "fact-022",
+        "decision-009",
+        "requirement-003",
+        "requirement-011"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002"
+      ],
+      "preferred_text": "Tools shown are optional alternatives, not a required stack. Some tools appear in more than one step.",
+      "status": "generated",
+      "length_metrics": {
+        "words": 17,
+        "characters": 101
+      },
+      "max_words_hint": 18
+    },
+    {
+      "id": "content-item-003",
+      "content_requirement_id": "content-req-003",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-1"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-001",
+        "fact-001",
+        "topic-003"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "TAM and Stakeholder Mapping",
+      "status": "generated",
+      "length_metrics": {
+        "words": 4,
+        "characters": 27
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 1 — TAM and Stakeholder Mapping",
+          "length_metrics": {
+            "words": 7,
+            "characters": 36
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 1
+    },
+    {
+      "id": "content-item-004",
+      "content_requirement_id": "content-req-004",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-006",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Sales Navigator",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 15
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-005",
+      "content_requirement_id": "content-req-005",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-007",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "AI Ark",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 6
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-006",
+      "content_requirement_id": "content-req-006",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-03"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-008",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Clay",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 4
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-007",
+      "content_requirement_id": "content-req-007",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-04"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-009",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Findymail",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 9
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-008",
+      "content_requirement_id": "content-req-008",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-05"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-010",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Ocean.io",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-009",
+      "content_requirement_id": "content-req-009",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-06"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-011",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "DiscoLike",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 9
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-010",
+      "content_requirement_id": "content-req-010",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-07"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-012",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Landbase",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-011",
+      "content_requirement_id": "content-req-011",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s1-tool-08"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-013",
+        "activity-001",
+        "decision-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Custom Scrapers",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 15
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-012",
+      "content_requirement_id": "content-req-012",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-2"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-002",
+        "fact-001",
+        "topic-004"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "AI Account Research and Enrichment",
+      "status": "generated",
+      "length_metrics": {
+        "words": 5,
+        "characters": 34
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 2 — AI Account Research and Enrichment",
+          "length_metrics": {
+            "words": 8,
+            "characters": 43
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 2
+    },
+    {
+      "id": "content-item-013",
+      "content_requirement_id": "content-req-013",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-010",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Ocean.io",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-014",
+      "content_requirement_id": "content-req-014",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-014",
+        "activity-002",
+        "decision-006"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-009"
+      ],
+      "preferred_text": "Claygent",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-015",
+      "content_requirement_id": "content-req-015",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-03"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-015",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Sumble",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 6
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-016",
+      "content_requirement_id": "content-req-016",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-04"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-016",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Codex",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 5
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-017",
+      "content_requirement_id": "content-req-017",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-05"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-017",
+        "activity-002",
+        "fact-005"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Tavily",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 6
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-018",
+      "content_requirement_id": "content-req-018",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-06"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-018",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Freckle",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-019",
+      "content_requirement_id": "content-req-019",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-07"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-019",
+        "activity-002",
+        "decision-008"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-009"
+      ],
+      "preferred_text": "Claude Code",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 11
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-020",
+      "content_requirement_id": "content-req-020",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-08"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-009",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Findymail",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 9
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-021",
+      "content_requirement_id": "content-req-021",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-09"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-020",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "BetterContact",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-022",
+      "content_requirement_id": "content-req-022",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-10"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-007",
+        "activity-002"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "AI Ark",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 6
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-023",
+      "content_requirement_id": "content-req-023",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-3"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-003",
+        "fact-001",
+        "topic-005"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "Track the Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 3,
+        "characters": 17
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 3 — Track the Signals",
+          "length_metrics": {
+            "words": 6,
+            "characters": 26
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 3
+    },
+    {
+      "id": "content-item-024",
+      "content_requirement_id": "content-req-024",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-group-034"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-034",
+        "topic-007"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "First-Party Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-025",
+      "content_requirement_id": "content-req-025",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-047"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-047",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Event Attendance",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 16
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-026",
+      "content_requirement_id": "content-req-026",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-048"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-048",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "CRM Activity",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-027",
+      "content_requirement_id": "content-req-027",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-049"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-049",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Meeting Forms",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-028",
+      "content_requirement_id": "content-req-028",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-050"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-050",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Product Usage",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-029",
+      "content_requirement_id": "content-req-029",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-051"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-051",
+        "topic-007",
+        "decision-011"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Website Visits",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-030",
+      "content_requirement_id": "content-req-030",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-052"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-052",
+        "topic-007",
+        "fact-011"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Gated Content",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-031",
+      "content_requirement_id": "content-req-031",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-053"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-053",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Marketing Sequences",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-032",
+      "content_requirement_id": "content-req-032",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-054"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-054",
+        "topic-007"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Outreach Replies",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 16
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-033",
+      "content_requirement_id": "content-req-033",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-group-035"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-035",
+        "topic-008"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Second-Party Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 20
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-034",
+      "content_requirement_id": "content-req-034",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-055"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-055",
+        "topic-008"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Champion Tracking",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 17
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-035",
+      "content_requirement_id": "content-req-035",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-056"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-056",
+        "topic-008"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Ad Engagements",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-036",
+      "content_requirement_id": "content-req-036",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-057"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-057",
+        "topic-008"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Partner Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 15
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-037",
+      "content_requirement_id": "content-req-037",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-058"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-058",
+        "topic-008"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "LinkedIn Engagement",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-038",
+      "content_requirement_id": "content-req-038",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-059"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-059",
+        "topic-008"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Review Sites",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-039",
+      "content_requirement_id": "content-req-039",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-060"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-060",
+        "topic-008",
+        "decision-013",
+        "fact-012"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Warm Intros",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 11
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-040",
+      "content_requirement_id": "content-req-040",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-group-033"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-033",
+        "topic-006"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Third-Party Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-041",
+      "content_requirement_id": "content-req-041",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-036"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-036",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Funding Announcements",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 21
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-042",
+      "content_requirement_id": "content-req-042",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-037"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-037",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Search Analytics",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 16
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-043",
+      "content_requirement_id": "content-req-043",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-038"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-038",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "People Data",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 11
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-044",
+      "content_requirement_id": "content-req-044",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-039"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-039",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Technographic Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 21
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-045",
+      "content_requirement_id": "content-req-045",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-040"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-040",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "News",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 4
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-046",
+      "content_requirement_id": "content-req-046",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-041"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-041",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Firmographic Data",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 17
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-047",
+      "content_requirement_id": "content-req-047",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-042"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-042",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Job Openings",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-048",
+      "content_requirement_id": "content-req-048",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-043"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-043",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Web Scraping",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-049",
+      "content_requirement_id": "content-req-049",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-044"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-044",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Advertisement Activity",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 22
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-050",
+      "content_requirement_id": "content-req-050",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-045"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-045",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Social Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-051",
+      "content_requirement_id": "content-req-051",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-046"
+      ],
+      "content_type": "signal_category_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-046",
+        "topic-006"
+      ],
+      "constraint_refs": [
+        "constraint-003"
+      ],
+      "preferred_text": "Competitive Signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-052",
+      "content_requirement_id": "content-req-052",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-4"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-004",
+        "fact-001",
+        "topic-009",
+        "decision-023"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008",
+        "constraint-006"
+      ],
+      "preferred_text": "Score + Tier Accounts",
+      "status": "generated",
+      "length_metrics": {
+        "words": 4,
+        "characters": 21
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 4 — Score + Tier Accounts",
+          "length_metrics": {
+            "words": 7,
+            "characters": 30
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 4
+    },
+    {
+      "id": "content-item-053",
+      "content_requirement_id": "content-req-053",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-004"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-054",
+      "content_requirement_id": "content-req-054",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-model-awareness"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-062",
+        "relationship-031",
+        "fact-015"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Awareness Stages",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 16
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-055",
+      "content_requirement_id": "content-req-055",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-stage-1"
+      ],
+      "content_type": "awareness_stage_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-063",
+        "fact-013",
+        "decision-027"
+      ],
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "preferred_text": "Identified",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-056",
+      "content_requirement_id": "content-req-056",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-stage-2"
+      ],
+      "content_type": "awareness_stage_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-064",
+        "fact-013",
+        "decision-027"
+      ],
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "preferred_text": "Aware",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 5
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-057",
+      "content_requirement_id": "content-req-057",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-stage-3"
+      ],
+      "content_type": "awareness_stage_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-065",
+        "fact-013",
+        "decision-027"
+      ],
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "preferred_text": "Interested",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-058",
+      "content_requirement_id": "content-req-058",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-stage-4"
+      ],
+      "content_type": "awareness_stage_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-066",
+        "fact-013",
+        "decision-027"
+      ],
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "preferred_text": "Considering",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 11
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-059",
+      "content_requirement_id": "content-req-059",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-stage-5"
+      ],
+      "content_type": "awareness_stage_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-067",
+        "fact-013",
+        "decision-027"
+      ],
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "preferred_text": "Selecting",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 9
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-060",
+      "content_requirement_id": "content-req-060",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-model-tiers"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-068",
+        "relationship-031",
+        "fact-015",
+        "decision-029"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Account Tiers",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-061",
+      "content_requirement_id": "content-req-061",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-tier-1"
+      ],
+      "content_type": "account_tier_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-069",
+        "fact-014"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Tier 1",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 6
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-062",
+      "content_requirement_id": "content-req-062",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-tier-2"
+      ],
+      "content_type": "account_tier_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-070",
+        "fact-014"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Tier 2",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 6
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-063",
+      "content_requirement_id": "content-req-063",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s4-tier-3"
+      ],
+      "content_type": "account_tier_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-071",
+        "fact-014"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Tier 3",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 6
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-064",
+      "content_requirement_id": "content-req-064",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-5"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-005",
+        "fact-001",
+        "topic-010"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "CRM Components",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 5 — CRM Components",
+          "length_metrics": {
+            "words": 5,
+            "characters": 23
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 5
+    },
+    {
+      "id": "content-item-065",
+      "content_requirement_id": "content-req-065",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s5-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-005",
+        "decision-031",
+        "fact-016"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-011"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-066",
+      "content_requirement_id": "content-req-066",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s5-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-022",
+        "activity-005",
+        "decision-031",
+        "fact-016"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-011"
+      ],
+      "preferred_text": "Salesforce",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-067",
+      "content_requirement_id": "content-req-067",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s5-crm-records"
+      ],
+      "content_type": "data_object_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "entity-072",
+        "fact-017",
+        "requirement-008",
+        "entity-073",
+        "fact-018"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "CRM Records",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 11
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-068",
+      "content_requirement_id": "content-req-068",
+      "target_scope": "node",
+      "target_refs": [
+        "node-step-6"
+      ],
+      "content_type": "process_stage_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-006",
+        "fact-001",
+        "topic-011"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "Demand Generation",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 17
+      },
+      "max_words_hint": 7,
+      "variants": [
+        {
+          "variant_type": "with_step_number",
+          "text": "Step 6 — Demand Generation",
+          "length_metrics": {
+            "words": 5,
+            "characters": 26
+          },
+          "meaning_unchanged": true
+        }
+      ],
+      "step_number": 6
+    },
+    {
+      "id": "content-item-069",
+      "content_requirement_id": "content-req-069",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-lane-one-to-one"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "topic-012",
+        "decision-016"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "One-to-One",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-070",
+      "content_requirement_id": "content-req-070",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-lane-one-to-many"
+      ],
+      "content_type": "group_label_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "topic-013",
+        "decision-016"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "One-to-Many",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 11
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-071",
+      "content_requirement_id": "content-req-071",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-007"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-007",
+        "topic-012",
+        "decision-013",
+        "fact-012"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Warm Intros",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 11
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-072",
+      "content_requirement_id": "content-req-072",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-007-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-024",
+        "activity-007"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Gmail",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 5
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-073",
+      "content_requirement_id": "content-req-073",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-008"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-008",
+        "topic-012",
+        "decision-022"
+      ],
+      "constraint_refs": [
+        "constraint-007",
+        "constraint-003"
+      ],
+      "preferred_text": "Gifting Campaigns",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 17
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-074",
+      "content_requirement_id": "content-req-074",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-009"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-009",
+        "topic-012"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Event Invites",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-075",
+      "content_requirement_id": "content-req-075",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-010"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-010",
+        "topic-012",
+        "decision-021"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Manual Outreach",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 15
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-076",
+      "content_requirement_id": "content-req-076",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-010-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-010"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-077",
+      "content_requirement_id": "content-req-077",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-011"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-011",
+        "topic-013"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Automated Outbound",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 18
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-078",
+      "content_requirement_id": "content-req-078",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-012"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-012",
+        "topic-013",
+        "decision-022"
+      ],
+      "constraint_refs": [
+        "constraint-007",
+        "constraint-003"
+      ],
+      "preferred_text": "Parallel Dialing",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 16
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-079",
+      "content_requirement_id": "content-req-079",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-013"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-013",
+        "topic-013",
+        "decision-018"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Targeted Ads",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-080",
+      "content_requirement_id": "content-req-080",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-013-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-025",
+        "activity-013"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "LinkedIn",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-081",
+      "content_requirement_id": "content-req-081",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-013-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-026",
+        "activity-013"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Meta",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 4
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-082",
+      "content_requirement_id": "content-req-082",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-013-tool-03"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-027",
+        "activity-013"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Google",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 6
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-083",
+      "content_requirement_id": "content-req-083",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-014"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-014",
+        "topic-013"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Public Events",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 13
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-084",
+      "content_requirement_id": "content-req-084",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-015"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-015",
+        "topic-013",
+        "decision-020"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Social Content",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-085",
+      "content_requirement_id": "content-req-085",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-015-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-029",
+        "activity-015"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "YouTube",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-086",
+      "content_requirement_id": "content-req-086",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-015-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-025",
+        "activity-015"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "LinkedIn",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-087",
+      "content_requirement_id": "content-req-087",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-015-tool-03"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-030",
+        "activity-015"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-009"
+      ],
+      "preferred_text": "X (formerly Twitter)",
+      "status": "generated",
+      "length_metrics": {
+        "words": 3,
+        "characters": 20
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-088",
+      "content_requirement_id": "content-req-088",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-016"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-016",
+        "topic-013",
+        "decision-021"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "On-Site Content",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 15
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-089",
+      "content_requirement_id": "content-req-089",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-016-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-031",
+        "activity-016"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Webflow",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-090",
+      "content_requirement_id": "content-req-090",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-017"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-017",
+        "topic-013",
+        "decision-017",
+        "fact-020"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Video Outreach",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 14
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-091",
+      "content_requirement_id": "content-req-091",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-018"
+      ],
+      "content_type": "sub_activity_label",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "activity-018",
+        "topic-013",
+        "decision-021"
+      ],
+      "constraint_refs": [
+        "constraint-007"
+      ],
+      "preferred_text": "Connection Requests",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 19
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-092",
+      "content_requirement_id": "content-req-092",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s6-018-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-025",
+        "activity-018"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "LinkedIn",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 8
+      },
+      "max_words_hint": 4
+    },
+    {
+      "id": "content-item-093",
+      "content_requirement_id": "content-req-093",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-1"
+      ],
+      "content_type": "downstream_activity_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-019",
+        "fact-021"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "Slack Notification",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 18
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-094",
+      "content_requirement_id": "content-req-094",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-1-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-032",
+        "activity-019"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Slack",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 5
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-095",
+      "content_requirement_id": "content-req-095",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-2"
+      ],
+      "content_type": "downstream_activity_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-020",
+        "fact-021",
+        "decision-034"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "Enroll in Sequences",
+      "status": "generated",
+      "length_metrics": {
+        "words": 3,
+        "characters": 19
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-096",
+      "content_requirement_id": "content-req-096",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-2-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-020"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-097",
+      "content_requirement_id": "content-req-097",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-3"
+      ],
+      "content_type": "downstream_activity_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-021",
+        "fact-021",
+        "decision-034"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "preferred_text": "CRM Tasks",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 9
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-098",
+      "content_requirement_id": "content-req-098",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-3-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-021"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-099",
+      "content_requirement_id": "content-req-099",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-3-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-022",
+        "activity-021"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Salesforce",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-100",
+      "content_requirement_id": "content-req-100",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-4"
+      ],
+      "content_type": "outcome_label",
+      "required": true,
+      "priority": "primary",
+      "source_refs": [
+        "activity-022",
+        "fact-021"
+      ],
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008",
+        "constraint-005"
+      ],
+      "preferred_text": "Closed-Won",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-101",
+      "content_requirement_id": "content-req-101",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-4-tool-01"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-021",
+        "activity-022"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "HubSpot",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 7
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-102",
+      "content_requirement_id": "content-req-102",
+      "target_scope": "node",
+      "target_refs": [
+        "node-ds-4-tool-02"
+      ],
+      "content_type": "optional_tool_label",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "entity-022",
+        "activity-022"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "preferred_text": "Salesforce",
+      "status": "generated",
+      "length_metrics": {
+        "words": 1,
+        "characters": 10
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-103",
+      "content_requirement_id": "content-req-103",
+      "target_scope": "visual_unit",
+      "target_refs": [
+        "visual-unit-001"
+      ],
+      "content_type": "subtitle",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "requirement-001",
+        "activity-022"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "From identifying accounts to closing deals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 6,
+        "characters": 42
+      },
+      "max_words_hint": 12
+    },
+    {
+      "id": "content-item-104",
+      "content_requirement_id": "content-req-104",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-3"
+      ],
+      "content_type": "description",
+      "required": true,
+      "priority": "supporting",
+      "source_refs": [
+        "fact-007"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Buying, engagement and account-activity signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 5,
+        "characters": 47
+      },
+      "max_words_hint": 10
+    },
+    {
+      "id": "content-item-105",
+      "content_requirement_id": "content-req-105",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-5"
+      ],
+      "content_type": "description",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "fact-018",
+        "entity-073"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Connects account intelligence and prioritization with demand generation",
+      "status": "generated",
+      "length_metrics": {
+        "words": 8,
+        "characters": 71
+      },
+      "max_words_hint": 14
+    },
+    {
+      "id": "content-item-106",
+      "content_requirement_id": "content-req-106",
+      "target_scope": "connection",
+      "target_refs": [
+        "connection-010"
+      ],
+      "content_type": "flow_annotation",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "fact-017",
+        "requirement-008",
+        "relationship-010",
+        "relationship-011",
+        "relationship-012",
+        "relationship-013"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "Steps 1–4 inform CRM records",
+      "status": "generated",
+      "length_metrics": {
+        "words": 5,
+        "characters": 28
+      },
+      "max_words_hint": 10,
+      "variants": [
+        {
+          "variant_type": "expanded",
+          "text": "Mapping, research, signals and scoring inform CRM records",
+          "length_metrics": {
+            "words": 8,
+            "characters": 57
+          },
+          "meaning_unchanged": true
+        }
+      ]
+    },
+    {
+      "id": "content-item-107",
+      "content_requirement_id": "content-req-107",
+      "target_scope": "connection",
+      "target_refs": [
+        "connection-033"
+      ],
+      "content_type": "alternative_marker",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "fact-016",
+        "decision-031"
+      ],
+      "constraint_refs": [
+        "constraint-011"
+      ],
+      "preferred_text": "Either/or, depending on existing tech stack",
+      "status": "generated",
+      "length_metrics": {
+        "words": 6,
+        "characters": 43
+      },
+      "max_words_hint": 8
+    },
+    {
+      "id": "content-item-108",
+      "content_requirement_id": "content-req-108",
+      "target_scope": "connection",
+      "target_refs": [
+        "connection-031"
+      ],
+      "content_type": "relationship_note",
+      "required": true,
+      "priority": "secondary",
+      "source_refs": [
+        "relationship-031",
+        "fact-015",
+        "decision-029"
+      ],
+      "constraint_refs": [
+        "constraint-006"
+      ],
+      "preferred_text": "Related, but no fixed stage-to-tier mapping",
+      "status": "generated",
+      "length_metrics": {
+        "words": 6,
+        "characters": 43
+      },
+      "max_words_hint": 8
+    },
+    {
+      "id": "content-item-109",
+      "content_requirement_id": "content-req-109",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-6-one-to-many"
+      ],
+      "content_type": "placement_note",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-020",
+        "decision-017"
+      ],
+      "constraint_refs": [],
+      "preferred_text": null,
+      "status": "omitted_optional",
+      "length_metrics": null,
+      "omission_reason": "Placement inside the one-to-many lane already communicates decision-017; a note would add density without new meaning."
+    },
+    {
+      "id": "content-item-110",
+      "content_requirement_id": "content-req-110",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s3-sig-052"
+      ],
+      "content_type": "gloss",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-011"
+      ],
+      "constraint_refs": [],
+      "preferred_text": null,
+      "status": "omitted_optional",
+      "length_metrics": null,
+      "omission_reason": "No other signal category carries a gloss; adding one only for Gated Content would be inconsistent in a very dense Step 3. The category label is kept."
+    },
+    {
+      "id": "content-item-111",
+      "content_requirement_id": "content-req-111",
+      "target_scope": "node",
+      "target_refs": [
+        "node-s2-tool-05"
+      ],
+      "content_type": "role_hint",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-005"
+      ],
+      "constraint_refs": [],
+      "preferred_text": null,
+      "status": "omitted_optional",
+      "length_metrics": null,
+      "omission_reason": "No other tool chip carries a role hint; Tavily keeps its required name label. Role remains traceable via fact-005."
+    },
+    {
+      "id": "content-item-112",
+      "content_requirement_id": "content-req-112",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-1"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-003",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "8 options",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 9
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-113",
+      "content_requirement_id": "content-req-113",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-2"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-004",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "10 options",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 10
+      },
+      "max_words_hint": 3
+    },
+    {
+      "id": "content-item-114",
+      "content_requirement_id": "content-req-114",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-3-first"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-009",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "8 signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 9
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-115",
+      "content_requirement_id": "content-req-115",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-3-second"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-010",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "6 signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 9
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-116",
+      "content_requirement_id": "content-req-116",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-3-third"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-008",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "11 signals",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 10
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-117",
+      "content_requirement_id": "content-req-117",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-4-awareness"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-013",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "5 stages",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 8
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-118",
+      "content_requirement_id": "content-req-118",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-4-tiers"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-014",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "3 tiers",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 7
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-119",
+      "content_requirement_id": "content-req-119",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-6-one-to-one"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-019",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "4 activities",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 2
+    },
+    {
+      "id": "content-item-120",
+      "content_requirement_id": "content-req-120",
+      "target_scope": "section",
+      "target_refs": [
+        "section-step-6-one-to-many"
+      ],
+      "content_type": "count_label",
+      "required": false,
+      "priority": "contextual",
+      "source_refs": [
+        "fact-019",
+        "structure-009"
+      ],
+      "constraint_refs": [],
+      "preferred_text": "8 activities",
+      "status": "generated",
+      "length_metrics": {
+        "words": 2,
+        "characters": 12
+      },
+      "max_words_hint": 2
+    }
+  ],
+  "terminology_registry": [
+    {
+      "term": "Sales Navigator",
+      "entity_id": "entity-006",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-006"
+      ]
+    },
+    {
+      "term": "AI Ark",
+      "entity_id": "entity-007",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-007"
+      ]
+    },
+    {
+      "term": "Clay",
+      "entity_id": "entity-008",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-008"
+      ]
+    },
+    {
+      "term": "Findymail",
+      "entity_id": "entity-009",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-009"
+      ]
+    },
+    {
+      "term": "Ocean.io",
+      "entity_id": "entity-010",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-010"
+      ]
+    },
+    {
+      "term": "DiscoLike",
+      "entity_id": "entity-011",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-011"
+      ]
+    },
+    {
+      "term": "Landbase",
+      "entity_id": "entity-012",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-012"
+      ]
+    },
+    {
+      "term": "Custom scrapers",
+      "entity_id": "entity-013",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-013"
+      ]
+    },
+    {
+      "term": "Claygent",
+      "entity_id": "entity-014",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [
+        "Clay (in Step 2)"
+      ],
+      "source_refs": [
+        "entity-014",
+        "decision-006"
+      ]
+    },
+    {
+      "term": "Sumble",
+      "entity_id": "entity-015",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-015"
+      ]
+    },
+    {
+      "term": "Codex",
+      "entity_id": "entity-016",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-016"
+      ]
+    },
+    {
+      "term": "Tavily",
+      "entity_id": "entity-017",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-017"
+      ]
+    },
+    {
+      "term": "Freckle",
+      "entity_id": "entity-018",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-018"
+      ]
+    },
+    {
+      "term": "Claude Code",
+      "entity_id": "entity-019",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [
+        "Claude"
+      ],
+      "source_refs": [
+        "entity-019",
+        "decision-008"
+      ]
+    },
+    {
+      "term": "BetterContact",
+      "entity_id": "entity-020",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-020"
+      ]
+    },
+    {
+      "term": "HubSpot",
+      "entity_id": "entity-021",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "term": "Salesforce",
+      "entity_id": "entity-022",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-022"
+      ]
+    },
+    {
+      "term": "Gmail",
+      "entity_id": "entity-024",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-024"
+      ]
+    },
+    {
+      "term": "LinkedIn",
+      "entity_id": "entity-025",
+      "category": "platform",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-025"
+      ]
+    },
+    {
+      "term": "Meta",
+      "entity_id": "entity-026",
+      "category": "platform",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-026"
+      ]
+    },
+    {
+      "term": "Google",
+      "entity_id": "entity-027",
+      "category": "platform",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-027"
+      ]
+    },
+    {
+      "term": "YouTube",
+      "entity_id": "entity-029",
+      "category": "platform",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-029"
+      ]
+    },
+    {
+      "term": "X (formerly Twitter)",
+      "entity_id": "entity-030",
+      "category": "platform",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [
+        "Twitter",
+        "X"
+      ],
+      "source_refs": [
+        "entity-030",
+        "decision-020"
+      ]
+    },
+    {
+      "term": "Webflow",
+      "entity_id": "entity-031",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-031"
+      ]
+    },
+    {
+      "term": "Slack",
+      "entity_id": "entity-032",
+      "category": "tool",
+      "usage": "verbatim brand name; never re-cased or abbreviated",
+      "forbidden_variants": [],
+      "source_refs": [
+        "entity-032"
+      ]
+    },
+    {
+      "term": "Score + Tier Accounts",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Score and Tier",
+        "Account Scoring"
+      ],
+      "source_refs": [
+        "decision-023"
+      ]
+    },
+    {
+      "term": "One-to-one / One-to-many",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Inbound",
+        "Outbound"
+      ],
+      "source_refs": [
+        "decision-016"
+      ]
+    },
+    {
+      "term": "Closed-Won",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Closed-Lost"
+      ],
+      "source_refs": [
+        "activity-022",
+        "decision-035"
+      ]
+    },
+    {
+      "term": "Our 6-Step ABM Playbook",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Step 7"
+      ],
+      "source_refs": [
+        "decision-001"
+      ]
+    },
+    {
+      "term": "Awareness stages: Identified, Aware, Interested, Considering, Selecting",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Selecting before Considering"
+      ],
+      "source_refs": [
+        "decision-027"
+      ]
+    },
+    {
+      "term": "Excluded names",
+      "entity_id": null,
+      "category": "controlled_term",
+      "usage": "exact wording/order",
+      "forbidden_variants": [
+        "Apollo",
+        "Pipedrive",
+        "Reddit",
+        "Email Opens"
+      ],
+      "source_refs": [
+        "constraint-010"
+      ]
+    }
+  ],
+  "relationship_communication": [
+    {
+      "connection_id": "connection-001",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-001",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-002",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-002",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-003",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-003",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-004",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-004",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-005",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-005",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-006",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-006",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-007",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-007",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-008",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-008",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-009",
+      "relationship_type": "sequence",
+      "representation_mode": "explicit_connector",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Directional connector; no label (order is carried by step numbers and downstream position).",
+      "upstream_refs": [
+        "relationship-009",
+        "structure-001"
+      ]
+    },
+    {
+      "connection_id": "connection-010",
+      "relationship_type": "information_flow",
+      "representation_mode": "flexible",
+      "visual_representation_required": true,
+      "content_item_ids": [
+        "content-item-106"
+      ],
+      "communication": "Communicated by the convergence annotation and the Step 5 description; no per-connection label. Covers connections for relationships 010–013.",
+      "upstream_refs": [
+        "relationship-010",
+        "fact-017",
+        "requirement-008",
+        "entity-072",
+        "structure-007"
+      ]
+    },
+    {
+      "connection_id": "connection-011",
+      "relationship_type": "information_flow",
+      "representation_mode": "flexible",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by the convergence annotation and the Step 5 description; no per-connection label.",
+      "upstream_refs": [
+        "relationship-011",
+        "fact-017",
+        "requirement-008",
+        "entity-072",
+        "structure-007"
+      ]
+    },
+    {
+      "connection_id": "connection-012",
+      "relationship_type": "information_flow",
+      "representation_mode": "flexible",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by the convergence annotation and the Step 5 description; no per-connection label.",
+      "upstream_refs": [
+        "relationship-012",
+        "fact-017",
+        "requirement-008",
+        "entity-072",
+        "structure-007"
+      ]
+    },
+    {
+      "connection_id": "connection-013",
+      "relationship_type": "information_flow",
+      "representation_mode": "flexible",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by the convergence annotation and the Step 5 description; no per-connection label.",
+      "upstream_refs": [
+        "relationship-013",
+        "fact-017",
+        "requirement-008",
+        "entity-072",
+        "structure-007"
+      ]
+    },
+    {
+      "connection_id": "connection-014",
+      "relationship_type": "information_flow",
+      "representation_mode": "flexible",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by the convergence annotation and the Step 5 description; no per-connection label.",
+      "upstream_refs": [
+        "relationship-014",
+        "fact-018",
+        "structure-007"
+      ]
+    },
+    {
+      "connection_id": "connection-015",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-015",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-016",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-016",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-017",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-017",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-018",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-018",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-019",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-019",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-020",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-020",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-021",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-021",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-022",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-022",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-023",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-023",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-024",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-024",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-025",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-025",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-026",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-026",
+        "structure-004"
+      ]
+    },
+    {
+      "connection_id": "connection-027",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-027",
+        "structure-003"
+      ]
+    },
+    {
+      "connection_id": "connection-028",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-028",
+        "structure-003"
+      ]
+    },
+    {
+      "connection_id": "connection-029",
+      "relationship_type": "membership",
+      "representation_mode": "containment",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Communicated by placement inside the parent group; no text.",
+      "upstream_refs": [
+        "relationship-029",
+        "structure-003"
+      ]
+    },
+    {
+      "connection_id": "connection-030",
+      "relationship_type": "association",
+      "representation_mode": "flexible",
+      "visual_representation_required": false,
+      "content_item_ids": [],
+      "communication": "Both instances labelled identically; no link text required.",
+      "upstream_refs": [
+        "relationship-030",
+        "fact-012",
+        "decision-013"
+      ]
+    },
+    {
+      "connection_id": "connection-031",
+      "relationship_type": "association",
+      "representation_mode": "grouping",
+      "visual_representation_required": true,
+      "content_item_ids": [
+        "content-item-108"
+      ],
+      "communication": "Co-location in Step 4 plus the relationship note; no stage-to-tier connector.",
+      "upstream_refs": [
+        "relationship-031",
+        "fact-015",
+        "decision-029"
+      ]
+    },
+    {
+      "connection_id": "connection-032",
+      "relationship_type": "comparison",
+      "representation_mode": "flexible",
+      "visual_representation_required": false,
+      "content_item_ids": [],
+      "communication": "Distinct names Claygent and Clay; no link text required.",
+      "upstream_refs": [
+        "relationship-032",
+        "decision-006"
+      ]
+    },
+    {
+      "connection_id": "connection-033",
+      "relationship_type": "alternative",
+      "representation_mode": "grouping",
+      "visual_representation_required": true,
+      "content_item_ids": [
+        "content-item-107"
+      ],
+      "communication": "HubSpot and Salesforce chips grouped with the either/or marker.",
+      "upstream_refs": [
+        "fact-016",
+        "decision-031",
+        "constraint-011"
+      ]
+    },
+    {
+      "connection_id": "connection-034",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-006",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-035",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-007",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-036",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-008",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-037",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-009",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-038",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-010",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-039",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-011",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-040",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-012",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-041",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-013",
+        "activity-001",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-042",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-010",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-043",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-014",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-044",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-015",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-045",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-016",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-046",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-017",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-047",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-018",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-048",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-019",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-049",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-009",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-050",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-020",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-051",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-007",
+        "activity-002",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-052",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-004",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-053",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-005",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-054",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-022",
+        "activity-005",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-055",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-024",
+        "activity-007",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-056",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-010",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-057",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-025",
+        "activity-013",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-058",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-026",
+        "activity-013",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-059",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-027",
+        "activity-013",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-060",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-029",
+        "activity-015",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-061",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-025",
+        "activity-015",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-062",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-030",
+        "activity-015",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-063",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-031",
+        "activity-016",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-064",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-025",
+        "activity-018",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-065",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-032",
+        "activity-019",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-066",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-020",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-067",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-021",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-068",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-022",
+        "activity-021",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-069",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-021",
+        "activity-022",
+        "structure-008"
+      ]
+    },
+    {
+      "connection_id": "connection-070",
+      "relationship_type": "association",
+      "representation_mode": "supporting_association",
+      "visual_representation_required": true,
+      "content_item_ids": [],
+      "communication": "Tool chip label placed with its activity; no connector text.",
+      "upstream_refs": [
+        "entity-022",
+        "activity-022",
+        "structure-008"
+      ]
+    }
+  ],
+  "omitted_optional_content": [
+    {
+      "content_item_id": "content-item-109",
+      "content_requirement_id": "content-req-109",
+      "target_id": "section-step-6-one-to-many",
+      "reason": "Placement inside the one-to-many lane already communicates decision-017; a note would add density without new meaning."
+    },
+    {
+      "content_item_id": "content-item-110",
+      "content_requirement_id": "content-req-110",
+      "target_id": "node-s3-sig-052",
+      "reason": "No other signal category carries a gloss; adding one only for Gated Content would be inconsistent in a very dense Step 3. The category label is kept."
+    },
+    {
+      "content_item_id": "content-item-111",
+      "content_requirement_id": "content-req-111",
+      "target_id": "node-s2-tool-05",
+      "reason": "No other tool chip carries a role hint; Tavily keeps its required name label. Role remains traceable via fact-005."
+    }
+  ],
+  "preserved_constraints": [
+    {
+      "id": "constraint-001",
+      "statement": "Present every tool/platform as an optional alternative; never as a required stack or recommendation to use all.",
+      "how_preserved": "Global optionality note (node-optionality-note); chips carry names only, nothing says \"required\"."
+    },
+    {
+      "id": "constraint-002",
+      "statement": "Repeat a tool in each step it belongs to (e.g. Ocean.io in Steps 1 and 2); do not deduplicate across steps.",
+      "how_preserved": "Repeated tools get their own label item in every step (e.g. Ocean.io, AI Ark, Findymail in Steps 1 and 2; HubSpot in six places)."
+    },
+    {
+      "id": "constraint-003",
+      "statement": "Do not invent tool or vendor names; signal categories and parallel dialing / gifting remain without vendors.",
+      "how_preserved": "Only confirmed names used; signal categories, Gifting Campaigns and Parallel Dialing have no vendor text."
+    },
+    {
+      "id": "constraint-004",
+      "statement": "Number exactly six steps; downstream items and closed-won are unnumbered.",
+      "how_preserved": "Step numbers 1–6 only; downstream items and Closed-Won have no number."
+    },
+    {
+      "id": "constraint-005",
+      "statement": "Show only the path toward closed-won; no closed-lost branch.",
+      "how_preserved": "Closed-Won is the only outcome text; no Closed-Lost wording anywhere."
+    },
+    {
+      "id": "constraint-006",
+      "statement": "No numerical scores or thresholds; no mapping between awareness stages and tiers.",
+      "how_preserved": "No scores or thresholds; relationship note states there is no fixed stage-to-tier mapping."
+    },
+    {
+      "id": "constraint-007",
+      "statement": "Demand generation is one-to-one / one-to-many, not inbound/outbound; video outreach sits in one-to-many.",
+      "how_preserved": "Lane labels One-to-One / One-to-Many; Video Outreach labelled in one-to-many; no inbound/outbound wording."
+    },
+    {
+      "id": "constraint-008",
+      "statement": "Use corrected orders: considering before selecting; sequence enrollment before CRM tasks; recap order for steps.",
+      "how_preserved": "Considering before Selecting; Enroll in Sequences before CRM Tasks; step order 1–6."
+    },
+    {
+      "id": "constraint-009",
+      "statement": "Use Claygent (not Clay) in Step 2, Claude Code (not Claude), and X (formerly Twitter).",
+      "how_preserved": "Claygent (Step 2), Claude Code, X (formerly Twitter) used verbatim."
+    },
+    {
+      "id": "constraint-010",
+      "statement": "Do not show excluded items as active content: Apollo, Pipedrive, Reddit ads, email opens as a category; website visits only under first-party.",
+      "how_preserved": "No text for Apollo, Pipedrive, Reddit or Email Opens; Website Visits appears only under first-party."
+    },
+    {
+      "id": "constraint-011",
+      "statement": "HubSpot and Salesforce are either/or CRM options, not both required.",
+      "how_preserved": "Either/or marker between HubSpot and Salesforce in Step 5."
+    }
+  ],
+  "preserved_ambiguities": [
+    {
+      "id": "arch-ambiguity-001",
+      "step02_ref": "ambiguity-001",
+      "copy_handling": "Gifting Campaigns and Parallel Dialing labelled with no tool or \"TBD\" text."
+    },
+    {
+      "id": "arch-ambiguity-002",
+      "step02_ref": "ambiguity-002",
+      "copy_handling": "Signal category labels only; no vendor names."
+    },
+    {
+      "id": "arch-ambiguity-003",
+      "step02_ref": "ambiguity-003",
+      "copy_handling": "Event Invites, Automated Outbound, Public Events and Video Outreach labelled with no tool text and no \"pending\" wording."
+    },
+    {
+      "id": "arch-ambiguity-004",
+      "step02_ref": "ambiguity-004",
+      "copy_handling": "Stage and tier labels only; no scoring criteria text."
+    },
+    {
+      "id": "arch-ambiguity-005",
+      "step02_ref": "ambiguity-005",
+      "copy_handling": "Slack Notification labelled without any trigger wording."
+    },
+    {
+      "id": "arch-ambiguity-006",
+      "step02_ref": "ambiguity-006",
+      "copy_handling": "HubSpot chip in Step 4 carries its name only; no function described."
+    }
+  ],
+  "content_density": [
+    {
+      "section_id": "section-header",
+      "architecture_density": "low",
+      "generated_items": 2,
+      "total_words": 21,
+      "max_item_words": 17
+    },
+    {
+      "section_id": "section-step-1",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "total_words": 17,
+      "max_item_words": 4
+    },
+    {
+      "section_id": "section-step-2",
+      "architecture_density": "medium",
+      "generated_items": 12,
+      "total_words": 19,
+      "max_item_words": 5
+    },
+    {
+      "section_id": "section-step-3",
+      "architecture_density": "very_high",
+      "generated_items": 33,
+      "total_words": 69,
+      "max_item_words": 5
+    },
+    {
+      "section_id": "section-step-4",
+      "architecture_density": "medium",
+      "generated_items": 14,
+      "total_words": 24,
+      "max_item_words": 4
+    },
+    {
+      "section_id": "section-step-5",
+      "architecture_density": "low",
+      "generated_items": 5,
+      "total_words": 14,
+      "max_item_words": 8
+    },
+    {
+      "section_id": "section-step-6",
+      "architecture_density": "high",
+      "generated_items": 27,
+      "total_words": 44,
+      "max_item_words": 3
+    },
+    {
+      "section_id": "section-downstream",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "total_words": 14,
+      "max_item_words": 3
+    },
+    {
+      "section_id": "section-root",
+      "architecture_density": "very_high",
+      "generated_items": 117,
+      "total_words": 245,
+      "max_item_words": 17
+    }
+  ],
+  "coverage_assessment": {
+    "content_requirements_total": 120,
+    "required_total": 108,
+    "required_generated": 108,
+    "optional_generated": 9,
+    "optional_omitted": 3,
+    "blocked": 0,
+    "unsatisfied_required_requirement_ids": []
+  },
+  "validation": {
+    "semantic_checks": [
+      {
+        "id": "C01",
+        "name": "Upstream Step 02/03/04 artifacts unchanged during writing",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C02",
+        "name": "Every item within its max_words_hint",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C03",
+        "name": "Brand tool labels are exact canonical names (X uses the corrected form; generic Custom Scrapers title-cased)",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C04",
+        "name": "Step, category, stage, tier, activity and downstream labels equal source names (case-insensitive)",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C05",
+        "name": "Step 4 uses confirmed name \"Score + Tier Accounts\"; title is \"Our 6-Step ABM Playbook\"",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C06",
+        "name": "No excluded names, inbound/outbound framing, closed-lost, step 7, scores, mandatory or pending wording",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C07",
+        "name": "Count labels match both Step 04 node counts and Step 02 facts",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C08",
+        "name": "Corrected orders preserved in copy (stages; downstream)",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C09",
+        "name": "Repeated tools labelled in every instance (no dedup)",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C10",
+        "name": "Optionality stated globally; no chip implies a tool is mandatory",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C11",
+        "name": "Information flow wording says \"inform\", not a dependency/trigger",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C12",
+        "name": "Required requirements all generated; omitted items optional with reasons; none blocked",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C13",
+        "name": "One item per requirement-target combination, targets unchanged from Step 04",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "C14",
+        "name": "Step numbers only on the six steps; with-number variants keep the name unchanged",
+        "method": "claude_authored_script_assertion",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "M01",
+        "name": "Read every preferred text and variant for tone, clarity and source fidelity",
+        "method": "claude_manual_review",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": []
+      },
+      {
+        "id": "M02",
+        "name": "Subtitle \"From identifying accounts to closing deals\" matches requirement-001 scope without implying a closed-lost path",
+        "method": "claude_manual_review",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": [
+          "requirement-001",
+          "constraint-005"
+        ]
+      },
+      {
+        "id": "M03",
+        "name": "Omission of the gloss, role hint and placement note loses no required meaning",
+        "method": "claude_manual_review",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": [
+          "content-req-109",
+          "content-req-110",
+          "content-req-111"
+        ]
+      },
+      {
+        "id": "N01",
+        "name": "Fit of copy inside rendered cards / legibility",
+        "method": "requires template and rendered visual (Steps 06–10)",
+        "execution_status": "not_executed",
+        "result": null,
+        "affected_references": []
+      }
+    ],
+    "overall": "pass",
+    "deterministic": {
+      "command": "python3 scripts/05-content-writing/validate_content.py --run-dir <run-dir>",
+      "exit_code": 0,
+      "valid": true,
+      "errors": []
+    },
+    "report_path": "step-05/05-validation-report.json"
+  },
+  "warnings": [],
+  "errors": []
+}

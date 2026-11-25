@@ -1,0 +1,80 @@
+{
+  "templates_dir": "references/templates",
+  "discovered_templates": [
+    {
+      "id": "template-6146b326e934",
+      "reference_path": "T01-modular-gtm.png",
+      "format": "png",
+      "fingerprint": "21f363cb0a0f0f06acac33a4db624148792723524d34a79d8c2b0b8b4fcc282e",
+      "byte_size": 982933
+    },
+    {
+      "id": "template-9dd7b3cd2fea",
+      "reference_path": "T02-growth-stages.png",
+      "format": "png",
+      "fingerprint": "f3b31068bde97025b58eb9ea48a1dba37759459c385ffb62989789ef074241a6",
+      "byte_size": 850609
+    },
+    {
+      "id": "template-6b84d46a7ece",
+      "reference_path": "T03-cheatsheet.png",
+      "format": "png",
+      "fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+      "byte_size": 741178
+    },
+    {
+      "id": "template-fca04aa3dbc3",
+      "reference_path": "T04-comparison.png",
+      "format": "png",
+      "fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+      "byte_size": 741178,
+      "duplicate_of": "template-6b84d46a7ece"
+    },
+    {
+      "id": "template-be6e9abdfee5",
+      "reference_path": "T05-composite-framework.png",
+      "format": "png",
+      "fingerprint": "e3edc0f32b738f4fe786be162cfe01c6b358ea80e727257c2b8baeb8e644b96e",
+      "byte_size": 860070
+    },
+    {
+      "id": "template-11a4035c6411",
+      "reference_path": "T06-vertical-playbook.png",
+      "format": "png",
+      "fingerprint": "cd8ce9723b1fe659cd60f29b119770489878184107f90279dbee47ce3c9e1983",
+      "byte_size": 1191940
+    },
+    {
+      "id": "template-da1453805dae",
+      "reference_path": "T07-gradient-workflow.png",
+      "format": "png",
+      "fingerprint": "298b5650f587f25d0549695c1f044eec88517b6bbf60b8b3eda67120bd3a1f7f",
+      "byte_size": 718038
+    },
+    {
+      "id": "template-e74170bee43d",
+      "reference_path": "T08-timeline.png",
+      "format": "png",
+      "fingerprint": "127aed1298e42bfa6dcb6cdded77743a3c76b2b0bfaf51aa12310d1b7b14f6fe",
+      "byte_size": 866613
+    },
+    {
+      "id": "template-c78d4e160aeb",
+      "reference_path": "T09-branching-workflow.png",
+      "format": "png",
+      "fingerprint": "689b9af0a56a8a3d0d2fd267091a617500fb1edb37be13344228023548a6471c",
+      "byte_size": 1126946
+    }
+  ],
+  "unavailable_templates": [],
+  "duplicates": [
+    {
+      "id": "template-fca04aa3dbc3",
+      "reference_path": "T04-comparison.png",
+      "format": "png",
+      "fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+      "byte_size": 741178,
+      "duplicate_of": "template-6b84d46a7ece"
+    }
+  ]
+}

@@ -1,0 +1,1345 @@
+{
+  "step": "01-input-processing",
+  "version": "1.0",
+  "status": "success",
+  "metadata": {
+    "input_type": "transcript",
+    "input_source": "chat",
+    "primary_language": null,
+    "additional_languages": [],
+    "has_speakers": true,
+    "has_timestamps": false,
+    "has_multiple_documents": false
+  },
+  "original_text": "**Speaker 1:** Hey, hello. Am I audible?\n\n**Speaker 2:** Yeah, yeah, I can hear you.\n\n**Speaker 1:** Okay, perfect. So basically what I wanted to discuss today is the modern GTM strategy for 2026. Like, how do we go from identifying the right accounts all the way to closing a deal?\n\n**Speaker 2:** Right. Before we start, did you receive the invoice I sent yesterday?\n\n**Speaker 1:** Yeah, I think so. I'll check after the meeting.\n\n**Speaker 2:** Okay, cool.\n\n**Speaker 1:** So the first thing is the ideal customer profile. ICP modeling. We should look at both closed-won and closed-lost deals.\n\n**Speaker 2:** From Salesforce?\n\n**Speaker 1:** Salesforce and HubSpot, both. We can take that historical information and analyze it using Clay, Claude, ChatGPT and Freckle.\n\n**Speaker 2:** Freckle as well?\n\n**Speaker 1:** Yeah, Freckle as well. And basically, what we're trying to identify is the common characteristics of the accounts.\n\n**Speaker 2:** Okay, so industry, company size, all those things?\n\n**Speaker 1:** Exactly. Firmographics would include segment, sub-industries, funding stage, location, headcount and team distribution.\n\n**Speaker 2:** What about their existing technology?\n\n**Speaker 1:** Yeah, that's the technographics part. Their GTM stack, development stack and operations stack. And then we should have custom data points depending on the business.\n\n**Speaker 2:** Sorry, one second. My laptop battery is almost dead.\n\n**Speaker 1:** Yeah, no problem.\n\n**Speaker 2:** Okay, continue.\n\n**Speaker 1:** Once the ICP is defined, we need to map the TAM.\n\n**Speaker 2:** Total addressable market?\n\n**Speaker 1:** Correct. For that, there are several tools. Apollo.io, Clay, Ocean.io, Landbase, AI Ark, Findymail and DiscoLike. We can also use custom scrapers where appropriate.\n\n**Speaker 2:** Should we include ZoomInfo?\n\n**Speaker 1:** No, not for this version. We can consider it later.\n\n**Speaker 2:** Okay. And then we start contacting those accounts?\n\n**Speaker 1:** Not directly. First, we need AI account research. We need to understand each account properly before reaching out.\n\n**Speaker 2:** So we can use ChatGPT and Claude for that?\n\n**Speaker 1:** Claude Code specifically in this section. And Apollo.io, Claygent, ChatGPT, Codex, Tavily and Freckle.\n\n**Speaker 2:** Wait, Clay or Claygent?\n\n**Speaker 1:** Claygent for account research. Clay is in the TAM mapping section.\n\n**Speaker 2:** Got it.\n\n**Speaker 1:** After researching those accounts, we can divide them into three tiers. Tier 1, Tier 2 and Tier 3.\n\n**Speaker 2:** Based on priority?\n\n**Speaker 1:** Yeah. Tier 1 is the highest priority. Tier 2 is medium, and Tier 3 is lower priority.\n\n**Speaker 2:** Should we define a score out of 100?\n\n**Speaker 1:** Not right now. Just keep the three tiers.\n\n**Speaker 2:** Okay. By the way, are you coming to the office tomorrow?\n\n**Speaker 1:** Probably not. I have some personal work in the morning.\n\n**Speaker 2:** Okay, no worries.\n\n**Speaker 1:** So, another important part is awareness scoring. We need to understand where each account is in terms of awareness.\n\n**Speaker 2:** Like whether they already know about us?\n\n**Speaker 1:** Exactly. There are five levels. Identified, aware, interested, considering and selecting.\n\n**Speaker 2:** Identified, aware, interested, considering and selecting. Okay.\n\n**Speaker 1:** These are basically our retargeting layers. For this, we can use RB2B, ZenABM and HubSpot.\n\n**Speaker 2:** Sorry, your voice broke. What was the second tool?\n\n**Speaker 1:** ZenABM. So RB2B, ZenABM and HubSpot.\n\n**Speaker 2:** Okay, understood.\n\n**Speaker 1:** Now, for demand generation, I think we should have four different channels.\n\n**Speaker 2:** Content and outbound?\n\n**Speaker 1:** Yeah, content, outbound, ads and partnerships.\n\n**Speaker 2:** For content, we can use LinkedIn, X, YouTube and our website.\n\n**Speaker 1:** Correct. And for outbound, LinkedIn, calls, email and Luma.\n\n**Speaker 2:** What about WhatsApp?\n\n**Speaker 1:** Let's leave WhatsApp out of the current framework.\n\n**Speaker 2:** Okay. For ads, Google and Meta?\n\n**Speaker 1:** LinkedIn, Meta, Google and Reddit.\n\n**Speaker 2:** And partnerships would be agencies, affiliates, referrals and marketplaces?\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Nice. I was actually reading something about Reddit ads yesterday. Apparently, they're getting more popular.\n\n**Speaker 1:** Yeah, we can discuss that separately.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** Actually, I think we skipped one step before demand generation.\n\n**Speaker 2:** Which one?\n\n**Speaker 1:** Contact sourcing and enrichment. That should come after awareness scoring and before demand generation.\n\n**Speaker 2:** Right, right. Makes sense.\n\n**Speaker 1:** For sourcing contacts, we can use Apollo.io, AI Ark, Sales Navigator and Clay.\n\n**Speaker 2:** And who exactly are we targeting inside those accounts?\n\n**Speaker 1:** Three types of people. Decision makers, champions and influencers.\n\n**Speaker 2:** Champions are the people who can internally support our product, right?\n\n**Speaker 1:** Exactly. They're important. Then we need to enrich the contact information.\n\n**Speaker 2:** BetterContact?\n\n**Speaker 1:** Yeah. BetterContact for phone numbers and Findymail for email addresses.\n\n**Speaker 2:** So Findymail for phone numbers?\n\n**Speaker 1:** No, no. BetterContact for phone. Findymail for email.\n\n**Speaker 2:** Oh, okay. Got it.\n\n**Speaker 1:** After that, we go into the four demand generation channels we discussed earlier.\n\n**Speaker 2:** Content, outbound, ads and partnerships.\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** Sorry, someone is calling me. Give me a second.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Okay, I'm back. It was just a delivery person.\n\n**Speaker 1:** No worries. So the next objective is to get a meeting booked.\n\n**Speaker 2:** We can use Calendly for that.\n\n**Speaker 1:** Actually, for this framework, I want to include Chili Piper, Cal.com, Default and RevenueHero. Let's not include Calendly.\n\n**Speaker 2:** Okay, Chili Piper, Cal.com, Default and RevenueHero.\n\n**Speaker 1:** Yeah. Once the meeting is booked, the account moves into the sales process.\n\n**Speaker 2:** What tools should we consider there?\n\n**Speaker 1:** Ergo, HubSpot, Salesforce, Apollo.io, Nooks, Claude, Qwilr and Mutiny.\n\n**Speaker 2:** Did you say Claude Code again?\n\n**Speaker 1:** No, just Claude for the sales process.\n\n**Speaker 2:** Okay. Should we divide the sales process into discovery, demo, negotiation and proposal?\n\n**Speaker 1:** We could, but not for this version. Keep it as a single sales process stage.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** And finally, the closed-won stage. For that, we should show Ergo, HubSpot and Salesforce.\n\n**Speaker 2:** Okay, so the entire thing has around nine stages?\n\n**Speaker 1:** Ten, actually. Let me quickly go through it again.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** First, ICP modeling. Then TAM mapping. Third is AI account research. Fourth is account tiering. Fifth is awareness scoring. Sixth is contact sourcing and enrichment.\n\n**Speaker 2:** Then demand generation?\n\n**Speaker 1:** Yeah, seventh is demand generation. Eighth is meeting booked. Ninth is the sales process. And tenth is closed-won.\n\n**Speaker 2:** Okay, ten stages. Perfect.\n\n**Speaker 1:** And just make sure that we don't treat every tool as mandatory. These are the tools that can be used at different stages of the GTM strategy.\n\n**Speaker 2:** Right. They're options, not necessarily one fixed technology stack.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Anything else we need to discuss?\n\n**Speaker 1:** No, I think that's everything for the modern GTM strategy.\n\n**Speaker 2:** Okay. Also, can you send me that document from last week's meeting?\n\n**Speaker 1:** Yeah, I'll send it by evening.\n\n**Speaker 2:** Perfect. Thanks.\n\n**Speaker 1:** Thanks. Bye.\n\n**Speaker 2:** Bye.",
+  "normalized_text": "**Speaker 1:** Hey, hello. Am I audible?\n\n**Speaker 2:** Yeah, yeah, I can hear you.\n\n**Speaker 1:** Okay, perfect. So basically what I wanted to discuss today is the modern GTM strategy for 2026. Like, how do we go from identifying the right accounts all the way to closing a deal?\n\n**Speaker 2:** Right. Before we start, did you receive the invoice I sent yesterday?\n\n**Speaker 1:** Yeah, I think so. I'll check after the meeting.\n\n**Speaker 2:** Okay, cool.\n\n**Speaker 1:** So the first thing is the ideal customer profile. ICP modeling. We should look at both closed-won and closed-lost deals.\n\n**Speaker 2:** From Salesforce?\n\n**Speaker 1:** Salesforce and HubSpot, both. We can take that historical information and analyze it using Clay, Claude, ChatGPT and Freckle.\n\n**Speaker 2:** Freckle as well?\n\n**Speaker 1:** Yeah, Freckle as well. And basically, what we're trying to identify is the common characteristics of the accounts.\n\n**Speaker 2:** Okay, so industry, company size, all those things?\n\n**Speaker 1:** Exactly. Firmographics would include segment, sub-industries, funding stage, location, headcount and team distribution.\n\n**Speaker 2:** What about their existing technology?\n\n**Speaker 1:** Yeah, that's the technographics part. Their GTM stack, development stack and operations stack. And then we should have custom data points depending on the business.\n\n**Speaker 2:** Sorry, one second. My laptop battery is almost dead.\n\n**Speaker 1:** Yeah, no problem.\n\n**Speaker 2:** Okay, continue.\n\n**Speaker 1:** Once the ICP is defined, we need to map the TAM.\n\n**Speaker 2:** Total addressable market?\n\n**Speaker 1:** Correct. For that, there are several tools. Apollo.io, Clay, Ocean.io, Landbase, AI Ark, Findymail and DiscoLike. We can also use custom scrapers where appropriate.\n\n**Speaker 2:** Should we include ZoomInfo?\n\n**Speaker 1:** No, not for this version. We can consider it later.\n\n**Speaker 2:** Okay. And then we start contacting those accounts?\n\n**Speaker 1:** Not directly. First, we need AI account research. We need to understand each account properly before reaching out.\n\n**Speaker 2:** So we can use ChatGPT and Claude for that?\n\n**Speaker 1:** Claude Code specifically in this section. And Apollo.io, Claygent, ChatGPT, Codex, Tavily and Freckle.\n\n**Speaker 2:** Wait, Clay or Claygent?\n\n**Speaker 1:** Claygent for account research. Clay is in the TAM mapping section.\n\n**Speaker 2:** Got it.\n\n**Speaker 1:** After researching those accounts, we can divide them into three tiers. Tier 1, Tier 2 and Tier 3.\n\n**Speaker 2:** Based on priority?\n\n**Speaker 1:** Yeah. Tier 1 is the highest priority. Tier 2 is medium, and Tier 3 is lower priority.\n\n**Speaker 2:** Should we define a score out of 100?\n\n**Speaker 1:** Not right now. Just keep the three tiers.\n\n**Speaker 2:** Okay. By the way, are you coming to the office tomorrow?\n\n**Speaker 1:** Probably not. I have some personal work in the morning.\n\n**Speaker 2:** Okay, no worries.\n\n**Speaker 1:** So, another important part is awareness scoring. We need to understand where each account is in terms of awareness.\n\n**Speaker 2:** Like whether they already know about us?\n\n**Speaker 1:** Exactly. There are five levels. Identified, aware, interested, considering and selecting.\n\n**Speaker 2:** Identified, aware, interested, considering and selecting. Okay.\n\n**Speaker 1:** These are basically our retargeting layers. For this, we can use RB2B, ZenABM and HubSpot.\n\n**Speaker 2:** Sorry, your voice broke. What was the second tool?\n\n**Speaker 1:** ZenABM. So RB2B, ZenABM and HubSpot.\n\n**Speaker 2:** Okay, understood.\n\n**Speaker 1:** Now, for demand generation, I think we should have four different channels.\n\n**Speaker 2:** Content and outbound?\n\n**Speaker 1:** Yeah, content, outbound, ads and partnerships.\n\n**Speaker 2:** For content, we can use LinkedIn, X, YouTube and our website.\n\n**Speaker 1:** Correct. And for outbound, LinkedIn, calls, email and Luma.\n\n**Speaker 2:** What about WhatsApp?\n\n**Speaker 1:** Let's leave WhatsApp out of the current framework.\n\n**Speaker 2:** Okay. For ads, Google and Meta?\n\n**Speaker 1:** LinkedIn, Meta, Google and Reddit.\n\n**Speaker 2:** And partnerships would be agencies, affiliates, referrals and marketplaces?\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Nice. I was actually reading something about Reddit ads yesterday. Apparently, they're getting more popular.\n\n**Speaker 1:** Yeah, we can discuss that separately.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** Actually, I think we skipped one step before demand generation.\n\n**Speaker 2:** Which one?\n\n**Speaker 1:** Contact sourcing and enrichment. That should come after awareness scoring and before demand generation.\n\n**Speaker 2:** Right, right. Makes sense.\n\n**Speaker 1:** For sourcing contacts, we can use Apollo.io, AI Ark, Sales Navigator and Clay.\n\n**Speaker 2:** And who exactly are we targeting inside those accounts?\n\n**Speaker 1:** Three types of people. Decision makers, champions and influencers.\n\n**Speaker 2:** Champions are the people who can internally support our product, right?\n\n**Speaker 1:** Exactly. They're important. Then we need to enrich the contact information.\n\n**Speaker 2:** BetterContact?\n\n**Speaker 1:** Yeah. BetterContact for phone numbers and Findymail for email addresses.\n\n**Speaker 2:** So Findymail for phone numbers?\n\n**Speaker 1:** No, no. BetterContact for phone. Findymail for email.\n\n**Speaker 2:** Oh, okay. Got it.\n\n**Speaker 1:** After that, we go into the four demand generation channels we discussed earlier.\n\n**Speaker 2:** Content, outbound, ads and partnerships.\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** Sorry, someone is calling me. Give me a second.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Okay, I'm back. It was just a delivery person.\n\n**Speaker 1:** No worries. So the next objective is to get a meeting booked.\n\n**Speaker 2:** We can use Calendly for that.\n\n**Speaker 1:** Actually, for this framework, I want to include Chili Piper, Cal.com, Default and RevenueHero. Let's not include Calendly.\n\n**Speaker 2:** Okay, Chili Piper, Cal.com, Default and RevenueHero.\n\n**Speaker 1:** Yeah. Once the meeting is booked, the account moves into the sales process.\n\n**Speaker 2:** What tools should we consider there?\n\n**Speaker 1:** Ergo, HubSpot, Salesforce, Apollo.io, Nooks, Claude, Qwilr and Mutiny.\n\n**Speaker 2:** Did you say Claude Code again?\n\n**Speaker 1:** No, just Claude for the sales process.\n\n**Speaker 2:** Okay. Should we divide the sales process into discovery, demo, negotiation and proposal?\n\n**Speaker 1:** We could, but not for this version. Keep it as a single sales process stage.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** And finally, the closed-won stage. For that, we should show Ergo, HubSpot and Salesforce.\n\n**Speaker 2:** Okay, so the entire thing has around nine stages?\n\n**Speaker 1:** Ten, actually. Let me quickly go through it again.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** First, ICP modeling. Then TAM mapping. Third is AI account research. Fourth is account tiering. Fifth is awareness scoring. Sixth is contact sourcing and enrichment.\n\n**Speaker 2:** Then demand generation?\n\n**Speaker 1:** Yeah, seventh is demand generation. Eighth is meeting booked. Ninth is the sales process. And tenth is closed-won.\n\n**Speaker 2:** Okay, ten stages. Perfect.\n\n**Speaker 1:** And just make sure that we don't treat every tool as mandatory. These are the tools that can be used at different stages of the GTM strategy.\n\n**Speaker 2:** Right. They're options, not necessarily one fixed technology stack.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Anything else we need to discuss?\n\n**Speaker 1:** No, I think that's everything for the modern GTM strategy.\n\n**Speaker 2:** Okay. Also, can you send me that document from last week's meeting?\n\n**Speaker 1:** Yeah, I'll send it by evening.\n\n**Speaker 2:** Perfect. Thanks.\n\n**Speaker 1:** Thanks. Bye.\n\n**Speaker 2:** Bye.",
+  "segments": [
+    {
+      "id": "segment-001",
+      "sequence": 1,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Hey, hello. Am I audible?",
+      "normalized_text": "Hey, hello. Am I audible?",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      }
+    },
+    {
+      "id": "segment-002",
+      "sequence": 2,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, yeah, I can hear you.",
+      "normalized_text": "Yeah, yeah, I can hear you.",
+      "source_location": {
+        "start_line": 3,
+        "end_line": 3
+      }
+    },
+    {
+      "id": "segment-003",
+      "sequence": 3,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, perfect. So basically what I wanted to discuss today is the modern GTM strategy for 2026. Like, how do we go from identifying the right accounts all the way to closing a deal?",
+      "normalized_text": "Okay, perfect. So basically what I wanted to discuss today is the modern GTM strategy for 2026. Like, how do we go from identifying the right accounts all the way to closing a deal?",
+      "source_location": {
+        "start_line": 5,
+        "end_line": 5
+      }
+    },
+    {
+      "id": "segment-004",
+      "sequence": 4,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right. Before we start, did you receive the invoice I sent yesterday?",
+      "normalized_text": "Right. Before we start, did you receive the invoice I sent yesterday?",
+      "source_location": {
+        "start_line": 7,
+        "end_line": 7
+      }
+    },
+    {
+      "id": "segment-005",
+      "sequence": 5,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, I think so. I'll check after the meeting.",
+      "normalized_text": "Yeah, I think so. I'll check after the meeting.",
+      "source_location": {
+        "start_line": 9,
+        "end_line": 9
+      }
+    },
+    {
+      "id": "segment-006",
+      "sequence": 6,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, cool.",
+      "normalized_text": "Okay, cool.",
+      "source_location": {
+        "start_line": 11,
+        "end_line": 11
+      }
+    },
+    {
+      "id": "segment-007",
+      "sequence": 7,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So the first thing is the ideal customer profile. ICP modeling. We should look at both closed-won and closed-lost deals.",
+      "normalized_text": "So the first thing is the ideal customer profile. ICP modeling. We should look at both closed-won and closed-lost deals.",
+      "source_location": {
+        "start_line": 13,
+        "end_line": 13
+      }
+    },
+    {
+      "id": "segment-008",
+      "sequence": 8,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "From Salesforce?",
+      "normalized_text": "From Salesforce?",
+      "source_location": {
+        "start_line": 15,
+        "end_line": 15
+      }
+    },
+    {
+      "id": "segment-009",
+      "sequence": 9,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Salesforce and HubSpot, both. We can take that historical information and analyze it using Clay, Claude, ChatGPT and Freckle.",
+      "normalized_text": "Salesforce and HubSpot, both. We can take that historical information and analyze it using Clay, Claude, ChatGPT and Freckle.",
+      "source_location": {
+        "start_line": 17,
+        "end_line": 17
+      }
+    },
+    {
+      "id": "segment-010",
+      "sequence": 10,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Freckle as well?",
+      "normalized_text": "Freckle as well?",
+      "source_location": {
+        "start_line": 19,
+        "end_line": 19
+      }
+    },
+    {
+      "id": "segment-011",
+      "sequence": 11,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, Freckle as well. And basically, what we're trying to identify is the common characteristics of the accounts.",
+      "normalized_text": "Yeah, Freckle as well. And basically, what we're trying to identify is the common characteristics of the accounts.",
+      "source_location": {
+        "start_line": 21,
+        "end_line": 21
+      }
+    },
+    {
+      "id": "segment-012",
+      "sequence": 12,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, so industry, company size, all those things?",
+      "normalized_text": "Okay, so industry, company size, all those things?",
+      "source_location": {
+        "start_line": 23,
+        "end_line": 23
+      }
+    },
+    {
+      "id": "segment-013",
+      "sequence": 13,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly. Firmographics would include segment, sub-industries, funding stage, location, headcount and team distribution.",
+      "normalized_text": "Exactly. Firmographics would include segment, sub-industries, funding stage, location, headcount and team distribution.",
+      "source_location": {
+        "start_line": 25,
+        "end_line": 25
+      }
+    },
+    {
+      "id": "segment-014",
+      "sequence": 14,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What about their existing technology?",
+      "normalized_text": "What about their existing technology?",
+      "source_location": {
+        "start_line": 27,
+        "end_line": 27
+      }
+    },
+    {
+      "id": "segment-015",
+      "sequence": 15,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, that's the technographics part. Their GTM stack, development stack and operations stack. And then we should have custom data points depending on the business.",
+      "normalized_text": "Yeah, that's the technographics part. Their GTM stack, development stack and operations stack. And then we should have custom data points depending on the business.",
+      "source_location": {
+        "start_line": 29,
+        "end_line": 29
+      }
+    },
+    {
+      "id": "segment-016",
+      "sequence": 16,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sorry, one second. My laptop battery is almost dead.",
+      "normalized_text": "Sorry, one second. My laptop battery is almost dead.",
+      "source_location": {
+        "start_line": 31,
+        "end_line": 31
+      }
+    },
+    {
+      "id": "segment-017",
+      "sequence": 17,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, no problem.",
+      "normalized_text": "Yeah, no problem.",
+      "source_location": {
+        "start_line": 33,
+        "end_line": 33
+      }
+    },
+    {
+      "id": "segment-018",
+      "sequence": 18,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, continue.",
+      "normalized_text": "Okay, continue.",
+      "source_location": {
+        "start_line": 35,
+        "end_line": 35
+      }
+    },
+    {
+      "id": "segment-019",
+      "sequence": 19,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Once the ICP is defined, we need to map the TAM.",
+      "normalized_text": "Once the ICP is defined, we need to map the TAM.",
+      "source_location": {
+        "start_line": 37,
+        "end_line": 37
+      }
+    },
+    {
+      "id": "segment-020",
+      "sequence": 20,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Total addressable market?",
+      "normalized_text": "Total addressable market?",
+      "source_location": {
+        "start_line": 39,
+        "end_line": 39
+      }
+    },
+    {
+      "id": "segment-021",
+      "sequence": 21,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct. For that, there are several tools. Apollo.io, Clay, Ocean.io, Landbase, AI Ark, Findymail and DiscoLike. We can also use custom scrapers where appropriate.",
+      "normalized_text": "Correct. For that, there are several tools. Apollo.io, Clay, Ocean.io, Landbase, AI Ark, Findymail and DiscoLike. We can also use custom scrapers where appropriate.",
+      "source_location": {
+        "start_line": 41,
+        "end_line": 41
+      }
+    },
+    {
+      "id": "segment-022",
+      "sequence": 22,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Should we include ZoomInfo?",
+      "normalized_text": "Should we include ZoomInfo?",
+      "source_location": {
+        "start_line": 43,
+        "end_line": 43
+      }
+    },
+    {
+      "id": "segment-023",
+      "sequence": 23,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, not for this version. We can consider it later.",
+      "normalized_text": "No, not for this version. We can consider it later.",
+      "source_location": {
+        "start_line": 45,
+        "end_line": 45
+      }
+    },
+    {
+      "id": "segment-024",
+      "sequence": 24,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. And then we start contacting those accounts?",
+      "normalized_text": "Okay. And then we start contacting those accounts?",
+      "source_location": {
+        "start_line": 47,
+        "end_line": 47
+      }
+    },
+    {
+      "id": "segment-025",
+      "sequence": 25,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Not directly. First, we need AI account research. We need to understand each account properly before reaching out.",
+      "normalized_text": "Not directly. First, we need AI account research. We need to understand each account properly before reaching out.",
+      "source_location": {
+        "start_line": 49,
+        "end_line": 49
+      }
+    },
+    {
+      "id": "segment-026",
+      "sequence": 26,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "So we can use ChatGPT and Claude for that?",
+      "normalized_text": "So we can use ChatGPT and Claude for that?",
+      "source_location": {
+        "start_line": 51,
+        "end_line": 51
+      }
+    },
+    {
+      "id": "segment-027",
+      "sequence": 27,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Claude Code specifically in this section. And Apollo.io, Claygent, ChatGPT, Codex, Tavily and Freckle.",
+      "normalized_text": "Claude Code specifically in this section. And Apollo.io, Claygent, ChatGPT, Codex, Tavily and Freckle.",
+      "source_location": {
+        "start_line": 53,
+        "end_line": 53
+      }
+    },
+    {
+      "id": "segment-028",
+      "sequence": 28,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Wait, Clay or Claygent?",
+      "normalized_text": "Wait, Clay or Claygent?",
+      "source_location": {
+        "start_line": 55,
+        "end_line": 55
+      }
+    },
+    {
+      "id": "segment-029",
+      "sequence": 29,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Claygent for account research. Clay is in the TAM mapping section.",
+      "normalized_text": "Claygent for account research. Clay is in the TAM mapping section.",
+      "source_location": {
+        "start_line": 57,
+        "end_line": 57
+      }
+    },
+    {
+      "id": "segment-030",
+      "sequence": 30,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Got it.",
+      "normalized_text": "Got it.",
+      "source_location": {
+        "start_line": 59,
+        "end_line": 59
+      }
+    },
+    {
+      "id": "segment-031",
+      "sequence": 31,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "After researching those accounts, we can divide them into three tiers. Tier 1, Tier 2 and Tier 3.",
+      "normalized_text": "After researching those accounts, we can divide them into three tiers. Tier 1, Tier 2 and Tier 3.",
+      "source_location": {
+        "start_line": 61,
+        "end_line": 61
+      }
+    },
+    {
+      "id": "segment-032",
+      "sequence": 32,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Based on priority?",
+      "normalized_text": "Based on priority?",
+      "source_location": {
+        "start_line": 63,
+        "end_line": 63
+      }
+    },
+    {
+      "id": "segment-033",
+      "sequence": 33,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah. Tier 1 is the highest priority. Tier 2 is medium, and Tier 3 is lower priority.",
+      "normalized_text": "Yeah. Tier 1 is the highest priority. Tier 2 is medium, and Tier 3 is lower priority.",
+      "source_location": {
+        "start_line": 65,
+        "end_line": 65
+      }
+    },
+    {
+      "id": "segment-034",
+      "sequence": 34,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Should we define a score out of 100?",
+      "normalized_text": "Should we define a score out of 100?",
+      "source_location": {
+        "start_line": 67,
+        "end_line": 67
+      }
+    },
+    {
+      "id": "segment-035",
+      "sequence": 35,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Not right now. Just keep the three tiers.",
+      "normalized_text": "Not right now. Just keep the three tiers.",
+      "source_location": {
+        "start_line": 69,
+        "end_line": 69
+      }
+    },
+    {
+      "id": "segment-036",
+      "sequence": 36,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. By the way, are you coming to the office tomorrow?",
+      "normalized_text": "Okay. By the way, are you coming to the office tomorrow?",
+      "source_location": {
+        "start_line": 71,
+        "end_line": 71
+      }
+    },
+    {
+      "id": "segment-037",
+      "sequence": 37,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Probably not. I have some personal work in the morning.",
+      "normalized_text": "Probably not. I have some personal work in the morning.",
+      "source_location": {
+        "start_line": 73,
+        "end_line": 73
+      }
+    },
+    {
+      "id": "segment-038",
+      "sequence": 38,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, no worries.",
+      "normalized_text": "Okay, no worries.",
+      "source_location": {
+        "start_line": 75,
+        "end_line": 75
+      }
+    },
+    {
+      "id": "segment-039",
+      "sequence": 39,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So, another important part is awareness scoring. We need to understand where each account is in terms of awareness.",
+      "normalized_text": "So, another important part is awareness scoring. We need to understand where each account is in terms of awareness.",
+      "source_location": {
+        "start_line": 77,
+        "end_line": 77
+      }
+    },
+    {
+      "id": "segment-040",
+      "sequence": 40,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Like whether they already know about us?",
+      "normalized_text": "Like whether they already know about us?",
+      "source_location": {
+        "start_line": 79,
+        "end_line": 79
+      }
+    },
+    {
+      "id": "segment-041",
+      "sequence": 41,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly. There are five levels. Identified, aware, interested, considering and selecting.",
+      "normalized_text": "Exactly. There are five levels. Identified, aware, interested, considering and selecting.",
+      "source_location": {
+        "start_line": 81,
+        "end_line": 81
+      }
+    },
+    {
+      "id": "segment-042",
+      "sequence": 42,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Identified, aware, interested, considering and selecting. Okay.",
+      "normalized_text": "Identified, aware, interested, considering and selecting. Okay.",
+      "source_location": {
+        "start_line": 83,
+        "end_line": 83
+      }
+    },
+    {
+      "id": "segment-043",
+      "sequence": 43,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "These are basically our retargeting layers. For this, we can use RB2B, ZenABM and HubSpot.",
+      "normalized_text": "These are basically our retargeting layers. For this, we can use RB2B, ZenABM and HubSpot.",
+      "source_location": {
+        "start_line": 85,
+        "end_line": 85
+      }
+    },
+    {
+      "id": "segment-044",
+      "sequence": 44,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sorry, your voice broke. What was the second tool?",
+      "normalized_text": "Sorry, your voice broke. What was the second tool?",
+      "source_location": {
+        "start_line": 87,
+        "end_line": 87
+      }
+    },
+    {
+      "id": "segment-045",
+      "sequence": 45,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "ZenABM. So RB2B, ZenABM and HubSpot.",
+      "normalized_text": "ZenABM. So RB2B, ZenABM and HubSpot.",
+      "source_location": {
+        "start_line": 89,
+        "end_line": 89
+      }
+    },
+    {
+      "id": "segment-046",
+      "sequence": 46,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, understood.",
+      "normalized_text": "Okay, understood.",
+      "source_location": {
+        "start_line": 91,
+        "end_line": 91
+      }
+    },
+    {
+      "id": "segment-047",
+      "sequence": 47,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Now, for demand generation, I think we should have four different channels.",
+      "normalized_text": "Now, for demand generation, I think we should have four different channels.",
+      "source_location": {
+        "start_line": 93,
+        "end_line": 93
+      }
+    },
+    {
+      "id": "segment-048",
+      "sequence": 48,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Content and outbound?",
+      "normalized_text": "Content and outbound?",
+      "source_location": {
+        "start_line": 95,
+        "end_line": 95
+      }
+    },
+    {
+      "id": "segment-049",
+      "sequence": 49,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, content, outbound, ads and partnerships.",
+      "normalized_text": "Yeah, content, outbound, ads and partnerships.",
+      "source_location": {
+        "start_line": 97,
+        "end_line": 97
+      }
+    },
+    {
+      "id": "segment-050",
+      "sequence": 50,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "For content, we can use LinkedIn, X, YouTube and our website.",
+      "normalized_text": "For content, we can use LinkedIn, X, YouTube and our website.",
+      "source_location": {
+        "start_line": 99,
+        "end_line": 99
+      }
+    },
+    {
+      "id": "segment-051",
+      "sequence": 51,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct. And for outbound, LinkedIn, calls, email and Luma.",
+      "normalized_text": "Correct. And for outbound, LinkedIn, calls, email and Luma.",
+      "source_location": {
+        "start_line": 101,
+        "end_line": 101
+      }
+    },
+    {
+      "id": "segment-052",
+      "sequence": 52,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What about WhatsApp?",
+      "normalized_text": "What about WhatsApp?",
+      "source_location": {
+        "start_line": 103,
+        "end_line": 103
+      }
+    },
+    {
+      "id": "segment-053",
+      "sequence": 53,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Let's leave WhatsApp out of the current framework.",
+      "normalized_text": "Let's leave WhatsApp out of the current framework.",
+      "source_location": {
+        "start_line": 105,
+        "end_line": 105
+      }
+    },
+    {
+      "id": "segment-054",
+      "sequence": 54,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. For ads, Google and Meta?",
+      "normalized_text": "Okay. For ads, Google and Meta?",
+      "source_location": {
+        "start_line": 107,
+        "end_line": 107
+      }
+    },
+    {
+      "id": "segment-055",
+      "sequence": 55,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "LinkedIn, Meta, Google and Reddit.",
+      "normalized_text": "LinkedIn, Meta, Google and Reddit.",
+      "source_location": {
+        "start_line": 109,
+        "end_line": 109
+      }
+    },
+    {
+      "id": "segment-056",
+      "sequence": 56,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And partnerships would be agencies, affiliates, referrals and marketplaces?",
+      "normalized_text": "And partnerships would be agencies, affiliates, referrals and marketplaces?",
+      "source_location": {
+        "start_line": 111,
+        "end_line": 111
+      }
+    },
+    {
+      "id": "segment-057",
+      "sequence": 57,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 113,
+        "end_line": 113
+      }
+    },
+    {
+      "id": "segment-058",
+      "sequence": 58,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Nice. I was actually reading something about Reddit ads yesterday. Apparently, they're getting more popular.",
+      "normalized_text": "Nice. I was actually reading something about Reddit ads yesterday. Apparently, they're getting more popular.",
+      "source_location": {
+        "start_line": 115,
+        "end_line": 115
+      }
+    },
+    {
+      "id": "segment-059",
+      "sequence": 59,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, we can discuss that separately.",
+      "normalized_text": "Yeah, we can discuss that separately.",
+      "source_location": {
+        "start_line": 117,
+        "end_line": 117
+      }
+    },
+    {
+      "id": "segment-060",
+      "sequence": 60,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 119,
+        "end_line": 119
+      }
+    },
+    {
+      "id": "segment-061",
+      "sequence": 61,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Actually, I think we skipped one step before demand generation.",
+      "normalized_text": "Actually, I think we skipped one step before demand generation.",
+      "source_location": {
+        "start_line": 121,
+        "end_line": 121
+      }
+    },
+    {
+      "id": "segment-062",
+      "sequence": 62,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Which one?",
+      "normalized_text": "Which one?",
+      "source_location": {
+        "start_line": 123,
+        "end_line": 123
+      }
+    },
+    {
+      "id": "segment-063",
+      "sequence": 63,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Contact sourcing and enrichment. That should come after awareness scoring and before demand generation.",
+      "normalized_text": "Contact sourcing and enrichment. That should come after awareness scoring and before demand generation.",
+      "source_location": {
+        "start_line": 125,
+        "end_line": 125
+      }
+    },
+    {
+      "id": "segment-064",
+      "sequence": 64,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right, right. Makes sense.",
+      "normalized_text": "Right, right. Makes sense.",
+      "source_location": {
+        "start_line": 127,
+        "end_line": 127
+      }
+    },
+    {
+      "id": "segment-065",
+      "sequence": 65,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "For sourcing contacts, we can use Apollo.io, AI Ark, Sales Navigator and Clay.",
+      "normalized_text": "For sourcing contacts, we can use Apollo.io, AI Ark, Sales Navigator and Clay.",
+      "source_location": {
+        "start_line": 129,
+        "end_line": 129
+      }
+    },
+    {
+      "id": "segment-066",
+      "sequence": 66,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And who exactly are we targeting inside those accounts?",
+      "normalized_text": "And who exactly are we targeting inside those accounts?",
+      "source_location": {
+        "start_line": 131,
+        "end_line": 131
+      }
+    },
+    {
+      "id": "segment-067",
+      "sequence": 67,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Three types of people. Decision makers, champions and influencers.",
+      "normalized_text": "Three types of people. Decision makers, champions and influencers.",
+      "source_location": {
+        "start_line": 133,
+        "end_line": 133
+      }
+    },
+    {
+      "id": "segment-068",
+      "sequence": 68,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Champions are the people who can internally support our product, right?",
+      "normalized_text": "Champions are the people who can internally support our product, right?",
+      "source_location": {
+        "start_line": 135,
+        "end_line": 135
+      }
+    },
+    {
+      "id": "segment-069",
+      "sequence": 69,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly. They're important. Then we need to enrich the contact information.",
+      "normalized_text": "Exactly. They're important. Then we need to enrich the contact information.",
+      "source_location": {
+        "start_line": 137,
+        "end_line": 137
+      }
+    },
+    {
+      "id": "segment-070",
+      "sequence": 70,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "BetterContact?",
+      "normalized_text": "BetterContact?",
+      "source_location": {
+        "start_line": 139,
+        "end_line": 139
+      }
+    },
+    {
+      "id": "segment-071",
+      "sequence": 71,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah. BetterContact for phone numbers and Findymail for email addresses.",
+      "normalized_text": "Yeah. BetterContact for phone numbers and Findymail for email addresses.",
+      "source_location": {
+        "start_line": 141,
+        "end_line": 141
+      }
+    },
+    {
+      "id": "segment-072",
+      "sequence": 72,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "So Findymail for phone numbers?",
+      "normalized_text": "So Findymail for phone numbers?",
+      "source_location": {
+        "start_line": 143,
+        "end_line": 143
+      }
+    },
+    {
+      "id": "segment-073",
+      "sequence": 73,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, no. BetterContact for phone. Findymail for email.",
+      "normalized_text": "No, no. BetterContact for phone. Findymail for email.",
+      "source_location": {
+        "start_line": 145,
+        "end_line": 145
+      }
+    },
+    {
+      "id": "segment-074",
+      "sequence": 74,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Oh, okay. Got it.",
+      "normalized_text": "Oh, okay. Got it.",
+      "source_location": {
+        "start_line": 147,
+        "end_line": 147
+      }
+    },
+    {
+      "id": "segment-075",
+      "sequence": 75,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "After that, we go into the four demand generation channels we discussed earlier.",
+      "normalized_text": "After that, we go into the four demand generation channels we discussed earlier.",
+      "source_location": {
+        "start_line": 149,
+        "end_line": 149
+      }
+    },
+    {
+      "id": "segment-076",
+      "sequence": 76,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Content, outbound, ads and partnerships.",
+      "normalized_text": "Content, outbound, ads and partnerships.",
+      "source_location": {
+        "start_line": 151,
+        "end_line": 151
+      }
+    },
+    {
+      "id": "segment-077",
+      "sequence": 77,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct.",
+      "normalized_text": "Correct.",
+      "source_location": {
+        "start_line": 153,
+        "end_line": 153
+      }
+    },
+    {
+      "id": "segment-078",
+      "sequence": 78,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sorry, someone is calling me. Give me a second.",
+      "normalized_text": "Sorry, someone is calling me. Give me a second.",
+      "source_location": {
+        "start_line": 155,
+        "end_line": 155
+      }
+    },
+    {
+      "id": "segment-079",
+      "sequence": 79,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 157,
+        "end_line": 157
+      }
+    },
+    {
+      "id": "segment-080",
+      "sequence": 80,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, I'm back. It was just a delivery person.",
+      "normalized_text": "Okay, I'm back. It was just a delivery person.",
+      "source_location": {
+        "start_line": 159,
+        "end_line": 159
+      }
+    },
+    {
+      "id": "segment-081",
+      "sequence": 81,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No worries. So the next objective is to get a meeting booked.",
+      "normalized_text": "No worries. So the next objective is to get a meeting booked.",
+      "source_location": {
+        "start_line": 161,
+        "end_line": 161
+      }
+    },
+    {
+      "id": "segment-082",
+      "sequence": 82,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "We can use Calendly for that.",
+      "normalized_text": "We can use Calendly for that.",
+      "source_location": {
+        "start_line": 163,
+        "end_line": 163
+      }
+    },
+    {
+      "id": "segment-083",
+      "sequence": 83,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Actually, for this framework, I want to include Chili Piper, Cal.com, Default and RevenueHero. Let's not include Calendly.",
+      "normalized_text": "Actually, for this framework, I want to include Chili Piper, Cal.com, Default and RevenueHero. Let's not include Calendly.",
+      "source_location": {
+        "start_line": 165,
+        "end_line": 165
+      }
+    },
+    {
+      "id": "segment-084",
+      "sequence": 84,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, Chili Piper, Cal.com, Default and RevenueHero.",
+      "normalized_text": "Okay, Chili Piper, Cal.com, Default and RevenueHero.",
+      "source_location": {
+        "start_line": 167,
+        "end_line": 167
+      }
+    },
+    {
+      "id": "segment-085",
+      "sequence": 85,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah. Once the meeting is booked, the account moves into the sales process.",
+      "normalized_text": "Yeah. Once the meeting is booked, the account moves into the sales process.",
+      "source_location": {
+        "start_line": 169,
+        "end_line": 169
+      }
+    },
+    {
+      "id": "segment-086",
+      "sequence": 86,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What tools should we consider there?",
+      "normalized_text": "What tools should we consider there?",
+      "source_location": {
+        "start_line": 171,
+        "end_line": 171
+      }
+    },
+    {
+      "id": "segment-087",
+      "sequence": 87,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Ergo, HubSpot, Salesforce, Apollo.io, Nooks, Claude, Qwilr and Mutiny.",
+      "normalized_text": "Ergo, HubSpot, Salesforce, Apollo.io, Nooks, Claude, Qwilr and Mutiny.",
+      "source_location": {
+        "start_line": 173,
+        "end_line": 173
+      }
+    },
+    {
+      "id": "segment-088",
+      "sequence": 88,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Did you say Claude Code again?",
+      "normalized_text": "Did you say Claude Code again?",
+      "source_location": {
+        "start_line": 175,
+        "end_line": 175
+      }
+    },
+    {
+      "id": "segment-089",
+      "sequence": 89,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, just Claude for the sales process.",
+      "normalized_text": "No, just Claude for the sales process.",
+      "source_location": {
+        "start_line": 177,
+        "end_line": 177
+      }
+    },
+    {
+      "id": "segment-090",
+      "sequence": 90,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. Should we divide the sales process into discovery, demo, negotiation and proposal?",
+      "normalized_text": "Okay. Should we divide the sales process into discovery, demo, negotiation and proposal?",
+      "source_location": {
+        "start_line": 179,
+        "end_line": 179
+      }
+    },
+    {
+      "id": "segment-091",
+      "sequence": 91,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "We could, but not for this version. Keep it as a single sales process stage.",
+      "normalized_text": "We could, but not for this version. Keep it as a single sales process stage.",
+      "source_location": {
+        "start_line": 181,
+        "end_line": 181
+      }
+    },
+    {
+      "id": "segment-092",
+      "sequence": 92,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Makes sense.",
+      "normalized_text": "Makes sense.",
+      "source_location": {
+        "start_line": 183,
+        "end_line": 183
+      }
+    },
+    {
+      "id": "segment-093",
+      "sequence": 93,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "And finally, the closed-won stage. For that, we should show Ergo, HubSpot and Salesforce.",
+      "normalized_text": "And finally, the closed-won stage. For that, we should show Ergo, HubSpot and Salesforce.",
+      "source_location": {
+        "start_line": 185,
+        "end_line": 185
+      }
+    },
+    {
+      "id": "segment-094",
+      "sequence": 94,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, so the entire thing has around nine stages?",
+      "normalized_text": "Okay, so the entire thing has around nine stages?",
+      "source_location": {
+        "start_line": 187,
+        "end_line": 187
+      }
+    },
+    {
+      "id": "segment-095",
+      "sequence": 95,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Ten, actually. Let me quickly go through it again.",
+      "normalized_text": "Ten, actually. Let me quickly go through it again.",
+      "source_location": {
+        "start_line": 189,
+        "end_line": 189
+      }
+    },
+    {
+      "id": "segment-096",
+      "sequence": 96,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 191,
+        "end_line": 191
+      }
+    },
+    {
+      "id": "segment-097",
+      "sequence": 97,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "First, ICP modeling. Then TAM mapping. Third is AI account research. Fourth is account tiering. Fifth is awareness scoring. Sixth is contact sourcing and enrichment.",
+      "normalized_text": "First, ICP modeling. Then TAM mapping. Third is AI account research. Fourth is account tiering. Fifth is awareness scoring. Sixth is contact sourcing and enrichment.",
+      "source_location": {
+        "start_line": 193,
+        "end_line": 193
+      }
+    },
+    {
+      "id": "segment-098",
+      "sequence": 98,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Then demand generation?",
+      "normalized_text": "Then demand generation?",
+      "source_location": {
+        "start_line": 195,
+        "end_line": 195
+      }
+    },
+    {
+      "id": "segment-099",
+      "sequence": 99,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, seventh is demand generation. Eighth is meeting booked. Ninth is the sales process. And tenth is closed-won.",
+      "normalized_text": "Yeah, seventh is demand generation. Eighth is meeting booked. Ninth is the sales process. And tenth is closed-won.",
+      "source_location": {
+        "start_line": 197,
+        "end_line": 197
+      }
+    },
+    {
+      "id": "segment-100",
+      "sequence": 100,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, ten stages. Perfect.",
+      "normalized_text": "Okay, ten stages. Perfect.",
+      "source_location": {
+        "start_line": 199,
+        "end_line": 199
+      }
+    },
+    {
+      "id": "segment-101",
+      "sequence": 101,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "And just make sure that we don't treat every tool as mandatory. These are the tools that can be used at different stages of the GTM strategy.",
+      "normalized_text": "And just make sure that we don't treat every tool as mandatory. These are the tools that can be used at different stages of the GTM strategy.",
+      "source_location": {
+        "start_line": 201,
+        "end_line": 201
+      }
+    },
+    {
+      "id": "segment-102",
+      "sequence": 102,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right. They're options, not necessarily one fixed technology stack.",
+      "normalized_text": "Right. They're options, not necessarily one fixed technology stack.",
+      "source_location": {
+        "start_line": 203,
+        "end_line": 203
+      }
+    },
+    {
+      "id": "segment-103",
+      "sequence": 103,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 205,
+        "end_line": 205
+      }
+    },
+    {
+      "id": "segment-104",
+      "sequence": 104,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Anything else we need to discuss?",
+      "normalized_text": "Anything else we need to discuss?",
+      "source_location": {
+        "start_line": 207,
+        "end_line": 207
+      }
+    },
+    {
+      "id": "segment-105",
+      "sequence": 105,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, I think that's everything for the modern GTM strategy.",
+      "normalized_text": "No, I think that's everything for the modern GTM strategy.",
+      "source_location": {
+        "start_line": 209,
+        "end_line": 209
+      }
+    },
+    {
+      "id": "segment-106",
+      "sequence": 106,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. Also, can you send me that document from last week's meeting?",
+      "normalized_text": "Okay. Also, can you send me that document from last week's meeting?",
+      "source_location": {
+        "start_line": 211,
+        "end_line": 211
+      }
+    },
+    {
+      "id": "segment-107",
+      "sequence": 107,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, I'll send it by evening.",
+      "normalized_text": "Yeah, I'll send it by evening.",
+      "source_location": {
+        "start_line": 213,
+        "end_line": 213
+      }
+    },
+    {
+      "id": "segment-108",
+      "sequence": 108,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Perfect. Thanks.",
+      "normalized_text": "Perfect. Thanks.",
+      "source_location": {
+        "start_line": 215,
+        "end_line": 215
+      }
+    },
+    {
+      "id": "segment-109",
+      "sequence": 109,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Thanks. Bye.",
+      "normalized_text": "Thanks. Bye.",
+      "source_location": {
+        "start_line": 217,
+        "end_line": 217
+      }
+    },
+    {
+      "id": "segment-110",
+      "sequence": 110,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Bye.",
+      "normalized_text": "Bye.",
+      "source_location": {
+        "start_line": 219,
+        "end_line": 219
+      }
+    }
+  ],
+  "statistics": {
+    "character_count": 7933,
+    "word_count": 1229,
+    "segment_count": 110
+  },
+  "warnings": [],
+  "errors": []
+}

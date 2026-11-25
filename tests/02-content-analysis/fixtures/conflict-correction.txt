@@ -1,0 +1,2 @@
+Ana: We will use Vendor A for the migration.
+Sam: Correction: Vendor A is rejected; Vendor B is the confirmed choice.

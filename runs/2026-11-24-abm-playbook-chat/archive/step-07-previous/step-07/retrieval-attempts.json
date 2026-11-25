@@ -1,0 +1,245 @@
+{
+  "execution": "fresh",
+  "attempts": [
+    {
+      "id": "fresh-attempt-001",
+      "entity": "AI Ark",
+      "source_category": "official_site",
+      "url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/ai-ark.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-002",
+      "entity": "DiscoLike",
+      "source_category": "official_site",
+      "url": "https://discolike.com/images/logo-dark.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-003",
+      "entity": "Landbase",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/66b7d1ed300d381ca5ef090d_Logo%20Landbase.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/landbase.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-004",
+      "entity": "Sumble",
+      "source_category": "official_site",
+      "url": "https://sumble.com/img/sumble-wordmark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/sumble.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-005",
+      "entity": "Tavily",
+      "source_category": "official_site",
+      "url": "https://www.tavily.com/logos/tavily-full.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/tavily.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-006",
+      "entity": "BetterContact",
+      "source_category": "official_site",
+      "url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/bettercontact.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-007",
+      "entity": "Freckle",
+      "source_category": "official_site",
+      "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/freckle.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-008",
+      "entity": "Clay",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/clay.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-009",
+      "entity": "HubSpot",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/hubspot.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-010",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/salesforce.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-011",
+      "entity": "Gmail",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/gmail.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-012",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-013",
+      "entity": "Meta",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/meta.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-014",
+      "entity": "Google",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/google.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-015",
+      "entity": "YouTube",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/youtube.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-016",
+      "entity": "X",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/x.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-017",
+      "entity": "Webflow",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/webflow.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-018",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/slack.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-019",
+      "entity": "Custom scrapers",
+      "source_category": "approved_icon_repository",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/custom-scrapers.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-020",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/salesforce",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-021",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/linkedin",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-022",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/slack",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-023",
+      "entity": "DiscoLike",
+      "source_category": "official_site_favicon_after_logo_block",
+      "url": "https://discolike.com/images/favicon-light.png",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-024",
+      "entity": "Landbase",
+      "source_category": "official_site_alternative_after_visual_review",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/landbase.svg",
+      "selected": true
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "template_id": "template-6b84d46a7ece",
+  "reference_path": "T03-cheatsheet.png",
+  "reference_fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1051 portrait",
+  "structural_characteristics": {
+    "layout": "Eight numbered section cards in a two-column/full-width grid, read in number order top to bottom.",
+    "reading_direction": "Left-to-right, top-to-bottom by numbered titles; no inter-section connectors.",
+    "patterns": [
+      "numbered pastel section cards with tab titles",
+      "pill/chip clusters",
+      "small inline flows with arrows",
+      "three-column sub-cards",
+      "benchmark bars"
+    ],
+    "hierarchy": "Title > numbered section > sub-card > chip.",
+    "containment": "Clear section containment."
+  },
+  "design_characteristics": {
+    "background": "White.",
+    "color_treatment": "Each section a different soft pastel tint with matching tab.",
+    "typography": "Bold sans title with lighter second word; clear small sans labels.",
+    "containers": "Rounded pastel cards, soft shadows, pill chips.",
+    "connectors": "Only short local arrows inside sections.",
+    "numbering": "Number prefix in section titles.",
+    "icons": "Few; three header icons.",
+    "decoration": "Minimal."
+  },
+  "content_capacity": {
+    "level": "high",
+    "observed": "Many chips and short text lines legible.",
+    "notes": "Good for taxonomies; text-first."
+  },
+  "adaptability": {
+    "adaptable": [
+      "section count",
+      "tint per section",
+      "chip rows"
+    ],
+    "fixed_or_characteristic": [
+      "text-first cheatsheet character"
+    ]
+  },
+  "limitations": [
+    "No pattern for cross-section flow or hub convergence.",
+    "Little logo-tile precedent.",
+    "Sequence relies on numbers only."
+  ],
+  "uncertainties": [
+    "Exact pastel values and fonts not measured."
+  ],
+  "evidence": [
+    {
+      "region": "section 1",
+      "observation": "Chip grid feeding a small tree and an inline arrow flow."
+    },
+    {
+      "region": "section 3",
+      "observation": "Three side-by-side sub-cards with chip clusters."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

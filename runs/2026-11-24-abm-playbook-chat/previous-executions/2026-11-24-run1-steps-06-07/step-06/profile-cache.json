@@ -1,0 +1,59 @@
+{
+  "profile_schema_version": "1.0",
+  "profiles": [
+    {
+      "template_id": "template-6146b326e934",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-6146b326e934.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-9dd7b3cd2fea",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-9dd7b3cd2fea.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-6b84d46a7ece",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-6b84d46a7ece.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-fca04aa3dbc3",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-fca04aa3dbc3.json",
+      "cache_state": "needs_visual_analysis",
+      "reason": "profile is absent"
+    },
+    {
+      "template_id": "template-be6e9abdfee5",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-be6e9abdfee5.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-11a4035c6411",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-11a4035c6411.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-da1453805dae",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-da1453805dae.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-e74170bee43d",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-e74170bee43d.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    },
+    {
+      "template_id": "template-c78d4e160aeb",
+      "profile_path": "runs/2026-11-24-abm-playbook-chat/step-06/template-profiles/template-c78d4e160aeb.json",
+      "cache_state": "valid_cached",
+      "reason": null
+    }
+  ]
+}

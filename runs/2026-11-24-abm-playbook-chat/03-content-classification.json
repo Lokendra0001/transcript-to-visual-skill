@@ -1,0 +1,1479 @@
+{
+  "step": "03-content-classification",
+  "version": "1.0",
+  "status": "success",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "source": {
+    "step": "02-content-analysis",
+    "version": "2.0",
+    "run_id": "2026-11-24-abm-playbook-chat"
+  },
+  "communication_objective": {
+    "primary": "Explain the end-to-end ABM process — six numbered steps from TAM and stakeholder mapping to demand generation, then downstream follow-up to closed-won — with optional supporting tools per step.",
+    "secondary": [
+      "Show the signal taxonomy (first-, second-, third-party) used to track account intent and engagement.",
+      "Show how account intelligence and prioritization flow into the CRM and on to demand generation.",
+      "Make clear that tools are interchangeable options, not a mandatory stack."
+    ],
+    "intended_audience": null,
+    "supporting_refs": [
+      "topic-001",
+      "requirement-001",
+      "decision-001",
+      "decision-002",
+      "topic-005",
+      "fact-017",
+      "fact-018"
+    ]
+  },
+  "information_structures": [
+    {
+      "id": "structure-001",
+      "type": "sequential",
+      "description": "Six explicitly numbered playbook steps (recap order, not discussion order), continuing through four unnumbered downstream items to the closed-won outcome.",
+      "supporting_refs": [
+        "activity-001",
+        "activity-002",
+        "activity-003",
+        "activity-004",
+        "activity-005",
+        "activity-006",
+        "activity-019",
+        "activity-020",
+        "activity-021",
+        "activity-022",
+        "relationship-001",
+        "relationship-002",
+        "relationship-003",
+        "relationship-004",
+        "relationship-005",
+        "relationship-006",
+        "relationship-007",
+        "relationship-008",
+        "relationship-009",
+        "fact-001",
+        "fact-021",
+        "decision-032",
+        "decision-034"
+      ]
+    },
+    {
+      "id": "structure-002",
+      "type": "parallel",
+      "description": "Within each step, tools and platforms are interchangeable alternatives (options), not sequential sub-steps or a mandatory stack.",
+      "supporting_refs": [
+        "topic-002",
+        "decision-002",
+        "decision-009",
+        "fact-022",
+        "fact-023",
+        "requirement-002",
+        "requirement-003",
+        "fact-003",
+        "fact-004",
+        "fact-016"
+      ]
+    },
+    {
+      "id": "structure-003",
+      "type": "hierarchical",
+      "description": "Step 3 signals form a two-level taxonomy: three signal groups (first-, second-, third-party) containing 8, 6 and 11 categories.",
+      "supporting_refs": [
+        "topic-005",
+        "topic-006",
+        "topic-007",
+        "topic-008",
+        "entity-033",
+        "entity-034",
+        "entity-035",
+        "entity-036",
+        "entity-037",
+        "entity-038",
+        "entity-039",
+        "entity-040",
+        "entity-041",
+        "entity-042",
+        "entity-043",
+        "entity-044",
+        "entity-045",
+        "entity-046",
+        "entity-047",
+        "entity-048",
+        "entity-049",
+        "entity-050",
+        "entity-051",
+        "entity-052",
+        "entity-053",
+        "entity-054",
+        "entity-055",
+        "entity-056",
+        "entity-057",
+        "entity-058",
+        "entity-059",
+        "entity-060",
+        "fact-008",
+        "fact-009",
+        "fact-010",
+        "decision-010"
+      ]
+    },
+    {
+      "id": "structure-004",
+      "type": "hierarchical",
+      "description": "Step 6 demand generation splits into two groups (one-to-one: 4 activities; one-to-many: 8 activities).",
+      "supporting_refs": [
+        "topic-011",
+        "topic-012",
+        "topic-013",
+        "activity-006",
+        "activity-007",
+        "activity-008",
+        "activity-009",
+        "activity-010",
+        "activity-011",
+        "activity-012",
+        "activity-013",
+        "activity-014",
+        "activity-015",
+        "activity-016",
+        "activity-017",
+        "activity-018",
+        "fact-019",
+        "decision-016"
+      ]
+    },
+    {
+      "id": "structure-005",
+      "type": "sequential",
+      "description": "Five awareness stages in a corrected fixed order (identified → aware → interested → considering → selecting).",
+      "supporting_refs": [
+        "entity-062",
+        "entity-063",
+        "entity-064",
+        "entity-065",
+        "entity-066",
+        "entity-067",
+        "fact-013",
+        "decision-027"
+      ]
+    },
+    {
+      "id": "structure-006",
+      "type": "parallel",
+      "description": "Three account tiers listed as peers; related to awareness stages but with no defined mapping.",
+      "supporting_refs": [
+        "entity-068",
+        "entity-069",
+        "entity-070",
+        "entity-071",
+        "fact-014",
+        "fact-015",
+        "decision-029"
+      ]
+    },
+    {
+      "id": "structure-007",
+      "type": "network",
+      "description": "Data-flow links: Steps 1–4 inform CRM records; the CRM supports demand generation.",
+      "supporting_refs": [
+        "activity-005",
+        "fact-017",
+        "fact-018",
+        "requirement-008",
+        "relationship-010",
+        "relationship-011",
+        "relationship-012",
+        "relationship-013",
+        "relationship-014"
+      ]
+    },
+    {
+      "id": "structure-008",
+      "type": "associative",
+      "description": "Tool/platform-to-activity associations; some tools (Ocean.io, AI Ark, Findymail, HubSpot, LinkedIn) recur across steps with different roles.",
+      "supporting_refs": [
+        "entity-010",
+        "entity-007",
+        "entity-009",
+        "entity-021",
+        "entity-025",
+        "fact-022"
+      ]
+    },
+    {
+      "id": "structure-009",
+      "type": "quantitative",
+      "description": "Explicit counts usable as labels: 6 steps, 8 and 10 tool options, 11/8/6 signal categories, 5 stages, 3 tiers, 4/8 demand-gen activities.",
+      "supporting_refs": [
+        "fact-001",
+        "fact-003",
+        "fact-004",
+        "fact-008",
+        "fact-009",
+        "fact-010",
+        "fact-013",
+        "fact-014",
+        "fact-019"
+      ]
+    }
+  ],
+  "classification": {
+    "primary_type": "playbook",
+    "secondary_types": [
+      "process_flow",
+      "taxonomy"
+    ],
+    "reasoning": "The deliverable is explicitly named a playbook and must explain an ordered path from identifying accounts to closed-won. A playbook holds the numbered step spine plus per-step option sets and rules. Process-flow treatment carries the explicit step order, downstream chain and CRM data-flow links; taxonomy treatment preserves the nested signal categories, demand-generation groups and awareness/tier lists. Workflow, funnel, decision tree and ecosystem map were rejected because they would invent operational logic, quantitative narrowing, branches, or detach tools from steps.",
+    "supporting_refs": [
+      "topic-001",
+      "entity-001",
+      "structure-001",
+      "structure-003",
+      "structure-004",
+      "structure-007"
+    ]
+  },
+  "candidate_evaluations": [
+    {
+      "id": "candidate-001",
+      "type": "playbook",
+      "outcome": "selected_primary",
+      "assessment": "Best fit. The source itself names the deliverable a playbook and its objective is to explain how to go from identifying accounts to closing deals. A playbook carries both the numbered step spine and, per step, the optional tool sets, categories and rules — preserving alternatives as options rather than sequence.",
+      "limitations": "Needs a supporting flow treatment to show the downstream chain and data-flow links clearly.",
+      "supporting_refs": [
+        "topic-001",
+        "entity-001",
+        "decision-001",
+        "requirement-001"
+      ]
+    },
+    {
+      "id": "candidate-002",
+      "type": "process_flow",
+      "outcome": "selected_secondary",
+      "assessment": "Supplies the explicit left-to-right order of the six steps plus the four downstream items, and the CRM 'informs/supports' links. Faithful to the corrected order (sequence enrollment before CRM tasks) and the single closed-won path.",
+      "limitations": "On its own it would flatten tool options and the signal taxonomy into node labels, losing hierarchy; must not imply a closed-lost branch or step seven.",
+      "supporting_refs": [
+        "structure-001",
+        "requirement-009",
+        "requirement-010"
+      ]
+    },
+    {
+      "id": "candidate-003",
+      "type": "taxonomy",
+      "outcome": "selected_secondary",
+      "assessment": "Required inside Step 3 (3 groups × 25 categories) and Step 6 (2 groups × 12 activities) and for the 5 awareness stages / 3 tiers. Preserves hierarchy and counts.",
+      "limitations": "As a standalone visual it would lose the playbook sequence and the downstream outcome.",
+      "supporting_refs": [
+        "topic-005",
+        "topic-011",
+        "topic-009"
+      ]
+    },
+    {
+      "id": "candidate-004",
+      "type": "workflow",
+      "outcome": "rejected",
+      "assessment": "Plausible because there is an ordered chain, but no actors, triggers, conditions or hand-offs are defined; framing as an operational workflow would imply detail the source does not supply.",
+      "limitations": "Would invent operational logic (e.g. Slack trigger, stage owners).",
+      "supporting_refs": [
+        "ambiguity-005",
+        "ambiguity-004"
+      ]
+    },
+    {
+      "id": "candidate-005",
+      "type": "funnel",
+      "outcome": "rejected",
+      "assessment": "Awareness stages and identifying-to-closing suggest narrowing, but the source gives no volumes and explicitly refuses a stage-to-tier mapping; a funnel would imply quantitative narrowing and mapping.",
+      "limitations": "Implies unsupported quantitative attrition and mapping.",
+      "supporting_refs": [
+        "fact-015",
+        "decision-029",
+        "requirement-007"
+      ]
+    },
+    {
+      "id": "candidate-006",
+      "type": "ecosystem_map",
+      "outcome": "rejected",
+      "assessment": "Could show the ~27 tools/platforms, but would detach tools from the steps they serve and weaken the optional-per-step framing.",
+      "limitations": "Loses the sequence, which is the primary objective.",
+      "supporting_refs": [
+        "structure-008"
+      ]
+    },
+    {
+      "id": "candidate-007",
+      "type": "framework",
+      "outcome": "rejected",
+      "assessment": "A static framework grid could hold the six steps, but the source stresses an end-to-end path ending at closed-won; 'playbook' is the explicitly requested and more accurate type.",
+      "limitations": "Under-represents the downstream sequence and outcome.",
+      "supporting_refs": [
+        "decision-001",
+        "fact-002"
+      ]
+    },
+    {
+      "id": "candidate-008",
+      "type": "decision_tree",
+      "outcome": "rejected",
+      "assessment": "No conditional branches exist; closed-lost branch is explicitly excluded.",
+      "limitations": "Would invent branches.",
+      "supporting_refs": [
+        "decision-035",
+        "requirement-010"
+      ]
+    },
+    {
+      "id": "candidate-009",
+      "type": "composite_infographic",
+      "outcome": "considered_scope",
+      "assessment": "Describes the realization: one visual combining a sequential spine with nested taxonomies and tool-option clusters. Captured via visual_scope 'composite_visual' rather than as the primary type.",
+      "limitations": "As a primary type it is too generic to guide Step 04.",
+      "supporting_refs": [
+        "structure-001",
+        "structure-003",
+        "structure-004"
+      ]
+    }
+  ],
+  "visual_scope": {
+    "type": "composite_visual",
+    "recommended_visual_count": 1,
+    "reasoning": "One communication objective (the end-to-end playbook). Step 3 and Step 6 contain nested taxonomies that must sit inside their steps, so a single composite visual — sequential spine with embedded taxonomy and tool-option clusters — is needed rather than a plain flow. Splitting into multiple visuals is not justified: the signal taxonomy and demand-gen groups are parts of the same process, not independent objectives."
+  },
+  "visual_units": [
+    {
+      "id": "visual-unit-001",
+      "objective": "Our 6-Step ABM Playbook: end-to-end path from TAM and stakeholder mapping to closed-won, with optional tools per step.",
+      "primary_type": "playbook",
+      "secondary_types": [
+        "process_flow",
+        "taxonomy"
+      ],
+      "content_group_ids": [
+        "group-001",
+        "group-002",
+        "group-003",
+        "group-004",
+        "group-005",
+        "group-006",
+        "group-007",
+        "group-008",
+        "group-009"
+      ],
+      "constraint_ids": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-004",
+        "constraint-005",
+        "constraint-006",
+        "constraint-007",
+        "constraint-008",
+        "constraint-009",
+        "constraint-010",
+        "constraint-011"
+      ],
+      "reasoning": "All nine groups serve the single objective; Step 3 (largest group, 25 categories) and Step 6 (12 activities) are expected to need the most space."
+    }
+  ],
+  "content_groups": [
+    {
+      "id": "group-001",
+      "name": "Playbook spine (six numbered steps)",
+      "semantic_purpose": "Ordered backbone of the playbook from identifying accounts to demand generation.",
+      "structures": [
+        "sequential",
+        "quantitative"
+      ],
+      "topic_ids": [
+        "topic-001"
+      ],
+      "entity_ids": [
+        "entity-001"
+      ],
+      "fact_ids": [
+        "fact-001"
+      ],
+      "activity_ids": [
+        "activity-001",
+        "activity-002",
+        "activity-003",
+        "activity-004",
+        "activity-005",
+        "activity-006"
+      ],
+      "relationship_ids": [
+        "relationship-001",
+        "relationship-002",
+        "relationship-003",
+        "relationship-004",
+        "relationship-005"
+      ],
+      "decision_ids": [
+        "decision-001",
+        "decision-032"
+      ],
+      "requirement_ids": [
+        "requirement-001",
+        "requirement-009"
+      ],
+      "source_segment_ids": [
+        "segment-013",
+        "segment-015",
+        "segment-016",
+        "segment-021",
+        "segment-022",
+        "segment-023",
+        "segment-025",
+        "segment-027",
+        "segment-030",
+        "segment-031",
+        "segment-033",
+        "segment-039",
+        "segment-040",
+        "segment-041",
+        "segment-043",
+        "segment-044",
+        "segment-045",
+        "segment-046",
+        "segment-047",
+        "segment-049",
+        "segment-050",
+        "segment-057",
+        "segment-059",
+        "segment-061",
+        "segment-064",
+        "segment-065",
+        "segment-067",
+        "segment-069",
+        "segment-070",
+        "segment-071",
+        "segment-077",
+        "segment-079",
+        "segment-081",
+        "segment-085",
+        "segment-093",
+        "segment-095",
+        "segment-097",
+        "segment-101",
+        "segment-103",
+        "segment-104",
+        "segment-105",
+        "segment-107",
+        "segment-109",
+        "segment-111",
+        "segment-121",
+        "segment-123",
+        "segment-153",
+        "segment-155",
+        "segment-157",
+        "segment-159",
+        "segment-161",
+        "segment-163",
+        "segment-167",
+        "segment-169",
+        "segment-171",
+        "segment-173",
+        "segment-175",
+        "segment-177",
+        "segment-179",
+        "segment-180",
+        "segment-185",
+        "segment-188",
+        "segment-189",
+        "segment-205",
+        "segment-207",
+        "segment-208",
+        "segment-209",
+        "segment-210",
+        "segment-211",
+        "segment-212",
+        "segment-213",
+        "segment-214",
+        "segment-215",
+        "segment-216",
+        "segment-217",
+        "segment-218"
+      ],
+      "inclusion_rationale": "Primary objective; explicit recap order."
+    },
+    {
+      "id": "group-002",
+      "name": "Tool optionality rule",
+      "semantic_purpose": "Global framing that every tool is an optional alternative, may repeat across steps, and unfinalized names are not invented.",
+      "structures": [
+        "parallel"
+      ],
+      "topic_ids": [
+        "topic-002"
+      ],
+      "entity_ids": [],
+      "fact_ids": [
+        "fact-022",
+        "fact-023"
+      ],
+      "activity_ids": [],
+      "relationship_ids": [],
+      "decision_ids": [
+        "decision-002",
+        "decision-009"
+      ],
+      "requirement_ids": [
+        "requirement-002",
+        "requirement-003",
+        "requirement-011"
+      ],
+      "source_segment_ids": [
+        "segment-017",
+        "segment-018",
+        "segment-019",
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-221",
+        "segment-222",
+        "segment-223"
+      ],
+      "inclusion_rationale": "Explicitly repeated requirement that changes how every tool cluster must be read."
+    },
+    {
+      "id": "group-003",
+      "name": "Step 1 — TAM and stakeholder mapping options",
+      "semantic_purpose": "Eight optional data/sourcing tools for identifying TAM and stakeholders.",
+      "structures": [
+        "parallel",
+        "quantitative"
+      ],
+      "topic_ids": [
+        "topic-003"
+      ],
+      "entity_ids": [
+        "entity-006",
+        "entity-007",
+        "entity-008",
+        "entity-009",
+        "entity-010",
+        "entity-011",
+        "entity-012",
+        "entity-013"
+      ],
+      "fact_ids": [
+        "fact-003"
+      ],
+      "activity_ids": [
+        "activity-001"
+      ],
+      "relationship_ids": [],
+      "decision_ids": [
+        "decision-005"
+      ],
+      "requirement_ids": [],
+      "source_segment_ids": [
+        "segment-021",
+        "segment-022",
+        "segment-023",
+        "segment-024",
+        "segment-025",
+        "segment-026",
+        "segment-027",
+        "segment-030",
+        "segment-031",
+        "segment-033",
+        "segment-040",
+        "segment-041",
+        "segment-043",
+        "segment-045",
+        "segment-050",
+        "segment-051",
+        "segment-207",
+        "segment-208"
+      ],
+      "inclusion_rationale": "Confirmed option set for Step 1."
+    },
+    {
+      "id": "group-004",
+      "name": "Step 2 — AI account research and enrichment tools",
+      "semantic_purpose": "Ten optional research/enrichment tools, with Claygent distinct from Clay and Claude Code (not Claude).",
+      "structures": [
+        "parallel",
+        "associative",
+        "quantitative"
+      ],
+      "topic_ids": [
+        "topic-004"
+      ],
+      "entity_ids": [
+        "entity-007",
+        "entity-009",
+        "entity-010",
+        "entity-014",
+        "entity-015",
+        "entity-016",
+        "entity-017",
+        "entity-018",
+        "entity-019",
+        "entity-020"
+      ],
+      "fact_ids": [
+        "fact-004",
+        "fact-005"
+      ],
+      "activity_ids": [
+        "activity-002"
+      ],
+      "relationship_ids": [
+        "relationship-032"
+      ],
+      "decision_ids": [
+        "decision-006",
+        "decision-008"
+      ],
+      "requirement_ids": [],
+      "source_segment_ids": [
+        "segment-023",
+        "segment-024",
+        "segment-025",
+        "segment-030",
+        "segment-039",
+        "segment-040",
+        "segment-041",
+        "segment-042",
+        "segment-043",
+        "segment-044",
+        "segment-045",
+        "segment-046",
+        "segment-047",
+        "segment-048",
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-209",
+        "segment-210"
+      ],
+      "inclusion_rationale": "Confirmed option set for Step 2 including corrections."
+    },
+    {
+      "id": "group-005",
+      "name": "Step 3 — Signal taxonomy",
+      "semantic_purpose": "Signals to track, organized as first-, second- and third-party groups with their categories (vendors intentionally unspecified).",
+      "structures": [
+        "hierarchical",
+        "quantitative"
+      ],
+      "topic_ids": [
+        "topic-005",
+        "topic-006",
+        "topic-007",
+        "topic-008"
+      ],
+      "entity_ids": [
+        "entity-033",
+        "entity-034",
+        "entity-035",
+        "entity-036",
+        "entity-037",
+        "entity-038",
+        "entity-039",
+        "entity-040",
+        "entity-041",
+        "entity-042",
+        "entity-043",
+        "entity-044",
+        "entity-045",
+        "entity-046",
+        "entity-047",
+        "entity-048",
+        "entity-049",
+        "entity-050",
+        "entity-051",
+        "entity-052",
+        "entity-053",
+        "entity-054",
+        "entity-055",
+        "entity-056",
+        "entity-057",
+        "entity-058",
+        "entity-059",
+        "entity-060"
+      ],
+      "fact_ids": [
+        "fact-006",
+        "fact-007",
+        "fact-008",
+        "fact-009",
+        "fact-010",
+        "fact-011",
+        "fact-012"
+      ],
+      "activity_ids": [
+        "activity-003"
+      ],
+      "relationship_ids": [
+        "relationship-027",
+        "relationship-028",
+        "relationship-029",
+        "relationship-030"
+      ],
+      "decision_ids": [
+        "decision-010",
+        "decision-011",
+        "decision-013",
+        "decision-014"
+      ],
+      "requirement_ids": [
+        "requirement-004"
+      ],
+      "source_segment_ids": [
+        "segment-057",
+        "segment-058",
+        "segment-059",
+        "segment-060",
+        "segment-061",
+        "segment-062",
+        "segment-064",
+        "segment-065",
+        "segment-066",
+        "segment-067",
+        "segment-068",
+        "segment-069",
+        "segment-070",
+        "segment-071",
+        "segment-077",
+        "segment-079",
+        "segment-081",
+        "segment-082",
+        "segment-083",
+        "segment-085",
+        "segment-093",
+        "segment-095",
+        "segment-096",
+        "segment-097",
+        "segment-098",
+        "segment-099",
+        "segment-100",
+        "segment-101",
+        "segment-102",
+        "segment-211",
+        "segment-212"
+      ],
+      "inclusion_rationale": "Most detailed step; hierarchy and counts must be preserved."
+    },
+    {
+      "id": "group-006",
+      "name": "Step 4 — Score + Tier Accounts",
+      "semantic_purpose": "Five ordered awareness stages and three tiers, shown as related but unmapped, with HubSpot associated.",
+      "structures": [
+        "sequential",
+        "parallel"
+      ],
+      "topic_ids": [
+        "topic-009"
+      ],
+      "entity_ids": [
+        "entity-021",
+        "entity-062",
+        "entity-063",
+        "entity-064",
+        "entity-065",
+        "entity-066",
+        "entity-067",
+        "entity-068",
+        "entity-069",
+        "entity-070",
+        "entity-071"
+      ],
+      "fact_ids": [
+        "fact-013",
+        "fact-014",
+        "fact-015"
+      ],
+      "activity_ids": [
+        "activity-004"
+      ],
+      "relationship_ids": [
+        "relationship-031"
+      ],
+      "decision_ids": [
+        "decision-023",
+        "decision-025",
+        "decision-027",
+        "decision-029"
+      ],
+      "requirement_ids": [
+        "requirement-006",
+        "requirement-007"
+      ],
+      "source_segment_ids": [
+        "segment-114",
+        "segment-115",
+        "segment-153",
+        "segment-155",
+        "segment-157",
+        "segment-159",
+        "segment-161",
+        "segment-162",
+        "segment-163",
+        "segment-164",
+        "segment-165",
+        "segment-166",
+        "segment-167",
+        "segment-168",
+        "segment-169",
+        "segment-170",
+        "segment-171",
+        "segment-175",
+        "segment-196",
+        "segment-197",
+        "segment-198",
+        "segment-199",
+        "segment-201",
+        "segment-213",
+        "segment-214",
+        "segment-216"
+      ],
+      "inclusion_rationale": "Confirmed stage/tier lists with explicit constraints."
+    },
+    {
+      "id": "group-007",
+      "name": "Step 5 — CRM components and data flow",
+      "semantic_purpose": "HubSpot or Salesforce as the CRM; Steps 1–4 inform CRM records; CRM connects intelligence and prioritization to demand generation.",
+      "structures": [
+        "network",
+        "parallel"
+      ],
+      "topic_ids": [
+        "topic-010"
+      ],
+      "entity_ids": [
+        "entity-021",
+        "entity-022",
+        "entity-072",
+        "entity-073"
+      ],
+      "fact_ids": [
+        "fact-016",
+        "fact-017",
+        "fact-018"
+      ],
+      "activity_ids": [
+        "activity-005"
+      ],
+      "relationship_ids": [
+        "relationship-010",
+        "relationship-011",
+        "relationship-012",
+        "relationship-013",
+        "relationship-014"
+      ],
+      "decision_ids": [
+        "decision-031"
+      ],
+      "requirement_ids": [
+        "requirement-008"
+      ],
+      "source_segment_ids": [
+        "segment-114",
+        "segment-115",
+        "segment-171",
+        "segment-173",
+        "segment-175",
+        "segment-176",
+        "segment-177",
+        "segment-179",
+        "segment-180",
+        "segment-181",
+        "segment-185",
+        "segment-196",
+        "segment-197",
+        "segment-198",
+        "segment-199",
+        "segment-201",
+        "segment-215",
+        "segment-216"
+      ],
+      "inclusion_rationale": "Hub that links upstream intelligence to demand generation."
+    },
+    {
+      "id": "group-008",
+      "name": "Step 6 — Demand generation (one-to-one / one-to-many)",
+      "semantic_purpose": "Twelve demand-generation activities in two groups with their associated platforms; activities without tools are retained.",
+      "structures": [
+        "hierarchical",
+        "associative",
+        "quantitative"
+      ],
+      "topic_ids": [
+        "topic-011",
+        "topic-012",
+        "topic-013"
+      ],
+      "entity_ids": [
+        "entity-021",
+        "entity-024",
+        "entity-025",
+        "entity-026",
+        "entity-027",
+        "entity-029",
+        "entity-030",
+        "entity-031"
+      ],
+      "fact_ids": [
+        "fact-019",
+        "fact-020"
+      ],
+      "activity_ids": [
+        "activity-007",
+        "activity-008",
+        "activity-009",
+        "activity-010",
+        "activity-011",
+        "activity-012",
+        "activity-013",
+        "activity-014",
+        "activity-015",
+        "activity-016",
+        "activity-017",
+        "activity-018"
+      ],
+      "relationship_ids": [
+        "relationship-015",
+        "relationship-016",
+        "relationship-017",
+        "relationship-018",
+        "relationship-019",
+        "relationship-020",
+        "relationship-021",
+        "relationship-022",
+        "relationship-023",
+        "relationship-024",
+        "relationship-025",
+        "relationship-026"
+      ],
+      "decision_ids": [
+        "decision-016",
+        "decision-017",
+        "decision-018",
+        "decision-020",
+        "decision-021",
+        "decision-022"
+      ],
+      "requirement_ids": [
+        "requirement-005",
+        "requirement-012"
+      ],
+      "source_segment_ids": [
+        "segment-097",
+        "segment-107",
+        "segment-109",
+        "segment-111",
+        "segment-112",
+        "segment-113",
+        "segment-114",
+        "segment-115",
+        "segment-116",
+        "segment-117",
+        "segment-118",
+        "segment-119",
+        "segment-120",
+        "segment-121",
+        "segment-123",
+        "segment-124",
+        "segment-125",
+        "segment-126",
+        "segment-127",
+        "segment-133",
+        "segment-134",
+        "segment-135",
+        "segment-136",
+        "segment-137",
+        "segment-138",
+        "segment-139",
+        "segment-140",
+        "segment-141",
+        "segment-171",
+        "segment-175",
+        "segment-196",
+        "segment-197",
+        "segment-198",
+        "segment-199",
+        "segment-201",
+        "segment-216",
+        "segment-217",
+        "segment-218"
+      ],
+      "inclusion_rationale": "Confirmed grouping and activity lists."
+    },
+    {
+      "id": "group-009",
+      "name": "Downstream activities and closed-won outcome",
+      "semantic_purpose": "Unnumbered follow-up chain after demand generation ending in the single closed-won outcome.",
+      "structures": [
+        "sequential"
+      ],
+      "topic_ids": [
+        "topic-014"
+      ],
+      "entity_ids": [
+        "entity-021",
+        "entity-022",
+        "entity-032"
+      ],
+      "fact_ids": [
+        "fact-021"
+      ],
+      "activity_ids": [
+        "activity-019",
+        "activity-020",
+        "activity-021",
+        "activity-022"
+      ],
+      "relationship_ids": [
+        "relationship-006",
+        "relationship-007",
+        "relationship-008",
+        "relationship-009"
+      ],
+      "decision_ids": [
+        "decision-034"
+      ],
+      "requirement_ids": [
+        "requirement-010"
+      ],
+      "source_segment_ids": [
+        "segment-114",
+        "segment-115",
+        "segment-171",
+        "segment-175",
+        "segment-177",
+        "segment-187",
+        "segment-189",
+        "segment-191",
+        "segment-192",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-196",
+        "segment-197",
+        "segment-198",
+        "segment-199",
+        "segment-200",
+        "segment-201",
+        "segment-202",
+        "segment-203",
+        "segment-216",
+        "segment-219"
+      ],
+      "inclusion_rationale": "Explicit downstream order and outcome."
+    }
+  ],
+  "representation_constraints": [
+    {
+      "id": "constraint-001",
+      "category": "tools_optional",
+      "statement": "Present every tool/platform as an optional alternative; never as a required stack or recommendation to use all.",
+      "supporting_refs": [
+        "decision-002",
+        "requirement-002",
+        "fact-023"
+      ]
+    },
+    {
+      "id": "constraint-002",
+      "category": "allow_repeats",
+      "statement": "Repeat a tool in each step it belongs to (e.g. Ocean.io in Steps 1 and 2); do not deduplicate across steps.",
+      "supporting_refs": [
+        "decision-009",
+        "requirement-003"
+      ]
+    },
+    {
+      "id": "constraint-003",
+      "category": "no_invented_names",
+      "statement": "Do not invent tool or vendor names; signal categories and parallel dialing / gifting remain without vendors.",
+      "supporting_refs": [
+        "decision-014",
+        "decision-022",
+        "requirement-004",
+        "requirement-011",
+        "requirement-005"
+      ]
+    },
+    {
+      "id": "constraint-004",
+      "category": "six_numbered_steps",
+      "statement": "Number exactly six steps; downstream items and closed-won are unnumbered.",
+      "supporting_refs": [
+        "decision-032",
+        "requirement-009"
+      ]
+    },
+    {
+      "id": "constraint-005",
+      "category": "closed_won_only",
+      "statement": "Show only the path toward closed-won; no closed-lost branch.",
+      "supporting_refs": [
+        "decision-035",
+        "requirement-010"
+      ]
+    },
+    {
+      "id": "constraint-006",
+      "category": "no_scores_no_mapping",
+      "statement": "No numerical scores or thresholds; no mapping between awareness stages and tiers.",
+      "supporting_refs": [
+        "decision-024",
+        "decision-025",
+        "decision-028",
+        "decision-029",
+        "requirement-006",
+        "requirement-007"
+      ]
+    },
+    {
+      "id": "constraint-007",
+      "category": "grouping_labels",
+      "statement": "Demand generation is one-to-one / one-to-many, not inbound/outbound; video outreach sits in one-to-many.",
+      "supporting_refs": [
+        "decision-015",
+        "decision-016",
+        "decision-017",
+        "requirement-012"
+      ]
+    },
+    {
+      "id": "constraint-008",
+      "category": "corrected_orders",
+      "statement": "Use corrected orders: considering before selecting; sequence enrollment before CRM tasks; recap order for steps.",
+      "supporting_refs": [
+        "decision-026",
+        "decision-027",
+        "decision-033",
+        "decision-034"
+      ]
+    },
+    {
+      "id": "constraint-009",
+      "category": "corrected_names",
+      "statement": "Use Claygent (not Clay) in Step 2, Claude Code (not Claude), and X (formerly Twitter).",
+      "supporting_refs": [
+        "decision-006",
+        "decision-007",
+        "decision-008",
+        "entity-030"
+      ]
+    },
+    {
+      "id": "constraint-010",
+      "category": "exclusions",
+      "statement": "Do not show excluded items as active content: Apollo, Pipedrive, Reddit ads, email opens as a category; website visits only under first-party.",
+      "supporting_refs": [
+        "entity-005",
+        "entity-023",
+        "entity-028",
+        "entity-061",
+        "decision-003",
+        "decision-004",
+        "decision-012",
+        "decision-019",
+        "decision-030",
+        "decision-011"
+      ]
+    },
+    {
+      "id": "constraint-011",
+      "category": "crm_either_or",
+      "statement": "HubSpot and Salesforce are either/or CRM options, not both required.",
+      "supporting_refs": [
+        "fact-016",
+        "decision-031"
+      ]
+    }
+  ],
+  "coverage_assessment": {
+    "represented_refs": [
+      "activity-001",
+      "activity-002",
+      "activity-003",
+      "activity-004",
+      "activity-005",
+      "activity-006",
+      "activity-007",
+      "activity-008",
+      "activity-009",
+      "activity-010",
+      "activity-011",
+      "activity-012",
+      "activity-013",
+      "activity-014",
+      "activity-015",
+      "activity-016",
+      "activity-017",
+      "activity-018",
+      "activity-019",
+      "activity-020",
+      "activity-021",
+      "activity-022",
+      "decision-001",
+      "decision-002",
+      "decision-005",
+      "decision-006",
+      "decision-008",
+      "decision-009",
+      "decision-010",
+      "decision-011",
+      "decision-013",
+      "decision-014",
+      "decision-016",
+      "decision-017",
+      "decision-018",
+      "decision-020",
+      "decision-021",
+      "decision-022",
+      "decision-023",
+      "decision-025",
+      "decision-027",
+      "decision-029",
+      "decision-031",
+      "decision-032",
+      "decision-034",
+      "entity-001",
+      "entity-006",
+      "entity-007",
+      "entity-008",
+      "entity-009",
+      "entity-010",
+      "entity-011",
+      "entity-012",
+      "entity-013",
+      "entity-014",
+      "entity-015",
+      "entity-016",
+      "entity-017",
+      "entity-018",
+      "entity-019",
+      "entity-020",
+      "entity-021",
+      "entity-022",
+      "entity-024",
+      "entity-025",
+      "entity-026",
+      "entity-027",
+      "entity-029",
+      "entity-030",
+      "entity-031",
+      "entity-032",
+      "entity-033",
+      "entity-034",
+      "entity-035",
+      "entity-036",
+      "entity-037",
+      "entity-038",
+      "entity-039",
+      "entity-040",
+      "entity-041",
+      "entity-042",
+      "entity-043",
+      "entity-044",
+      "entity-045",
+      "entity-046",
+      "entity-047",
+      "entity-048",
+      "entity-049",
+      "entity-050",
+      "entity-051",
+      "entity-052",
+      "entity-053",
+      "entity-054",
+      "entity-055",
+      "entity-056",
+      "entity-057",
+      "entity-058",
+      "entity-059",
+      "entity-060",
+      "entity-062",
+      "entity-063",
+      "entity-064",
+      "entity-065",
+      "entity-066",
+      "entity-067",
+      "entity-068",
+      "entity-069",
+      "entity-070",
+      "entity-071",
+      "entity-072",
+      "entity-073",
+      "fact-001",
+      "fact-003",
+      "fact-004",
+      "fact-005",
+      "fact-006",
+      "fact-007",
+      "fact-008",
+      "fact-009",
+      "fact-010",
+      "fact-011",
+      "fact-012",
+      "fact-013",
+      "fact-014",
+      "fact-015",
+      "fact-016",
+      "fact-017",
+      "fact-018",
+      "fact-019",
+      "fact-020",
+      "fact-021",
+      "fact-022",
+      "fact-023",
+      "relationship-001",
+      "relationship-002",
+      "relationship-003",
+      "relationship-004",
+      "relationship-005",
+      "relationship-006",
+      "relationship-007",
+      "relationship-008",
+      "relationship-009",
+      "relationship-010",
+      "relationship-011",
+      "relationship-012",
+      "relationship-013",
+      "relationship-014",
+      "relationship-015",
+      "relationship-016",
+      "relationship-017",
+      "relationship-018",
+      "relationship-019",
+      "relationship-020",
+      "relationship-021",
+      "relationship-022",
+      "relationship-023",
+      "relationship-024",
+      "relationship-025",
+      "relationship-026",
+      "relationship-027",
+      "relationship-028",
+      "relationship-029",
+      "relationship-030",
+      "relationship-031",
+      "relationship-032",
+      "requirement-001",
+      "requirement-002",
+      "requirement-003",
+      "requirement-004",
+      "requirement-005",
+      "requirement-006",
+      "requirement-007",
+      "requirement-008",
+      "requirement-009",
+      "requirement-010",
+      "requirement-011",
+      "requirement-012",
+      "topic-001",
+      "topic-002",
+      "topic-003",
+      "topic-004",
+      "topic-005",
+      "topic-006",
+      "topic-007",
+      "topic-008",
+      "topic-009",
+      "topic-010",
+      "topic-011",
+      "topic-012",
+      "topic-013",
+      "topic-014"
+    ],
+    "supporting_context_refs": [
+      "entity-002",
+      "entity-003",
+      "entity-004",
+      "fact-002"
+    ],
+    "constraint_refs": [
+      "decision-004"
+    ],
+    "excluded_refs": [
+      "decision-003",
+      "decision-007",
+      "decision-012",
+      "decision-015",
+      "decision-019",
+      "decision-024",
+      "decision-026",
+      "decision-028",
+      "decision-030",
+      "decision-033",
+      "decision-035",
+      "entity-005",
+      "entity-023",
+      "entity-028",
+      "entity-061"
+    ],
+    "unresolved_ambiguity_refs": [
+      "ambiguity-001",
+      "ambiguity-002",
+      "ambiguity-003",
+      "ambiguity-004",
+      "ambiguity-005",
+      "ambiguity-006"
+    ],
+    "unassigned_relevant_refs": []
+  },
+  "ambiguities": [
+    {
+      "id": "class-ambiguity-001",
+      "step02_ref": "ambiguity-001",
+      "description": "Supporting tools for parallel dialing and gifting campaigns are not finalized.",
+      "classification_impact": "Show parallel dialing and gifting campaigns with no tool chips.",
+      "blocks_downstream": false
+    },
+    {
+      "id": "class-ambiguity-002",
+      "step02_ref": "ambiguity-002",
+      "description": "Vendors for signal categories are not finalized.",
+      "classification_impact": "Show signal categories as labels without vendors.",
+      "blocks_downstream": false
+    },
+    {
+      "id": "class-ambiguity-003",
+      "step02_ref": "ambiguity-003",
+      "description": "No tools were named for event invites, automated outbound, public events or video outreach; it is not stated whether tools are pending or unnecessary.",
+      "classification_impact": "Show these activities without tool chips; do not imply tools are missing or pending.",
+      "blocks_downstream": false
+    },
+    {
+      "id": "class-ambiguity-004",
+      "step02_ref": "ambiguity-004",
+      "description": "Scoring criteria and how accounts are assigned to tiers are not defined beyond the stage/tier lists.",
+      "classification_impact": "Show stages and tiers as lists only; no scoring logic.",
+      "blocks_downstream": false
+    },
+    {
+      "id": "class-ambiguity-005",
+      "step02_ref": "ambiguity-005",
+      "description": "What triggers the Slack notification after demand generation is not stated.",
+      "classification_impact": "Show Slack notification as the next item after demand generation without a trigger label.",
+      "blocks_downstream": false
+    },
+    {
+      "id": "class-ambiguity-006",
+      "step02_ref": "ambiguity-006",
+      "description": "The role of HubSpot in Step 4 is stated only as 'associated'.",
+      "classification_impact": "Show HubSpot as an associated option in Step 4 without a specific function.",
+      "blocks_downstream": false
+    }
+  ],
+  "validation": {
+    "step02_status": "success",
+    "step02_records": 217,
+    "records_assigned": 217,
+    "bucket_overlaps": [],
+    "density_note": "About 27 tool/platform names, 25 signal categories and 12 demand-gen activities in one visual; Step 04 must plan for high density."
+  },
+  "warnings": [],
+  "errors": []
+}

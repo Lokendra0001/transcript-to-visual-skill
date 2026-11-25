@@ -1,0 +1,4385 @@
+{
+  "step": "06-template-selection",
+  "version": "1.0",
+  "status": "success",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "sources": {
+    "classification": {
+      "step": "03-content-classification",
+      "version": "1.0",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "architecture": {
+      "step": "04-workflow-architecture",
+      "version": "1.1",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    },
+    "content_writing": {
+      "step": "05-content-writing",
+      "version": "1.0",
+      "run_id": "2026-11-24-abm-playbook-chat"
+    }
+  },
+  "template_library": {
+    "templates_dir": "references/templates",
+    "discovered_templates": [
+      {
+        "id": "template-6146b326e934",
+        "reference_path": "T01-modular-gtm.png",
+        "format": "png",
+        "fingerprint": "21f363cb0a0f0f06acac33a4db624148792723524d34a79d8c2b0b8b4fcc282e",
+        "byte_size": 982933
+      },
+      {
+        "id": "template-9dd7b3cd2fea",
+        "reference_path": "T02-growth-stages.png",
+        "format": "png",
+        "fingerprint": "f3b31068bde97025b58eb9ea48a1dba37759459c385ffb62989789ef074241a6",
+        "byte_size": 850609
+      },
+      {
+        "id": "template-6b84d46a7ece",
+        "reference_path": "T03-cheatsheet.png",
+        "format": "png",
+        "fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+        "byte_size": 741178
+      },
+      {
+        "id": "template-fca04aa3dbc3",
+        "reference_path": "T04-comparison.png",
+        "format": "png",
+        "fingerprint": "cacdbe2ae008c29289d761884dff5d5da12b286b27ea91b5f05c2c7569ddeac5",
+        "byte_size": 741178,
+        "duplicate_of": "template-6b84d46a7ece"
+      },
+      {
+        "id": "template-be6e9abdfee5",
+        "reference_path": "T05-composite-framework.png",
+        "format": "png",
+        "fingerprint": "e3edc0f32b738f4fe786be162cfe01c6b358ea80e727257c2b8baeb8e644b96e",
+        "byte_size": 860070
+      },
+      {
+        "id": "template-11a4035c6411",
+        "reference_path": "T06-vertical-playbook.png",
+        "format": "png",
+        "fingerprint": "cd8ce9723b1fe659cd60f29b119770489878184107f90279dbee47ce3c9e1983",
+        "byte_size": 1191940
+      },
+      {
+        "id": "template-da1453805dae",
+        "reference_path": "T07-gradient-workflow.png",
+        "format": "png",
+        "fingerprint": "298b5650f587f25d0549695c1f044eec88517b6bbf60b8b3eda67120bd3a1f7f",
+        "byte_size": 718038
+      },
+      {
+        "id": "template-e74170bee43d",
+        "reference_path": "T08-timeline.png",
+        "format": "png",
+        "fingerprint": "127aed1298e42bfa6dcb6cdded77743a3c76b2b0bfaf51aa12310d1b7b14f6fe",
+        "byte_size": 866613
+      },
+      {
+        "id": "template-c78d4e160aeb",
+        "reference_path": "T09-branching-workflow.png",
+        "format": "png",
+        "fingerprint": "689b9af0a56a8a3d0d2fd267091a617500fb1edb37be13344228023548a6471c",
+        "byte_size": 1126946
+      }
+    ],
+    "analyzed_templates": [
+      {
+        "template_id": "template-6146b326e934",
+        "profile_id": "template-6146b326e934",
+        "reference_path": "T01-modular-gtm.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-9dd7b3cd2fea",
+        "profile_id": "template-9dd7b3cd2fea",
+        "reference_path": "T02-growth-stages.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-6b84d46a7ece",
+        "profile_id": "template-6b84d46a7ece",
+        "reference_path": "T03-cheatsheet.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-be6e9abdfee5",
+        "profile_id": "template-be6e9abdfee5",
+        "reference_path": "T05-composite-framework.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-11a4035c6411",
+        "profile_id": "template-11a4035c6411",
+        "reference_path": "T06-vertical-playbook.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-da1453805dae",
+        "profile_id": "template-da1453805dae",
+        "reference_path": "T07-gradient-workflow.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-e74170bee43d",
+        "profile_id": "template-e74170bee43d",
+        "reference_path": "T08-timeline.png",
+        "visual_analysis_status": "success"
+      },
+      {
+        "template_id": "template-c78d4e160aeb",
+        "profile_id": "template-c78d4e160aeb",
+        "reference_path": "T09-branching-workflow.png",
+        "visual_analysis_status": "success"
+      }
+    ],
+    "unavailable_templates": [
+      {
+        "template_id": "template-fca04aa3dbc3",
+        "reference_path": "T04-comparison.png",
+        "reason": "byte-duplicate of template-6b84d46a7ece; evaluated through that profile",
+        "duplicate_of": "template-6b84d46a7ece"
+      }
+    ],
+    "profile_cache": {
+      "state_before_run": "all needs_visual_analysis",
+      "report": "step-06/profile-cache.json",
+      "profiles_dir": "step-06/template-profiles"
+    },
+    "user_constraints": [],
+    "design_guidelines": "none supplied (references/design-guidelines is empty)"
+  },
+  "visual_requirements": {
+    "visual_units": [
+      {
+        "id": "visual-unit-001",
+        "primary_type": "playbook",
+        "secondary_types": [
+          "process_flow",
+          "taxonomy"
+        ],
+        "step03_scope": "composite_visual"
+      }
+    ],
+    "sections": 17,
+    "nodes": 102,
+    "required_connections": 68,
+    "representation_modes": [
+      "containment",
+      "explicit_connector",
+      "flexible",
+      "grouping",
+      "supporting_association"
+    ],
+    "mandatory_layout": [
+      "layout-req-001",
+      "layout-req-002",
+      "layout-req-003",
+      "layout-req-004",
+      "layout-req-005",
+      "layout-req-006"
+    ],
+    "recommended_layout": [
+      "layout-req-007",
+      "layout-req-008",
+      "layout-req-009"
+    ],
+    "flexible_layout": [
+      "layout-req-010"
+    ],
+    "reading_order": "title → steps 1–6 (Step 3 groups first/second/third; Step 4 stages then tiers; Step 6 one-to-one then one-to-many) → downstream → Closed-Won",
+    "asset_needs": "37 optional logo/icon requirements, all with text fallback",
+    "copy": "117 generated items (108 required); variants available for step labels and the flow annotation",
+    "density": "very_high overall; Step 3 very_high, Step 6 very_high",
+    "explicit_user_constraints": "none recorded upstream (no canvas size, orientation, brand rules or animation preference)"
+  },
+  "candidate_evaluations": [
+    {
+      "id": "evaluation-001",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-6146b326e934",
+      "reference_path": "T01-modular-gtm.png",
+      "assessment": "highly_compatible",
+      "reasons": [
+        "Its numbered modular grid, logo-tile clusters, chip rows, awareness staircase, tier stack, categorized columns and terminal card each match an architecture section."
+      ],
+      "strengths": [
+        "Numbered module language directly carries the six-step spine.",
+        "Observed patterns for every section type in this run.",
+        "High native resolution and observed capacity close to 102 nodes.",
+        "Separate tier and awareness modules already avoid a stage-to-tier mapping."
+      ],
+      "limitations": [
+        "No hub-with-convergence pattern for Step 5.",
+        "No connector labels.",
+        "Closed-lost and numbered final modules must not be reused."
+      ],
+      "mandatory_conflicts": [],
+      "adaptations": [
+        "Hub convergence into Step 5",
+        "Unnumbered downstream chain",
+        "Two demand-gen lanes instead of four columns",
+        "Three signal rows sized 8/6/11"
+      ],
+      "uncertainties": [
+        "Exact fonts, colors and spacing values not measured.",
+        "Whether the dot texture is part of the design system or export artifact."
+      ],
+      "selection_eligible": true,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-002",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-da1453805dae",
+      "reference_path": "T07-gradient-workflow.png",
+      "assessment": "compatible_with_adaptations",
+      "reasons": [
+        "Same composition as T01 with softer styling; structurally equivalent but numbering is less prominent and resolution lower."
+      ],
+      "strengths": [
+        "Same pattern set as T01."
+      ],
+      "limitations": [
+        "Small phase pills weaken the numbered-step emphasis.",
+        "Lower resolution for 102 nodes.",
+        "Same structural gaps as T01."
+      ],
+      "mandatory_conflicts": [],
+      "adaptations": [
+        "Same as T01 plus stronger numbering"
+      ],
+      "uncertainties": [
+        "Exact colors/fonts not measured."
+      ],
+      "selection_eligible": true,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-003",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-11a4035c6411",
+      "reference_path": "T06-vertical-playbook.png",
+      "assessment": "compatible_with_adaptations",
+      "reasons": [
+        "A strict numbered vertical stack carries sequence well, and its routing section shows convergence; but the single column gives the CRM hub no central role and the canvas becomes very tall."
+      ],
+      "strengths": [
+        "Very clear numbered sequence.",
+        "Observed convergence pattern (inputs → process → CRM).",
+        "Stage columns with ordered headers."
+      ],
+      "limitations": [
+        "Strict single column; hub reads as just another row.",
+        "Very tall aspect grows further at this density.",
+        "Low native resolution."
+      ],
+      "mandatory_conflicts": [],
+      "adaptations": [
+        "Hub emphasis",
+        "Taxonomy rows inside wide section"
+      ],
+      "uncertainties": [
+        "Exact colors/fonts not measured."
+      ],
+      "selection_eligible": true,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-004",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-be6e9abdfee5",
+      "reference_path": "T05-composite-framework.png",
+      "assessment": "compatible_with_adaptations",
+      "reasons": [
+        "Numbered regions and an internal flowchart exist, but the irregular composition and photo-centric patterns fit this content poorly."
+      ],
+      "strengths": [
+        "Numbered regions with dashed connectors.",
+        "Flowchart merge pattern."
+      ],
+      "limitations": [
+        "Irregular region sizes blur the 1–6 order.",
+        "Photo grids irrelevant.",
+        "Dense at low resolution."
+      ],
+      "mandatory_conflicts": [],
+      "adaptations": [
+        "Regularize region grid",
+        "Replace photo grids"
+      ],
+      "uncertainties": [
+        "Exact colors and fonts not measured."
+      ],
+      "selection_eligible": true,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-005",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-6b84d46a7ece",
+      "reference_path": "T03-cheatsheet.png",
+      "assessment": "compatible_with_adaptations",
+      "reasons": [
+        "Numbered pastel sections and chip clusters suit the taxonomy, but there is no precedent for cross-section flow, hub convergence or logo tiles."
+      ],
+      "strengths": [
+        "Clean numbered sections.",
+        "Strong chip-cluster pattern for signals."
+      ],
+      "limitations": [
+        "Sequence and information flow would rely on new connector design.",
+        "Little logo-tile precedent for 37 tool chips."
+      ],
+      "mandatory_conflicts": [],
+      "adaptations": [
+        "Add inter-section connectors",
+        "Add logo tiles"
+      ],
+      "uncertainties": [
+        "Exact pastel values and fonts not measured."
+      ],
+      "selection_eligible": true,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-006",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-9dd7b3cd2fea",
+      "reference_path": "T02-growth-stages.png",
+      "assessment": "weakly_compatible",
+      "reasons": [
+        "The ascending staircase implies growth or size between stages that the source does not state, and there are no sequence connectors or taxonomy rows."
+      ],
+      "strengths": [
+        "High logo-chip density."
+      ],
+      "limitations": [
+        "Staircase adds an unsupported quantitative meaning.",
+        "No connectors for sequence or information flow.",
+        "Four-column structure, not six steps plus downstream."
+      ],
+      "mandatory_conflicts": [
+        "layout-req-001 directional numbered sequence would need a different structure."
+      ],
+      "adaptations": [],
+      "uncertainties": [
+        "Exact colors/fonts not measured."
+      ],
+      "selection_eligible": false,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-007",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-c78d4e160aeb",
+      "reference_path": "T09-branching-workflow.png",
+      "assessment": "weakly_compatible",
+      "reasons": [
+        "The reference is cropped and blurry, and its sparse flowchart cannot hold the taxonomy, lanes or tool clusters."
+      ],
+      "strengths": [
+        "Clear branch/merge connectors."
+      ],
+      "limitations": [
+        "Incomplete reference.",
+        "Low capacity.",
+        "No numbering or containment patterns."
+      ],
+      "mandatory_conflicts": [
+        "layout-req-004 (25 categories in three groups) and layout-req-005 (two lanes) lack a pattern."
+      ],
+      "adaptations": [],
+      "uncertainties": [
+        "Remaining lower portion of the reference is unknown."
+      ],
+      "selection_eligible": false,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    },
+    {
+      "id": "evaluation-008",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-e74170bee43d",
+      "reference_path": "T08-timeline.png",
+      "assessment": "incompatible",
+      "reasons": [
+        "A flat two-column comparison table cannot represent hierarchy, lanes, a hub or nested tools."
+      ],
+      "strengths": [
+        "Large legible rows."
+      ],
+      "limitations": [
+        "No grouping or containment.",
+        "Pairwise layout misrepresents the playbook."
+      ],
+      "mandatory_conflicts": [
+        "layout-req-001, -004, -005, -006 cannot be represented."
+      ],
+      "adaptations": [],
+      "uncertainties": [
+        "None material."
+      ],
+      "selection_eligible": false,
+      "method": "qualitative comparison of profile against visual requirement profile; no numeric scores"
+    }
+  ],
+  "template_selections": [
+    {
+      "id": "selection-001",
+      "visual_unit_id": "visual-unit-001",
+      "template_id": "template-6146b326e934",
+      "profile_id": "template-6146b326e934",
+      "reference_path": "T01-modular-gtm.png",
+      "assessment": "highly_compatible",
+      "selection_rationale": "T01 is the only reference whose observed patterns cover every architecture section: numbered modules for the six steps, logo-tile grids for tool options, chip-row panels for the three signal groups, a staircase and tier stack for Step 4, categorized columns for the Step 6 lanes, and a terminal card for Closed-Won. It also has the highest native resolution for a 102-node design. T07 has the same structure but weaker numbering and lower resolution; T06 has no hub position and grows very tall.",
+      "runner_up": {
+        "template_id": "template-da1453805dae",
+        "reason": "Same structure, softer numbering, lower resolution."
+      },
+      "adaptation_ids": [
+        "adapt-001",
+        "adapt-002",
+        "adapt-003",
+        "adapt-004",
+        "adapt-005",
+        "adapt-006",
+        "adapt-007",
+        "adapt-008",
+        "adapt-009",
+        "adapt-010"
+      ],
+      "limitations": [
+        "No pattern for a hub with converging inputs; would need adaptation.",
+        "No connector labels.",
+        "Final modules are numbered; unnumbered downstream items need adaptation.",
+        "Includes a closed-lost branch pattern that must not be reused here."
+      ],
+      "source_refs": [
+        "step03:classification",
+        "step04:architecture_strategy",
+        "layout-req-001",
+        "layout-req-002",
+        "layout-req-003",
+        "layout-req-004",
+        "layout-req-005",
+        "layout-req-006",
+        "layout-req-007",
+        "layout-req-008",
+        "layout-req-009",
+        "layout-req-010"
+      ],
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003",
+        "constraint-004",
+        "constraint-005",
+        "constraint-006",
+        "constraint-007",
+        "constraint-008",
+        "constraint-009",
+        "constraint-010",
+        "constraint-011"
+      ]
+    }
+  ],
+  "design_direction": [
+    {
+      "aspect": "overall",
+      "direction": "Modular numbered-card infographic in the selected reference's design language, portrait orientation. No orientation or canvas constraint exists upstream, so portrait follows the reference.",
+      "retained": true
+    },
+    {
+      "aspect": "background",
+      "direction": "Light, warm, near-white background; a subtle texture is optional. Keep it quiet so logos and chips stay legible.",
+      "retained": true
+    },
+    {
+      "aspect": "color",
+      "direction": "Mostly neutral cards with one or two accents: one for number badges and the terminal card, one for the title. Signal groups and lanes may use soft distinct tints. Brand logos stay in original colors. Exact values are chosen in Step 08, not inferred from the reference.",
+      "retained": "adapted"
+    },
+    {
+      "aspect": "hierarchy",
+      "direction": "Title > numbered step modules > sub-panels/lanes > chips/tiles. Steps 3 and 6 get the most area; downstream cards are smaller than modules; Closed-Won is the most emphasized element after the title.",
+      "retained": "adapted"
+    },
+    {
+      "aspect": "containers",
+      "direction": "Rounded cards with a thin outline and offset shadow, tabbed headers with number badges; sub-panels use a lighter container.",
+      "retained": true
+    },
+    {
+      "aspect": "logos_icons",
+      "direction": "Rounded-square logo tiles with the name beneath; text-only tile when no approved logo exists. Signal categories and tool-less activities get no logos and no placeholders. No company or creator logo anywhere.",
+      "retained": "adapted"
+    },
+    {
+      "aspect": "connectors",
+      "direction": "Thin dashed gray connectors with arrowheads in the gutters, for sequence only, plus one convergence group into the CRM. No connectors between stages and tiers, and none from activities to Closed-Won.",
+      "retained": "adapted"
+    },
+    {
+      "aspect": "grouping_spacing",
+      "direction": "Generous gutters between modules for connector routing; consistent spacing within chip rows and tile grids; no overlapping text or icons.",
+      "retained": true
+    },
+    {
+      "aspect": "brand_constraints",
+      "direction": "No brand guidelines are supplied for this run (their absence is disclosed). Do not adopt the reference's title, wording, creator footer or company branding.",
+      "retained": false
+    }
+  ],
+  "component_patterns": [
+    {
+      "id": "cp-header-band",
+      "name": "Title band",
+      "description": "Large display title with a secondary line beneath (observed breadcrumb row).",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "top band"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-numbered-module",
+      "name": "Numbered module card",
+      "description": "Outlined rounded card with tabbed header holding a number badge and title.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "modules 01–10"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-logo-tile-grid",
+      "name": "Logo tile grid",
+      "description": "Rounded-square logo tiles with the name beneath, in a regular grid.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "modules 02, 03"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-chip-row-panel",
+      "name": "Labelled chip-row sub-panel",
+      "description": "Sub-panel with a label tab and a row of chips (observed checklist rows).",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 01 right side"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-stage-staircase",
+      "name": "Awareness staircase",
+      "description": "Numbered pills stepping diagonally over a bar.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 05"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-tier-stack",
+      "name": "Tier stack",
+      "description": "Vertically stacked tier rows with number tags.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 04"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-category-columns",
+      "name": "Categorized columns",
+      "description": "Column cards each with a header and icon+label rows.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 07"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-paired-mini-card",
+      "name": "Paired logo mini-card",
+      "description": "Small card holding two logo+name items side by side.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 01 outcome cards"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-dashed-connector",
+      "name": "Dashed gutter connector",
+      "description": "Thin dashed line with arrowhead routed in gutters between modules.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "between modules"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-terminal-card",
+      "name": "Highlighted terminal card",
+      "description": "Filled accent card ending the flow, with small logo tiles.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 10"
+      },
+      "reuse": "adapt"
+    },
+    {
+      "id": "cp-convergence-annotation",
+      "name": "Convergence connector with one annotation",
+      "description": "Four connectors from Steps 1–4 merge into the CRM module and carry a single short annotation.",
+      "observed_in": null,
+      "reuse": "new_adaptation",
+      "adaptation_id": "adapt-005"
+    },
+    {
+      "id": "cp-downstream-chain",
+      "name": "Unnumbered downstream chain",
+      "description": "Compact cards in sequence after Step 6, styled like modules but without number badges, ending in the terminal card.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "modules 08–10"
+      },
+      "reuse": "adapt",
+      "adaptation_id": "adapt-001"
+    },
+    {
+      "id": "cp-global-note",
+      "name": "Global note line",
+      "description": "Short note line under the title in the breadcrumb position.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "top band breadcrumb"
+      },
+      "reuse": "adapt",
+      "adaptation_id": "adapt-007"
+    },
+    {
+      "id": "cp-lane-columns",
+      "name": "Two-lane columns with attached tool icons",
+      "description": "Category-column pattern reduced to two columns; each activity row may carry its own small tool icons.",
+      "observed_in": {
+        "template_id": "template-6146b326e934",
+        "region": "module 07"
+      },
+      "reuse": "adapt",
+      "adaptation_id": "adapt-004"
+    }
+  ],
+  "content_template_mapping": [
+    {
+      "id": "mapping-001",
+      "target_type": "section",
+      "target_id": "section-root",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Overall modular grid of the selected reference",
+      "adaptation_ids": [
+        "adapt-008"
+      ]
+    },
+    {
+      "id": "mapping-002",
+      "target_type": "section",
+      "target_id": "section-header",
+      "component_pattern_id": "cp-header-band",
+      "representation_strategy": "Title band with subtitle and global note",
+      "adaptation_ids": [
+        "adapt-007"
+      ]
+    },
+    {
+      "id": "mapping-003",
+      "target_type": "section",
+      "target_id": "section-spine",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Six numbered modules joined by directional dashed connectors",
+      "adaptation_ids": [
+        "adapt-008"
+      ]
+    },
+    {
+      "id": "mapping-004",
+      "target_type": "section",
+      "target_id": "section-step-1",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Numbered module holding a logo tile grid",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-005",
+      "target_type": "section",
+      "target_id": "section-step-2",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Numbered module holding a logo tile grid",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-006",
+      "target_type": "section",
+      "target_id": "section-step-3",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Largest numbered module holding three chip-row panels",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-007",
+      "target_type": "section",
+      "target_id": "section-step-4",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Numbered module with staircase and tier stack side by side",
+      "adaptation_ids": [
+        "adapt-006"
+      ]
+    },
+    {
+      "id": "mapping-008",
+      "target_type": "section",
+      "target_id": "section-step-5",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Numbered module styled as the CRM hub",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-009",
+      "target_type": "section",
+      "target_id": "section-step-6",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Numbered module with two lane columns",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-010",
+      "target_type": "section",
+      "target_id": "section-step-3-first",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Labelled chip-row panel",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-011",
+      "target_type": "section",
+      "target_id": "section-step-3-second",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Labelled chip-row panel",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-012",
+      "target_type": "section",
+      "target_id": "section-step-3-third",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Labelled chip-row panel",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-013",
+      "target_type": "section",
+      "target_id": "section-step-4-awareness",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered staircase of numbered pills",
+      "adaptation_ids": [
+        "adapt-006"
+      ]
+    },
+    {
+      "id": "mapping-014",
+      "target_type": "section",
+      "target_id": "section-step-4-tiers",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Stacked tier rows",
+      "adaptation_ids": [
+        "adapt-006"
+      ]
+    },
+    {
+      "id": "mapping-015",
+      "target_type": "section",
+      "target_id": "section-step-6-one-to-one",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Lane column",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-016",
+      "target_type": "section",
+      "target_id": "section-step-6-one-to-many",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Lane column",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-017",
+      "target_type": "section",
+      "target_id": "section-downstream",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Unnumbered chain ending in the terminal card",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-018",
+      "target_type": "node",
+      "target_id": "node-title",
+      "component_pattern_id": "cp-header-band",
+      "representation_strategy": "Display title",
+      "adaptation_ids": [
+        "adapt-007"
+      ]
+    },
+    {
+      "id": "mapping-019",
+      "target_type": "node",
+      "target_id": "node-optionality-note",
+      "component_pattern_id": "cp-global-note",
+      "representation_strategy": "Note line under title",
+      "adaptation_ids": [
+        "adapt-007"
+      ]
+    },
+    {
+      "id": "mapping-020",
+      "target_type": "node",
+      "target_id": "node-step-1",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-021",
+      "target_type": "node",
+      "target_id": "node-s1-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-022",
+      "target_type": "node",
+      "target_id": "node-s1-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-023",
+      "target_type": "node",
+      "target_id": "node-s1-tool-03",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-024",
+      "target_type": "node",
+      "target_id": "node-s1-tool-04",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-025",
+      "target_type": "node",
+      "target_id": "node-s1-tool-05",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-026",
+      "target_type": "node",
+      "target_id": "node-s1-tool-06",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-027",
+      "target_type": "node",
+      "target_id": "node-s1-tool-07",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-028",
+      "target_type": "node",
+      "target_id": "node-s1-tool-08",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-029",
+      "target_type": "node",
+      "target_id": "node-step-2",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-030",
+      "target_type": "node",
+      "target_id": "node-s2-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-031",
+      "target_type": "node",
+      "target_id": "node-s2-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-032",
+      "target_type": "node",
+      "target_id": "node-s2-tool-03",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-033",
+      "target_type": "node",
+      "target_id": "node-s2-tool-04",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-034",
+      "target_type": "node",
+      "target_id": "node-s2-tool-05",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-035",
+      "target_type": "node",
+      "target_id": "node-s2-tool-06",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-036",
+      "target_type": "node",
+      "target_id": "node-s2-tool-07",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-037",
+      "target_type": "node",
+      "target_id": "node-s2-tool-08",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-038",
+      "target_type": "node",
+      "target_id": "node-s2-tool-09",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-039",
+      "target_type": "node",
+      "target_id": "node-s2-tool-10",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-040",
+      "target_type": "node",
+      "target_id": "node-step-3",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-041",
+      "target_type": "node",
+      "target_id": "node-s3-group-034",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-042",
+      "target_type": "node",
+      "target_id": "node-s3-sig-047",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-043",
+      "target_type": "node",
+      "target_id": "node-s3-sig-048",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-044",
+      "target_type": "node",
+      "target_id": "node-s3-sig-049",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-045",
+      "target_type": "node",
+      "target_id": "node-s3-sig-050",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-046",
+      "target_type": "node",
+      "target_id": "node-s3-sig-051",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-047",
+      "target_type": "node",
+      "target_id": "node-s3-sig-052",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-048",
+      "target_type": "node",
+      "target_id": "node-s3-sig-053",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-049",
+      "target_type": "node",
+      "target_id": "node-s3-sig-054",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-050",
+      "target_type": "node",
+      "target_id": "node-s3-group-035",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-051",
+      "target_type": "node",
+      "target_id": "node-s3-sig-055",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-052",
+      "target_type": "node",
+      "target_id": "node-s3-sig-056",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-053",
+      "target_type": "node",
+      "target_id": "node-s3-sig-057",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-054",
+      "target_type": "node",
+      "target_id": "node-s3-sig-058",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-055",
+      "target_type": "node",
+      "target_id": "node-s3-sig-059",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-056",
+      "target_type": "node",
+      "target_id": "node-s3-sig-060",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-057",
+      "target_type": "node",
+      "target_id": "node-s3-group-033",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-058",
+      "target_type": "node",
+      "target_id": "node-s3-sig-036",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-059",
+      "target_type": "node",
+      "target_id": "node-s3-sig-037",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-060",
+      "target_type": "node",
+      "target_id": "node-s3-sig-038",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-061",
+      "target_type": "node",
+      "target_id": "node-s3-sig-039",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-062",
+      "target_type": "node",
+      "target_id": "node-s3-sig-040",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-063",
+      "target_type": "node",
+      "target_id": "node-s3-sig-041",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-064",
+      "target_type": "node",
+      "target_id": "node-s3-sig-042",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-065",
+      "target_type": "node",
+      "target_id": "node-s3-sig-043",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-066",
+      "target_type": "node",
+      "target_id": "node-s3-sig-044",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-067",
+      "target_type": "node",
+      "target_id": "node-s3-sig-045",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-068",
+      "target_type": "node",
+      "target_id": "node-s3-sig-046",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Text chip with neutral marker",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-069",
+      "target_type": "node",
+      "target_id": "node-step-4",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-070",
+      "target_type": "node",
+      "target_id": "node-s4-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-071",
+      "target_type": "node",
+      "target_id": "node-s4-model-awareness",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-072",
+      "target_type": "node",
+      "target_id": "node-s4-stage-1",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered pill (position number is order, not a score)",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-073",
+      "target_type": "node",
+      "target_id": "node-s4-stage-2",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered pill (position number is order, not a score)",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-074",
+      "target_type": "node",
+      "target_id": "node-s4-stage-3",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered pill (position number is order, not a score)",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-075",
+      "target_type": "node",
+      "target_id": "node-s4-stage-4",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered pill (position number is order, not a score)",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-076",
+      "target_type": "node",
+      "target_id": "node-s4-stage-5",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Ordered pill (position number is order, not a score)",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-077",
+      "target_type": "node",
+      "target_id": "node-s4-model-tiers",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-078",
+      "target_type": "node",
+      "target_id": "node-s4-tier-1",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Tier row",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-079",
+      "target_type": "node",
+      "target_id": "node-s4-tier-2",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Tier row",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-080",
+      "target_type": "node",
+      "target_id": "node-s4-tier-3",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Tier row",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-081",
+      "target_type": "node",
+      "target_id": "node-step-5",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-082",
+      "target_type": "node",
+      "target_id": "node-s5-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-083",
+      "target_type": "node",
+      "target_id": "node-s5-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-084",
+      "target_type": "node",
+      "target_id": "node-s5-crm-records",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "CRM Records element receiving the convergence",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-085",
+      "target_type": "node",
+      "target_id": "node-step-6",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Module tab: number badge + step name",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-086",
+      "target_type": "node",
+      "target_id": "node-s6-lane-one-to-one",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-087",
+      "target_type": "node",
+      "target_id": "node-s6-lane-one-to-many",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Panel/column/model label",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-088",
+      "target_type": "node",
+      "target_id": "node-s6-007",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-089",
+      "target_type": "node",
+      "target_id": "node-s6-007-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-090",
+      "target_type": "node",
+      "target_id": "node-s6-008",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-091",
+      "target_type": "node",
+      "target_id": "node-s6-009",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-092",
+      "target_type": "node",
+      "target_id": "node-s6-010",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-093",
+      "target_type": "node",
+      "target_id": "node-s6-010-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-094",
+      "target_type": "node",
+      "target_id": "node-s6-011",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-095",
+      "target_type": "node",
+      "target_id": "node-s6-012",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-096",
+      "target_type": "node",
+      "target_id": "node-s6-013",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-097",
+      "target_type": "node",
+      "target_id": "node-s6-013-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-098",
+      "target_type": "node",
+      "target_id": "node-s6-013-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-099",
+      "target_type": "node",
+      "target_id": "node-s6-013-tool-03",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-100",
+      "target_type": "node",
+      "target_id": "node-s6-014",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-101",
+      "target_type": "node",
+      "target_id": "node-s6-015",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-102",
+      "target_type": "node",
+      "target_id": "node-s6-015-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-103",
+      "target_type": "node",
+      "target_id": "node-s6-015-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-104",
+      "target_type": "node",
+      "target_id": "node-s6-015-tool-03",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-105",
+      "target_type": "node",
+      "target_id": "node-s6-016",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-106",
+      "target_type": "node",
+      "target_id": "node-s6-016-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-107",
+      "target_type": "node",
+      "target_id": "node-s6-017",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-108",
+      "target_type": "node",
+      "target_id": "node-s6-018",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Activity row in its lane",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-109",
+      "target_type": "node",
+      "target_id": "node-s6-018-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-110",
+      "target_type": "node",
+      "target_id": "node-ds-1",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Unnumbered chain card",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-111",
+      "target_type": "node",
+      "target_id": "node-ds-1-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-112",
+      "target_type": "node",
+      "target_id": "node-ds-2",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Unnumbered chain card",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-113",
+      "target_type": "node",
+      "target_id": "node-ds-2-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-114",
+      "target_type": "node",
+      "target_id": "node-ds-3",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Unnumbered chain card",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-115",
+      "target_type": "node",
+      "target_id": "node-ds-3-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-116",
+      "target_type": "node",
+      "target_id": "node-ds-3-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-117",
+      "target_type": "node",
+      "target_id": "node-ds-4",
+      "component_pattern_id": "cp-terminal-card",
+      "representation_strategy": "Highlighted terminal card",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-118",
+      "target_type": "node",
+      "target_id": "node-ds-4-tool-01",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-119",
+      "target_type": "node",
+      "target_id": "node-ds-4-tool-02",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Logo tile with name (text-only fallback)",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-120",
+      "target_type": "connection",
+      "target_id": "connection-001",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-121",
+      "target_type": "connection",
+      "target_id": "connection-002",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-122",
+      "target_type": "connection",
+      "target_id": "connection-003",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-123",
+      "target_type": "connection",
+      "target_id": "connection-004",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-124",
+      "target_type": "connection",
+      "target_id": "connection-005",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-125",
+      "target_type": "connection",
+      "target_id": "connection-006",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-126",
+      "target_type": "connection",
+      "target_id": "connection-007",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-127",
+      "target_type": "connection",
+      "target_id": "connection-008",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-128",
+      "target_type": "connection",
+      "target_id": "connection-009",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Directional dashed connector",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-129",
+      "target_type": "connection",
+      "target_id": "connection-010",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Converging connectors with one annotation (Steps 1–4 → CRM Records); CRM → Step 6 shares the onward connector",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-130",
+      "target_type": "connection",
+      "target_id": "connection-011",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Converging connectors with one annotation (Steps 1–4 → CRM Records); CRM → Step 6 shares the onward connector",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-131",
+      "target_type": "connection",
+      "target_id": "connection-012",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Converging connectors with one annotation (Steps 1–4 → CRM Records); CRM → Step 6 shares the onward connector",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-132",
+      "target_type": "connection",
+      "target_id": "connection-013",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Converging connectors with one annotation (Steps 1–4 → CRM Records); CRM → Step 6 shares the onward connector",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-133",
+      "target_type": "connection",
+      "target_id": "connection-014",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Converging connectors with one annotation (Steps 1–4 → CRM Records); CRM → Step 6 shares the onward connector",
+      "adaptation_ids": [
+        "adapt-005"
+      ]
+    },
+    {
+      "id": "mapping-134",
+      "target_type": "connection",
+      "target_id": "connection-015",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-135",
+      "target_type": "connection",
+      "target_id": "connection-016",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-136",
+      "target_type": "connection",
+      "target_id": "connection-017",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-137",
+      "target_type": "connection",
+      "target_id": "connection-018",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-138",
+      "target_type": "connection",
+      "target_id": "connection-019",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-139",
+      "target_type": "connection",
+      "target_id": "connection-020",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-140",
+      "target_type": "connection",
+      "target_id": "connection-021",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-141",
+      "target_type": "connection",
+      "target_id": "connection-022",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-142",
+      "target_type": "connection",
+      "target_id": "connection-023",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-143",
+      "target_type": "connection",
+      "target_id": "connection-024",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-144",
+      "target_type": "connection",
+      "target_id": "connection-025",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-145",
+      "target_type": "connection",
+      "target_id": "connection-026",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-146",
+      "target_type": "connection",
+      "target_id": "connection-027",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-147",
+      "target_type": "connection",
+      "target_id": "connection-028",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-148",
+      "target_type": "connection",
+      "target_id": "connection-029",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Containment inside the parent module/panel/lane",
+      "adaptation_ids": []
+    },
+    {
+      "id": "mapping-149",
+      "target_type": "connection",
+      "target_id": "connection-031",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Co-location in Step 4 module with relationship note; no connector",
+      "adaptation_ids": [
+        "adapt-006"
+      ]
+    },
+    {
+      "id": "mapping-150",
+      "target_type": "connection",
+      "target_id": "connection-033",
+      "component_pattern_id": "cp-paired-mini-card",
+      "representation_strategy": "Paired mini-card with either/or marker",
+      "adaptation_ids": [
+        "adapt-009"
+      ]
+    },
+    {
+      "id": "mapping-151",
+      "target_type": "connection",
+      "target_id": "connection-034",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-152",
+      "target_type": "connection",
+      "target_id": "connection-035",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-153",
+      "target_type": "connection",
+      "target_id": "connection-036",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-154",
+      "target_type": "connection",
+      "target_id": "connection-037",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-155",
+      "target_type": "connection",
+      "target_id": "connection-038",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-156",
+      "target_type": "connection",
+      "target_id": "connection-039",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-157",
+      "target_type": "connection",
+      "target_id": "connection-040",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-158",
+      "target_type": "connection",
+      "target_id": "connection-041",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-159",
+      "target_type": "connection",
+      "target_id": "connection-042",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-160",
+      "target_type": "connection",
+      "target_id": "connection-043",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-161",
+      "target_type": "connection",
+      "target_id": "connection-044",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-162",
+      "target_type": "connection",
+      "target_id": "connection-045",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-163",
+      "target_type": "connection",
+      "target_id": "connection-046",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-164",
+      "target_type": "connection",
+      "target_id": "connection-047",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-165",
+      "target_type": "connection",
+      "target_id": "connection-048",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-166",
+      "target_type": "connection",
+      "target_id": "connection-049",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-167",
+      "target_type": "connection",
+      "target_id": "connection-050",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-168",
+      "target_type": "connection",
+      "target_id": "connection-051",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-169",
+      "target_type": "connection",
+      "target_id": "connection-052",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-170",
+      "target_type": "connection",
+      "target_id": "connection-053",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-171",
+      "target_type": "connection",
+      "target_id": "connection-054",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-172",
+      "target_type": "connection",
+      "target_id": "connection-055",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-173",
+      "target_type": "connection",
+      "target_id": "connection-056",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-174",
+      "target_type": "connection",
+      "target_id": "connection-057",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-175",
+      "target_type": "connection",
+      "target_id": "connection-058",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-176",
+      "target_type": "connection",
+      "target_id": "connection-059",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-177",
+      "target_type": "connection",
+      "target_id": "connection-060",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-178",
+      "target_type": "connection",
+      "target_id": "connection-061",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-179",
+      "target_type": "connection",
+      "target_id": "connection-062",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-180",
+      "target_type": "connection",
+      "target_id": "connection-063",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-181",
+      "target_type": "connection",
+      "target_id": "connection-064",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-182",
+      "target_type": "connection",
+      "target_id": "connection-065",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-183",
+      "target_type": "connection",
+      "target_id": "connection-066",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-184",
+      "target_type": "connection",
+      "target_id": "connection-067",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-185",
+      "target_type": "connection",
+      "target_id": "connection-068",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-186",
+      "target_type": "connection",
+      "target_id": "connection-069",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-187",
+      "target_type": "connection",
+      "target_id": "connection-070",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tool tile placed inside its step module or on its activity row",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-188",
+      "target_type": "content_item",
+      "target_id": "content-item-001",
+      "component_pattern_id": "cp-header-band",
+      "representation_strategy": "Preferred text placed as title label on node-title",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-189",
+      "target_type": "content_item",
+      "target_id": "content-item-002",
+      "component_pattern_id": "cp-global-note",
+      "representation_strategy": "Preferred text placed as global note label on node-optionality-note",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-190",
+      "target_type": "content_item",
+      "target_id": "content-item-003",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-1",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-191",
+      "target_type": "content_item",
+      "target_id": "content-item-004",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-192",
+      "target_type": "content_item",
+      "target_id": "content-item-005",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-193",
+      "target_type": "content_item",
+      "target_id": "content-item-006",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-03",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-194",
+      "target_type": "content_item",
+      "target_id": "content-item-007",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-04",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-195",
+      "target_type": "content_item",
+      "target_id": "content-item-008",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-05",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-196",
+      "target_type": "content_item",
+      "target_id": "content-item-009",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-06",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-197",
+      "target_type": "content_item",
+      "target_id": "content-item-010",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-07",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-198",
+      "target_type": "content_item",
+      "target_id": "content-item-011",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s1-tool-08",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-199",
+      "target_type": "content_item",
+      "target_id": "content-item-012",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-2",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-200",
+      "target_type": "content_item",
+      "target_id": "content-item-013",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-201",
+      "target_type": "content_item",
+      "target_id": "content-item-014",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-202",
+      "target_type": "content_item",
+      "target_id": "content-item-015",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-03",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-203",
+      "target_type": "content_item",
+      "target_id": "content-item-016",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-04",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-204",
+      "target_type": "content_item",
+      "target_id": "content-item-017",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-05",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-205",
+      "target_type": "content_item",
+      "target_id": "content-item-018",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-06",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-206",
+      "target_type": "content_item",
+      "target_id": "content-item-019",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-07",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-207",
+      "target_type": "content_item",
+      "target_id": "content-item-020",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-08",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-208",
+      "target_type": "content_item",
+      "target_id": "content-item-021",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-09",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-209",
+      "target_type": "content_item",
+      "target_id": "content-item-022",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s2-tool-10",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-210",
+      "target_type": "content_item",
+      "target_id": "content-item-023",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-3",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-211",
+      "target_type": "content_item",
+      "target_id": "content-item-024",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as group label label on node-s3-group-034",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-212",
+      "target_type": "content_item",
+      "target_id": "content-item-025",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-047",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-213",
+      "target_type": "content_item",
+      "target_id": "content-item-026",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-048",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-214",
+      "target_type": "content_item",
+      "target_id": "content-item-027",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-049",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-215",
+      "target_type": "content_item",
+      "target_id": "content-item-028",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-050",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-216",
+      "target_type": "content_item",
+      "target_id": "content-item-029",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-051",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-217",
+      "target_type": "content_item",
+      "target_id": "content-item-030",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-052",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-218",
+      "target_type": "content_item",
+      "target_id": "content-item-031",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-053",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-219",
+      "target_type": "content_item",
+      "target_id": "content-item-032",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-054",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-220",
+      "target_type": "content_item",
+      "target_id": "content-item-033",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as group label label on node-s3-group-035",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-221",
+      "target_type": "content_item",
+      "target_id": "content-item-034",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-055",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-222",
+      "target_type": "content_item",
+      "target_id": "content-item-035",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-056",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-223",
+      "target_type": "content_item",
+      "target_id": "content-item-036",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-057",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-224",
+      "target_type": "content_item",
+      "target_id": "content-item-037",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-058",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-225",
+      "target_type": "content_item",
+      "target_id": "content-item-038",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-059",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-226",
+      "target_type": "content_item",
+      "target_id": "content-item-039",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-060",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-227",
+      "target_type": "content_item",
+      "target_id": "content-item-040",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as group label label on node-s3-group-033",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-228",
+      "target_type": "content_item",
+      "target_id": "content-item-041",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-036",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-229",
+      "target_type": "content_item",
+      "target_id": "content-item-042",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-037",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-230",
+      "target_type": "content_item",
+      "target_id": "content-item-043",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-038",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-231",
+      "target_type": "content_item",
+      "target_id": "content-item-044",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-039",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-232",
+      "target_type": "content_item",
+      "target_id": "content-item-045",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-040",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-233",
+      "target_type": "content_item",
+      "target_id": "content-item-046",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-041",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-234",
+      "target_type": "content_item",
+      "target_id": "content-item-047",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-042",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-235",
+      "target_type": "content_item",
+      "target_id": "content-item-048",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-043",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-236",
+      "target_type": "content_item",
+      "target_id": "content-item-049",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-044",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-237",
+      "target_type": "content_item",
+      "target_id": "content-item-050",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-045",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-238",
+      "target_type": "content_item",
+      "target_id": "content-item-051",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Preferred text placed as signal category label on node-s3-sig-046",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-239",
+      "target_type": "content_item",
+      "target_id": "content-item-052",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-4",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-240",
+      "target_type": "content_item",
+      "target_id": "content-item-053",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s4-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-241",
+      "target_type": "content_item",
+      "target_id": "content-item-054",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as group label label on node-s4-model-awareness",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-242",
+      "target_type": "content_item",
+      "target_id": "content-item-055",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as awareness stage label on node-s4-stage-1",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-243",
+      "target_type": "content_item",
+      "target_id": "content-item-056",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as awareness stage label on node-s4-stage-2",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-244",
+      "target_type": "content_item",
+      "target_id": "content-item-057",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as awareness stage label on node-s4-stage-3",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-245",
+      "target_type": "content_item",
+      "target_id": "content-item-058",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as awareness stage label on node-s4-stage-4",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-246",
+      "target_type": "content_item",
+      "target_id": "content-item-059",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Preferred text placed as awareness stage label on node-s4-stage-5",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-247",
+      "target_type": "content_item",
+      "target_id": "content-item-060",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Preferred text placed as group label label on node-s4-model-tiers",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-248",
+      "target_type": "content_item",
+      "target_id": "content-item-061",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Preferred text placed as account tier label on node-s4-tier-1",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-249",
+      "target_type": "content_item",
+      "target_id": "content-item-062",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Preferred text placed as account tier label on node-s4-tier-2",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-250",
+      "target_type": "content_item",
+      "target_id": "content-item-063",
+      "component_pattern_id": "cp-tier-stack",
+      "representation_strategy": "Preferred text placed as account tier label on node-s4-tier-3",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-251",
+      "target_type": "content_item",
+      "target_id": "content-item-064",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-5",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-252",
+      "target_type": "content_item",
+      "target_id": "content-item-065",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s5-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-253",
+      "target_type": "content_item",
+      "target_id": "content-item-066",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s5-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-254",
+      "target_type": "content_item",
+      "target_id": "content-item-067",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Preferred text placed as data object label on node-s5-crm-records",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-255",
+      "target_type": "content_item",
+      "target_id": "content-item-068",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as process stage label on node-step-6",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-256",
+      "target_type": "content_item",
+      "target_id": "content-item-069",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as group label label on node-s6-lane-one-to-one",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-257",
+      "target_type": "content_item",
+      "target_id": "content-item-070",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as group label label on node-s6-lane-one-to-many",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-258",
+      "target_type": "content_item",
+      "target_id": "content-item-071",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-007",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-259",
+      "target_type": "content_item",
+      "target_id": "content-item-072",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-007-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-260",
+      "target_type": "content_item",
+      "target_id": "content-item-073",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-008",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-261",
+      "target_type": "content_item",
+      "target_id": "content-item-074",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-009",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-262",
+      "target_type": "content_item",
+      "target_id": "content-item-075",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-010",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-263",
+      "target_type": "content_item",
+      "target_id": "content-item-076",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-010-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-264",
+      "target_type": "content_item",
+      "target_id": "content-item-077",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-011",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-265",
+      "target_type": "content_item",
+      "target_id": "content-item-078",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-012",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-266",
+      "target_type": "content_item",
+      "target_id": "content-item-079",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-013",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-267",
+      "target_type": "content_item",
+      "target_id": "content-item-080",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-013-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-268",
+      "target_type": "content_item",
+      "target_id": "content-item-081",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-013-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-269",
+      "target_type": "content_item",
+      "target_id": "content-item-082",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-013-tool-03",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-270",
+      "target_type": "content_item",
+      "target_id": "content-item-083",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-014",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-271",
+      "target_type": "content_item",
+      "target_id": "content-item-084",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-015",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-272",
+      "target_type": "content_item",
+      "target_id": "content-item-085",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-015-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-273",
+      "target_type": "content_item",
+      "target_id": "content-item-086",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-015-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-274",
+      "target_type": "content_item",
+      "target_id": "content-item-087",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-015-tool-03",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-275",
+      "target_type": "content_item",
+      "target_id": "content-item-088",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-016",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-276",
+      "target_type": "content_item",
+      "target_id": "content-item-089",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-016-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-277",
+      "target_type": "content_item",
+      "target_id": "content-item-090",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-017",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-278",
+      "target_type": "content_item",
+      "target_id": "content-item-091",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Preferred text placed as sub activity label on node-s6-018",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-279",
+      "target_type": "content_item",
+      "target_id": "content-item-092",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-s6-018-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-280",
+      "target_type": "content_item",
+      "target_id": "content-item-093",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Preferred text placed as downstream activity label on node-ds-1",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-281",
+      "target_type": "content_item",
+      "target_id": "content-item-094",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-1-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-282",
+      "target_type": "content_item",
+      "target_id": "content-item-095",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Preferred text placed as downstream activity label on node-ds-2",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-283",
+      "target_type": "content_item",
+      "target_id": "content-item-096",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-2-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-284",
+      "target_type": "content_item",
+      "target_id": "content-item-097",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Preferred text placed as downstream activity label on node-ds-3",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-285",
+      "target_type": "content_item",
+      "target_id": "content-item-098",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-3-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-286",
+      "target_type": "content_item",
+      "target_id": "content-item-099",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-3-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-287",
+      "target_type": "content_item",
+      "target_id": "content-item-100",
+      "component_pattern_id": "cp-terminal-card",
+      "representation_strategy": "Preferred text placed as outcome label on node-ds-4",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-288",
+      "target_type": "content_item",
+      "target_id": "content-item-101",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-4-tool-01",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-289",
+      "target_type": "content_item",
+      "target_id": "content-item-102",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Preferred text placed as optional tool label on node-ds-4-tool-02",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-290",
+      "target_type": "content_item",
+      "target_id": "content-item-103",
+      "component_pattern_id": "cp-header-band",
+      "representation_strategy": "Preferred text placed as subtitle on visual-unit-001",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-291",
+      "target_type": "content_item",
+      "target_id": "content-item-104",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as description on section-step-3",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-292",
+      "target_type": "content_item",
+      "target_id": "content-item-105",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as description on section-step-5",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-293",
+      "target_type": "content_item",
+      "target_id": "content-item-106",
+      "component_pattern_id": "cp-convergence-annotation",
+      "representation_strategy": "Preferred text placed as flow annotation on connection-010",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-294",
+      "target_type": "content_item",
+      "target_id": "content-item-107",
+      "component_pattern_id": "cp-paired-mini-card",
+      "representation_strategy": "Preferred text placed as alternative marker on connection-033",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-295",
+      "target_type": "content_item",
+      "target_id": "content-item-108",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Preferred text placed as relationship note on connection-031",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-296",
+      "target_type": "content_item",
+      "target_id": "content-item-112",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-1 heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-297",
+      "target_type": "content_item",
+      "target_id": "content-item-113",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-2 heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-298",
+      "target_type": "content_item",
+      "target_id": "content-item-114",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Optional count label beside the section-step-3-first heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-299",
+      "target_type": "content_item",
+      "target_id": "content-item-115",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Optional count label beside the section-step-3-second heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-300",
+      "target_type": "content_item",
+      "target_id": "content-item-116",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Optional count label beside the section-step-3-third heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-301",
+      "target_type": "content_item",
+      "target_id": "content-item-117",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-4-awareness heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-302",
+      "target_type": "content_item",
+      "target_id": "content-item-118",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-4-tiers heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-303",
+      "target_type": "content_item",
+      "target_id": "content-item-119",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-6-one-to-one heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-304",
+      "target_type": "content_item",
+      "target_id": "content-item-120",
+      "component_pattern_id": "cp-numbered-module",
+      "representation_strategy": "Optional count label beside the section-step-6-one-to-many heading",
+      "adaptation_ids": [],
+      "content_variant": "preferred_text"
+    },
+    {
+      "id": "mapping-305",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-001",
+      "component_pattern_id": "cp-dashed-connector",
+      "representation_strategy": "Steps 1–6 read as one directional numbered sequence; Step 6 continues into the downstream chain.",
+      "adaptation_ids": [
+        "adapt-008"
+      ]
+    },
+    {
+      "id": "mapping-306",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-002",
+      "component_pattern_id": "cp-downstream-chain",
+      "representation_strategy": "Downstream items continue the flow but stay unnumbered and distinct from steps; closed-won is the single terminal element; no closed-lost branch; no direct links from individual demand-generation activities to closed-won.",
+      "adaptation_ids": [
+        "adapt-001"
+      ]
+    },
+    {
+      "id": "mapping-307",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-003",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Tools are subordinate to the step or activity they belong to, never process stages; repeated tools appear in every step that uses them.",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-308",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-004",
+      "component_pattern_id": "cp-chip-row-panel",
+      "representation_strategy": "Step 3 holds three sibling sub-groups (first, second, third party) with all 25 categories and no vendor slots.",
+      "adaptation_ids": [
+        "adapt-003"
+      ]
+    },
+    {
+      "id": "mapping-309",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-005",
+      "component_pattern_id": "cp-lane-columns",
+      "representation_strategy": "Step 6 shows two parallel groups, one-to-one and one-to-many; activities without tools still appear; no inbound/outbound framing.",
+      "adaptation_ids": [
+        "adapt-004"
+      ]
+    },
+    {
+      "id": "mapping-310",
+      "target_type": "layout_requirement",
+      "target_id": "layout-req-006",
+      "component_pattern_id": "cp-stage-staircase",
+      "representation_strategy": "Step 4 places ordered awareness stages and peer tiers side by side with no connector or alignment implying a stage-to-tier mapping; no numeric scores.",
+      "adaptation_ids": [
+        "adapt-006"
+      ]
+    },
+    {
+      "id": "mapping-311",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-001",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-312",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-002",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-313",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-003",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-314",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-004",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-315",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-005",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-316",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-006",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-317",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-007",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-318",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-008",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-319",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-009",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-320",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-010",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-321",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-011",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-322",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-012",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-323",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-013",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-324",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-014",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-325",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-015",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-326",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-016",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-327",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-017",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-328",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-018",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-329",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-019",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-330",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-020",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-331",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-021",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-332",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-022",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-333",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-023",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-334",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-024",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-335",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-025",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-336",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-026",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-337",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-027",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-338",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-028",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-339",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-029",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-340",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-030",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-341",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-031",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-342",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-032",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-343",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-033",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-344",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-034",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-345",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-035",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-346",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-036",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    },
+    {
+      "id": "mapping-347",
+      "target_type": "asset_requirement",
+      "target_id": "asset-req-037",
+      "component_pattern_id": "cp-logo-tile-grid",
+      "representation_strategy": "Optional logo in the tool tile; text-only fallback (Step 07 retrieves).",
+      "adaptation_ids": [
+        "adapt-010"
+      ]
+    }
+  ],
+  "adaptation_requirements": [
+    {
+      "id": "adapt-001",
+      "template_id": "template-6146b326e934",
+      "description": "Use six numbered modules only; render Slack Notification → Enroll in Sequences → CRM Tasks → Closed-Won as an unnumbered chain ending in the terminal card.",
+      "constraint_refs": [
+        "constraint-004",
+        "constraint-008"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-001",
+        "layout-req-002"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-002",
+      "template_id": "template-6146b326e934",
+      "description": "Do not reuse the reference start node, closed-lost card, or any outcome other than Closed-Won.",
+      "constraint_refs": [
+        "constraint-005"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-002"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-003",
+      "template_id": "template-6146b326e934",
+      "description": "Make Step 3 the largest module: three labelled chip-row panels (first-, second-, third-party; 8/6/11 chips). Replace checkmark glyphs with neutral markers so categories do not read as completed tasks; no vendor logos.",
+      "constraint_refs": [
+        "constraint-003",
+        "constraint-010"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-004",
+        "layout-req-009"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-004",
+      "template_id": "template-6146b326e934",
+      "description": "Reduce the four categorized columns to two lanes (One-to-One, One-to-Many) for Step 6; attach tool icons to their own activity row; activities without tools show no tool and no placeholder.",
+      "constraint_refs": [
+        "constraint-007",
+        "constraint-003"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-005",
+        "layout-req-003"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-005",
+      "template_id": "template-6146b326e934",
+      "description": "Add a CRM hub treatment to Step 5: converge connectors from Steps 1–4 into the CRM Records element with one annotation, plus an onward connector to Step 6.",
+      "constraint_refs": [
+        "constraint-011"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-007"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-006",
+      "template_id": "template-6146b326e934",
+      "description": "Combine staircase and tier stack in one Step 4 module side by side with the relationship note; no lines or alignment between individual stages and tiers; drop reference logos except the single HubSpot tile.",
+      "constraint_refs": [
+        "constraint-006",
+        "constraint-008"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-006"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-007",
+      "template_id": "template-6146b326e934",
+      "description": "Replace the reference title, breadcrumb, header icon box and creator footer with this run's title, subtitle and optionality note; no footer identity or logo.",
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-003"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-008"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-008",
+      "template_id": "template-6146b326e934",
+      "description": "Keep the serpentine grid only if numbered order stays unambiguous; every step transition gets a directional dashed connector.",
+      "constraint_refs": [
+        "constraint-004"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-001",
+        "layout-req-010"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-009",
+      "template_id": "template-6146b326e934",
+      "description": "Pair HubSpot and Salesforce in a paired mini-card with the either/or marker in Step 5.",
+      "constraint_refs": [
+        "constraint-011"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-007"
+      ],
+      "changes_content": false
+    },
+    {
+      "id": "adapt-010",
+      "template_id": "template-6146b326e934",
+      "description": "Logo tiles show the name beneath every logo; when Step 07 finds no approved logo, the tile shows the text label only. Repeated tools get a tile in every step.",
+      "constraint_refs": [
+        "constraint-001",
+        "constraint-002",
+        "constraint-003"
+      ],
+      "layout_requirement_refs": [
+        "layout-req-003"
+      ],
+      "changes_content": false
+    }
+  ],
+  "content_variant_recommendations": [
+    {
+      "content_item_id": "content-item-003",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-012",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-023",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-052",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-064",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-068",
+      "recommended": "preferred_text",
+      "reason": "Number badge already carries the step number; the \"Step N —\" variant would duplicate it.",
+      "variant_considered": "with_step_number"
+    },
+    {
+      "content_item_id": "content-item-106",
+      "recommended": "preferred_text",
+      "reason": "Short form fits a connector annotation; expanded variant kept as fallback if space allows.",
+      "variant_considered": "expanded"
+    }
+  ],
+  "density_assessment": [
+    {
+      "section_id": "section-header",
+      "architecture_density": "low",
+      "generated_items": 2,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-step-1",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-step-2",
+      "architecture_density": "medium",
+      "generated_items": 12,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-step-3",
+      "architecture_density": "very_high",
+      "generated_items": 33,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits_with_adaptation"
+    },
+    {
+      "section_id": "section-step-4",
+      "architecture_density": "medium",
+      "generated_items": 14,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-step-5",
+      "architecture_density": "low",
+      "generated_items": 5,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-step-6",
+      "architecture_density": "high",
+      "generated_items": 27,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits_with_adaptation"
+    },
+    {
+      "section_id": "section-downstream",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits"
+    },
+    {
+      "section_id": "section-root",
+      "architecture_density": "very_high",
+      "generated_items": 117,
+      "reference_capacity": "high (T01 shows ~100 labelled items legibly at native resolution)",
+      "assessment": "fits_with_adaptation"
+    }
+  ],
+  "preserved_constraints": [
+    {
+      "id": "constraint-001",
+      "statement": "Present every tool/platform as an optional alternative; never as a required stack or recommendation to use all.",
+      "template_handling": "adapt-007: Replace the reference title, breadcrumb, header icon box and creator footer with this run's title, subtitle and optionality note; no footer identity or logo."
+    },
+    {
+      "id": "constraint-002",
+      "statement": "Repeat a tool in each step it belongs to (e.g. Ocean.io in Steps 1 and 2); do not deduplicate across steps.",
+      "template_handling": "adapt-010: Logo tiles show the name beneath every logo; when Step 07 finds no approved logo, the tile shows the text label only. Repeated tools get a tile in every step."
+    },
+    {
+      "id": "constraint-003",
+      "statement": "Do not invent tool or vendor names; signal categories and parallel dialing / gifting remain without vendors.",
+      "template_handling": "adapt-003: Make Step 3 the largest module: three labelled chip-row panels (first-, second-, third-party; 8/6/11 chips). Replace checkmark glyphs with neutral markers so categories do not read as completed tasks; no vendor logos."
+    },
+    {
+      "id": "constraint-004",
+      "statement": "Number exactly six steps; downstream items and closed-won are unnumbered.",
+      "template_handling": "adapt-001: Use six numbered modules only; render Slack Notification → Enroll in Sequences → CRM Tasks → Closed-Won as an unnumbered chain ending in the terminal card."
+    },
+    {
+      "id": "constraint-005",
+      "statement": "Show only the path toward closed-won; no closed-lost branch.",
+      "template_handling": "adapt-002: Do not reuse the reference start node, closed-lost card, or any outcome other than Closed-Won."
+    },
+    {
+      "id": "constraint-006",
+      "statement": "No numerical scores or thresholds; no mapping between awareness stages and tiers.",
+      "template_handling": "adapt-006: Combine staircase and tier stack in one Step 4 module side by side with the relationship note; no lines or alignment between individual stages and tiers; drop reference logos except the single HubSpot tile."
+    },
+    {
+      "id": "constraint-007",
+      "statement": "Demand generation is one-to-one / one-to-many, not inbound/outbound; video outreach sits in one-to-many.",
+      "template_handling": "adapt-004: Reduce the four categorized columns to two lanes (One-to-One, One-to-Many) for Step 6; attach tool icons to their own activity row; activities without tools show no tool and no placeholder."
+    },
+    {
+      "id": "constraint-008",
+      "statement": "Use corrected orders: considering before selecting; sequence enrollment before CRM tasks; recap order for steps.",
+      "template_handling": "adapt-001: Use six numbered modules only; render Slack Notification → Enroll in Sequences → CRM Tasks → Closed-Won as an unnumbered chain ending in the terminal card."
+    },
+    {
+      "id": "constraint-009",
+      "statement": "Use Claygent (not Clay) in Step 2, Claude Code (not Claude), and X (formerly Twitter).",
+      "template_handling": "Carried unchanged; no template conflict."
+    },
+    {
+      "id": "constraint-010",
+      "statement": "Do not show excluded items as active content: Apollo, Pipedrive, Reddit ads, email opens as a category; website visits only under first-party.",
+      "template_handling": "adapt-003: Make Step 3 the largest module: three labelled chip-row panels (first-, second-, third-party; 8/6/11 chips). Replace checkmark glyphs with neutral markers so categories do not read as completed tasks; no vendor logos."
+    },
+    {
+      "id": "constraint-011",
+      "statement": "HubSpot and Salesforce are either/or CRM options, not both required.",
+      "template_handling": "adapt-005: Add a CRM hub treatment to Step 5: converge connectors from Steps 1–4 into the CRM Records element with one annotation, plus an onward connector to Step 6."
+    }
+  ],
+  "preserved_ambiguities": [
+    {
+      "id": "arch-ambiguity-001",
+      "step02_ref": "ambiguity-001",
+      "template_handling": "Gifting Campaigns and Parallel Dialing labelled with no tool or \"TBD\" text. The template adds no placeholder or invented detail."
+    },
+    {
+      "id": "arch-ambiguity-002",
+      "step02_ref": "ambiguity-002",
+      "template_handling": "Signal category labels only; no vendor names. The template adds no placeholder or invented detail."
+    },
+    {
+      "id": "arch-ambiguity-003",
+      "step02_ref": "ambiguity-003",
+      "template_handling": "Event Invites, Automated Outbound, Public Events and Video Outreach labelled with no tool text and no \"pending\" wording. The template adds no placeholder or invented detail."
+    },
+    {
+      "id": "arch-ambiguity-004",
+      "step02_ref": "ambiguity-004",
+      "template_handling": "Stage and tier labels only; no scoring criteria text. The template adds no placeholder or invented detail."
+    },
+    {
+      "id": "arch-ambiguity-005",
+      "step02_ref": "ambiguity-005",
+      "template_handling": "Slack Notification labelled without any trigger wording. The template adds no placeholder or invented detail."
+    },
+    {
+      "id": "arch-ambiguity-006",
+      "step02_ref": "ambiguity-006",
+      "template_handling": "HubSpot chip in Step 4 carries its name only; no function described. The template adds no placeholder or invented detail."
+    }
+  ],
+  "animation_reference_handoff": [
+    {
+      "status": "none_available",
+      "note": "references/animation-examples/ does not exist; nothing to hand off to Step 09."
+    }
+  ],
+  "coverage_assessment": {
+    "required_targets": 301,
+    "mapped_required_targets": 301,
+    "unmapped_required": [],
+    "optional_targets_mapped": {
+      "assets": 37,
+      "optional_content_items": 9
+    },
+    "duplicate_target_mappings": []
+  },
+  "validation": {
+    "report_path": "06-validation-report.json",
+    "semantic_visual_checks": [
+      {
+        "id": "S01",
+        "name": "Upstream Step 03/04/05 artifacts unchanged",
+        "result": "pass"
+      },
+      {
+        "id": "S02",
+        "name": "Reference files unmodified (fingerprints still match discovery)",
+        "result": "pass"
+      },
+      {
+        "id": "S03",
+        "name": "Every required section, node, connection, content item and mandatory layout requirement mapped exactly once",
+        "result": "pass"
+      },
+      {
+        "id": "S04",
+        "name": "No reference-sourced names or claims enter mappings/design direction (Apollo, Reddit, Closed-Lost, creator/company names)",
+        "result": "pass"
+      },
+      {
+        "id": "S05",
+        "name": "Design direction has no coordinates, pixel values, hex colors or SVG",
+        "result": "pass"
+      },
+      {
+        "id": "S06",
+        "name": "Selected template is evaluated, eligible and highly/fully compatible; every analyzed template evaluated",
+        "result": "pass"
+      },
+      {
+        "id": "S07",
+        "name": "Adaptations never change approved copy; only preferred_text used in mappings",
+        "result": "pass"
+      },
+      {
+        "id": "S08",
+        "name": "All 11 constraints and 6 ambiguities carried",
+        "result": "pass"
+      },
+      {
+        "id": "S09",
+        "name": "No connector mapped between stages and tiers or from demand-gen activities to Closed-Won",
+        "result": "pass"
+      },
+      {
+        "id": "S10",
+        "name": "Ineligible candidates have recorded mandatory conflicts or incompleteness",
+        "result": "pass"
+      },
+      {
+        "id": "V01",
+        "name": "Visual inspection of all 8 unique references (T01, T02, T03, T05, T06, T07, T08, T09)",
+        "result": "pass"
+      },
+      {
+        "id": "V02",
+        "name": "T04 identified as a byte-duplicate of T03, not profiled separately",
+        "result": "pass"
+      },
+      {
+        "id": "V03",
+        "name": "Qualitative fit of each candidate against the requirement profile",
+        "result": "pass"
+      },
+      {
+        "id": "V04",
+        "name": "Selected reference patterns cover each mandatory layout requirement with adaptation",
+        "result": "pass"
+      }
+    ],
+    "unexecuted": [
+      {
+        "id": "N01",
+        "reason": "Belongs to Steps 08 and 10."
+      },
+      {
+        "id": "N02",
+        "reason": "Belongs to Step 07."
+      }
+    ],
+    "overall": "pass",
+    "deterministic": {
+      "valid": true,
+      "errors": [],
+      "exit_code": 0
+    }
+  },
+  "warnings": [
+    "T04-comparison.png is a byte-duplicate of T03-cheatsheet.png; its filename suggests a different template may have been intended.",
+    "T09-branching-workflow.png appears cropped at the bottom and blurry; it was evaluated only on its visible portion."
+  ],
+  "errors": []
+}

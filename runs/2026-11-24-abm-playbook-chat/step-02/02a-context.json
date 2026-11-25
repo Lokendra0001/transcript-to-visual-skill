@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02A-context-understanding",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "context": {
+    "primary_subject": "Our 6-Step ABM Playbook",
+    "domain": "account-based marketing (ABM) / B2B go-to-market",
+    "discussion_purpose": "Define an ABM playbook that explains the entire process from identifying accounts to closing deals, with optional supporting tools per step.",
+    "objectives": [
+      "Explain the full ABM process from identifying accounts to closing deals.",
+      "Define six numbered steps: TAM and stakeholder mapping; AI account research and enrichment; track the signals; Score + Tier Accounts; CRM components; demand generation.",
+      "List supporting technology options per step without implying a mandatory software stack.",
+      "Show unnumbered downstream activities (Slack notification, enroll in sequences, CRM tasks) leading to the closed-won outcome."
+    ],
+    "problems": [],
+    "proposals": [
+      "Name the deliverable \"Our 6-Step ABM Playbook\"."
+    ],
+    "existing_systems": [
+      "A GTM framework discussed previously (referenced for comparison only)."
+    ],
+    "outcomes": [
+      "Speaker 2 will prepare the documentation."
+    ],
+    "intended_audience": null,
+    "independent_subjects": [
+      "Personal logistics (weekend, lunch, invoice, delivery, car service) — excluded."
+    ],
+    "material_limitations": [
+      "Speaker identities and roles are not named.",
+      "Vendors for signal categories, and tools for several demand-generation activities, are explicitly not finalized.",
+      "Numerical scoring thresholds and an awareness-to-tier mapping are explicitly undefined."
+    ],
+    "discussion_order_note": "Steps were discussed out of order (6 before 4 and 5); the recap (segment-205 to segment-219) is the authoritative sequence.",
+    "summary": "Two speakers define a six-step ABM playbook, the tools that can optionally support each step, a three-way signal taxonomy, awareness stages and account tiers, a one-to-one / one-to-many demand-generation split, and downstream activities ending at closed-won. Multiple corrections and exclusions are stated explicitly.",
+    "source_segment_ids": [
+      "segment-013",
+      "segment-015",
+      "segment-017",
+      "segment-019",
+      "segment-189",
+      "segment-205",
+      "segment-206",
+      "segment-207",
+      "segment-208",
+      "segment-209",
+      "segment-210",
+      "segment-211",
+      "segment-212",
+      "segment-213",
+      "segment-214",
+      "segment-215",
+      "segment-216",
+      "segment-217",
+      "segment-218",
+      "segment-219",
+      "segment-221",
+      "segment-224"
+    ]
+  },
+  "warnings": [],
+  "errors": []
+}

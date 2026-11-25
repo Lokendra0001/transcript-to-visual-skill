@@ -1,0 +1,148 @@
+[
+  {
+    "entity_id": "entity-006",
+    "name": "Sales Navigator",
+    "fallback": {
+      "type": "associated_brand_mark",
+      "parent_entity_id": "entity-025",
+      "parent_display_name": "LinkedIn",
+      "reason": "Sales Navigator is a LinkedIn product; use the verified associated LinkedIn mark with the exact product label after source research is exhausted."
+    }
+  },
+  {
+    "entity_id": "entity-014",
+    "name": "Claygent",
+    "fallback": {
+      "type": "associated_brand_mark",
+      "parent_entity_id": "entity-008",
+      "parent_display_name": "Clay",
+      "reason": "Claygent is a Clay product; use the verified associated Clay mark with the exact product label after source research is exhausted."
+    }
+  },
+  {
+    "entity_id": "entity-007",
+    "name": "AI Ark",
+    "url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-008",
+    "name": "Clay",
+    "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6778506d788ebf16fef48551_Clay%20primary%20logo.png",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-009",
+    "name": "Findymail",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=findymail.com",
+    "source_category": "verified_favicon_late_fallback",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-012",
+    "name": "Landbase",
+    "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-013",
+    "name": "Custom scrapers",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+    "source_category": "licensed_generic_icon",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-015",
+    "name": "Sumble",
+    "url": "https://sumble.com/img/sumble-wordmark.svg",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-017",
+    "name": "Tavily",
+    "url": "https://www.tavily.com/logos/tavily-full.svg",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-018",
+    "name": "Freckle",
+    "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-020",
+    "name": "BetterContact",
+    "url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+    "source_category": "official_site",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-021",
+    "name": "HubSpot",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-022",
+    "name": "Salesforce",
+    "url": "https://www.salesforce.com/news/wp-content/uploads/sites/3/2026/07/salesforce-favicon.svg?w=192",
+    "source_category": "official_media_library",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-024",
+    "name": "Gmail",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-026",
+    "name": "Meta",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-027",
+    "name": "Google",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-029",
+    "name": "YouTube",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-030",
+    "name": "X",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-031",
+    "name": "Webflow",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+    "source_category": "trusted_logo_repository",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  },
+  {
+    "entity_id": "entity-032",
+    "name": "Slack",
+    "url": "https://a.slack-edge.com/1f40066/marketing/img/nav/logo.svg",
+    "source_category": "official_brand_asset",
+    "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+  }
+]

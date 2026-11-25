@@ -1,0 +1,2 @@
+Nora: AcmeCloud will use Kubernetes and PostgreSQL.
+Lee: The OAuth 2.0 integration remains unchanged.

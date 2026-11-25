@@ -1,0 +1,2712 @@
+{
+  "step": "07-logo-retrieval",
+  "version": "1.0",
+  "status": "warning",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "sources": {
+    "architecture": "04-workflow-architecture.json",
+    "content": "05-content-writing.json",
+    "template_selection": "06-template-selection.json"
+  },
+  "network_capabilities": {
+    "web_search": "available and used",
+    "official_page_fetch": "available and used",
+    "bounded_http_download": "available and used through retrieve_assets.py",
+    "visual_inspection": "available; selected assets visually spot-checked",
+    "network_restrictions": "several public image endpoints returned HTTPError to the bounded downloader"
+  },
+  "retrieval_strategy": {
+    "priority": [
+      "authorized user assets (none supplied)",
+      "fresh official brand/product resources",
+      "trusted logo repository",
+      "approved generic-icon repository",
+      "authorized text label fallback"
+    ],
+    "prior_run_reuse": "none",
+    "product_identity_rule": "parent marks were never substituted for distinct products"
+  },
+  "asset_requirements": [
+    {
+      "id": "asset-req-001",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "Sales Navigator",
+      "entity_id": "entity-006",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-006"
+      ]
+    },
+    {
+      "id": "asset-req-002",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "AI Ark",
+      "entity_id": "entity-007",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-007"
+      ]
+    },
+    {
+      "id": "asset-req-003",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-03",
+      "asset_type": "brand_logo",
+      "subject": "Clay",
+      "entity_id": "entity-008",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-008"
+      ]
+    },
+    {
+      "id": "asset-req-004",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-04",
+      "asset_type": "brand_logo",
+      "subject": "Findymail",
+      "entity_id": "entity-009",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-009"
+      ]
+    },
+    {
+      "id": "asset-req-005",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-05",
+      "asset_type": "brand_logo",
+      "subject": "Ocean.io",
+      "entity_id": "entity-010",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-010"
+      ]
+    },
+    {
+      "id": "asset-req-006",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-06",
+      "asset_type": "brand_logo",
+      "subject": "DiscoLike",
+      "entity_id": "entity-011",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-011"
+      ]
+    },
+    {
+      "id": "asset-req-007",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-07",
+      "asset_type": "brand_logo",
+      "subject": "Landbase",
+      "entity_id": "entity-012",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-012"
+      ]
+    },
+    {
+      "id": "asset-req-008",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-08",
+      "asset_type": "generic_icon",
+      "subject": "Custom scrapers",
+      "entity_id": "entity-013",
+      "required": false,
+      "purpose": "Generic, non-branded icon; custom scrapers are not a vendor.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-013"
+      ]
+    },
+    {
+      "id": "asset-req-009",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "Ocean.io",
+      "entity_id": "entity-010",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-010"
+      ]
+    },
+    {
+      "id": "asset-req-010",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "Claygent",
+      "entity_id": "entity-014",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-014"
+      ]
+    },
+    {
+      "id": "asset-req-011",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-03",
+      "asset_type": "brand_logo",
+      "subject": "Sumble",
+      "entity_id": "entity-015",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-015"
+      ]
+    },
+    {
+      "id": "asset-req-012",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-04",
+      "asset_type": "brand_logo",
+      "subject": "Codex",
+      "entity_id": "entity-016",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-016"
+      ]
+    },
+    {
+      "id": "asset-req-013",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-05",
+      "asset_type": "brand_logo",
+      "subject": "Tavily",
+      "entity_id": "entity-017",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-017"
+      ]
+    },
+    {
+      "id": "asset-req-014",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-06",
+      "asset_type": "brand_logo",
+      "subject": "Freckle",
+      "entity_id": "entity-018",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-018"
+      ]
+    },
+    {
+      "id": "asset-req-015",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-07",
+      "asset_type": "brand_logo",
+      "subject": "Claude Code",
+      "entity_id": "entity-019",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-019"
+      ]
+    },
+    {
+      "id": "asset-req-016",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-08",
+      "asset_type": "brand_logo",
+      "subject": "Findymail",
+      "entity_id": "entity-009",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-009"
+      ]
+    },
+    {
+      "id": "asset-req-017",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-09",
+      "asset_type": "brand_logo",
+      "subject": "BetterContact",
+      "entity_id": "entity-020",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-020"
+      ]
+    },
+    {
+      "id": "asset-req-018",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-10",
+      "asset_type": "brand_logo",
+      "subject": "AI Ark",
+      "entity_id": "entity-007",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-007"
+      ]
+    },
+    {
+      "id": "asset-req-019",
+      "target_scope": "node",
+      "target_id": "node-s4-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-020",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-021",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "Salesforce",
+      "entity_id": "entity-022",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-022"
+      ]
+    },
+    {
+      "id": "asset-req-022",
+      "target_scope": "node",
+      "target_id": "node-s6-007-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "Gmail",
+      "entity_id": "entity-024",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-024"
+      ]
+    },
+    {
+      "id": "asset-req-023",
+      "target_scope": "node",
+      "target_id": "node-s6-010-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-024",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "LinkedIn",
+      "entity_id": "entity-025",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-025"
+      ]
+    },
+    {
+      "id": "asset-req-025",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "Meta",
+      "entity_id": "entity-026",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-026"
+      ]
+    },
+    {
+      "id": "asset-req-026",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-03",
+      "asset_type": "brand_logo",
+      "subject": "Google",
+      "entity_id": "entity-027",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-027"
+      ]
+    },
+    {
+      "id": "asset-req-027",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "YouTube",
+      "entity_id": "entity-029",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-029"
+      ]
+    },
+    {
+      "id": "asset-req-028",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "LinkedIn",
+      "entity_id": "entity-025",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-025"
+      ]
+    },
+    {
+      "id": "asset-req-029",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-03",
+      "asset_type": "brand_logo",
+      "subject": "X",
+      "entity_id": "entity-030",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-030"
+      ]
+    },
+    {
+      "id": "asset-req-030",
+      "target_scope": "node",
+      "target_id": "node-s6-016-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "Webflow",
+      "entity_id": "entity-031",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-031"
+      ]
+    },
+    {
+      "id": "asset-req-031",
+      "target_scope": "node",
+      "target_id": "node-s6-018-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "LinkedIn",
+      "entity_id": "entity-025",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-025"
+      ]
+    },
+    {
+      "id": "asset-req-032",
+      "target_scope": "node",
+      "target_id": "node-ds-1-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "Slack",
+      "entity_id": "entity-032",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-032"
+      ]
+    },
+    {
+      "id": "asset-req-033",
+      "target_scope": "node",
+      "target_id": "node-ds-2-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-034",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-035",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "Salesforce",
+      "entity_id": "entity-022",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-022"
+      ]
+    },
+    {
+      "id": "asset-req-036",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-01",
+      "asset_type": "brand_logo",
+      "subject": "HubSpot",
+      "entity_id": "entity-021",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-021"
+      ]
+    },
+    {
+      "id": "asset-req-037",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-02",
+      "asset_type": "brand_logo",
+      "subject": "Salesforce",
+      "entity_id": "entity-022",
+      "required": false,
+      "purpose": "Official logo/wordmark to retrieve in Step 07 from approved sources only.",
+      "fallback": "Text label only; never invent or approximate a logo.",
+      "source_refs": [
+        "entity-022"
+      ]
+    }
+  ],
+  "entity_resolutions": [
+    {
+      "entity_id": "entity-006",
+      "approved_display_name": "Sales Navigator",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-1",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "no product-specific standalone logo located in official LinkedIn trademark resources"
+    },
+    {
+      "entity_id": "entity-007",
+      "approved_display_name": "AI Ark",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-2",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-001",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-008",
+      "approved_display_name": "Clay",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-3",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-002",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-009",
+      "approved_display_name": "Findymail",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-4",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-010",
+      "approved_display_name": "Ocean.io",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-5",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-011",
+      "approved_display_name": "DiscoLike",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-6",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official wordmark and favicon downloads returned HTTPError"
+    },
+    {
+      "entity_id": "entity-012",
+      "approved_display_name": "Landbase",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-7",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-003",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-013",
+      "approved_display_name": "Custom scrapers",
+      "asset_type": "generic_icon",
+      "unique_asset_request_id": "asset-request-8",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-004",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-014",
+      "approved_display_name": "Claygent",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-9",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official Clay sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-015",
+      "approved_display_name": "Sumble",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-10",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-005",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-016",
+      "approved_display_name": "Codex",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-11",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official OpenAI sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-017",
+      "approved_display_name": "Tavily",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-12",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-006",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-018",
+      "approved_display_name": "Freckle",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-13",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-007",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-019",
+      "approved_display_name": "Claude Code",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-14",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "official Anthropic sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-020",
+      "approved_display_name": "BetterContact",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-15",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-008",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-16",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-009",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-022",
+      "approved_display_name": "Salesforce",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-17",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-024",
+      "approved_display_name": "Gmail",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-18",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-010",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-025",
+      "approved_display_name": "LinkedIn",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-19",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-026",
+      "approved_display_name": "Meta",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-20",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-011",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-027",
+      "approved_display_name": "Google",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-21",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-012",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-029",
+      "approved_display_name": "YouTube",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-22",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-013",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-030",
+      "approved_display_name": "X",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-23",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-014",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-031",
+      "approved_display_name": "Webflow",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-24",
+      "resolution": "selected_verified_asset",
+      "selected_asset_id": "asset-015",
+      "product_vs_parent": {
+        "parent_logo_used": false
+      }
+    },
+    {
+      "entity_id": "entity-032",
+      "approved_display_name": "Slack",
+      "asset_type": "brand_logo",
+      "unique_asset_request_id": "asset-request-25",
+      "resolution": "text_label_fallback",
+      "selected_asset_id": null,
+      "product_vs_parent": {
+        "parent_logo_used": false
+      },
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    }
+  ],
+  "unique_asset_requests": [
+    {
+      "id": "asset-request-1",
+      "entity_id": "entity-006",
+      "canonical_entity_name": "Sales Navigator",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-001"
+      ]
+    },
+    {
+      "id": "asset-request-2",
+      "entity_id": "entity-007",
+      "canonical_entity_name": "AI Ark",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-002",
+        "asset-req-018"
+      ]
+    },
+    {
+      "id": "asset-request-3",
+      "entity_id": "entity-008",
+      "canonical_entity_name": "Clay",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-003"
+      ]
+    },
+    {
+      "id": "asset-request-4",
+      "entity_id": "entity-009",
+      "canonical_entity_name": "Findymail",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-004",
+        "asset-req-016"
+      ]
+    },
+    {
+      "id": "asset-request-5",
+      "entity_id": "entity-010",
+      "canonical_entity_name": "Ocean.io",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-005",
+        "asset-req-009"
+      ]
+    },
+    {
+      "id": "asset-request-6",
+      "entity_id": "entity-011",
+      "canonical_entity_name": "DiscoLike",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-006"
+      ]
+    },
+    {
+      "id": "asset-request-7",
+      "entity_id": "entity-012",
+      "canonical_entity_name": "Landbase",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-007"
+      ]
+    },
+    {
+      "id": "asset-request-8",
+      "entity_id": "entity-013",
+      "canonical_entity_name": "Custom scrapers",
+      "asset_type": "generic_icon",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-008"
+      ]
+    },
+    {
+      "id": "asset-request-9",
+      "entity_id": "entity-014",
+      "canonical_entity_name": "Claygent",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-010"
+      ]
+    },
+    {
+      "id": "asset-request-10",
+      "entity_id": "entity-015",
+      "canonical_entity_name": "Sumble",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-011"
+      ]
+    },
+    {
+      "id": "asset-request-11",
+      "entity_id": "entity-016",
+      "canonical_entity_name": "Codex",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-012"
+      ]
+    },
+    {
+      "id": "asset-request-12",
+      "entity_id": "entity-017",
+      "canonical_entity_name": "Tavily",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-013"
+      ]
+    },
+    {
+      "id": "asset-request-13",
+      "entity_id": "entity-018",
+      "canonical_entity_name": "Freckle",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-014"
+      ]
+    },
+    {
+      "id": "asset-request-14",
+      "entity_id": "entity-019",
+      "canonical_entity_name": "Claude Code",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-015"
+      ]
+    },
+    {
+      "id": "asset-request-15",
+      "entity_id": "entity-020",
+      "canonical_entity_name": "BetterContact",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-017"
+      ]
+    },
+    {
+      "id": "asset-request-16",
+      "entity_id": "entity-021",
+      "canonical_entity_name": "HubSpot",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-019",
+        "asset-req-020",
+        "asset-req-023",
+        "asset-req-033",
+        "asset-req-034",
+        "asset-req-036"
+      ]
+    },
+    {
+      "id": "asset-request-17",
+      "entity_id": "entity-022",
+      "canonical_entity_name": "Salesforce",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-021",
+        "asset-req-035",
+        "asset-req-037"
+      ]
+    },
+    {
+      "id": "asset-request-18",
+      "entity_id": "entity-024",
+      "canonical_entity_name": "Gmail",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-022"
+      ]
+    },
+    {
+      "id": "asset-request-19",
+      "entity_id": "entity-025",
+      "canonical_entity_name": "LinkedIn",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-024",
+        "asset-req-028",
+        "asset-req-031"
+      ]
+    },
+    {
+      "id": "asset-request-20",
+      "entity_id": "entity-026",
+      "canonical_entity_name": "Meta",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-025"
+      ]
+    },
+    {
+      "id": "asset-request-21",
+      "entity_id": "entity-027",
+      "canonical_entity_name": "Google",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-026"
+      ]
+    },
+    {
+      "id": "asset-request-22",
+      "entity_id": "entity-029",
+      "canonical_entity_name": "YouTube",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-027"
+      ]
+    },
+    {
+      "id": "asset-request-23",
+      "entity_id": "entity-030",
+      "canonical_entity_name": "X",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-029"
+      ]
+    },
+    {
+      "id": "asset-request-24",
+      "entity_id": "entity-031",
+      "canonical_entity_name": "Webflow",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-030"
+      ]
+    },
+    {
+      "id": "asset-request-25",
+      "entity_id": "entity-032",
+      "canonical_entity_name": "Slack",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-032"
+      ]
+    }
+  ],
+  "retrieval_attempts": [
+    {
+      "id": "fresh-attempt-001",
+      "entity": "AI Ark",
+      "source_category": "official_site",
+      "url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/ai-ark.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-002",
+      "entity": "DiscoLike",
+      "source_category": "official_site",
+      "url": "https://discolike.com/images/logo-dark.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-003",
+      "entity": "Landbase",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/66b7d1ed300d381ca5ef090d_Logo%20Landbase.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/landbase.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-004",
+      "entity": "Sumble",
+      "source_category": "official_site",
+      "url": "https://sumble.com/img/sumble-wordmark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/sumble.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-005",
+      "entity": "Tavily",
+      "source_category": "official_site",
+      "url": "https://www.tavily.com/logos/tavily-full.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/tavily.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-006",
+      "entity": "BetterContact",
+      "source_category": "official_site",
+      "url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/bettercontact.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-007",
+      "entity": "Freckle",
+      "source_category": "official_site",
+      "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/freckle.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-008",
+      "entity": "Clay",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/clay.png",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-009",
+      "entity": "HubSpot",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/hubspot.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-010",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/salesforce.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-011",
+      "entity": "Gmail",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/gmail.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-012",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-013",
+      "entity": "Meta",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/meta.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-014",
+      "entity": "Google",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/google.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-015",
+      "entity": "YouTube",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/youtube.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-016",
+      "entity": "X",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/x.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-017",
+      "entity": "Webflow",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/webflow.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-018",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/slack.svg",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-019",
+      "entity": "Custom scrapers",
+      "source_category": "approved_icon_repository",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/custom-scrapers.svg",
+      "selected": true
+    },
+    {
+      "id": "fresh-attempt-020",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/salesforce",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-021",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/linkedin",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-022",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/slack",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-023",
+      "entity": "DiscoLike",
+      "source_category": "official_site_favicon_after_logo_block",
+      "url": "https://discolike.com/images/favicon-light.png",
+      "outcome": "rejected_or_blocked",
+      "detail": "HTTPError",
+      "original_path": null,
+      "selected": false
+    },
+    {
+      "id": "fresh-attempt-024",
+      "entity": "Landbase",
+      "source_category": "official_site_alternative_after_visual_review",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+      "outcome": "retrieved_and_verified",
+      "detail": null,
+      "original_path": "assets/originals/landbase.svg",
+      "selected": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-001",
+      "entity_id": "entity-007",
+      "display_name": "AI Ark",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/ai-ark.svg",
+      "prepared_path": "assets/logos/ai-ark.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 1763,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 84 20",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842",
+      "fingerprint_sha256": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+        "identity_source": "https://docs.ai-ark.com/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-002",
+      "entity_id": "entity-008",
+      "display_name": "Clay",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/clay.png",
+      "prepared_path": "assets/logos/clay.png",
+      "format": "png",
+      "mime": "image/png",
+      "byte_size": 267230,
+      "width": 512,
+      "height": 512,
+      "viewBox": null,
+      "aspect_ratio": 1.0,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6",
+      "fingerprint_sha256": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+        "identity_source": "https://www.clay.com/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-003",
+      "entity_id": "entity-012",
+      "display_name": "Landbase",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/landbase.svg",
+      "prepared_path": "assets/logos/landbase.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 3072,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 68 37",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022",
+      "fingerprint_sha256": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+        "identity_source": "https://www.landbase.com/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-004",
+      "entity_id": "entity-013",
+      "display_name": "Custom scrapers",
+      "variant": "generic_concept_icon",
+      "asset_type": "generic_icon",
+      "original_path": "assets/originals/custom-scrapers.svg",
+      "prepared_path": "assets/icons/custom-scrapers.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 431,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
+      "fingerprint_sha256": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
+      "provenance": {
+        "source_category": "approved_icon_repository",
+        "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+        "identity_source": "https://github.com/lucide-icons/lucide",
+        "license_status": "ISC licensed icon source"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-005",
+      "entity_id": "entity-015",
+      "display_name": "Sumble",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/sumble.svg",
+      "prepared_path": "assets/logos/sumble.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 1870,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 482.31 125.9",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76",
+      "fingerprint_sha256": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://sumble.com/img/sumble-wordmark.svg",
+        "identity_source": "https://sumble.com/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-006",
+      "entity_id": "entity-017",
+      "display_name": "Tavily",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/tavily.svg",
+      "prepared_path": "assets/logos/tavily.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 6969,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 362 109",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c",
+      "fingerprint_sha256": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://www.tavily.com/logos/tavily-full.svg",
+        "identity_source": "https://www.tavily.com/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-007",
+      "entity_id": "entity-018",
+      "display_name": "Freckle",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/freckle.png",
+      "prepared_path": "assets/logos/freckle.png",
+      "format": "png",
+      "mime": "image/png",
+      "byte_size": 64497,
+      "width": 640,
+      "height": 640,
+      "viewBox": null,
+      "aspect_ratio": 1.0,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+      "fingerprint_sha256": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+        "identity_source": "https://www.freckle.io/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-008",
+      "entity_id": "entity-020",
+      "display_name": "BetterContact",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/bettercontact.png",
+      "prepared_path": "assets/logos/bettercontact.png",
+      "format": "png",
+      "mime": "image/png",
+      "byte_size": 15537,
+      "width": 539,
+      "height": 101,
+      "viewBox": null,
+      "aspect_ratio": 5.3366,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4",
+      "fingerprint_sha256": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4",
+      "provenance": {
+        "source_category": "official_site",
+        "source_url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+        "identity_source": "https://bettercontact.rocks/",
+        "license_status": "unknown \u2014 trademark of owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable-with-limitations"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-009",
+      "entity_id": "entity-021",
+      "display_name": "HubSpot",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/hubspot.svg",
+      "prepared_path": "assets/logos/hubspot.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 663,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9",
+      "fingerprint_sha256": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-010",
+      "entity_id": "entity-024",
+      "display_name": "Gmail",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/gmail.svg",
+      "prepared_path": "assets/logos/gmail.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 339,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f",
+      "fingerprint_sha256": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-011",
+      "entity_id": "entity-026",
+      "display_name": "Meta",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/meta.svg",
+      "prepared_path": "assets/logos/meta.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 1324,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+      "fingerprint_sha256": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-012",
+      "entity_id": "entity-027",
+      "display_name": "Google",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/google.svg",
+      "prepared_path": "assets/logos/google.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 457,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01",
+      "fingerprint_sha256": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-013",
+      "entity_id": "entity-029",
+      "display_name": "YouTube",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/youtube.svg",
+      "prepared_path": "assets/logos/youtube.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 459,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "fingerprint_sha256": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-014",
+      "entity_id": "entity-030",
+      "display_name": "X",
+      "variant": "icon_mark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/x.svg",
+      "prepared_path": "assets/logos/x.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 299,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "fingerprint_sha256": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    },
+    {
+      "id": "asset-015",
+      "entity_id": "entity-031",
+      "display_name": "Webflow",
+      "variant": "wordmark",
+      "asset_type": "brand_logo",
+      "original_path": "assets/originals/webflow.svg",
+      "prepared_path": "assets/logos/webflow.svg",
+      "format": "svg",
+      "mime": "image/svg+xml",
+      "byte_size": 294,
+      "width": null,
+      "height": null,
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": null,
+      "transparency": "unknown",
+      "original_fingerprint_sha256": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a",
+      "fingerprint_sha256": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a",
+      "provenance": {
+        "source_category": "trusted_logo_repository",
+        "source_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+        "identity_source": "https://github.com/simple-icons/simple-icons",
+        "license_status": "unknown for brand marks; Simple Icons source is CC0 but trademark rights remain with the respective owner"
+      },
+      "retrieved_at": "2026-11-24T15:45:00+05:30",
+      "verification": {
+        "byte_check": "pass (verify_assets.py)",
+        "identity_status": "verified by source attribution",
+        "security_status": "pass",
+        "quality_assessment": "suitable"
+      },
+      "usage": {
+        "recommended_role": "small labeled tool tile",
+        "presentation_note": "Name remains visible; icon is not a standalone substitute for the label"
+      },
+      "normalization": [
+        "copied_verified_original"
+      ],
+      "cache_status": "new_entry"
+    }
+  ],
+  "asset_mappings": [
+    {
+      "asset_requirement_id": "asset-req-001",
+      "unique_asset_request_id": "asset-request-1",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-01",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-006",
+      "approved_display_name": "Sales Navigator",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-002",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-02",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-007",
+      "approved_display_name": "AI Ark",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-001",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-003",
+      "unique_asset_request_id": "asset-request-3",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-03",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-008",
+      "approved_display_name": "Clay",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-002",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-004",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-04",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-009",
+      "approved_display_name": "Findymail",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-005",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-05",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-010",
+      "approved_display_name": "Ocean.io",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-006",
+      "unique_asset_request_id": "asset-request-6",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-06",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-011",
+      "approved_display_name": "DiscoLike",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-007",
+      "unique_asset_request_id": "asset-request-7",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-07",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-012",
+      "approved_display_name": "Landbase",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-003",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-008",
+      "unique_asset_request_id": "asset-request-8",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-08",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-013",
+      "approved_display_name": "Custom scrapers",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-004",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-009",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-01",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-010",
+      "approved_display_name": "Ocean.io",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-010",
+      "unique_asset_request_id": "asset-request-9",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-02",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-014",
+      "approved_display_name": "Claygent",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-011",
+      "unique_asset_request_id": "asset-request-10",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-03",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-015",
+      "approved_display_name": "Sumble",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-005",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-012",
+      "unique_asset_request_id": "asset-request-11",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-04",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-016",
+      "approved_display_name": "Codex",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-013",
+      "unique_asset_request_id": "asset-request-12",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-05",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-017",
+      "approved_display_name": "Tavily",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-006",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-014",
+      "unique_asset_request_id": "asset-request-13",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-06",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-018",
+      "approved_display_name": "Freckle",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-007",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-015",
+      "unique_asset_request_id": "asset-request-14",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-07",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-019",
+      "approved_display_name": "Claude Code",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-016",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-08",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-009",
+      "approved_display_name": "Findymail",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-017",
+      "unique_asset_request_id": "asset-request-15",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-09",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-020",
+      "approved_display_name": "BetterContact",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-008",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-018",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-10",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-007",
+      "approved_display_name": "AI Ark",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-001",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-019",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s4-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-020",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-021",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-02",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-022",
+      "approved_display_name": "Salesforce",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-022",
+      "unique_asset_request_id": "asset-request-18",
+      "target_scope": "node",
+      "target_id": "node-s6-007-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-024",
+      "approved_display_name": "Gmail",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-010",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-023",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s6-010-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-024",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-01",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-025",
+      "approved_display_name": "LinkedIn",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-025",
+      "unique_asset_request_id": "asset-request-20",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-02",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-026",
+      "approved_display_name": "Meta",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-011",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-026",
+      "unique_asset_request_id": "asset-request-21",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-03",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-027",
+      "approved_display_name": "Google",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-012",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-027",
+      "unique_asset_request_id": "asset-request-22",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-029",
+      "approved_display_name": "YouTube",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-013",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-028",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-02",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-025",
+      "approved_display_name": "LinkedIn",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-029",
+      "unique_asset_request_id": "asset-request-23",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-03",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-030",
+      "approved_display_name": "X",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-014",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-030",
+      "unique_asset_request_id": "asset-request-24",
+      "target_scope": "node",
+      "target_id": "node-s6-016-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-031",
+      "approved_display_name": "Webflow",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-015",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-031",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-018-tool-01",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-025",
+      "approved_display_name": "LinkedIn",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-032",
+      "unique_asset_request_id": "asset-request-25",
+      "target_scope": "node",
+      "target_id": "node-ds-1-tool-01",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-032",
+      "approved_display_name": "Slack",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-033",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-2-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-034",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-035",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-02",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-022",
+      "approved_display_name": "Salesforce",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-036",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-01",
+      "required": false,
+      "fallback": null,
+      "entity_id": "entity-021",
+      "approved_display_name": "HubSpot",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": "asset-009",
+      "resolution_status": "resolved_with_asset",
+      "low_resolution_warning": false
+    },
+    {
+      "asset_requirement_id": "asset-req-037",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-02",
+      "required": false,
+      "fallback": "text_label",
+      "entity_id": "entity-022",
+      "approved_display_name": "Salesforce",
+      "presentation_requirements": "labeled tool tile; asset is optional and must not replace the approved name",
+      "selected_asset_id": null,
+      "resolution_status": "text_label_fallback",
+      "low_resolution_warning": false
+    }
+  ],
+  "fallback_assets": [
+    {
+      "entity_id": "entity-006",
+      "unique_asset_request_id": "asset-request-1",
+      "fallback": "text_label",
+      "text": "Sales Navigator",
+      "reason": "no product-specific standalone logo located in official LinkedIn trademark resources"
+    },
+    {
+      "entity_id": "entity-009",
+      "unique_asset_request_id": "asset-request-4",
+      "fallback": "text_label",
+      "text": "Findymail",
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-010",
+      "unique_asset_request_id": "asset-request-5",
+      "fallback": "text_label",
+      "text": "Ocean.io",
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-011",
+      "unique_asset_request_id": "asset-request-6",
+      "fallback": "text_label",
+      "text": "DiscoLike",
+      "reason": "official wordmark and favicon downloads returned HTTPError"
+    },
+    {
+      "entity_id": "entity-014",
+      "unique_asset_request_id": "asset-request-9",
+      "fallback": "text_label",
+      "text": "Claygent",
+      "reason": "official Clay sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-016",
+      "unique_asset_request_id": "asset-request-11",
+      "fallback": "text_label",
+      "text": "Codex",
+      "reason": "official OpenAI sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-019",
+      "unique_asset_request_id": "asset-request-14",
+      "fallback": "text_label",
+      "text": "Claude Code",
+      "reason": "official Anthropic sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-022",
+      "unique_asset_request_id": "asset-request-17",
+      "fallback": "text_label",
+      "text": "Salesforce",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-025",
+      "unique_asset_request_id": "asset-request-19",
+      "fallback": "text_label",
+      "text": "LinkedIn",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-032",
+      "unique_asset_request_id": "asset-request-25",
+      "fallback": "text_label",
+      "text": "Slack",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    }
+  ],
+  "unavailable_assets": [
+    {
+      "entity_id": "entity-006",
+      "display_name": "Sales Navigator",
+      "unique_asset_request_id": "asset-request-1",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "no product-specific standalone logo located in official LinkedIn trademark resources"
+    },
+    {
+      "entity_id": "entity-009",
+      "display_name": "Findymail",
+      "unique_asset_request_id": "asset-request-4",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-010",
+      "display_name": "Ocean.io",
+      "unique_asset_request_id": "asset-request-5",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official site returned 403 and no verified alternate was selected"
+    },
+    {
+      "entity_id": "entity-011",
+      "display_name": "DiscoLike",
+      "unique_asset_request_id": "asset-request-6",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official wordmark and favicon downloads returned HTTPError"
+    },
+    {
+      "entity_id": "entity-014",
+      "display_name": "Claygent",
+      "unique_asset_request_id": "asset-request-9",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official Clay sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-016",
+      "display_name": "Codex",
+      "unique_asset_request_id": "asset-request-11",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official OpenAI sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-019",
+      "display_name": "Claude Code",
+      "unique_asset_request_id": "asset-request-14",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "official Anthropic sources establish the product identity but no distinct product mark was established"
+    },
+    {
+      "entity_id": "entity-022",
+      "display_name": "Salesforce",
+      "unique_asset_request_id": "asset-request-17",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-025",
+      "display_name": "LinkedIn",
+      "unique_asset_request_id": "asset-request-19",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    },
+    {
+      "entity_id": "entity-032",
+      "display_name": "Slack",
+      "unique_asset_request_id": "asset-request-25",
+      "outcome": "authorized_text_label_fallback",
+      "reason": "two trusted-repository SVG download endpoints returned HTTPError"
+    }
+  ],
+  "cache_summary": {
+    "cache_file": "step-07/asset-cache.json",
+    "entries": 15,
+    "prior_entries_reused": 0,
+    "freshness": "all selected assets retrieved in this fresh execution"
+  },
+  "preserved_constraints": [],
+  "preserved_ambiguities": [
+    {
+      "id": "arch-ambiguity-001",
+      "step02_ref": "ambiguity-001",
+      "step03_ref": "class-ambiguity-001",
+      "description": "Supporting tools for parallel dialing and gifting campaigns are not finalized.",
+      "architecture_handling": "Gifting campaigns and parallel dialing are nodes with no tool nodes or asset slots.",
+      "affected_node_ids": [
+        "node-s6-008",
+        "node-s6-012"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    },
+    {
+      "id": "arch-ambiguity-002",
+      "step02_ref": "ambiguity-002",
+      "step03_ref": "class-ambiguity-002",
+      "description": "Vendors for signal categories are not finalized.",
+      "architecture_handling": "Signal categories have label slots only; no vendor nodes or logo assets.",
+      "affected_node_ids": [
+        "node-step-3"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    },
+    {
+      "id": "arch-ambiguity-003",
+      "step02_ref": "ambiguity-003",
+      "step03_ref": "class-ambiguity-003",
+      "description": "No tools were named for event invites, automated outbound, public events or video outreach; it is not stated whether tools are pending or unnecessary.",
+      "architecture_handling": "Event invites, automated outbound, public events and video outreach have no tool nodes and no \"pending\" marker.",
+      "affected_node_ids": [
+        "node-s6-009",
+        "node-s6-011",
+        "node-s6-014",
+        "node-s6-017"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    },
+    {
+      "id": "arch-ambiguity-004",
+      "step02_ref": "ambiguity-004",
+      "step03_ref": "class-ambiguity-004",
+      "description": "Scoring criteria and how accounts are assigned to tiers are not defined beyond the stage/tier lists.",
+      "architecture_handling": "Stages and tiers are lists only; no scoring-logic node or slot.",
+      "affected_node_ids": [
+        "node-step-4"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    },
+    {
+      "id": "arch-ambiguity-005",
+      "step02_ref": "ambiguity-005",
+      "step03_ref": "class-ambiguity-005",
+      "description": "What triggers the Slack notification after demand generation is not stated.",
+      "architecture_handling": "Slack notification follows demand generation with an unlabeled sequence connector; no trigger is invented.",
+      "affected_node_ids": [
+        "node-ds-1"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    },
+    {
+      "id": "arch-ambiguity-006",
+      "step02_ref": "ambiguity-006",
+      "step03_ref": "class-ambiguity-006",
+      "description": "The role of HubSpot in Step 4 is stated only as 'associated'.",
+      "architecture_handling": "HubSpot is an optional supporting association of Step 4 with no stated function.",
+      "affected_node_ids": [
+        "node-s4-tool-01"
+      ],
+      "invented_relationship": false,
+      "blocks_downstream": false
+    }
+  ],
+  "coverage_assessment": {
+    "asset_requirements": 37,
+    "mapped": 37,
+    "resolved_with_asset": 21,
+    "text_label_fallback": 16,
+    "required_unresolved": 0,
+    "unique_entities": 25,
+    "unique_assets_prepared": 15
+  },
+  "validation": {
+    "report_path": "07-validation-report.json",
+    "overall": "pass_with_warnings"
+  },
+  "warnings": [
+    "10 optional entities use authorized text-label fallback after fresh research/retrieval did not produce an acceptable verified asset",
+    "Brand trademark/license permission is not confirmed by source availability",
+    "Rendered-size legibility remains a Step 08/10 concern"
+  ],
+  "errors": []
+}

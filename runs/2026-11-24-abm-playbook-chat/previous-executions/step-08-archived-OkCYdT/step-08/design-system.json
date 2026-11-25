@@ -1,0 +1,119 @@
+{
+  "reference": {
+    "id": "template-6146b326e934",
+    "path": "references/templates/T01-modular-gtm.png",
+    "fingerprint": "21f363cb0a0f0f06acac33a4db624148792723524d34a79d8c2b0b8b4fcc282e"
+  },
+  "observations": {
+    "hierarchy": "Large title band; numbered modular panels; clear reading order through panel placement and dashed connectors.",
+    "palette_principles": "Warm off-white field, charcoal typography and borders, mint for active/success states, violet for alternate stage accents.",
+    "retained_characteristics": [
+      "high contrast hierarchy",
+      "rounded panels",
+      "number tabs",
+      "compact recognizable logo tiles",
+      "dotted background texture"
+    ],
+    "adapted_characteristics": [
+      "content-specific section count and density",
+      "single-column portrait reading order",
+      "no copied source copy, brand marks, or watermark"
+    ]
+  },
+  "palette": {
+    "background": "#FBF8F5",
+    "surface": "#FFFFFF",
+    "primary": "#7C4DDF",
+    "primary_light": "#EEE7FF",
+    "secondary": "#3FE4AA",
+    "accent": "#3FE4AA",
+    "text_primary": "#202124",
+    "text_secondary": "#4A4A4A",
+    "text_on_primary": "#FFFFFF",
+    "border": "#242424",
+    "connector": "#242424",
+    "success": "#3FE4AA",
+    "warning": "#F4C95D",
+    "error": "#EF476F"
+  },
+  "type_scale": {
+    "title": {
+      "size": 42,
+      "weight": "bold",
+      "line_height": 1.1
+    },
+    "subtitle": {
+      "size": 22,
+      "weight": "bold",
+      "line_height": 1.2
+    },
+    "heading": {
+      "size": 16,
+      "weight": "600",
+      "line_height": 1.3
+    },
+    "body": {
+      "size": 14,
+      "weight": "normal",
+      "line_height": 1.4
+    },
+    "caption": {
+      "size": 12,
+      "weight": "normal",
+      "line_height": 1.3
+    },
+    "label": {
+      "size": 12,
+      "weight": "500",
+      "line_height": 1.2
+    }
+  },
+  "spacing": {
+    "xs": 5,
+    "sm": 9,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48,
+    "section_gap": 28,
+    "card_padding": 16,
+    "group_padding": 20
+  },
+  "borders": {
+    "radius_sm": 6,
+    "radius_md": 10,
+    "radius_lg": 16,
+    "radius_xl": 24,
+    "width": 2,
+    "color": "#242424"
+  },
+  "connector_style": {
+    "stroke_width": 2,
+    "color": "#242424",
+    "arrow_size": 8,
+    "dash_pattern": "6 5",
+    "style": "orthogonal"
+  },
+  "logo_treatment": {
+    "max_width": 34,
+    "max_height": 34,
+    "padding": 4,
+    "border_radius": 7,
+    "background": "#FFFFFF",
+    "fallback_style": "rounded_label"
+  },
+  "shadows": {
+    "card": "0 1px 3px rgba(0,0,0,0.1)",
+    "elevated": "0 4px 6px rgba(0,0,0,0.1)",
+    "none": "none"
+  },
+  "fonts": {
+    "resolved_fonts": {
+      "sans": "Helvetica Neue",
+      "mono": "Menlo",
+      "serif": "Georgia"
+    },
+    "discovery_method": "fc-list",
+    "available_count": 672
+  }
+}

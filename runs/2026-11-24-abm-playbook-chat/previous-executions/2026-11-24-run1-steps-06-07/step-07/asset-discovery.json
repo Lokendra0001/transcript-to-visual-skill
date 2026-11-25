@@ -1,0 +1,564 @@
+{
+  "unique_asset_requests": [
+    {
+      "id": "asset-request-1",
+      "entity_id": "entity-006",
+      "canonical_entity_name": "Sales Navigator",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-001"
+      ]
+    },
+    {
+      "id": "asset-request-2",
+      "entity_id": "entity-007",
+      "canonical_entity_name": "AI Ark",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-002",
+        "asset-req-018"
+      ]
+    },
+    {
+      "id": "asset-request-3",
+      "entity_id": "entity-008",
+      "canonical_entity_name": "Clay",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-003"
+      ]
+    },
+    {
+      "id": "asset-request-4",
+      "entity_id": "entity-009",
+      "canonical_entity_name": "Findymail",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-004",
+        "asset-req-016"
+      ]
+    },
+    {
+      "id": "asset-request-5",
+      "entity_id": "entity-010",
+      "canonical_entity_name": "Ocean.io",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-005",
+        "asset-req-009"
+      ]
+    },
+    {
+      "id": "asset-request-6",
+      "entity_id": "entity-011",
+      "canonical_entity_name": "DiscoLike",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-006"
+      ]
+    },
+    {
+      "id": "asset-request-7",
+      "entity_id": "entity-012",
+      "canonical_entity_name": "Landbase",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-007"
+      ]
+    },
+    {
+      "id": "asset-request-8",
+      "entity_id": "entity-013",
+      "canonical_entity_name": "Custom scrapers",
+      "asset_type": "generic_icon",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-008"
+      ]
+    },
+    {
+      "id": "asset-request-9",
+      "entity_id": "entity-014",
+      "canonical_entity_name": "Claygent",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-010"
+      ]
+    },
+    {
+      "id": "asset-request-10",
+      "entity_id": "entity-015",
+      "canonical_entity_name": "Sumble",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-011"
+      ]
+    },
+    {
+      "id": "asset-request-11",
+      "entity_id": "entity-016",
+      "canonical_entity_name": "Codex",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-012"
+      ]
+    },
+    {
+      "id": "asset-request-12",
+      "entity_id": "entity-017",
+      "canonical_entity_name": "Tavily",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-013"
+      ]
+    },
+    {
+      "id": "asset-request-13",
+      "entity_id": "entity-018",
+      "canonical_entity_name": "Freckle",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-014"
+      ]
+    },
+    {
+      "id": "asset-request-14",
+      "entity_id": "entity-019",
+      "canonical_entity_name": "Claude Code",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-015"
+      ]
+    },
+    {
+      "id": "asset-request-15",
+      "entity_id": "entity-020",
+      "canonical_entity_name": "BetterContact",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-017"
+      ]
+    },
+    {
+      "id": "asset-request-16",
+      "entity_id": "entity-021",
+      "canonical_entity_name": "HubSpot",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-019",
+        "asset-req-020",
+        "asset-req-023",
+        "asset-req-033",
+        "asset-req-034",
+        "asset-req-036"
+      ]
+    },
+    {
+      "id": "asset-request-17",
+      "entity_id": "entity-022",
+      "canonical_entity_name": "Salesforce",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-021",
+        "asset-req-035",
+        "asset-req-037"
+      ]
+    },
+    {
+      "id": "asset-request-18",
+      "entity_id": "entity-024",
+      "canonical_entity_name": "Gmail",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-022"
+      ]
+    },
+    {
+      "id": "asset-request-19",
+      "entity_id": "entity-025",
+      "canonical_entity_name": "LinkedIn",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-024",
+        "asset-req-028",
+        "asset-req-031"
+      ]
+    },
+    {
+      "id": "asset-request-20",
+      "entity_id": "entity-026",
+      "canonical_entity_name": "Meta",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-025"
+      ]
+    },
+    {
+      "id": "asset-request-21",
+      "entity_id": "entity-027",
+      "canonical_entity_name": "Google",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-026"
+      ]
+    },
+    {
+      "id": "asset-request-22",
+      "entity_id": "entity-029",
+      "canonical_entity_name": "YouTube",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-027"
+      ]
+    },
+    {
+      "id": "asset-request-23",
+      "entity_id": "entity-030",
+      "canonical_entity_name": "X",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-029"
+      ]
+    },
+    {
+      "id": "asset-request-24",
+      "entity_id": "entity-031",
+      "canonical_entity_name": "Webflow",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-030"
+      ]
+    },
+    {
+      "id": "asset-request-25",
+      "entity_id": "entity-032",
+      "canonical_entity_name": "Slack",
+      "asset_type": "brand_logo",
+      "variant": null,
+      "requirement_ids": [
+        "asset-req-032"
+      ]
+    }
+  ],
+  "asset_mappings": [
+    {
+      "asset_requirement_id": "asset-req-001",
+      "unique_asset_request_id": "asset-request-1",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-002",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-003",
+      "unique_asset_request_id": "asset-request-3",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-004",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-04",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-005",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-05",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-006",
+      "unique_asset_request_id": "asset-request-6",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-06",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-007",
+      "unique_asset_request_id": "asset-request-7",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-07",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-008",
+      "unique_asset_request_id": "asset-request-8",
+      "target_scope": "node",
+      "target_id": "node-s1-tool-08",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-009",
+      "unique_asset_request_id": "asset-request-5",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-010",
+      "unique_asset_request_id": "asset-request-9",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-011",
+      "unique_asset_request_id": "asset-request-10",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-012",
+      "unique_asset_request_id": "asset-request-11",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-04",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-013",
+      "unique_asset_request_id": "asset-request-12",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-05",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-014",
+      "unique_asset_request_id": "asset-request-13",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-06",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-015",
+      "unique_asset_request_id": "asset-request-14",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-07",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-016",
+      "unique_asset_request_id": "asset-request-4",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-08",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-017",
+      "unique_asset_request_id": "asset-request-15",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-09",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-018",
+      "unique_asset_request_id": "asset-request-2",
+      "target_scope": "node",
+      "target_id": "node-s2-tool-10",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-019",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s4-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-020",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-021",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-s5-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-022",
+      "unique_asset_request_id": "asset-request-18",
+      "target_scope": "node",
+      "target_id": "node-s6-007-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-023",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-s6-010-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-024",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-025",
+      "unique_asset_request_id": "asset-request-20",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-026",
+      "unique_asset_request_id": "asset-request-21",
+      "target_scope": "node",
+      "target_id": "node-s6-013-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-027",
+      "unique_asset_request_id": "asset-request-22",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-028",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-029",
+      "unique_asset_request_id": "asset-request-23",
+      "target_scope": "node",
+      "target_id": "node-s6-015-tool-03",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-030",
+      "unique_asset_request_id": "asset-request-24",
+      "target_scope": "node",
+      "target_id": "node-s6-016-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-031",
+      "unique_asset_request_id": "asset-request-19",
+      "target_scope": "node",
+      "target_id": "node-s6-018-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-032",
+      "unique_asset_request_id": "asset-request-25",
+      "target_scope": "node",
+      "target_id": "node-ds-1-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-033",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-2-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-034",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-035",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-3-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-036",
+      "unique_asset_request_id": "asset-request-16",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-01",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    },
+    {
+      "asset_requirement_id": "asset-req-037",
+      "unique_asset_request_id": "asset-request-17",
+      "target_scope": "node",
+      "target_id": "node-ds-4-tool-02",
+      "required": false,
+      "fallback": "Text label only; never invent or approximate a logo."
+    }
+  ]
+}

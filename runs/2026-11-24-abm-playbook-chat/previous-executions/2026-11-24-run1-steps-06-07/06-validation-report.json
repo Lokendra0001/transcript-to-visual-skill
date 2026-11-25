@@ -1,0 +1,244 @@
+{
+  "step": "06-template-selection",
+  "contract_version": "1.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "overall": "pass",
+  "deterministic_checks": [
+    {
+      "id": "deterministic-template-selection",
+      "method": "python structural validator",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "deterministic-input",
+      "method": "validate_input.py",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "deterministic-after-embedding",
+      "method": "validate_selection.py rerun",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    }
+  ],
+  "semantic_and_visual_checks": [
+    {
+      "id": "S01",
+      "name": "Upstream Step 03/04/05 artifacts unchanged",
+      "method": "sha1 comparison before/after",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S02",
+      "name": "Reference files unmodified (fingerprints still match discovery)",
+      "method": "sha256 recomputation",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S03",
+      "name": "Every required section, node, connection, content item and mandatory layout requirement mapped exactly once",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S04",
+      "name": "No reference-sourced names or claims enter mappings/design direction (Apollo, Reddit, Closed-Lost, creator/company names)",
+      "method": "regex over handoff fields",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S05",
+      "name": "Design direction has no coordinates, pixel values, hex colors or SVG",
+      "method": "regex",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S06",
+      "name": "Selected template is evaluated, eligible and highly/fully compatible; every analyzed template evaluated",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S07",
+      "name": "Adaptations never change approved copy; only preferred_text used in mappings",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S08",
+      "name": "All 11 constraints and 6 ambiguities carried",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S09",
+      "name": "No connector mapped between stages and tiers or from demand-gen activities to Closed-Won",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "S10",
+      "name": "Ineligible candidates have recorded mandatory conflicts or incompleteness",
+      "method": "script assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "V01",
+      "name": "Visual inspection of all 8 unique references (T01, T02, T03, T05, T06, T07, T08, T09)",
+      "method": "Claude visual inspection",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "template-6146b326e934",
+        "template-9dd7b3cd2fea",
+        "template-6b84d46a7ece",
+        "template-be6e9abdfee5",
+        "template-11a4035c6411",
+        "template-da1453805dae",
+        "template-e74170bee43d",
+        "template-c78d4e160aeb"
+      ],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "V02",
+      "name": "T04 identified as a byte-duplicate of T03, not profiled separately",
+      "method": "discovery fingerprint + inspection of T03",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "template-fca04aa3dbc3"
+      ],
+      "issues": [
+        "Possible wrong file supplied for T04"
+      ],
+      "repair_attempts": []
+    },
+    {
+      "id": "V03",
+      "name": "Qualitative fit of each candidate against the requirement profile",
+      "method": "Claude qualitative evaluation",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "evaluation-001",
+        "evaluation-002",
+        "evaluation-003",
+        "evaluation-004",
+        "evaluation-005",
+        "evaluation-006",
+        "evaluation-007",
+        "evaluation-008"
+      ],
+      "issues": [],
+      "repair_attempts": []
+    },
+    {
+      "id": "V04",
+      "name": "Selected reference patterns cover each mandatory layout requirement with adaptation",
+      "method": "Claude review of mapping vs profile evidence",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "layout-req-001",
+        "layout-req-002",
+        "layout-req-003",
+        "layout-req-004",
+        "layout-req-005",
+        "layout-req-006"
+      ],
+      "issues": [],
+      "repair_attempts": []
+    }
+  ],
+  "unexecuted_checks": [
+    {
+      "id": "N01",
+      "name": "Rendering fit, legibility and connector overlap at final size",
+      "method": "requires rendered output",
+      "execution_status": "not_executed",
+      "reason": "Belongs to Steps 08 and 10."
+    },
+    {
+      "id": "N02",
+      "name": "Logo availability for the 37 optional asset slots",
+      "method": "requires Step 07 retrieval",
+      "execution_status": "not_executed",
+      "reason": "Belongs to Step 07."
+    }
+  ],
+  "summary": {
+    "selected": "T01-modular-gtm.png",
+    "assessments": {
+      "T01-modular-gtm.png": "highly_compatible",
+      "T07-gradient-workflow.png": "compatible_with_adaptations",
+      "T06-vertical-playbook.png": "compatible_with_adaptations",
+      "T05-composite-framework.png": "compatible_with_adaptations",
+      "T03-cheatsheet.png": "compatible_with_adaptations",
+      "T02-growth-stages.png": "weakly_compatible",
+      "T09-branching-workflow.png": "weakly_compatible",
+      "T08-timeline.png": "incompatible"
+    },
+    "mappings": 347,
+    "adaptations": 10,
+    "coverage": {
+      "required_targets": 301,
+      "mapped_required_targets": 301,
+      "unmapped_required": [],
+      "optional_targets_mapped": {
+        "assets": 37,
+        "optional_content_items": 9
+      },
+      "duplicate_target_mappings": []
+    }
+  }
+}

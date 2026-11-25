@@ -1,0 +1,10 @@
+{
+  "step": "08-visual-generation", "version": "1.0", "status": "incomplete", "run_id": "2026-11-24-abm-playbook-chat",
+  "sources": {"architecture": "04-workflow-architecture.json", "content": "05-content-writing.json", "template": "06-template-selection.json", "assets": "07-logo-retrieval.json"},
+  "design_system": {"path": "step-08/design-system.json"}, "generation": {"tool": "built-in AI image generation", "record": "step-08/generation-record.json", "preview": "step-08/preview.png", "sha256": "fa0be5b3866a670f25bc2dc5bdab2d1b1c233f328c4dd3fc9cdc24c644fc763a"},
+  "element_manifest": [], "asset_usage": {"source_occurrences": 37, "generated_asset_identities_verified": false},
+  "coverage_assessment": {"status": "incomplete", "note": "Complete item-by-item review not performed."},
+  "animation_handoff": {"available": false, "reason": "Flat raster image; no semantic element layers."},
+  "validation": {"report": "08-validation-report.json", "overall_valid": false},
+  "warnings": ["Step 07 asset visual inspection remains pending."], "errors": ["Dense labels need improved readability and complete content and asset verification."]
+}

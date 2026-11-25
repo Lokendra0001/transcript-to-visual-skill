@@ -1,0 +1,300 @@
+{
+  "assets": [
+    {
+      "target_id": "node-s1-tool-01",
+      "asset_id": "asset-request-1",
+      "prepared_path": "step-08/prepared-assets/asset-request-1.png",
+      "derivative": true,
+      "sha256": "6eec6803fecf427b5fcbc906466f22355a3357e67fd49e31cb49c4830bbd2154",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s1-tool-02",
+      "asset_id": "asset-request-2",
+      "prepared_path": "step-08/prepared-assets/asset-request-2.png",
+      "derivative": true,
+      "sha256": "adc06b59edda3530d13bff332eabea1bcb7090864aa9a3e6a1a2b32c37431c0b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s1-tool-03",
+      "asset_id": "asset-request-3",
+      "prepared_path": "assets/logos/asset-request-3.png",
+      "derivative": false,
+      "sha256": "45162440313ba3d1ddd9e579af1ad6725864b95416aeb4b0fec56226417ee750",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s1-tool-04",
+      "asset_id": "asset-request-4",
+      "prepared_path": "assets/logos/asset-request-4.png",
+      "derivative": false,
+      "sha256": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s1-tool-05",
+      "asset_id": "asset-request-5",
+      "prepared_path": "assets/logos/asset-request-5.jpg",
+      "derivative": false,
+      "sha256": "7001a04c2b8a259efe3f6d44b2713f66d5c54537173bab2a0cddc1fea964861f",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s1-tool-06",
+      "asset_id": "asset-request-6",
+      "prepared_path": "assets/logos/asset-request-6.jpg",
+      "derivative": false,
+      "sha256": "b2416a8834b3821c8b835db06d3205a1f647781415441dd6ab6f2c97c6d91171",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s1-tool-07",
+      "asset_id": "asset-request-7",
+      "prepared_path": "step-08/prepared-assets/asset-request-7.png",
+      "derivative": true,
+      "sha256": "bcfa294ad33f945a017f67fdfbc61efd1e5c0cff67f3f54ede8673cab6a9eead",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s1-tool-08",
+      "asset_id": "asset-request-8",
+      "prepared_path": "step-08/prepared-assets/asset-request-8.png",
+      "derivative": true,
+      "sha256": "93d182e2212805f5ce30b09a5a15fb06f2978260d18a542cfef4b6a1258ccf45",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s2-tool-01",
+      "asset_id": "asset-request-5",
+      "prepared_path": "assets/logos/asset-request-5.jpg",
+      "derivative": false,
+      "sha256": "7001a04c2b8a259efe3f6d44b2713f66d5c54537173bab2a0cddc1fea964861f",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-02",
+      "asset_id": "asset-request-9",
+      "prepared_path": "step-08/prepared-assets/asset-request-9.png",
+      "derivative": true,
+      "sha256": "d9249eec30bdb2ad6e38e497de5df079a07a875e17de9af9d256dd1ef1f28328",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s2-tool-03",
+      "asset_id": "asset-request-10",
+      "prepared_path": "step-08/prepared-assets/asset-request-10.png",
+      "derivative": true,
+      "sha256": "a713504a0c5d457b248cba29bd17e76b0929698f03b2d3e03bdc88ff6459f203",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s2-tool-04",
+      "asset_id": "asset-request-11",
+      "prepared_path": "assets/logos/asset-request-11.jpg",
+      "derivative": false,
+      "sha256": "c54357a6f0312b9fd556e728ac32f34a44bcc35664e3cdfa6625e8944ff051d2",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-05",
+      "asset_id": "asset-request-12",
+      "prepared_path": "step-08/prepared-assets/asset-request-12.png",
+      "derivative": true,
+      "sha256": "1ae1e9c9b1012e9545e63cf8dcc3fe7e06bf2e74b483337556adbe438fe53096",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s2-tool-06",
+      "asset_id": "asset-request-13",
+      "prepared_path": "assets/logos/asset-request-13.png",
+      "derivative": false,
+      "sha256": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-07",
+      "asset_id": "asset-request-14",
+      "prepared_path": "assets/logos/asset-request-14.jpg",
+      "derivative": false,
+      "sha256": "bae29e8c79e1bd33898820b783a113458008beaf15aa1bae3925769bc71abad0",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-08",
+      "asset_id": "asset-request-4",
+      "prepared_path": "assets/logos/asset-request-4.png",
+      "derivative": false,
+      "sha256": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-09",
+      "asset_id": "asset-request-15",
+      "prepared_path": "assets/logos/asset-request-15.png",
+      "derivative": false,
+      "sha256": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s2-tool-10",
+      "asset_id": "asset-request-2",
+      "prepared_path": "step-08/prepared-assets/asset-request-2.png",
+      "derivative": true,
+      "sha256": "adc06b59edda3530d13bff332eabea1bcb7090864aa9a3e6a1a2b32c37431c0b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s4-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s5-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s5-tool-02",
+      "asset_id": "asset-request-17",
+      "prepared_path": "step-08/prepared-assets/asset-request-17.png",
+      "derivative": true,
+      "sha256": "0ddc7e5151e067d459abb220dff4c0f445d6130235b5a044451dd69a3a27d02c",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-007-tool-01",
+      "asset_id": "asset-request-18",
+      "prepared_path": "step-08/prepared-assets/asset-request-18.png",
+      "derivative": true,
+      "sha256": "1e83c49d3ee2b5e355d3361cc5a7bdcabcb001f8fc3861548fb5495db6b1d3e6",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-010-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-013-tool-01",
+      "asset_id": "asset-request-19",
+      "prepared_path": "assets/logos/asset-request-19.jpg",
+      "derivative": false,
+      "sha256": "b16f6f21dbd748161911625ea5e53026412fe3d9c56c0b97f4566a027d5e58af",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s6-013-tool-02",
+      "asset_id": "asset-request-20",
+      "prepared_path": "step-08/prepared-assets/asset-request-20.png",
+      "derivative": true,
+      "sha256": "d292e4d772825c4f1c84c6db43f6b0410f493dd1bd8ff84b926c68bc5410a948",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-013-tool-03",
+      "asset_id": "asset-request-21",
+      "prepared_path": "step-08/prepared-assets/asset-request-21.png",
+      "derivative": true,
+      "sha256": "330a5bce0fa176b9050e311778348fbbacae935eb364cf064bd963dd23e788a4",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-015-tool-01",
+      "asset_id": "asset-request-22",
+      "prepared_path": "step-08/prepared-assets/asset-request-22.png",
+      "derivative": true,
+      "sha256": "d0d9d9ae92a008db57757f59e44ec806a932193fc5c22604f478fcb1a1634929",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-015-tool-02",
+      "asset_id": "asset-request-19",
+      "prepared_path": "assets/logos/asset-request-19.jpg",
+      "derivative": false,
+      "sha256": "b16f6f21dbd748161911625ea5e53026412fe3d9c56c0b97f4566a027d5e58af",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-s6-015-tool-03",
+      "asset_id": "asset-request-23",
+      "prepared_path": "step-08/prepared-assets/asset-request-23.png",
+      "derivative": true,
+      "sha256": "19d0b4d2f2e0fb18126eb4937ee9da6624ceb7a81d294382f74b73d5d4a30ad0",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-016-tool-01",
+      "asset_id": "asset-request-24",
+      "prepared_path": "step-08/prepared-assets/asset-request-24.png",
+      "derivative": true,
+      "sha256": "2f63c44045a8b73f30425b3a973a154f24193ba066dfa732c35af7951f32f58e",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-s6-018-tool-01",
+      "asset_id": "asset-request-19",
+      "prepared_path": "assets/logos/asset-request-19.jpg",
+      "derivative": false,
+      "sha256": "b16f6f21dbd748161911625ea5e53026412fe3d9c56c0b97f4566a027d5e58af",
+      "security_check": "raster source accepted"
+    },
+    {
+      "target_id": "node-ds-1-tool-01",
+      "asset_id": "asset-request-25",
+      "prepared_path": "step-08/prepared-assets/asset-request-25.png",
+      "derivative": true,
+      "sha256": "c6f6973f97ccd1a056187be857877579fdc75b5516a29e0415ba84277658a346",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-ds-2-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-ds-3-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-ds-3-tool-02",
+      "asset_id": "asset-request-17",
+      "prepared_path": "step-08/prepared-assets/asset-request-17.png",
+      "derivative": true,
+      "sha256": "0ddc7e5151e067d459abb220dff4c0f445d6130235b5a044451dd69a3a27d02c",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-ds-4-tool-01",
+      "asset_id": "asset-request-16",
+      "prepared_path": "step-08/prepared-assets/asset-request-16.png",
+      "derivative": true,
+      "sha256": "d9cfde3e4612b922cf2f212fcdbb00dac05ac9bc8453bd6cef2101408dd0946b",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    },
+    {
+      "target_id": "node-ds-4-tool-02",
+      "asset_id": "asset-request-17",
+      "prepared_path": "step-08/prepared-assets/asset-request-17.png",
+      "derivative": true,
+      "sha256": "0ddc7e5151e067d459abb220dff4c0f445d6130235b5a044451dd69a3a27d02c",
+      "security_check": "safe SVG parsed and rasterized to bounded PNG"
+    }
+  ]
+}

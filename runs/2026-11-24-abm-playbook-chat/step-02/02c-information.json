@@ -1,0 +1,2408 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02C-information-extraction",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "topics": [
+    {
+      "id": "topic-001",
+      "source_segment_ids": [
+        "segment-013",
+        "segment-015",
+        "segment-016",
+        "segment-189",
+        "segment-205"
+      ],
+      "evidence_status": "explicit",
+      "name": "Our 6-Step ABM Playbook",
+      "parent_topic_id": null,
+      "explanation": "Overall ABM playbook from identifying accounts to closing deals; six numbered steps plus downstream activities.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-001",
+        "entity-002",
+        "entity-003",
+        "entity-004"
+      ],
+      "fact_ids": [
+        "fact-001",
+        "fact-002"
+      ],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-002",
+      "source_segment_ids": [
+        "segment-017",
+        "segment-018",
+        "segment-019",
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-221",
+        "segment-222",
+        "segment-223"
+      ],
+      "evidence_status": "explicit",
+      "name": "Tool optionality policy",
+      "parent_topic_id": "topic-001",
+      "explanation": "Tools are alternatives / supporting technology options, not a mandatory stack; may repeat across steps; unfinalized names are not invented.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [
+        "fact-022",
+        "fact-023"
+      ],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-003",
+      "source_segment_ids": [
+        "segment-021",
+        "segment-023",
+        "segment-025",
+        "segment-027",
+        "segment-030",
+        "segment-031",
+        "segment-033",
+        "segment-207",
+        "segment-208"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 1 — TAM and stakeholder mapping",
+      "parent_topic_id": "topic-001",
+      "explanation": "Identify the total addressable market and relevant stakeholders within target accounts; eight supporting options.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-005",
+        "entity-006",
+        "entity-007",
+        "entity-008",
+        "entity-009",
+        "entity-010",
+        "entity-011",
+        "entity-012",
+        "entity-013"
+      ],
+      "fact_ids": [
+        "fact-003"
+      ],
+      "activity_ids": [
+        "activity-001"
+      ]
+    },
+    {
+      "id": "topic-004",
+      "source_segment_ids": [
+        "segment-039",
+        "segment-041",
+        "segment-043",
+        "segment-045",
+        "segment-047",
+        "segment-209",
+        "segment-210"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 2 — AI account research and enrichment",
+      "parent_topic_id": "topic-001",
+      "explanation": "AI-assisted research and enrichment of accounts; ten supporting tools.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-007",
+        "entity-008",
+        "entity-009",
+        "entity-010",
+        "entity-014",
+        "entity-015",
+        "entity-016",
+        "entity-017",
+        "entity-018",
+        "entity-019",
+        "entity-020"
+      ],
+      "fact_ids": [
+        "fact-004",
+        "fact-005"
+      ],
+      "activity_ids": [
+        "activity-002"
+      ]
+    },
+    {
+      "id": "topic-005",
+      "source_segment_ids": [
+        "segment-057",
+        "segment-059",
+        "segment-061",
+        "segment-211",
+        "segment-212"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 3 — Track the signals",
+      "parent_topic_id": "topic-001",
+      "explanation": "Track buying signals, engagement signals and account activity, categorized as first-, second- and third-party.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-033",
+        "entity-034",
+        "entity-035"
+      ],
+      "fact_ids": [
+        "fact-006",
+        "fact-007"
+      ],
+      "activity_ids": [
+        "activity-003"
+      ]
+    },
+    {
+      "id": "topic-006",
+      "source_segment_ids": [
+        "segment-064",
+        "segment-065",
+        "segment-069",
+        "segment-070",
+        "segment-071"
+      ],
+      "evidence_status": "explicit",
+      "name": "Third-party signals",
+      "parent_topic_id": "topic-005",
+      "explanation": "Eleven third-party signal categories.",
+      "importance": "secondary",
+      "entity_ids": [
+        "entity-033",
+        "entity-036",
+        "entity-037",
+        "entity-038",
+        "entity-039",
+        "entity-040",
+        "entity-041",
+        "entity-042",
+        "entity-043",
+        "entity-044",
+        "entity-045",
+        "entity-046"
+      ],
+      "fact_ids": [
+        "fact-008"
+      ],
+      "activity_ids": [
+        "activity-003"
+      ]
+    },
+    {
+      "id": "topic-007",
+      "source_segment_ids": [
+        "segment-079",
+        "segment-081",
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "name": "First-party signals",
+      "parent_topic_id": "topic-005",
+      "explanation": "Eight first-party signal categories.",
+      "importance": "secondary",
+      "entity_ids": [
+        "entity-034",
+        "entity-047",
+        "entity-048",
+        "entity-049",
+        "entity-050",
+        "entity-051",
+        "entity-052",
+        "entity-053",
+        "entity-054",
+        "entity-061"
+      ],
+      "fact_ids": [
+        "fact-009",
+        "fact-011"
+      ],
+      "activity_ids": [
+        "activity-003"
+      ]
+    },
+    {
+      "id": "topic-008",
+      "source_segment_ids": [
+        "segment-093",
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "name": "Second-party signals",
+      "parent_topic_id": "topic-005",
+      "explanation": "Six second-party signal categories.",
+      "importance": "secondary",
+      "entity_ids": [
+        "entity-035",
+        "entity-055",
+        "entity-056",
+        "entity-057",
+        "entity-058",
+        "entity-059",
+        "entity-060"
+      ],
+      "fact_ids": [
+        "fact-010",
+        "fact-012"
+      ],
+      "activity_ids": [
+        "activity-003"
+      ]
+    },
+    {
+      "id": "topic-009",
+      "source_segment_ids": [
+        "segment-153",
+        "segment-155",
+        "segment-161",
+        "segment-163",
+        "segment-167",
+        "segment-169",
+        "segment-213",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 4 — Score + Tier Accounts",
+      "parent_topic_id": "topic-001",
+      "explanation": "Five awareness stages and three account tiers; no numeric thresholds and no fixed mapping between them.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-021",
+        "entity-062",
+        "entity-063",
+        "entity-064",
+        "entity-065",
+        "entity-066",
+        "entity-067",
+        "entity-068",
+        "entity-069",
+        "entity-070",
+        "entity-071"
+      ],
+      "fact_ids": [
+        "fact-013",
+        "fact-014",
+        "fact-015"
+      ],
+      "activity_ids": [
+        "activity-004"
+      ]
+    },
+    {
+      "id": "topic-010",
+      "source_segment_ids": [
+        "segment-173",
+        "segment-175",
+        "segment-177",
+        "segment-179",
+        "segment-185",
+        "segment-215",
+        "segment-216"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 5 — CRM components",
+      "parent_topic_id": "topic-001",
+      "explanation": "HubSpot or Salesforce; CRM records informed by steps 1–4 and supporting demand generation.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-021",
+        "entity-022",
+        "entity-023",
+        "entity-072",
+        "entity-073"
+      ],
+      "fact_ids": [
+        "fact-016",
+        "fact-017",
+        "fact-018"
+      ],
+      "activity_ids": [
+        "activity-005"
+      ]
+    },
+    {
+      "id": "topic-011",
+      "source_segment_ids": [
+        "segment-107",
+        "segment-109",
+        "segment-217",
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "name": "Step 6 — Demand generation",
+      "parent_topic_id": "topic-001",
+      "explanation": "Demand generation organized as one-to-one and one-to-many (not inbound/outbound).",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [
+        "fact-018",
+        "fact-019"
+      ],
+      "activity_ids": [
+        "activity-006"
+      ]
+    },
+    {
+      "id": "topic-012",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-113",
+        "segment-115",
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "name": "One-to-one demand generation",
+      "parent_topic_id": "topic-011",
+      "explanation": "Four one-to-one activities.",
+      "importance": "secondary",
+      "entity_ids": [
+        "entity-021",
+        "entity-024"
+      ],
+      "fact_ids": [
+        "fact-012",
+        "fact-019"
+      ],
+      "activity_ids": [
+        "activity-006",
+        "activity-007",
+        "activity-008",
+        "activity-009",
+        "activity-010"
+      ]
+    },
+    {
+      "id": "topic-013",
+      "source_segment_ids": [
+        "segment-117",
+        "segment-121",
+        "segment-123",
+        "segment-125",
+        "segment-133",
+        "segment-137",
+        "segment-139",
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "name": "One-to-many demand generation",
+      "parent_topic_id": "topic-011",
+      "explanation": "Eight one-to-many activities.",
+      "importance": "secondary",
+      "entity_ids": [
+        "entity-025",
+        "entity-026",
+        "entity-027",
+        "entity-028",
+        "entity-029",
+        "entity-030",
+        "entity-031"
+      ],
+      "fact_ids": [
+        "fact-019",
+        "fact-020"
+      ],
+      "activity_ids": [
+        "activity-006",
+        "activity-011",
+        "activity-012",
+        "activity-013",
+        "activity-014",
+        "activity-015",
+        "activity-016",
+        "activity-017",
+        "activity-018"
+      ]
+    },
+    {
+      "id": "topic-014",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-189",
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "name": "Downstream activities and final outcome",
+      "parent_topic_id": "topic-001",
+      "explanation": "Unnumbered follow-up after demand generation: Slack notification, enroll in sequences, CRM tasks, then closed-won.",
+      "importance": "primary",
+      "entity_ids": [
+        "entity-021",
+        "entity-022",
+        "entity-032"
+      ],
+      "fact_ids": [
+        "fact-001",
+        "fact-021"
+      ],
+      "activity_ids": [
+        "activity-019",
+        "activity-020",
+        "activity-021",
+        "activity-022"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-001",
+      "source_segment_ids": [
+        "segment-013",
+        "segment-015",
+        "segment-016",
+        "segment-189"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Our 6-Step ABM Playbook",
+      "canonical_name": "Our 6-Step ABM Playbook",
+      "category": "framework",
+      "description": null,
+      "topic_ids": [
+        "topic-001"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-002",
+      "source_segment_ids": [
+        "segment-014",
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Previously discussed GTM framework",
+      "canonical_name": "Previously discussed GTM framework",
+      "category": "framework_reference",
+      "description": "Earlier GTM framework; the ABM playbook is similar but specifically ABM.",
+      "topic_ids": [
+        "topic-001"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "historical"
+    },
+    {
+      "id": "entity-003",
+      "source_segment_ids": [
+        "segment-013"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Speaker 1",
+      "canonical_name": "Speaker 1",
+      "category": "participant",
+      "description": "Leads the discussion and states playbook decisions; name and role not given.",
+      "topic_ids": [
+        "topic-001"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-004",
+      "source_segment_ids": [
+        "segment-014",
+        "segment-224"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Speaker 2",
+      "canonical_name": "Speaker 2",
+      "category": "participant",
+      "description": "Asks clarifying questions; will prepare the documentation; name and role not given.",
+      "topic_ids": [
+        "topic-001"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-005",
+      "source_segment_ids": [
+        "segment-022",
+        "segment-023"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Apollo",
+      "canonical_name": "Apollo",
+      "category": "tool",
+      "description": "Proposed for TAM mapping; explicitly excluded from this playbook.",
+      "topic_ids": [
+        "topic-003"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "excluded"
+    },
+    {
+      "id": "entity-006",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-030"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Sales Navigator",
+      "canonical_name": "Sales Navigator",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-003"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-007",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-030",
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "AI Ark",
+      "canonical_name": "AI Ark",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-003",
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-008",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-030",
+        "segment-040",
+        "segment-041"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Clay",
+      "canonical_name": "Clay",
+      "category": "tool",
+      "description": "Step 1 option; explicitly not the Step 2 tool (Claygent is).",
+      "topic_ids": [
+        "topic-003",
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-009",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-024",
+        "segment-030",
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Findymail",
+      "canonical_name": "Findymail",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-003",
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-010",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-030",
+        "segment-043",
+        "segment-050",
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Ocean.io",
+      "canonical_name": "Ocean.io",
+      "category": "tool",
+      "description": "Appears in Steps 1 and 2 with different purposes; must not be removed from Step 2.",
+      "topic_ids": [
+        "topic-003",
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-011",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-030",
+        "segment-031"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "DiscoLike",
+      "canonical_name": "DiscoLike",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-003"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-012",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-031"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Landbase",
+      "canonical_name": "Landbase",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-003"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-013",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-026",
+        "segment-027",
+        "segment-031"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Custom scrapers",
+      "canonical_name": "Custom scrapers",
+      "category": "tool",
+      "description": "Custom-built data collection tools (own scripts) used wherever required.",
+      "topic_ids": [
+        "topic-003"
+      ],
+      "aliases": [
+        "custom-built data collection tools"
+      ],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-014",
+      "source_segment_ids": [
+        "segment-041",
+        "segment-042",
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Claygent",
+      "canonical_name": "Claygent",
+      "category": "tool",
+      "description": "Step 2 tool; distinct from Clay.",
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-015",
+      "source_segment_ids": [
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Sumble",
+      "canonical_name": "Sumble",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-016",
+      "source_segment_ids": [
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Codex",
+      "canonical_name": "Codex",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-017",
+      "source_segment_ids": [
+        "segment-043",
+        "segment-044",
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Tavily",
+      "canonical_name": "Tavily",
+      "category": "tool",
+      "description": "Used for web research.",
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-018",
+      "source_segment_ids": [
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Freckle",
+      "canonical_name": "Freckle",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-019",
+      "source_segment_ids": [
+        "segment-045",
+        "segment-046",
+        "segment-047",
+        "segment-048"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Claude Code",
+      "canonical_name": "Claude Code",
+      "category": "tool",
+      "description": "Specifically Claude Code (not Claude).",
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-020",
+      "source_segment_ids": [
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "BetterContact",
+      "canonical_name": "BetterContact",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-004"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-021",
+      "source_segment_ids": [
+        "segment-114",
+        "segment-115",
+        "segment-171",
+        "segment-175",
+        "segment-196",
+        "segment-197",
+        "segment-198",
+        "segment-199",
+        "segment-201",
+        "segment-216"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "HubSpot",
+      "canonical_name": "HubSpot",
+      "category": "tool",
+      "description": "CRM/marketing platform associated with Steps 4, 5, manual outreach, sequence enrollment, CRM tasks and closed-won.",
+      "topic_ids": [
+        "topic-009",
+        "topic-010",
+        "topic-012",
+        "topic-014"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-022",
+      "source_segment_ids": [
+        "segment-175",
+        "segment-177",
+        "segment-198",
+        "segment-199",
+        "segment-201",
+        "segment-216"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Salesforce",
+      "canonical_name": "Salesforce",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-010",
+        "topic-014"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-023",
+      "source_segment_ids": [
+        "segment-174",
+        "segment-175"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Pipedrive",
+      "canonical_name": "Pipedrive",
+      "category": "tool",
+      "description": "Proposed CRM; excluded for this version.",
+      "topic_ids": [
+        "topic-010"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "excluded"
+    },
+    {
+      "id": "entity-024",
+      "source_segment_ids": [
+        "segment-112",
+        "segment-113"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Gmail",
+      "canonical_name": "Gmail",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-012"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-025",
+      "source_segment_ids": [
+        "segment-125",
+        "segment-133",
+        "segment-138",
+        "segment-139"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "LinkedIn",
+      "canonical_name": "LinkedIn",
+      "category": "platform",
+      "description": "Ad platform, social content platform and connection-request channel.",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-026",
+      "source_segment_ids": [
+        "segment-125"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Meta",
+      "canonical_name": "Meta",
+      "category": "platform",
+      "description": null,
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-027",
+      "source_segment_ids": [
+        "segment-125"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Google",
+      "canonical_name": "Google",
+      "category": "platform",
+      "description": null,
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-028",
+      "source_segment_ids": [
+        "segment-126",
+        "segment-127"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Reddit",
+      "canonical_name": "Reddit",
+      "category": "platform",
+      "description": "No Reddit ads in this version.",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "excluded"
+    },
+    {
+      "id": "entity-029",
+      "source_segment_ids": [
+        "segment-133"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "YouTube",
+      "canonical_name": "YouTube",
+      "category": "platform",
+      "description": null,
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-030",
+      "source_segment_ids": [
+        "segment-133",
+        "segment-134",
+        "segment-135"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "X",
+      "canonical_name": "X",
+      "category": "platform",
+      "description": "X, formerly Twitter; same platform.",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [
+        "Twitter"
+      ],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-031",
+      "source_segment_ids": [
+        "segment-136",
+        "segment-137"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Webflow",
+      "canonical_name": "Webflow",
+      "category": "tool",
+      "description": null,
+      "topic_ids": [
+        "topic-013"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-032",
+      "source_segment_ids": [
+        "segment-191",
+        "segment-194",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Slack",
+      "canonical_name": "Slack",
+      "category": "tool",
+      "description": "Named in the 'Slack notification' downstream activity.",
+      "topic_ids": [
+        "topic-014"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-033",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-062",
+        "segment-069",
+        "segment-070",
+        "segment-071"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Third-party signals",
+      "canonical_name": "Third-party signals",
+      "category": "signal_group",
+      "description": null,
+      "topic_ids": [
+        "topic-005",
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "count": 11
+    },
+    {
+      "id": "entity-034",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-067",
+        "segment-077",
+        "segment-085",
+        "segment-093"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "First-party signals",
+      "canonical_name": "First-party signals",
+      "category": "signal_group",
+      "description": null,
+      "topic_ids": [
+        "topic-005",
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "count": 8
+    },
+    {
+      "id": "entity-035",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-093",
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Second-party signals",
+      "canonical_name": "Second-party signals",
+      "category": "signal_group",
+      "description": null,
+      "topic_ids": [
+        "topic-005",
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "count": 6
+    },
+    {
+      "id": "entity-036",
+      "source_segment_ids": [
+        "segment-064",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Funding announcements",
+      "canonical_name": "Funding announcements",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 1
+    },
+    {
+      "id": "entity-037",
+      "source_segment_ids": [
+        "segment-065",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Search analytics",
+      "canonical_name": "Search analytics",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 2
+    },
+    {
+      "id": "entity-038",
+      "source_segment_ids": [
+        "segment-065",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "People data",
+      "canonical_name": "People data",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 3
+    },
+    {
+      "id": "entity-039",
+      "source_segment_ids": [
+        "segment-065",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Technographic signals",
+      "canonical_name": "Technographic signals",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 4
+    },
+    {
+      "id": "entity-040",
+      "source_segment_ids": [
+        "segment-064",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "News",
+      "canonical_name": "News",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 5
+    },
+    {
+      "id": "entity-041",
+      "source_segment_ids": [
+        "segment-065",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Firmographic data",
+      "canonical_name": "Firmographic data",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 6
+    },
+    {
+      "id": "entity-042",
+      "source_segment_ids": [
+        "segment-064",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Job openings",
+      "canonical_name": "Job openings",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 7
+    },
+    {
+      "id": "entity-043",
+      "source_segment_ids": [
+        "segment-069",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Web scraping",
+      "canonical_name": "Web scraping",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 8
+    },
+    {
+      "id": "entity-044",
+      "source_segment_ids": [
+        "segment-069",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Advertisement activity",
+      "canonical_name": "Advertisement activity",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 9
+    },
+    {
+      "id": "entity-045",
+      "source_segment_ids": [
+        "segment-069",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Social signals",
+      "canonical_name": "Social signals",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 10
+    },
+    {
+      "id": "entity-046",
+      "source_segment_ids": [
+        "segment-069",
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Competitive signals",
+      "canonical_name": "Competitive signals",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-006"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-033",
+      "list_order": 11
+    },
+    {
+      "id": "entity-047",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Event attendance",
+      "canonical_name": "Event attendance",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 1
+    },
+    {
+      "id": "entity-048",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "CRM activity",
+      "canonical_name": "CRM activity",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 2
+    },
+    {
+      "id": "entity-049",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Meeting forms",
+      "canonical_name": "Meeting forms",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 3
+    },
+    {
+      "id": "entity-050",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Product usage",
+      "canonical_name": "Product usage",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 4
+    },
+    {
+      "id": "entity-051",
+      "source_segment_ids": [
+        "segment-066",
+        "segment-067",
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Website visits",
+      "canonical_name": "Website visits",
+      "category": "signal_category",
+      "description": "First-party signal — explicitly not third-party in this framework.",
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 5
+    },
+    {
+      "id": "entity-052",
+      "source_segment_ids": [
+        "segment-081",
+        "segment-082",
+        "segment-083"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Gated content",
+      "canonical_name": "Gated content",
+      "category": "signal_category",
+      "description": "E.g. downloadable resources behind a form.",
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 6
+    },
+    {
+      "id": "entity-053",
+      "source_segment_ids": [
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Marketing sequences",
+      "canonical_name": "Marketing sequences",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 7
+    },
+    {
+      "id": "entity-054",
+      "source_segment_ids": [
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Outreach replies",
+      "canonical_name": "Outreach replies",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-034",
+      "list_order": 8
+    },
+    {
+      "id": "entity-055",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Champion tracking",
+      "canonical_name": "Champion tracking",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 1
+    },
+    {
+      "id": "entity-056",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Ad engagements",
+      "canonical_name": "Ad engagements",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 2
+    },
+    {
+      "id": "entity-057",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Partner signals",
+      "canonical_name": "Partner signals",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 3
+    },
+    {
+      "id": "entity-058",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "LinkedIn engagement",
+      "canonical_name": "LinkedIn engagement",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 4
+    },
+    {
+      "id": "entity-059",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Review sites",
+      "canonical_name": "Review sites",
+      "category": "signal_category",
+      "description": null,
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 5
+    },
+    {
+      "id": "entity-060",
+      "source_segment_ids": [
+        "segment-095",
+        "segment-096",
+        "segment-097",
+        "segment-098"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Warm intros (signal)",
+      "canonical_name": "Warm intros (signal)",
+      "category": "signal_category",
+      "description": "Warm introductions tracked as a signal; the same concept is also a one-to-one demand-generation activity.",
+      "topic_ids": [
+        "topic-008"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "vendor": null,
+      "parent_entity_id": "entity-035",
+      "list_order": 6
+    },
+    {
+      "id": "entity-061",
+      "source_segment_ids": [
+        "segment-080",
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Email opens",
+      "canonical_name": "Email opens",
+      "category": "signal_category",
+      "description": "Proposed first-party category; not a separate category for now.",
+      "topic_ids": [
+        "topic-007"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "excluded"
+    },
+    {
+      "id": "entity-062",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-163",
+        "segment-164",
+        "segment-165",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Awareness stages",
+      "canonical_name": "Awareness stages",
+      "category": "model",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "count": 5
+    },
+    {
+      "id": "entity-063",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-162",
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Identified",
+      "canonical_name": "Identified",
+      "category": "awareness_stage",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-062",
+      "list_order": 1
+    },
+    {
+      "id": "entity-064",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-162",
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Aware",
+      "canonical_name": "Aware",
+      "category": "awareness_stage",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-062",
+      "list_order": 2
+    },
+    {
+      "id": "entity-065",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-162",
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Interested",
+      "canonical_name": "Interested",
+      "category": "awareness_stage",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-062",
+      "list_order": 3
+    },
+    {
+      "id": "entity-066",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-162",
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Considering",
+      "canonical_name": "Considering",
+      "category": "awareness_stage",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-062",
+      "list_order": 4
+    },
+    {
+      "id": "entity-067",
+      "source_segment_ids": [
+        "segment-161",
+        "segment-162",
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Selecting",
+      "canonical_name": "Selecting",
+      "category": "awareness_stage",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-062",
+      "list_order": 5
+    },
+    {
+      "id": "entity-068",
+      "source_segment_ids": [
+        "segment-166",
+        "segment-167",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Account tiers",
+      "canonical_name": "Account tiers",
+      "category": "model",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "count": 3
+    },
+    {
+      "id": "entity-069",
+      "source_segment_ids": [
+        "segment-167"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Tier 1",
+      "canonical_name": "Tier 1",
+      "category": "account_tier",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-068",
+      "list_order": 1
+    },
+    {
+      "id": "entity-070",
+      "source_segment_ids": [
+        "segment-167"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Tier 2",
+      "canonical_name": "Tier 2",
+      "category": "account_tier",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-068",
+      "list_order": 2
+    },
+    {
+      "id": "entity-071",
+      "source_segment_ids": [
+        "segment-167"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Tier 3",
+      "canonical_name": "Tier 3",
+      "category": "account_tier",
+      "description": null,
+      "topic_ids": [
+        "topic-009"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included",
+      "parent_entity_id": "entity-068",
+      "list_order": 3
+    },
+    {
+      "id": "entity-072",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "CRM records",
+      "canonical_name": "CRM records",
+      "category": "data_object",
+      "description": "Informed by account mapping, research, tracked signals and scoring information.",
+      "topic_ids": [
+        "topic-010"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    },
+    {
+      "id": "entity-073",
+      "source_segment_ids": [
+        "segment-185"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Account intelligence and prioritization",
+      "canonical_name": "Account intelligence and prioritization",
+      "category": "concept",
+      "description": "What the CRM connects with demand-generation activities.",
+      "topic_ids": [
+        "topic-010"
+      ],
+      "aliases": [],
+      "identity_ambiguity": false,
+      "status": "included"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-001",
+      "source_segment_ids": [
+        "segment-015",
+        "segment-016",
+        "segment-189"
+      ],
+      "evidence_status": "explicit",
+      "statement": "The playbook has six numbered steps; downstream activities are not step seven.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-001"
+      ],
+      "topic_ids": [
+        "topic-001",
+        "topic-014"
+      ],
+      "quantitative": {
+        "value": 6,
+        "unit": "numbered steps"
+      }
+    },
+    {
+      "id": "fact-002",
+      "source_segment_ids": [
+        "segment-014",
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "statement": "The ABM playbook is similar to the previously discussed GTM framework but is specifically ABM.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-001",
+        "entity-002"
+      ],
+      "topic_ids": [
+        "topic-001"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-003",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-025",
+        "segment-030",
+        "segment-031",
+        "segment-033",
+        "segment-208"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Step 1 has eight supporting options: Sales Navigator, AI Ark, Clay, Findymail, Ocean.io, DiscoLike, Landbase, custom scrapers.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-006",
+        "entity-007",
+        "entity-008",
+        "entity-009",
+        "entity-010",
+        "entity-011",
+        "entity-012",
+        "entity-013"
+      ],
+      "topic_ids": [
+        "topic-003"
+      ],
+      "quantitative": {
+        "value": 8,
+        "unit": "supporting options"
+      }
+    },
+    {
+      "id": "fact-004",
+      "source_segment_ids": [
+        "segment-043",
+        "segment-045",
+        "segment-210"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Step 2 has ten tools: Ocean.io, Claygent, Sumble, Codex, Tavily, Freckle, Claude Code, Findymail, BetterContact, AI Ark.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-010",
+        "entity-014",
+        "entity-015",
+        "entity-016",
+        "entity-017",
+        "entity-018",
+        "entity-019",
+        "entity-009",
+        "entity-020",
+        "entity-007"
+      ],
+      "topic_ids": [
+        "topic-004"
+      ],
+      "quantitative": {
+        "value": 10,
+        "unit": "tools"
+      }
+    },
+    {
+      "id": "fact-005",
+      "source_segment_ids": [
+        "segment-044",
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Tavily is used for web research.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-017"
+      ],
+      "topic_ids": [
+        "topic-004"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-006",
+      "source_segment_ids": [
+        "segment-057"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Step 3 is described as probably the most detailed step.",
+      "statement_type": "fact",
+      "entity_ids": [],
+      "topic_ids": [
+        "topic-005"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-007",
+      "source_segment_ids": [
+        "segment-058",
+        "segment-059"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Signals tracked include buying signals, engagement signals and account activity.",
+      "statement_type": "fact",
+      "entity_ids": [],
+      "topic_ids": [
+        "topic-005"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-008",
+      "source_segment_ids": [
+        "segment-070",
+        "segment-071"
+      ],
+      "evidence_status": "explicit",
+      "statement": "There are eleven third-party signal categories.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-033",
+        "entity-036",
+        "entity-037",
+        "entity-038",
+        "entity-039",
+        "entity-040",
+        "entity-041",
+        "entity-042",
+        "entity-043",
+        "entity-044",
+        "entity-045",
+        "entity-046"
+      ],
+      "topic_ids": [
+        "topic-006"
+      ],
+      "quantitative": {
+        "value": 11,
+        "unit": "categories"
+      }
+    },
+    {
+      "id": "fact-009",
+      "source_segment_ids": [
+        "segment-079",
+        "segment-081",
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "statement": "There are eight first-party signal categories.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-034",
+        "entity-047",
+        "entity-048",
+        "entity-049",
+        "entity-050",
+        "entity-051",
+        "entity-052",
+        "entity-053",
+        "entity-054"
+      ],
+      "topic_ids": [
+        "topic-007"
+      ],
+      "quantitative": {
+        "value": 8,
+        "unit": "categories"
+      }
+    },
+    {
+      "id": "fact-010",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "statement": "There are six second-party signal categories.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-035",
+        "entity-055",
+        "entity-056",
+        "entity-057",
+        "entity-058",
+        "entity-059",
+        "entity-060"
+      ],
+      "topic_ids": [
+        "topic-008"
+      ],
+      "quantitative": {
+        "value": 6,
+        "unit": "categories"
+      }
+    },
+    {
+      "id": "fact-011",
+      "source_segment_ids": [
+        "segment-082",
+        "segment-083"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Gated content means things like downloadable resources behind a form.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-052"
+      ],
+      "topic_ids": [
+        "topic-007"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-012",
+      "source_segment_ids": [
+        "segment-096",
+        "segment-097",
+        "segment-098",
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Warm introductions are tracked as a second-party signal and are also a one-to-one demand-generation activity (same concept, different context).",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-060"
+      ],
+      "topic_ids": [
+        "topic-008",
+        "topic-012"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-013",
+      "source_segment_ids": [
+        "segment-163",
+        "segment-164",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "statement": "There are five awareness stages in order: identified, aware, interested, considering, selecting.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-062",
+        "entity-063",
+        "entity-064",
+        "entity-065",
+        "entity-066",
+        "entity-067"
+      ],
+      "topic_ids": [
+        "topic-009"
+      ],
+      "quantitative": {
+        "value": 5,
+        "unit": "awareness stages"
+      }
+    },
+    {
+      "id": "fact-014",
+      "source_segment_ids": [
+        "segment-167",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "statement": "There are three account tiers: Tier 1, Tier 2, Tier 3.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-068",
+        "entity-069",
+        "entity-070",
+        "entity-071"
+      ],
+      "topic_ids": [
+        "topic-009"
+      ],
+      "quantitative": {
+        "value": 3,
+        "unit": "tiers"
+      }
+    },
+    {
+      "id": "fact-015",
+      "source_segment_ids": [
+        "segment-168",
+        "segment-169",
+        "segment-170"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Awareness stages and account tiering are related concepts with no defined fixed mapping.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-062",
+        "entity-068"
+      ],
+      "topic_ids": [
+        "topic-009"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-016",
+      "source_segment_ids": [
+        "segment-175",
+        "segment-176",
+        "segment-177"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Either HubSpot or Salesforce can be used for CRM depending on the existing technology stack; both are not required.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-021",
+        "entity-022"
+      ],
+      "topic_ids": [
+        "topic-010"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-017",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Account mapping, research, tracked signals and scoring information inform the CRM records.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-072"
+      ],
+      "topic_ids": [
+        "topic-010"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-018",
+      "source_segment_ids": [
+        "segment-180",
+        "segment-181",
+        "segment-185"
+      ],
+      "evidence_status": "explicit",
+      "statement": "The CRM supports demand generation and connects account intelligence and prioritization with demand-generation activities.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-073"
+      ],
+      "topic_ids": [
+        "topic-010",
+        "topic-011"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-019",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121",
+        "segment-123",
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Demand generation has four one-to-one activities and eight one-to-many activities.",
+      "statement_type": "fact",
+      "entity_ids": [],
+      "topic_ids": [
+        "topic-011",
+        "topic-012",
+        "topic-013"
+      ],
+      "quantitative": {
+        "value": {
+          "one_to_one": 4,
+          "one_to_many": 8
+        },
+        "unit": "activities"
+      }
+    },
+    {
+      "id": "fact-020",
+      "source_segment_ids": [
+        "segment-116",
+        "segment-117",
+        "segment-118",
+        "segment-119"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Personalized video could technically be one-to-one, but video outreach is classified as one-to-many in this playbook.",
+      "statement_type": "fact",
+      "entity_ids": [],
+      "topic_ids": [
+        "topic-013"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-021",
+      "source_segment_ids": [
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Downstream order: Slack notification, enroll in sequences, CRM tasks, then closed-won as the final outcome.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-032"
+      ],
+      "topic_ids": [
+        "topic-014"
+      ],
+      "quantitative": {
+        "value": 4,
+        "unit": "downstream items"
+      }
+    },
+    {
+      "id": "fact-022",
+      "source_segment_ids": [
+        "segment-049",
+        "segment-050",
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Some tools appear in multiple sections because they have different purposes in different stages.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-010"
+      ],
+      "topic_ids": [
+        "topic-002"
+      ],
+      "quantitative": null
+    },
+    {
+      "id": "fact-023",
+      "source_segment_ids": [
+        "segment-017",
+        "segment-018",
+        "segment-019",
+        "segment-221"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Tools are supporting technology options; the playbook does not recommend every company use all of them.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-001"
+      ],
+      "topic_ids": [
+        "topic-002"
+      ],
+      "quantitative": null
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

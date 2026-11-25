@@ -1,0 +1,182 @@
+[
+  {
+    "entity_id": "entity-007",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/ai-ark.png",
+    "fingerprint": "44c70ae7887724fd11e23dfcd70b14eb9b75f62d6e62b82ec9c7f49cab498a70",
+    "provenance_url": "https://framerusercontent.com/images/dJI8UbuMnaAQmSRWnFGM7BW4x4.png",
+    "retrieved_at": "2026-11-24T09:30:05+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-008",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/clay.png",
+    "fingerprint": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6",
+    "provenance_url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+    "retrieved_at": "2026-11-24T09:30:05+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-009",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/findymail.png",
+    "fingerprint": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.findymail.com",
+    "retrieved_at": "2026-11-24T09:30:34+00:00",
+    "identity_status": "verified_with_caveat"
+  },
+  {
+    "entity_id": "entity-010",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/oceanio.png",
+    "fingerprint": "0eca623ace9f535ad820211b422d7d37ba50f95587362144a406b6833b4153c1",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.ocean.io",
+    "retrieved_at": "2026-11-24T09:30:31+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-011",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/discolike.png",
+    "fingerprint": "aa05466208d79fc28a1427061d31e26b48de586348c50dadcb7dfd26711a6ef7",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://discolike.com",
+    "retrieved_at": "2026-11-24T09:30:32+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-012",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/landbase.png",
+    "fingerprint": "a3a53f6248b474c8a001541e8a01baab506db12580ece512e03a43fcd8341f9b",
+    "provenance_url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/665df6511f919f2ee06412ee_webclip-landbase.png",
+    "retrieved_at": "2026-11-24T09:30:07+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-015",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/sumble.png",
+    "fingerprint": "5333d3d6fe58d710105851e751a2424fc6015cf0e3d7337516819682ff06461a",
+    "provenance_url": "https://sumble.com/logo512.png",
+    "retrieved_at": "2026-11-24T09:30:07+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-017",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/tavily.png",
+    "fingerprint": "7f8dd7b74386f30b061ddfe57e58217d6d32f9318e3f95fdf4130db6a22e60dc",
+    "provenance_url": "https://www.tavily.com/apple-icon.png?apple-icon.2rsjznomrsf77.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-018",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/freckle.png",
+    "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+    "provenance_url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-020",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/bettercontact.png",
+    "fingerprint": "d818c71d383eda0a901adc89200f5b321168b6aea513c0e624977f284467cf0c",
+    "provenance_url": "https://bettercontact.rocks/assets/bettercontact-mark.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-021",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/hubspot.png",
+    "fingerprint": "9d8bf25acfa7ab6ae6f4fb7989b860a3df8c0caffb00e4988af79a832c9d3dad",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.hubspot.com",
+    "retrieved_at": "2026-11-24T09:30:32+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-022",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/salesforce.png",
+    "fingerprint": "abcc0840c906aef643ba63da8d2d3f1487a8324ccc6ea7f122dd06168099e586",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.salesforce.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-024",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/gmail.png",
+    "fingerprint": "bafa757ab4e42971ae097c454b96569bc7e0e126b483b6dd893df861a0a5b1c3",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://mail.google.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-025",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/linkedin.png",
+    "fingerprint": "eda6fe05a8638d28efe6d27dd867cff3259854a02403e234c6a7677db5ad564a",
+    "provenance_url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.linkedin.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-026",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/meta.png",
+    "fingerprint": "9057c80f202df5ccec8b06b6094d86312cf4c97bfc7e7db382b503664839033d",
+    "provenance_url": "https://static.xx.fbcdn.net/rsrc.php/yQ/r/0eWKxz9kEoF.webp",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-027",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/google.png",
+    "fingerprint": "4befa9a14ca914915d0f486f59900776d8758fd810587ff0c18c724da37571ae",
+    "provenance_url": "https://www.google.com/s2/favicons?sz=256&domain=google.com",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-029",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/youtube.png",
+    "fingerprint": "e39dc3d8c2f82ad2375132a8efcf521c232d5e2cf08abeb9bebe1ad94afb2157",
+    "provenance_url": "https://www.youtube.com/s/desktop/db37c5a5/img/favicon_144x144.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-030",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/x.png",
+    "fingerprint": "a83542eb0563242949d7dbde720014fb7ab48ae14ed59f43eec34907cb90c477",
+    "provenance_url": "https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-031",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/webflow.png",
+    "fingerprint": "5530fa535b6f07cc3d5f41a0bb035b617f24d90a02144d2a1a69644c19481367",
+    "provenance_url": "https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/686d53d0446d4237b2f38c5f_webclip.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "identity_status": "verified"
+  },
+  {
+    "entity_id": "entity-032",
+    "variant": "icon_mark",
+    "prepared_file_path": "assets/logos/slack.png",
+    "fingerprint": "ca3872d0fb85ff9858bcbdc529d6e1db32c029c681c6e723e4f2ecb1c7defea6",
+    "provenance_url": "https://a.slack-edge.com/9cc0056/img/icons/favicon-32.png",
+    "retrieved_at": "2026-11-24T09:30:11+00:00",
+    "identity_status": "verified"
+  }
+]

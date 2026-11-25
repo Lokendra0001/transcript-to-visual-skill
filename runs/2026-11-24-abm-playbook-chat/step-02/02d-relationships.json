@@ -1,0 +1,1438 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02D-activities-relationships",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "activities": [
+    {
+      "id": "activity-001",
+      "source_segment_ids": [
+        "segment-021",
+        "segment-022",
+        "segment-023",
+        "segment-025",
+        "segment-027",
+        "segment-030",
+        "segment-031",
+        "segment-033",
+        "segment-207",
+        "segment-208"
+      ],
+      "evidence_status": "explicit",
+      "name": "TAM and stakeholder mapping",
+      "description": "Identify the total addressable market and the relevant stakeholders within target accounts.",
+      "purpose": "Identify target accounts and stakeholders.",
+      "step_number": 1,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Step 1 of 6 (recap).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-003"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-006",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-007",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-008",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-009",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-010",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-011",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-012",
+          "role": "data source",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-013",
+          "role": "custom data collection",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-005",
+          "role": "proposed data source",
+          "selection_status": "rejected",
+          "usage_status": "excluded"
+        }
+      ]
+    },
+    {
+      "id": "activity-002",
+      "source_segment_ids": [
+        "segment-039",
+        "segment-040",
+        "segment-041",
+        "segment-043",
+        "segment-044",
+        "segment-045",
+        "segment-046",
+        "segment-047",
+        "segment-049",
+        "segment-050",
+        "segment-209",
+        "segment-210"
+      ],
+      "evidence_status": "explicit",
+      "name": "AI account research and enrichment",
+      "description": "Research and enrich target accounts with AI-assisted tools.",
+      "purpose": "Understand and enrich accounts.",
+      "step_number": 2,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Step 2 of 6 (recap).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-004"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-010",
+          "role": "research/enrichment",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-014",
+          "role": "AI research agent",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-015",
+          "role": "research",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-016",
+          "role": "AI research",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-017",
+          "role": "web research",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-018",
+          "role": "research/enrichment",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-019",
+          "role": "AI research",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-009",
+          "role": "enrichment",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-020",
+          "role": "enrichment",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-007",
+          "role": "research/enrichment",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-003",
+      "source_segment_ids": [
+        "segment-057",
+        "segment-059",
+        "segment-061",
+        "segment-064",
+        "segment-065",
+        "segment-067",
+        "segment-069",
+        "segment-070",
+        "segment-071",
+        "segment-077",
+        "segment-079",
+        "segment-081",
+        "segment-085",
+        "segment-093",
+        "segment-095",
+        "segment-097",
+        "segment-101",
+        "segment-211",
+        "segment-212"
+      ],
+      "evidence_status": "explicit",
+      "name": "Track the signals",
+      "description": "Track buying signals, engagement signals and account activity across first-party (8), second-party (6) and third-party (11) categories. Vendors per category are not finalized and must not be guessed.",
+      "purpose": "Detect account intent and engagement.",
+      "step_number": 3,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [
+        "entity-033",
+        "entity-034",
+        "entity-035"
+      ],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Step 3 of 6 (recap).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-005",
+        "topic-006",
+        "topic-007",
+        "topic-008"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-004",
+      "source_segment_ids": [
+        "segment-153",
+        "segment-155",
+        "segment-157",
+        "segment-159",
+        "segment-161",
+        "segment-163",
+        "segment-167",
+        "segment-169",
+        "segment-171",
+        "segment-213",
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "name": "Score + Tier Accounts",
+      "description": "Assess accounts across five awareness stages (identified, aware, interested, considering, selecting) and assign Tier 1, Tier 2 or Tier 3. No numerical thresholds; no fixed stage-to-tier mapping.",
+      "purpose": "Prioritize accounts.",
+      "step_number": 4,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [
+        "entity-062",
+        "entity-068"
+      ],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Step 4 of 6 (recap); discussed after Step 6.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-009"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "associated platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-005",
+      "source_segment_ids": [
+        "segment-173",
+        "segment-175",
+        "segment-177",
+        "segment-179",
+        "segment-180",
+        "segment-185",
+        "segment-215",
+        "segment-216"
+      ],
+      "evidence_status": "explicit",
+      "name": "CRM components",
+      "description": "Maintain CRM records in HubSpot or Salesforce (either, depending on the existing stack), informed by account mapping, research, tracked signals and scoring; connects account intelligence and prioritization with demand generation.",
+      "purpose": "System of record linking intelligence and prioritization to demand generation.",
+      "step_number": 5,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [
+        "activity-001",
+        "activity-002",
+        "activity-003",
+        "activity-004"
+      ],
+      "output_refs": [
+        "entity-072",
+        "entity-073"
+      ],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-001",
+        "activity-002",
+        "activity-003",
+        "activity-004"
+      ],
+      "sequence_note": "Step 5 of 6 (recap).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-010"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "CRM (either/or)",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-022",
+          "role": "CRM (either/or)",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-023",
+          "role": "proposed CRM",
+          "selection_status": "rejected",
+          "usage_status": "excluded"
+        }
+      ]
+    },
+    {
+      "id": "activity-006",
+      "source_segment_ids": [
+        "segment-103",
+        "segment-104",
+        "segment-105",
+        "segment-107",
+        "segment-109",
+        "segment-111",
+        "segment-121",
+        "segment-123",
+        "segment-217",
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "name": "Demand generation",
+      "description": "Run demand generation in two groups — one-to-one (4 activities) and one-to-many (8 activities); explicitly not organized as inbound/outbound.",
+      "purpose": "Generate demand from prioritized accounts.",
+      "step_number": 6,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [
+        "activity-005"
+      ],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-005"
+      ],
+      "sequence_note": "Step 6 of 6 (recap); discussed before Steps 4 and 5.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-011",
+        "topic-012",
+        "topic-013"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-007",
+      "source_segment_ids": [
+        "segment-097",
+        "segment-111",
+        "segment-112",
+        "segment-113"
+      ],
+      "evidence_status": "explicit",
+      "name": "Warm intros",
+      "description": "One-to-one demand-generation activity. Same concept as the 'warm intros' second-party signal, in a different context.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-one",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 1 of 4 in the one-to-one group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-012"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-024",
+          "role": "associated tool",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-008",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-140",
+        "segment-141"
+      ],
+      "evidence_status": "explicit",
+      "name": "Gifting campaigns",
+      "description": "One-to-one demand-generation activity. Supporting tools to be finalized later; the activity must be kept.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-one",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 2 of 4 in the one-to-one group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-012"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-009",
+      "source_segment_ids": [
+        "segment-111"
+      ],
+      "evidence_status": "explicit",
+      "name": "Event invites",
+      "description": "One-to-one demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-one",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 3 of 4 in the one-to-one group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-012"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-010",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-114",
+        "segment-115"
+      ],
+      "evidence_status": "explicit",
+      "name": "Manual outreach",
+      "description": "One-to-one demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-one",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 4 of 4 in the one-to-one group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-012"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "associated tool",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-011",
+      "source_segment_ids": [
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "name": "Automated outbound",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 1 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-012",
+      "source_segment_ids": [
+        "segment-121",
+        "segment-140",
+        "segment-141"
+      ],
+      "evidence_status": "explicit",
+      "name": "Parallel dialing",
+      "description": "One-to-many demand-generation activity. Supporting tools to be finalized later; the activity must be kept.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 2 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-013",
+      "source_segment_ids": [
+        "segment-121",
+        "segment-124",
+        "segment-125",
+        "segment-126",
+        "segment-127"
+      ],
+      "evidence_status": "explicit",
+      "name": "Targeted ads",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 3 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-025",
+          "role": "ad platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-026",
+          "role": "ad platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-027",
+          "role": "ad platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-028",
+          "role": "proposed ad platform",
+          "selection_status": "rejected",
+          "usage_status": "excluded"
+        }
+      ]
+    },
+    {
+      "id": "activity-014",
+      "source_segment_ids": [
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "name": "Public events",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 4 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-015",
+      "source_segment_ids": [
+        "segment-121",
+        "segment-133",
+        "segment-134",
+        "segment-135"
+      ],
+      "evidence_status": "explicit",
+      "name": "Social content",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 5 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-029",
+          "role": "social platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-025",
+          "role": "social platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-030",
+          "role": "social platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-016",
+      "source_segment_ids": [
+        "segment-121",
+        "segment-136",
+        "segment-137"
+      ],
+      "evidence_status": "explicit",
+      "name": "On-site content",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 6 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-031",
+          "role": "website platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-017",
+      "source_segment_ids": [
+        "segment-116",
+        "segment-117",
+        "segment-118",
+        "segment-119",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "name": "Video outreach",
+      "description": "One-to-many demand-generation activity. Classified one-to-many in this playbook even though personalized video could technically be one-to-one.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 7 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-018",
+      "source_segment_ids": [
+        "segment-121",
+        "segment-138",
+        "segment-139"
+      ],
+      "evidence_status": "explicit",
+      "name": "Connection requests",
+      "description": "One-to-many demand-generation activity.",
+      "purpose": null,
+      "step_number": null,
+      "group": "one-to-many",
+      "parent_activity_id": "activity-006",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Listed item 8 of 8 in the one-to-many group (list order, not execution order).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-013"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-025",
+          "role": "channel",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-019",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-189",
+        "segment-191",
+        "segment-194",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "name": "Slack notification",
+      "description": "First downstream follow-up activity after demand generation (unnumbered).",
+      "purpose": null,
+      "step_number": null,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Downstream 1 of 4.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-014"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-032",
+          "role": "notification channel",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-020",
+      "source_segment_ids": [
+        "segment-193",
+        "segment-194",
+        "segment-196",
+        "segment-197",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "name": "Enroll in sequences",
+      "description": "Enroll contacts in sequences; comes before CRM tasks.",
+      "purpose": null,
+      "step_number": null,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Downstream 2 of 4 (corrected to precede CRM tasks).",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-014"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "supporting platform",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-021",
+      "source_segment_ids": [
+        "segment-192",
+        "segment-193",
+        "segment-194",
+        "segment-198",
+        "segment-199",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "name": "CRM tasks",
+      "description": "Create CRM tasks after sequence enrollment.",
+      "purpose": null,
+      "step_number": null,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Downstream 3 of 4.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-014"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "CRM",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-022",
+          "role": "CRM",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    },
+    {
+      "id": "activity-022",
+      "source_segment_ids": [
+        "segment-195",
+        "segment-200",
+        "segment-201",
+        "segment-202",
+        "segment-203",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "name": "Closed-won",
+      "description": "Final outcome of the playbook; no closed-lost branch in this version.",
+      "purpose": null,
+      "step_number": null,
+      "group": null,
+      "parent_activity_id": null,
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Downstream 4 of 4 — final outcome.",
+      "activity_status": "outcome",
+      "topic_ids": [
+        "topic-014"
+      ],
+      "entity_associations": [
+        {
+          "entity_id": "entity-021",
+          "role": "records outcome",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        },
+        {
+          "entity_id": "entity-022",
+          "role": "records outcome",
+          "selection_status": "confirmed_included",
+          "usage_status": "optional"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship-001",
+      "source_segment_ids": [
+        "segment-207",
+        "segment-209",
+        "segment-211",
+        "segment-213",
+        "segment-215",
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-001",
+      "target_ref": "activity-002",
+      "relationship_type": "precedes",
+      "description": "Explicit numbered step order from the recap.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-002",
+      "source_segment_ids": [
+        "segment-207",
+        "segment-209",
+        "segment-211",
+        "segment-213",
+        "segment-215",
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-002",
+      "target_ref": "activity-003",
+      "relationship_type": "precedes",
+      "description": "Explicit numbered step order from the recap.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-003",
+      "source_segment_ids": [
+        "segment-207",
+        "segment-209",
+        "segment-211",
+        "segment-213",
+        "segment-215",
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-003",
+      "target_ref": "activity-004",
+      "relationship_type": "precedes",
+      "description": "Explicit numbered step order from the recap.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-004",
+      "source_segment_ids": [
+        "segment-207",
+        "segment-209",
+        "segment-211",
+        "segment-213",
+        "segment-215",
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-004",
+      "target_ref": "activity-005",
+      "relationship_type": "precedes",
+      "description": "Explicit numbered step order from the recap.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-005",
+      "source_segment_ids": [
+        "segment-207",
+        "segment-209",
+        "segment-211",
+        "segment-213",
+        "segment-215",
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-005",
+      "target_ref": "activity-006",
+      "relationship_type": "precedes",
+      "description": "Explicit numbered step order from the recap.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-006",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-006",
+      "target_ref": "activity-019",
+      "relationship_type": "precedes",
+      "description": "Explicit downstream order (sequence enrollment corrected to precede CRM tasks).",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-007",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-019",
+      "target_ref": "activity-020",
+      "relationship_type": "precedes",
+      "description": "Explicit downstream order (sequence enrollment corrected to precede CRM tasks).",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-008",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-020",
+      "target_ref": "activity-021",
+      "relationship_type": "precedes",
+      "description": "Explicit downstream order (sequence enrollment corrected to precede CRM tasks).",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-009",
+      "source_segment_ids": [
+        "segment-187",
+        "segment-191",
+        "segment-193",
+        "segment-194",
+        "segment-195",
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-021",
+      "target_ref": "activity-022",
+      "relationship_type": "precedes",
+      "description": "Explicit downstream order (sequence enrollment corrected to precede CRM tasks).",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-010",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-001",
+      "target_ref": "activity-005",
+      "relationship_type": "informs",
+      "description": "Output informs CRM records.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-011",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-002",
+      "target_ref": "activity-005",
+      "relationship_type": "informs",
+      "description": "Output informs CRM records.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-012",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-003",
+      "target_ref": "activity-005",
+      "relationship_type": "informs",
+      "description": "Output informs CRM records.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-013",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-004",
+      "target_ref": "activity-005",
+      "relationship_type": "informs",
+      "description": "Output informs CRM records.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-014",
+      "source_segment_ids": [
+        "segment-180",
+        "segment-181",
+        "segment-185"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-005",
+      "target_ref": "activity-006",
+      "relationship_type": "supports",
+      "description": "CRM supports demand generation.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-015",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-007",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-016",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-008",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-017",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-009",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-018",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-010",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-019",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-011",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-020",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-012",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-021",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-013",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-022",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-014",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-023",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-015",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-024",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-016",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-025",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-017",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-026",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-018",
+      "target_ref": "activity-006",
+      "relationship_type": "part_of",
+      "description": "Demand-generation sub-activity.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-027",
+      "source_segment_ids": [
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-033",
+      "target_ref": "activity-003",
+      "relationship_type": "part_of",
+      "description": "Signal group tracked in Step 3.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-028",
+      "source_segment_ids": [
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-034",
+      "target_ref": "activity-003",
+      "relationship_type": "part_of",
+      "description": "Signal group tracked in Step 3.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-029",
+      "source_segment_ids": [
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-035",
+      "target_ref": "activity-003",
+      "relationship_type": "part_of",
+      "description": "Signal group tracked in Step 3.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-030",
+      "source_segment_ids": [
+        "segment-096",
+        "segment-097",
+        "segment-098",
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-060",
+      "target_ref": "activity-007",
+      "relationship_type": "same_concept_different_context",
+      "description": "Warm intros as a signal vs. as a demand-generation activity.",
+      "direction": "bidirectional",
+      "conditions": null
+    },
+    {
+      "id": "relationship-031",
+      "source_segment_ids": [
+        "segment-168",
+        "segment-169",
+        "segment-170"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-062",
+      "target_ref": "entity-068",
+      "relationship_type": "related_without_defined_mapping",
+      "description": "Related concepts; no fixed mapping defined.",
+      "direction": "bidirectional",
+      "conditions": null
+    },
+    {
+      "id": "relationship-032",
+      "source_segment_ids": [
+        "segment-040",
+        "segment-041"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-014",
+      "target_ref": "entity-008",
+      "relationship_type": "distinct_from",
+      "description": "Claygent must not be confused with Clay in Step 2.",
+      "direction": "bidirectional",
+      "conditions": null
+    }
+  ],
+  "missed_entities": [],
+  "warnings": [],
+  "errors": []
+}

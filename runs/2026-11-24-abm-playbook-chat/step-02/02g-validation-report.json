@@ -1,0 +1,57 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02G-validation",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "checks": [
+    {
+      "check": "unique_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "topic_entity_reciprocity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "relevance_covers_every_segment_once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exclusions_match_irrelevant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_unrepresented_relevant_segments",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "counts_match_source",
+      "passed": true,
+      "detail": "11/8/6 signals, 4/8 demand gen, 8 Step-1 options, 10 Step-2 tools"
+    },
+    {
+      "check": "supersessions_resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_numeric_thresholds_or_invented_vendors",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "repairs": [],
+  "finalized_artifact": "02-content-analysis.json",
+  "warnings": [],
+  "errors": []
+}

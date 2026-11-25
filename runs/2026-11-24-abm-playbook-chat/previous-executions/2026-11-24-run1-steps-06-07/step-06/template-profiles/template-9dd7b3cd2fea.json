@@ -1,0 +1,66 @@
+{
+  "template_id": "template-9dd7b3cd2fea",
+  "reference_path": "T02-growth-stages.png",
+  "reference_fingerprint": "f3b31068bde97025b58eb9ea48a1dba37759459c385ffb62989789ef074241a6",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1024 portrait",
+  "structural_characteristics": {
+    "layout": "Four ascending staircase columns (stages) growing left to right, each a tall dark panel with nested team groups.",
+    "reading_direction": "Left-to-right by column height; no connectors.",
+    "patterns": [
+      "ascending stage columns",
+      "pill group headers",
+      "dense logo chips with \"or\" pairing",
+      "dashed loop diagram"
+    ],
+    "hierarchy": "Stage column > team pill > role pills > tool chips.",
+    "containment": "Strong nesting within columns."
+  },
+  "design_characteristics": {
+    "background": "Near-black with halftone texture.",
+    "color_treatment": "Each column a different saturated gradient header (green, yellow, orange, red).",
+    "typography": "Large bold sans title; small labels inside dark pills.",
+    "containers": "Dark rounded panels, pill tags.",
+    "connectors": "None between stages; dashed ellipse loop in last column.",
+    "numbering": "Stage names, no badges.",
+    "icons": "Small circular logo chips.",
+    "decoration": "Glow and halftone."
+  },
+  "content_capacity": {
+    "level": "very_high",
+    "observed": "Very dense logo chips; small type at native size.",
+    "notes": "Readability already strained."
+  },
+  "adaptability": {
+    "adaptable": [
+      "column count",
+      "group pills"
+    ],
+    "fixed_or_characteristic": [
+      "ascending staircase metaphor implying growth/size",
+      "dark theme"
+    ]
+  },
+  "limitations": [
+    "Staircase implies quantitative growth between stages, which is not in the source.",
+    "No sequence connectors.",
+    "No taxonomy row pattern for 25 categories.",
+    "Low native resolution for this density."
+  ],
+  "uncertainties": [
+    "Exact colors/fonts not measured."
+  ],
+  "evidence": [
+    {
+      "region": "columns",
+      "observation": "Four stage panels of increasing height with color-coded headers."
+    },
+    {
+      "region": "stage 4",
+      "observation": "Dashed loop of agent icons."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

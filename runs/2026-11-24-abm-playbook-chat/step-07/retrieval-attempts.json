@@ -1,0 +1,883 @@
+[
+  {
+    "asset_request_id": "asset-request-1",
+    "entity_id": "entity-006",
+    "selection_status": "generated_associated_product_badge",
+    "candidate": {
+      "entity_id": "entity-006",
+      "name": "Sales Navigator",
+      "fallback": {
+        "type": "associated_brand_mark",
+        "parent_entity_id": "entity-025",
+        "parent_display_name": "LinkedIn",
+        "reason": "Sales Navigator is a LinkedIn product; use the verified associated LinkedIn mark with the exact product label after source research is exhausted."
+      }
+    },
+    "fallback": {
+      "type": "generated_associated_product_badge",
+      "parent_asset_id": "asset-request-19",
+      "reason": "Sales Navigator is a LinkedIn product; use the verified associated LinkedIn mark with the exact product label after source research is exhausted."
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 406,
+      "fingerprint": "1a9e66d5367e48b5d3c4df211a58005d1ea7bf769052141b6a3a6d5576328036",
+      "viewBox": "0 0 64 64",
+      "aspect_ratio": 1.0
+    }
+  },
+  {
+    "asset_request_id": "asset-request-2",
+    "entity_id": "entity-007",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-007",
+      "name": "AI Ark",
+      "url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-2.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1763,
+      "fingerprint": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842",
+      "viewBox": "0 0 84 20",
+      "aspect_ratio": 4.2
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1763,
+      "fingerprint": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842",
+      "viewBox": "0 0 84 20",
+      "aspect_ratio": 4.2,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-2.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-3",
+    "entity_id": "entity-008",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-008",
+      "name": "Clay",
+      "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6778506d788ebf16fef48551_Clay%20primary%20logo.png",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-3.png",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 37338,
+      "fingerprint": "45162440313ba3d1ddd9e579af1ad6725864b95416aeb4b0fec56226417ee750"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 37338,
+      "fingerprint": "45162440313ba3d1ddd9e579af1ad6725864b95416aeb4b0fec56226417ee750",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-3.png",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-4",
+    "entity_id": "entity-009",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-009",
+      "name": "Findymail",
+      "url": "https://www.google.com/s2/favicons?sz=256&domain=findymail.com",
+      "source_category": "verified_favicon_late_fallback",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-4.png",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 5014,
+      "fingerprint": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 5014,
+      "fingerprint": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-4.png",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-5",
+    "entity_id": "entity-010",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-010",
+      "name": "Ocean.io",
+      "url": "https://img.logo.dev/assets/KIgw3G8jQ14g9cu8kdzvl62nhSxuwS7Vf1mEZF6XP7cGLpeapHJD-E1bClFo9oUaZ8wjZmLH0dbdnKzQNConycZzoNDF08qae-aBPMlgJIY8E6dcbdwgdrESGrm8LbZsGBUduiqiGsaVLA5QWgtwh6kecpQ00Alxt1BhvJAkC2LJvAnw_0T8RiZoArmrpujWekeIvQ-cNxGhbivNmDmwfiQiixnGhu_sYqgLBkvSrAt6cacEB08lRxQVAUAhRxs2D5TanqjUsi-ORNZ2b93rkLeExASaTaok1X_OTLQY7PIh1RRDaY4EeJh-FapT2dx7YqNyIpcIpzxrvO160g",
+      "source_category": "logo_dev_api",
+      "identity_evidence": "Direct Logo.dev domain lookup for ocean.io.",
+      "provider_brand_id": "brand_a1ws0bsvnh7c3811srjjhmggvw",
+      "provider_domain": "ocean.io"
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-5.jpg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 9747,
+      "fingerprint": "7001a04c2b8a259efe3f6d44b2713f66d5c54537173bab2a0cddc1fea964861f"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 9747,
+      "fingerprint": "7001a04c2b8a259efe3f6d44b2713f66d5c54537173bab2a0cddc1fea964861f",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-5.jpg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-6",
+    "entity_id": "entity-011",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-011",
+      "name": "DiscoLike",
+      "url": "https://img.logo.dev/assets/s8OdEdkv7qqZxqwEtY5lI6y5jIPXWWsbndADJn2HqJ9yo1u-HD_mJ4SlPkdA-IMRaB07lujcBr3mOndVxfhd_2BT5LuGR2UkFl0ghVnWBCXUa0GjgzBfyO4S4_mREJLhXDmGC-bY0Go4PeWMZqeEx_LKDjocSf373PT-2guwC94fv4gdIWc2VFXlqer89Q60PTOXU0GcWPw1HKY1w0KBGwVQBxXfLA8hGNzWUwqSGatqI6uzIyP95iG19rnZjpcL1GwHL-_fml_030fMiGAuObQq2juXzHYnkZyo3anLSh1Dfc5w6E4LfK7kJFOlibBZeboBuGZ-7wGYTIWFdU0l70cl",
+      "source_category": "logo_dev_api",
+      "identity_evidence": "Exact Logo.dev search match followed by a Logo.dev brand lookup for discolike.com.",
+      "provider_brand_id": "brand_rmst80xtbn1bsfe26ee2fyat7w",
+      "provider_domain": "discolike.com"
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-6.jpg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 1458,
+      "fingerprint": "b2416a8834b3821c8b835db06d3205a1f647781415441dd6ab6f2c97c6d91171"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 1458,
+      "fingerprint": "b2416a8834b3821c8b835db06d3205a1f647781415441dd6ab6f2c97c6d91171",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-6.jpg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-7",
+    "entity_id": "entity-012",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-012",
+      "name": "Landbase",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-7.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 3072,
+      "fingerprint": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022",
+      "viewBox": "0 0 68 37",
+      "aspect_ratio": 1.837837837837838
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 3072,
+      "fingerprint": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022",
+      "viewBox": "0 0 68 37",
+      "aspect_ratio": 1.837837837837838,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-7.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-8",
+    "entity_id": "entity-013",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-013",
+      "name": "Custom scrapers",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+      "source_category": "licensed_generic_icon",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-8.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 431,
+      "fingerprint": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 431,
+      "fingerprint": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-8.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-9",
+    "entity_id": "entity-014",
+    "selection_status": "generated_associated_product_badge",
+    "candidate": {
+      "entity_id": "entity-014",
+      "name": "Claygent",
+      "fallback": {
+        "type": "associated_brand_mark",
+        "parent_entity_id": "entity-008",
+        "parent_display_name": "Clay",
+        "reason": "Claygent is a Clay product; use the verified associated Clay mark with the exact product label after source research is exhausted."
+      }
+    },
+    "fallback": {
+      "type": "generated_associated_product_badge",
+      "parent_asset_id": "asset-request-3",
+      "reason": "Claygent is a Clay product; use the verified associated Clay mark with the exact product label after source research is exhausted."
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 394,
+      "fingerprint": "566af05de0d253fa7e834f1226d3f3fe994bb746f195fa5d5f9f1e83dcc23830",
+      "viewBox": "0 0 64 64",
+      "aspect_ratio": 1.0
+    }
+  },
+  {
+    "asset_request_id": "asset-request-10",
+    "entity_id": "entity-015",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-015",
+      "name": "Sumble",
+      "url": "https://sumble.com/img/sumble-wordmark.svg",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-10.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1870,
+      "fingerprint": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76",
+      "viewBox": "0 0 482.31 125.9",
+      "aspect_ratio": 3.830897537728356
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1870,
+      "fingerprint": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76",
+      "viewBox": "0 0 482.31 125.9",
+      "aspect_ratio": 3.830897537728356,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-10.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-11",
+    "entity_id": "entity-016",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-016",
+      "name": "Codex",
+      "url": "https://img.logo.dev/assets/aGYffG81R9eg2PWIXBpS4_JblbsSRVgu3yYDakgpd5bU7aIRz9kaJBz1dDyvh5vgepPeTigzdm_YVMzxD292DaNPFpnfr1giXawYfC2MyHAcpwOqvEjKr9vTGrgGWwYL3kn01AUJ2mFALZcLVdWeuwbhQotjJpttozaoWjqoej7RHgKjr2d_ISIXkZTnEK9QaOYh9kWB9m5yjS7jBJVjJJ5y5XvzRc3jnXI3JS4bSvdBMozJYB8XCFHiTzaqenbp3mdLPGT-lTNy1DzK4mOBSPJbPhj1tlUARmhCi8X2WdDHV2Bw2D0NKnWXGRAA8n61Uf6WfQH0bzQDT_6Cgw",
+      "source_category": "logo_dev_api",
+      "identity_evidence": "Exact Logo.dev search match followed by a Logo.dev brand lookup for codex.io.",
+      "provider_brand_id": "brand_qpxkvj15kd2xvf7zva5pqdxfx8",
+      "provider_domain": "codex.io"
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-11.jpg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 7314,
+      "fingerprint": "c54357a6f0312b9fd556e728ac32f34a44bcc35664e3cdfa6625e8944ff051d2"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 7314,
+      "fingerprint": "c54357a6f0312b9fd556e728ac32f34a44bcc35664e3cdfa6625e8944ff051d2",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-11.jpg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-12",
+    "entity_id": "entity-017",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-017",
+      "name": "Tavily",
+      "url": "https://www.tavily.com/logos/tavily-full.svg",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-12.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 6969,
+      "fingerprint": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c",
+      "viewBox": "0 0 362 109",
+      "aspect_ratio": 3.3211009174311927
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 6969,
+      "fingerprint": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c",
+      "viewBox": "0 0 362 109",
+      "aspect_ratio": 3.3211009174311927,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-12.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-13",
+    "entity_id": "entity-018",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-018",
+      "name": "Freckle",
+      "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-13.png",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 64497,
+      "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 64497,
+      "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-13.png",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-14",
+    "entity_id": "entity-019",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-019",
+      "name": "Claude Code",
+      "url": "https://img.logo.dev/assets/nOhTqDy6oJoS_PFDyz2K3zu3LTrrpURUlznqdgymOywgD0XOuCnx4s-0_lF1C1r4XucPIxz_sBJ_5-_5cXNpBVmRQ2ydwgrNnijNriv8HgU_McIbWuWIWpMhSu17t6CBvuIXKv7qR2Lzc2lasZlgJ1gzlgvqlg8erXuLJshirToq2B2o7M4f0wSWabUq-nbdl17JtOdtXVBUlv74qXVVll28eMhZGgUnVma-U8sAPEWV-u5S3Z6QDFLd2Vz25wlIEd-I2ozRuNfs6fOSaTO-L1knFioCyoXr44EFGuR-nXLsxrtMydDGsZ6ZuEbu-gu1HTlNwN1BJyG00ooPnwV4YND70g",
+      "source_category": "logo_dev_api",
+      "identity_evidence": "Exact Logo.dev search match followed by a Logo.dev brand lookup for claudecode.app.",
+      "provider_brand_id": "brand_p36rr1ntkh60f5er4z3prxmd2r",
+      "provider_domain": "claudecode.app"
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-14.jpg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 11691,
+      "fingerprint": "bae29e8c79e1bd33898820b783a113458008beaf15aa1bae3925769bc71abad0"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 11691,
+      "fingerprint": "bae29e8c79e1bd33898820b783a113458008beaf15aa1bae3925769bc71abad0",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-14.jpg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-15",
+    "entity_id": "entity-020",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-020",
+      "name": "BetterContact",
+      "url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+      "source_category": "official_site",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-15.png",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 15537,
+      "fingerprint": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 15537,
+      "fingerprint": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-15.png",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-16",
+    "entity_id": "entity-021",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-021",
+      "name": "HubSpot",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-16.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 663,
+      "fingerprint": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 663,
+      "fingerprint": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-16.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-17",
+    "entity_id": "entity-022",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-022",
+      "name": "Salesforce",
+      "url": "https://www.salesforce.com/news/wp-content/uploads/sites/3/2026/07/salesforce-favicon.svg?w=192",
+      "source_category": "official_media_library",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-17.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 889,
+      "fingerprint": "0e47c10118bdcdfe537f7c533dc29bf5451a6eef5be9a85b14dd532728bf7225",
+      "viewBox": "0 0 512 512",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 889,
+      "fingerprint": "0e47c10118bdcdfe537f7c533dc29bf5451a6eef5be9a85b14dd532728bf7225",
+      "viewBox": "0 0 512 512",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-17.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-18",
+    "entity_id": "entity-024",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-024",
+      "name": "Gmail",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-18.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 339,
+      "fingerprint": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 339,
+      "fingerprint": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-18.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-19",
+    "entity_id": "entity-025",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-025",
+      "name": "LinkedIn",
+      "url": "https://img.logo.dev/assets/ZtSH9KUehB7QNvsq0cEw4C373P4HBaAzj_9EbKGTE5g-UwOetdORCwHkGVAsU3x2cyXBRWx45kO1njLXs8T2RdJzZl0RnHliytiB7On46s8YGFjdTFUfQrz06UQCaC7H6wkAYxOLKCkZyXKGNm6-Bn_uWRKcqaA9UpxpKzGIWsnKpc7cTdifoG5zViTBLsltp1QhxNx47TuP-VF4LcQxqoN8hd-ZFlRxlVq7j1t97drbloMRCMvDZx5NZiDrqiP97v55nxq300weLrDguEdfKaLD5E1P-_v3lCqJVAXLvWzpn0iiTkMYXopIx3dt8nF5INA1-SJDOtepuRD8vMWvCEc",
+      "source_category": "logo_dev_api",
+      "identity_evidence": "Exact Logo.dev search match followed by a Logo.dev brand lookup for linkedin.com.",
+      "provider_brand_id": "brand_en3zsmjbbd5878kg4ww2hevfmc",
+      "provider_domain": "linkedin.com"
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-19.jpg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 7450,
+      "fingerprint": "b16f6f21dbd748161911625ea5e53026412fe3d9c56c0b97f4566a027d5e58af"
+    },
+    "normalization": {
+      "valid": true,
+      "format": "jpg",
+      "byte_size": 7450,
+      "fingerprint": "b16f6f21dbd748161911625ea5e53026412fe3d9c56c0b97f4566a027d5e58af",
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-19.jpg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-20",
+    "entity_id": "entity-026",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-026",
+      "name": "Meta",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-20.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1324,
+      "fingerprint": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 1324,
+      "fingerprint": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-20.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-21",
+    "entity_id": "entity-027",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-027",
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-21.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 457,
+      "fingerprint": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 457,
+      "fingerprint": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-21.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-22",
+    "entity_id": "entity-029",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-029",
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-22.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 459,
+      "fingerprint": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 459,
+      "fingerprint": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-22.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-23",
+    "entity_id": "entity-030",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-030",
+      "name": "X",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-23.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 299,
+      "fingerprint": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 299,
+      "fingerprint": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-23.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-24",
+    "entity_id": "entity-031",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-031",
+      "name": "Webflow",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+      "source_category": "trusted_logo_repository",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-24.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 294,
+      "fingerprint": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 294,
+      "fingerprint": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a",
+      "viewBox": "0 0 24 24",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-24.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  },
+  {
+    "asset_request_id": "asset-request-25",
+    "entity_id": "entity-032",
+    "selection_status": "selected",
+    "candidate": {
+      "entity_id": "entity-032",
+      "name": "Slack",
+      "url": "https://a.slack-edge.com/1f40066/marketing/img/nav/logo.svg",
+      "source_category": "official_brand_asset",
+      "identity_evidence": "Fresh fallback research after Logo.dev v2 adapter returned HTTP 400."
+    },
+    "download": {
+      "ok": true,
+      "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/asset-request-25.svg",
+      "reused_after_revalidation": true
+    },
+    "verification": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 2101,
+      "fingerprint": "1f40066b694020057218c46eb2a11982b278d89b2dc8f96a21e4ea04e2b9db3b",
+      "viewBox": "0 0 54 54",
+      "aspect_ratio": 1.0
+    },
+    "normalization": {
+      "valid": true,
+      "format": "svg",
+      "byte_size": 2101,
+      "fingerprint": "1f40066b694020057218c46eb2a11982b278d89b2dc8f96a21e4ea04e2b9db3b",
+      "viewBox": "0 0 54 54",
+      "aspect_ratio": 1.0,
+      "prepared_path": "runs/2026-11-24-abm-playbook-chat/assets/logos/asset-request-25.svg",
+      "normalization_actions": [
+        "copied_verified_original"
+      ]
+    }
+  }
+]

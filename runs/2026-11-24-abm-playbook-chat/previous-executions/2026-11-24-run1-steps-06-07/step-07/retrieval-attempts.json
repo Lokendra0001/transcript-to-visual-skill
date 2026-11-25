@@ -1,0 +1,597 @@
+[
+  {
+    "attempt_id": "attempt-001",
+    "entity_id": "entity-007",
+    "entity": "AI Ark",
+    "source_category": "official_site",
+    "url": "https://framerusercontent.com/images/dJI8UbuMnaAQmSRWnFGM7BW4x4.png",
+    "retrieved_at": "2026-11-24T09:30:05+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 2385,
+      "fingerprint": "44c70ae7887724fd11e23dfcd70b14eb9b75f62d6e62b82ec9c7f49cab498a70"
+    },
+    "original_path": "assets/originals/ai-ark.png",
+    "width": 192,
+    "height": 192,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-002",
+    "entity_id": "entity-008",
+    "entity": "Clay",
+    "source_category": "official_site",
+    "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+    "retrieved_at": "2026-11-24T09:30:05+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 267230,
+      "fingerprint": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6"
+    },
+    "original_path": "assets/originals/clay.png",
+    "width": 512,
+    "height": 512,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-003",
+    "entity_id": "entity-009",
+    "entity": "Findymail",
+    "source_category": "external_service",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=findymail.com",
+    "retrieved_at": "2026-11-24T09:30:06+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 5014,
+      "fingerprint": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac"
+    },
+    "original_path": "assets/originals/findymail-s2.png",
+    "width": 230,
+    "height": 230,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-004",
+    "entity_id": "entity-010",
+    "entity": "Ocean.io",
+    "source_category": "official_site",
+    "url": "https://cdn.ocean.io/assets/images/favicon/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:06+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-005",
+    "entity_id": "entity-011",
+    "entity": "DiscoLike",
+    "source_category": "official_site",
+    "url": "https://discolike.com/images/favicon-light.png",
+    "retrieved_at": "2026-11-24T09:30:07+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-006",
+    "entity_id": "entity-012",
+    "entity": "Landbase",
+    "source_category": "official_site",
+    "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/665df6511f919f2ee06412ee_webclip-landbase.png",
+    "retrieved_at": "2026-11-24T09:30:07+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 4833,
+      "fingerprint": "a3a53f6248b474c8a001541e8a01baab506db12580ece512e03a43fcd8341f9b"
+    },
+    "original_path": "assets/originals/landbase.png",
+    "width": 256,
+    "height": 256,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-007",
+    "entity_id": "entity-015",
+    "entity": "Sumble",
+    "source_category": "official_site",
+    "url": "https://sumble.com/logo512.png",
+    "retrieved_at": "2026-11-24T09:30:07+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 17536,
+      "fingerprint": "5333d3d6fe58d710105851e751a2424fc6015cf0e3d7337516819682ff06461a"
+    },
+    "original_path": "assets/originals/sumble.png",
+    "width": 512,
+    "height": 512,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-008",
+    "entity_id": "entity-017",
+    "entity": "Tavily",
+    "source_category": "official_site",
+    "url": "https://www.tavily.com/apple-icon.png?apple-icon.2rsjznomrsf77.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 3217,
+      "fingerprint": "7f8dd7b74386f30b061ddfe57e58217d6d32f9318e3f95fdf4130db6a22e60dc"
+    },
+    "original_path": "assets/originals/tavily.png",
+    "width": 180,
+    "height": 180,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-009",
+    "entity_id": "entity-018",
+    "entity": "Freckle",
+    "source_category": "official_site",
+    "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 64497,
+      "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c"
+    },
+    "original_path": "assets/originals/freckle.png",
+    "width": 640,
+    "height": 640,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-010",
+    "entity_id": "entity-020",
+    "entity": "BetterContact",
+    "source_category": "official_site",
+    "url": "https://bettercontact.rocks/assets/bettercontact-mark.png",
+    "retrieved_at": "2026-11-24T09:30:08+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 9888,
+      "fingerprint": "d818c71d383eda0a901adc89200f5b321168b6aea513c0e624977f284467cf0c"
+    },
+    "original_path": "assets/originals/bettercontact.png",
+    "width": 101,
+    "height": 101,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-011",
+    "entity_id": "entity-021",
+    "entity": "HubSpot",
+    "source_category": "official_site",
+    "url": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png",
+    "retrieved_at": "2026-11-24T09:30:09+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-012",
+    "entity_id": "entity-022",
+    "entity": "Salesforce",
+    "source_category": "external_service",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=salesforce.com",
+    "retrieved_at": "2026-11-24T09:30:09+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 652,
+      "fingerprint": "abcc0840c906aef643ba63da8d2d3f1487a8324ccc6ea7f122dd06168099e586"
+    },
+    "original_path": "assets/originals/salesforce-s2.png",
+    "width": 32,
+    "height": 32,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-013",
+    "entity_id": "entity-024",
+    "entity": "Gmail",
+    "source_category": "external_service",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=mail.google.com",
+    "retrieved_at": "2026-11-24T09:30:09+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 1339,
+      "fingerprint": "63efcfe9eeda4cc58965c7587a485886612cbf878ecd8fc3e4dd594db31a67fd"
+    },
+    "original_path": "assets/originals/gmail-s2.png",
+    "width": 32,
+    "height": 32,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-014",
+    "entity_id": "entity-025",
+    "entity": "LinkedIn",
+    "source_category": "official_site",
+    "url": "https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": false,
+      "reason": "unsupported or invalid signature"
+    },
+    "note": "Downloaded bytes were not PNG (likely ICO); file deleted."
+  },
+  {
+    "attempt_id": "attempt-015",
+    "entity_id": "entity-026",
+    "entity": "Meta",
+    "source_category": "official_site",
+    "url": "https://static.xx.fbcdn.net/rsrc.php/yQ/r/0eWKxz9kEoF.webp",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "webp",
+      "byte_size": 1460,
+      "fingerprint": "2d1ac8a2fd4b90aa0e4be05bfdb634c02404c94c9f5c1923e4be7b89fa36cfe3"
+    },
+    "original_path": "assets/originals/meta.webp",
+    "width": null,
+    "height": null,
+    "transparency": "unknown"
+  },
+  {
+    "attempt_id": "attempt-016",
+    "entity_id": "entity-027",
+    "entity": "Google",
+    "source_category": "external_service",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=google.com",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 6958,
+      "fingerprint": "4befa9a14ca914915d0f486f59900776d8758fd810587ff0c18c724da37571ae"
+    },
+    "original_path": "assets/originals/google-s2.png",
+    "width": 144,
+    "height": 144,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-017",
+    "entity_id": "entity-029",
+    "entity": "YouTube",
+    "source_category": "official_site",
+    "url": "https://www.youtube.com/s/desktop/db37c5a5/img/favicon_144x144.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 5020,
+      "fingerprint": "e39dc3d8c2f82ad2375132a8efcf521c232d5e2cf08abeb9bebe1ad94afb2157"
+    },
+    "original_path": "assets/originals/youtube.png",
+    "width": 144,
+    "height": 144,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-018",
+    "entity_id": "entity-030",
+    "entity": "X",
+    "source_category": "official_site",
+    "url": "https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 13160,
+      "fingerprint": "a83542eb0563242949d7dbde720014fb7ab48ae14ed59f43eec34907cb90c477"
+    },
+    "original_path": "assets/originals/x.png",
+    "width": 1024,
+    "height": 1024,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-019",
+    "entity_id": "entity-031",
+    "entity": "Webflow",
+    "source_category": "official_site",
+    "url": "https://cdn.prod.website-files.com/686294e263eb7e215bd232f7/686d53d0446d4237b2f38c5f_webclip.png",
+    "retrieved_at": "2026-11-24T09:30:10+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 2661,
+      "fingerprint": "5530fa535b6f07cc3d5f41a0bb035b617f24d90a02144d2a1a69644c19481367"
+    },
+    "original_path": "assets/originals/webflow.png",
+    "width": 256,
+    "height": 256,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-020",
+    "entity_id": "entity-032",
+    "entity": "Slack",
+    "source_category": "official_site",
+    "url": "https://a.slack-edge.com/9cc0056/img/icons/favicon-32.png",
+    "retrieved_at": "2026-11-24T09:30:11+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 702,
+      "fingerprint": "ca3872d0fb85ff9858bcbdc529d6e1db32c029c681c6e723e4f2ecb1c7defea6"
+    },
+    "original_path": "assets/originals/slack.png",
+    "width": 35,
+    "height": 34,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-021",
+    "entity_id": "entity-032",
+    "entity": "Slack",
+    "source_category": "external_service",
+    "url": "https://www.google.com/s2/favicons?sz=256&domain=slack.com",
+    "retrieved_at": "2026-11-24T09:30:11+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 823,
+      "fingerprint": "9969989446edc2d8136e1d518a9a1dca46b6777f4b3172ec0800cc8edcce5fe0"
+    },
+    "original_path": "assets/originals/slack-s2.png",
+    "width": 35,
+    "height": 34,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-022",
+    "entity_id": "entity-010",
+    "entity": "Ocean.io",
+    "source_category": "official_site",
+    "url": "https://www.ocean.io/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:31+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-023",
+    "entity_id": "entity-010",
+    "entity": "Ocean.io",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.ocean.io",
+    "retrieved_at": "2026-11-24T09:30:31+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 17594,
+      "fingerprint": "0eca623ace9f535ad820211b422d7d37ba50f95587362144a406b6833b4153c1"
+    },
+    "original_path": "assets/originals/oceanio-gs.png",
+    "width": 180,
+    "height": 180,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-024",
+    "entity_id": "entity-011",
+    "entity": "DiscoLike",
+    "source_category": "official_site",
+    "url": "https://discolike.com/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:31+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-025",
+    "entity_id": "entity-011",
+    "entity": "DiscoLike",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://discolike.com",
+    "retrieved_at": "2026-11-24T09:30:32+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 3425,
+      "fingerprint": "aa05466208d79fc28a1427061d31e26b48de586348c50dadcb7dfd26711a6ef7"
+    },
+    "original_path": "assets/originals/discolike-gs.png",
+    "width": 256,
+    "height": 256,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-026",
+    "entity_id": "entity-021",
+    "entity": "HubSpot",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.hubspot.com",
+    "retrieved_at": "2026-11-24T09:30:32+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 3296,
+      "fingerprint": "9d8bf25acfa7ab6ae6f4fb7989b860a3df8c0caffb00e4988af79a832c9d3dad"
+    },
+    "original_path": "assets/originals/hubspot-gs.png",
+    "width": 256,
+    "height": 256,
+    "transparency": "palette_or_none"
+  },
+  {
+    "attempt_id": "attempt-027",
+    "entity_id": "entity-022",
+    "entity": "Salesforce",
+    "source_category": "official_site",
+    "url": "https://www.salesforce.com/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:32+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-028",
+    "entity_id": "entity-022",
+    "entity": "Salesforce",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.salesforce.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 652,
+      "fingerprint": "abcc0840c906aef643ba63da8d2d3f1487a8324ccc6ea7f122dd06168099e586"
+    },
+    "original_path": "assets/originals/salesforce-gs.png",
+    "width": 32,
+    "height": 32,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-029",
+    "entity_id": "entity-024",
+    "entity": "Gmail",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://mail.google.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 4825,
+      "fingerprint": "bafa757ab4e42971ae097c454b96569bc7e0e126b483b6dd893df861a0a5b1c3"
+    },
+    "original_path": "assets/originals/gmail-gs.png",
+    "width": 128,
+    "height": 128,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-030",
+    "entity_id": "entity-025",
+    "entity": "LinkedIn",
+    "source_category": "official_site",
+    "url": "https://www.linkedin.com/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-031",
+    "entity_id": "entity-025",
+    "entity": "LinkedIn",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.linkedin.com",
+    "retrieved_at": "2026-11-24T09:30:33+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 834,
+      "fingerprint": "eda6fe05a8638d28efe6d27dd867cff3259854a02403e234c6a7677db5ad564a"
+    },
+    "original_path": "assets/originals/linkedin-gs.png",
+    "width": 64,
+    "height": 64,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-032",
+    "entity_id": "entity-032",
+    "entity": "Slack",
+    "source_category": "official_site",
+    "url": "https://slack.com/apple-touch-icon.png",
+    "retrieved_at": "2026-11-24T09:30:34+00:00",
+    "ok": false,
+    "reason": "HTTPError"
+  },
+  {
+    "attempt_id": "attempt-033",
+    "entity_id": "entity-032",
+    "entity": "Slack",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://slack.com",
+    "retrieved_at": "2026-11-24T09:30:34+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 823,
+      "fingerprint": "9969989446edc2d8136e1d518a9a1dca46b6777f4b3172ec0800cc8edcce5fe0"
+    },
+    "original_path": "assets/originals/slack-gs.png",
+    "width": 35,
+    "height": 34,
+    "transparency": "alpha"
+  },
+  {
+    "attempt_id": "attempt-034",
+    "entity_id": "entity-009",
+    "entity": "Findymail",
+    "source_category": "external_service",
+    "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=256&url=https://www.findymail.com",
+    "retrieved_at": "2026-11-24T09:30:34+00:00",
+    "ok": true,
+    "reason": null,
+    "verify": {
+      "valid": true,
+      "format": "png",
+      "byte_size": 5014,
+      "fingerprint": "5591d94020a30f781a3bcab7205b18ffdab09113e9570ae3e7940e409bc27bac"
+    },
+    "original_path": "assets/originals/findymail-gs.png",
+    "width": 230,
+    "height": 230,
+    "transparency": "alpha"
+  }
+]

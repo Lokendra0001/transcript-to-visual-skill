@@ -1,0 +1,249 @@
+{
+  "step": "05-content-writing",
+  "contract_version": "1.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "overall": "pass",
+  "deterministic": {
+    "command": "python3 scripts/05-content-writing/validate_content.py --run-dir <run-dir>",
+    "exit_code": 0,
+    "valid": true,
+    "errors": []
+  },
+  "deterministic_after_embedding": {
+    "exit_code": 0,
+    "valid": true,
+    "errors": []
+  },
+  "semantic_checks": [
+    {
+      "id": "C01",
+      "name": "Upstream Step 02/03/04 artifacts unchanged during writing",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C02",
+      "name": "Every item within its max_words_hint",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C03",
+      "name": "Brand tool labels are exact canonical names (X uses the corrected form; generic Custom Scrapers title-cased)",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C04",
+      "name": "Step, category, stage, tier, activity and downstream labels equal source names (case-insensitive)",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C05",
+      "name": "Step 4 uses confirmed name \"Score + Tier Accounts\"; title is \"Our 6-Step ABM Playbook\"",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C06",
+      "name": "No excluded names, inbound/outbound framing, closed-lost, step 7, scores, mandatory or pending wording",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C07",
+      "name": "Count labels match both Step 04 node counts and Step 02 facts",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C08",
+      "name": "Corrected orders preserved in copy (stages; downstream)",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C09",
+      "name": "Repeated tools labelled in every instance (no dedup)",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C10",
+      "name": "Optionality stated globally; no chip implies a tool is mandatory",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C11",
+      "name": "Information flow wording says \"inform\", not a dependency/trigger",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C12",
+      "name": "Required requirements all generated; omitted items optional with reasons; none blocked",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C13",
+      "name": "One item per requirement-target combination, targets unchanged from Step 04",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "C14",
+      "name": "Step numbers only on the six steps; with-number variants keep the name unchanged",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "M01",
+      "name": "Read every preferred text and variant for tone, clarity and source fidelity",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": []
+    },
+    {
+      "id": "M02",
+      "name": "Subtitle \"From identifying accounts to closing deals\" matches requirement-001 scope without implying a closed-lost path",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "requirement-001",
+        "constraint-005"
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "Omission of the gloss, role hint and placement note loses no required meaning",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "content-req-109",
+        "content-req-110",
+        "content-req-111"
+      ]
+    },
+    {
+      "id": "N01",
+      "name": "Fit of copy inside rendered cards / legibility",
+      "method": "requires template and rendered visual (Steps 06–10)",
+      "execution_status": "not_executed",
+      "result": null,
+      "affected_references": []
+    }
+  ],
+  "coverage": {
+    "content_requirements_total": 120,
+    "required_total": 108,
+    "required_generated": 108,
+    "optional_generated": 9,
+    "optional_omitted": 3,
+    "blocked": 0,
+    "unsatisfied_required_requirement_ids": []
+  },
+  "content_density": [
+    {
+      "section_id": "section-header",
+      "architecture_density": "low",
+      "generated_items": 2,
+      "total_words": 21,
+      "max_item_words": 17
+    },
+    {
+      "section_id": "section-step-1",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "total_words": 17,
+      "max_item_words": 4
+    },
+    {
+      "section_id": "section-step-2",
+      "architecture_density": "medium",
+      "generated_items": 12,
+      "total_words": 19,
+      "max_item_words": 5
+    },
+    {
+      "section_id": "section-step-3",
+      "architecture_density": "very_high",
+      "generated_items": 33,
+      "total_words": 69,
+      "max_item_words": 5
+    },
+    {
+      "section_id": "section-step-4",
+      "architecture_density": "medium",
+      "generated_items": 14,
+      "total_words": 24,
+      "max_item_words": 4
+    },
+    {
+      "section_id": "section-step-5",
+      "architecture_density": "low",
+      "generated_items": 5,
+      "total_words": 14,
+      "max_item_words": 8
+    },
+    {
+      "section_id": "section-step-6",
+      "architecture_density": "high",
+      "generated_items": 27,
+      "total_words": 44,
+      "max_item_words": 3
+    },
+    {
+      "section_id": "section-downstream",
+      "architecture_density": "medium",
+      "generated_items": 10,
+      "total_words": 14,
+      "max_item_words": 3
+    },
+    {
+      "section_id": "section-root",
+      "architecture_density": "very_high",
+      "generated_items": 117,
+      "total_words": 245,
+      "max_item_words": 17
+    }
+  ],
+  "notes": [
+    "Step 04 architecture used unchanged; Steps 02/03 consulted for verification only.",
+    "Skill implementation not modified.",
+    "No template selected; handoff target is Step 06."
+  ]
+}

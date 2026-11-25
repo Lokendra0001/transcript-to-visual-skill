@@ -1,0 +1,3964 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 5632
+  },
+  "components": [
+    {
+      "id": "title",
+      "type": "title",
+      "x": 32,
+      "y": 32,
+      "width": 1936,
+      "height": 79,
+      "text": "Our 6-Step ABM Playbook",
+      "font_size": 42,
+      "font_weight": "bold",
+      "fill": "#FBF8F5",
+      "text_fill": "#202124",
+      "radius": 0,
+      "padding": 16,
+      "role": "title"
+    },
+    {
+      "id": "section-header-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 139,
+      "width": 1936,
+      "height": 36,
+      "text": "Title and tool-optionality framing",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-title",
+      "type": "card",
+      "x": 32,
+      "y": 184,
+      "width": 1936,
+      "height": 98,
+      "text": "Our 6-Step ABM Playbook",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-optionality-note",
+      "type": "badge",
+      "x": 48,
+      "y": 249,
+      "width": 1904,
+      "height": 28,
+      "text": "Tools shown are optional alternatives, not a required stack. Some tools appear in more than one step.",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-1-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 326,
+      "width": 1936,
+      "height": 36,
+      "text": "8 options",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-1",
+      "type": "card",
+      "x": 32,
+      "y": 371,
+      "width": 1936,
+      "height": 329,
+      "text": "TAM and Stakeholder Mapping",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s1-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 436,
+      "width": 1904,
+      "height": 28,
+      "text": "Sales Navigator",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-1.png",
+        "fallback_label": "Sales Navigator",
+        "subject": "Sales Navigator"
+      }
+    },
+    {
+      "id": "node-s1-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 469,
+      "width": 1904,
+      "height": 28,
+      "text": "AI Ark",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-2.png",
+        "fallback_label": "AI Ark",
+        "subject": "AI Ark"
+      }
+    },
+    {
+      "id": "node-s1-tool-03",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 502,
+      "width": 1904,
+      "height": 28,
+      "text": "Clay",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-3.png",
+        "fallback_label": "Clay",
+        "subject": "Clay"
+      }
+    },
+    {
+      "id": "node-s1-tool-04",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 535,
+      "width": 1904,
+      "height": 28,
+      "text": "Findymail",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-4.png",
+        "fallback_label": "Findymail",
+        "subject": "Findymail"
+      }
+    },
+    {
+      "id": "node-s1-tool-05",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 568,
+      "width": 1904,
+      "height": 28,
+      "text": "Ocean.io",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-5.jpg",
+        "fallback_label": "Ocean.io",
+        "subject": "Ocean.io"
+      }
+    },
+    {
+      "id": "node-s1-tool-06",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 601,
+      "width": 1904,
+      "height": 28,
+      "text": "DiscoLike",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-6.jpg",
+        "fallback_label": "DiscoLike",
+        "subject": "DiscoLike"
+      }
+    },
+    {
+      "id": "node-s1-tool-07",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 634,
+      "width": 1904,
+      "height": 28,
+      "text": "Landbase",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-7.png",
+        "fallback_label": "Landbase",
+        "subject": "Landbase"
+      }
+    },
+    {
+      "id": "node-s1-tool-08",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 667,
+      "width": 1904,
+      "height": 28,
+      "text": "Custom Scrapers",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-8.png",
+        "fallback_label": "Custom Scrapers",
+        "subject": "Custom Scrapers"
+      }
+    },
+    {
+      "id": "section-step-2-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 744,
+      "width": 1936,
+      "height": 36,
+      "text": "10 options",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-2",
+      "type": "card",
+      "x": 32,
+      "y": 789,
+      "width": 1936,
+      "height": 395,
+      "text": "AI Account Research and Enrichment",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s2-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 854,
+      "width": 1904,
+      "height": 28,
+      "text": "Ocean.io",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-5.jpg",
+        "fallback_label": "Ocean.io",
+        "subject": "Ocean.io"
+      }
+    },
+    {
+      "id": "node-s2-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 887,
+      "width": 1904,
+      "height": 28,
+      "text": "Claygent",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-9.png",
+        "fallback_label": "Claygent",
+        "subject": "Claygent"
+      }
+    },
+    {
+      "id": "node-s2-tool-03",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 920,
+      "width": 1904,
+      "height": 28,
+      "text": "Sumble",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-10.png",
+        "fallback_label": "Sumble",
+        "subject": "Sumble"
+      }
+    },
+    {
+      "id": "node-s2-tool-04",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 953,
+      "width": 1904,
+      "height": 28,
+      "text": "Codex",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-11.jpg",
+        "fallback_label": "Codex",
+        "subject": "Codex"
+      }
+    },
+    {
+      "id": "node-s2-tool-05",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 986,
+      "width": 1904,
+      "height": 28,
+      "text": "Node S2 Tool 05",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-12.png",
+        "fallback_label": null,
+        "subject": null
+      }
+    },
+    {
+      "id": "node-s2-tool-06",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1019,
+      "width": 1904,
+      "height": 28,
+      "text": "Freckle",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-13.png",
+        "fallback_label": "Freckle",
+        "subject": "Freckle"
+      }
+    },
+    {
+      "id": "node-s2-tool-07",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1052,
+      "width": 1904,
+      "height": 28,
+      "text": "Claude Code",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-14.jpg",
+        "fallback_label": "Claude Code",
+        "subject": "Claude Code"
+      }
+    },
+    {
+      "id": "node-s2-tool-08",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1085,
+      "width": 1904,
+      "height": 28,
+      "text": "Findymail",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-4.png",
+        "fallback_label": "Findymail",
+        "subject": "Findymail"
+      }
+    },
+    {
+      "id": "node-s2-tool-09",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1118,
+      "width": 1904,
+      "height": 28,
+      "text": "BetterContact",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-15.png",
+        "fallback_label": "BetterContact",
+        "subject": "BetterContact"
+      }
+    },
+    {
+      "id": "node-s2-tool-10",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1151,
+      "width": 1904,
+      "height": 28,
+      "text": "AI Ark",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-2.png",
+        "fallback_label": "AI Ark",
+        "subject": "AI Ark"
+      }
+    },
+    {
+      "id": "section-step-3-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 1228,
+      "width": 1936,
+      "height": 36,
+      "text": "Buying, engagement and account-activity signals",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-3",
+      "type": "card",
+      "x": 32,
+      "y": 1273,
+      "width": 1936,
+      "height": 65,
+      "text": "Track the Signals",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "section-step-4-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 1382,
+      "width": 1936,
+      "height": 36,
+      "text": "Step 4 \u2014 Score + Tier Accounts",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-4",
+      "type": "card",
+      "x": 32,
+      "y": 1427,
+      "width": 1936,
+      "height": 98,
+      "text": "Score + Tier Accounts",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s4-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1492,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "section-step-5-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 1569,
+      "width": 1936,
+      "height": 36,
+      "text": "Connects account intelligence and prioritization with demand generation",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-5",
+      "type": "card",
+      "x": 32,
+      "y": 1614,
+      "width": 1936,
+      "height": 164,
+      "text": "CRM Components",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s5-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1679,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "node-s5-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 1712,
+      "width": 1904,
+      "height": 28,
+      "text": "Salesforce",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-17.png",
+        "fallback_label": "Salesforce",
+        "subject": "Salesforce"
+      }
+    },
+    {
+      "id": "node-s5-crm-records",
+      "type": "badge",
+      "x": 48,
+      "y": 1745,
+      "width": 1904,
+      "height": 28,
+      "text": "CRM Records",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-6-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 1822,
+      "width": 1936,
+      "height": 36,
+      "text": "Step 6 \u2014 Demand generation",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-step-6",
+      "type": "card",
+      "x": 32,
+      "y": 1867,
+      "width": 1936,
+      "height": 65,
+      "text": "Demand Generation",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "section-step-3-first-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 1976,
+      "width": 1936,
+      "height": 36,
+      "text": "8 signals",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s3-group-034",
+      "type": "card",
+      "x": 32,
+      "y": 2021,
+      "width": 1936,
+      "height": 329,
+      "text": "First-Party Signals",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s3-sig-047",
+      "type": "badge",
+      "x": 48,
+      "y": 2086,
+      "width": 1904,
+      "height": 28,
+      "text": "Event Attendance",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-048",
+      "type": "badge",
+      "x": 48,
+      "y": 2119,
+      "width": 1904,
+      "height": 28,
+      "text": "CRM Activity",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-049",
+      "type": "badge",
+      "x": 48,
+      "y": 2152,
+      "width": 1904,
+      "height": 28,
+      "text": "Meeting Forms",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-050",
+      "type": "badge",
+      "x": 48,
+      "y": 2185,
+      "width": 1904,
+      "height": 28,
+      "text": "Product Usage",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-051",
+      "type": "badge",
+      "x": 48,
+      "y": 2218,
+      "width": 1904,
+      "height": 28,
+      "text": "Website Visits",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-052",
+      "type": "badge",
+      "x": 48,
+      "y": 2251,
+      "width": 1904,
+      "height": 28,
+      "text": "Node S3 Sig 052",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-053",
+      "type": "badge",
+      "x": 48,
+      "y": 2284,
+      "width": 1904,
+      "height": 28,
+      "text": "Marketing Sequences",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-054",
+      "type": "badge",
+      "x": 48,
+      "y": 2317,
+      "width": 1904,
+      "height": 28,
+      "text": "Outreach Replies",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-3-second-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 2394,
+      "width": 1936,
+      "height": 36,
+      "text": "6 signals",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s3-group-035",
+      "type": "card",
+      "x": 32,
+      "y": 2439,
+      "width": 1936,
+      "height": 263,
+      "text": "Second-Party Signals",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s3-sig-055",
+      "type": "badge",
+      "x": 48,
+      "y": 2504,
+      "width": 1904,
+      "height": 28,
+      "text": "Champion Tracking",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-056",
+      "type": "badge",
+      "x": 48,
+      "y": 2537,
+      "width": 1904,
+      "height": 28,
+      "text": "Ad Engagements",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-057",
+      "type": "badge",
+      "x": 48,
+      "y": 2570,
+      "width": 1904,
+      "height": 28,
+      "text": "Partner Signals",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-058",
+      "type": "badge",
+      "x": 48,
+      "y": 2603,
+      "width": 1904,
+      "height": 28,
+      "text": "LinkedIn Engagement",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-059",
+      "type": "badge",
+      "x": 48,
+      "y": 2636,
+      "width": 1904,
+      "height": 28,
+      "text": "Review Sites",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-060",
+      "type": "badge",
+      "x": 48,
+      "y": 2669,
+      "width": 1904,
+      "height": 28,
+      "text": "Warm Intros",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-3-third-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 2746,
+      "width": 1936,
+      "height": 36,
+      "text": "11 signals",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s3-group-033",
+      "type": "card",
+      "x": 32,
+      "y": 2791,
+      "width": 1936,
+      "height": 428,
+      "text": "Third-Party Signals",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s3-sig-036",
+      "type": "badge",
+      "x": 48,
+      "y": 2856,
+      "width": 1904,
+      "height": 28,
+      "text": "Funding Announcements",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-037",
+      "type": "badge",
+      "x": 48,
+      "y": 2889,
+      "width": 1904,
+      "height": 28,
+      "text": "Search Analytics",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-038",
+      "type": "badge",
+      "x": 48,
+      "y": 2922,
+      "width": 1904,
+      "height": 28,
+      "text": "People Data",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-039",
+      "type": "badge",
+      "x": 48,
+      "y": 2955,
+      "width": 1904,
+      "height": 28,
+      "text": "Technographic Signals",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-040",
+      "type": "badge",
+      "x": 48,
+      "y": 2988,
+      "width": 1904,
+      "height": 28,
+      "text": "News",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-041",
+      "type": "badge",
+      "x": 48,
+      "y": 3021,
+      "width": 1904,
+      "height": 28,
+      "text": "Firmographic Data",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-042",
+      "type": "badge",
+      "x": 48,
+      "y": 3054,
+      "width": 1904,
+      "height": 28,
+      "text": "Job Openings",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-043",
+      "type": "badge",
+      "x": 48,
+      "y": 3087,
+      "width": 1904,
+      "height": 28,
+      "text": "Web Scraping",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-044",
+      "type": "badge",
+      "x": 48,
+      "y": 3120,
+      "width": 1904,
+      "height": 28,
+      "text": "Advertisement Activity",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-045",
+      "type": "badge",
+      "x": 48,
+      "y": 3153,
+      "width": 1904,
+      "height": 28,
+      "text": "Social Signals",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s3-sig-046",
+      "type": "badge",
+      "x": 48,
+      "y": 3186,
+      "width": 1904,
+      "height": 28,
+      "text": "Competitive Signals",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-4-awareness-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 3263,
+      "width": 1936,
+      "height": 36,
+      "text": "5 stages",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s4-model-awareness",
+      "type": "card",
+      "x": 32,
+      "y": 3308,
+      "width": 1936,
+      "height": 230,
+      "text": "Awareness Stages",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s4-stage-1",
+      "type": "badge",
+      "x": 48,
+      "y": 3373,
+      "width": 1904,
+      "height": 28,
+      "text": "Identified",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-stage-2",
+      "type": "badge",
+      "x": 48,
+      "y": 3406,
+      "width": 1904,
+      "height": 28,
+      "text": "Aware",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-stage-3",
+      "type": "badge",
+      "x": 48,
+      "y": 3439,
+      "width": 1904,
+      "height": 28,
+      "text": "Interested",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-stage-4",
+      "type": "badge",
+      "x": 48,
+      "y": 3472,
+      "width": 1904,
+      "height": 28,
+      "text": "Considering",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-stage-5",
+      "type": "badge",
+      "x": 48,
+      "y": 3505,
+      "width": 1904,
+      "height": 28,
+      "text": "Selecting",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-4-tiers-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 3582,
+      "width": 1936,
+      "height": 36,
+      "text": "3 tiers",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s4-model-tiers",
+      "type": "card",
+      "x": 32,
+      "y": 3627,
+      "width": 1936,
+      "height": 164,
+      "text": "Account Tiers",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s4-tier-1",
+      "type": "badge",
+      "x": 48,
+      "y": 3692,
+      "width": 1904,
+      "height": 28,
+      "text": "Tier 1",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-tier-2",
+      "type": "badge",
+      "x": 48,
+      "y": 3725,
+      "width": 1904,
+      "height": 28,
+      "text": "Tier 2",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s4-tier-3",
+      "type": "badge",
+      "x": 48,
+      "y": 3758,
+      "width": 1904,
+      "height": 28,
+      "text": "Tier 3",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "section-step-6-one-to-one-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 3835,
+      "width": 1936,
+      "height": 36,
+      "text": "4 activities",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s6-lane-one-to-one",
+      "type": "card",
+      "x": 32,
+      "y": 3880,
+      "width": 1936,
+      "height": 263,
+      "text": "One-to-One",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s6-007",
+      "type": "badge",
+      "x": 48,
+      "y": 3945,
+      "width": 1904,
+      "height": 28,
+      "text": "Warm Intros",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-007-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 3978,
+      "width": 1904,
+      "height": 28,
+      "text": "Gmail",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-18.png",
+        "fallback_label": "Gmail",
+        "subject": "Gmail"
+      }
+    },
+    {
+      "id": "node-s6-008",
+      "type": "badge",
+      "x": 48,
+      "y": 4011,
+      "width": 1904,
+      "height": 28,
+      "text": "Gifting Campaigns",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-009",
+      "type": "badge",
+      "x": 48,
+      "y": 4044,
+      "width": 1904,
+      "height": 28,
+      "text": "Event Invites",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-010",
+      "type": "badge",
+      "x": 48,
+      "y": 4077,
+      "width": 1904,
+      "height": 28,
+      "text": "Manual Outreach",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-010-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4110,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "section-step-6-one-to-many-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 4187,
+      "width": 1936,
+      "height": 36,
+      "text": "8 activities",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-s6-lane-one-to-many",
+      "type": "card",
+      "x": 32,
+      "y": 4232,
+      "width": 1936,
+      "height": 593,
+      "text": "One-to-Many",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-s6-011",
+      "type": "badge",
+      "x": 48,
+      "y": 4297,
+      "width": 1904,
+      "height": 28,
+      "text": "Automated Outbound",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-012",
+      "type": "badge",
+      "x": 48,
+      "y": 4330,
+      "width": 1904,
+      "height": 28,
+      "text": "Parallel Dialing",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-013",
+      "type": "badge",
+      "x": 48,
+      "y": 4363,
+      "width": 1904,
+      "height": 28,
+      "text": "Targeted Ads",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-013-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4396,
+      "width": 1904,
+      "height": 28,
+      "text": "LinkedIn",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-19.jpg",
+        "fallback_label": "LinkedIn",
+        "subject": "LinkedIn"
+      }
+    },
+    {
+      "id": "node-s6-013-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4429,
+      "width": 1904,
+      "height": 28,
+      "text": "Meta",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-20.png",
+        "fallback_label": "Meta",
+        "subject": "Meta"
+      }
+    },
+    {
+      "id": "node-s6-013-tool-03",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4462,
+      "width": 1904,
+      "height": 28,
+      "text": "Google",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-21.png",
+        "fallback_label": "Google",
+        "subject": "Google"
+      }
+    },
+    {
+      "id": "node-s6-014",
+      "type": "badge",
+      "x": 48,
+      "y": 4495,
+      "width": 1904,
+      "height": 28,
+      "text": "Public Events",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-015",
+      "type": "badge",
+      "x": 48,
+      "y": 4528,
+      "width": 1904,
+      "height": 28,
+      "text": "Social Content",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-015-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4561,
+      "width": 1904,
+      "height": 28,
+      "text": "YouTube",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-22.png",
+        "fallback_label": "YouTube",
+        "subject": "YouTube"
+      }
+    },
+    {
+      "id": "node-s6-015-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4594,
+      "width": 1904,
+      "height": 28,
+      "text": "LinkedIn",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-19.jpg",
+        "fallback_label": "LinkedIn",
+        "subject": "LinkedIn"
+      }
+    },
+    {
+      "id": "node-s6-015-tool-03",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4627,
+      "width": 1904,
+      "height": 28,
+      "text": "X (formerly Twitter)",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-23.png",
+        "fallback_label": "X (formerly Twitter)",
+        "subject": "X (formerly Twitter)"
+      }
+    },
+    {
+      "id": "node-s6-016",
+      "type": "badge",
+      "x": 48,
+      "y": 4660,
+      "width": 1904,
+      "height": 28,
+      "text": "On-Site Content",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-016-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4693,
+      "width": 1904,
+      "height": 28,
+      "text": "Webflow",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-24.png",
+        "fallback_label": "Webflow",
+        "subject": "Webflow"
+      }
+    },
+    {
+      "id": "node-s6-017",
+      "type": "badge",
+      "x": 48,
+      "y": 4726,
+      "width": 1904,
+      "height": 28,
+      "text": "Video Outreach",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-018",
+      "type": "badge",
+      "x": 48,
+      "y": 4759,
+      "width": 1904,
+      "height": 28,
+      "text": "Connection Requests",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-s6-018-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4792,
+      "width": 1904,
+      "height": 28,
+      "text": "LinkedIn",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "assets/logos/asset-request-19.jpg",
+        "fallback_label": "LinkedIn",
+        "subject": "LinkedIn"
+      }
+    },
+    {
+      "id": "section-downstream-header",
+      "type": "section_header",
+      "x": 32,
+      "y": 4869,
+      "width": 1936,
+      "height": 36,
+      "text": "Downstream activities and closed-won outcome",
+      "font_size": 22,
+      "font_weight": "bold",
+      "fill": "#7C4DDF",
+      "text_fill": "#FFFFFF",
+      "radius": 10,
+      "padding": 16,
+      "role": "section_header"
+    },
+    {
+      "id": "node-ds-1",
+      "type": "card",
+      "x": 32,
+      "y": 4914,
+      "width": 1936,
+      "height": 362,
+      "text": "Slack Notification",
+      "font_size": 16,
+      "font_weight": "600",
+      "fill": "#FFFFFF",
+      "text_fill": "#202124",
+      "radius": 16,
+      "padding": 16,
+      "role": "content_card"
+    },
+    {
+      "id": "node-ds-1-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 4979,
+      "width": 1904,
+      "height": 28,
+      "text": "Slack",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-25.png",
+        "fallback_label": "Slack",
+        "subject": "Slack"
+      }
+    },
+    {
+      "id": "node-ds-2",
+      "type": "badge",
+      "x": 48,
+      "y": 5012,
+      "width": 1904,
+      "height": 28,
+      "text": "Enroll in Sequences",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-ds-2-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 5045,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "node-ds-3",
+      "type": "badge",
+      "x": 48,
+      "y": 5078,
+      "width": 1904,
+      "height": 28,
+      "text": "CRM Tasks",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-ds-3-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 5111,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "node-ds-3-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 5144,
+      "width": 1904,
+      "height": 28,
+      "text": "Salesforce",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-17.png",
+        "fallback_label": "Salesforce",
+        "subject": "Salesforce"
+      }
+    },
+    {
+      "id": "node-ds-4",
+      "type": "badge",
+      "x": 48,
+      "y": 5177,
+      "width": 1904,
+      "height": 28,
+      "text": "Closed-Won",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item"
+    },
+    {
+      "id": "node-ds-4-tool-01",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 5210,
+      "width": 1904,
+      "height": 28,
+      "text": "HubSpot",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-16.png",
+        "fallback_label": "HubSpot",
+        "subject": "HubSpot"
+      }
+    },
+    {
+      "id": "node-ds-4-tool-02",
+      "type": "logo_badge",
+      "x": 48,
+      "y": 5243,
+      "width": 1904,
+      "height": 28,
+      "text": "Salesforce",
+      "font_size": 12,
+      "font_weight": "500",
+      "fill": "#FFFFFF",
+      "text_fill": "#4A4A4A",
+      "radius": 6,
+      "padding": 5,
+      "role": "sub_item",
+      "asset": {
+        "disposition": "prepared",
+        "path": "step-08/prepared-assets/asset-request-17.png",
+        "fallback_label": "Salesforce",
+        "subject": "Salesforce"
+      }
+    },
+    {
+      "id": "visual-unit-001-annotation",
+      "type": "card",
+      "x": 48,
+      "y": 5352,
+      "width": 1904,
+      "height": 48,
+      "text": "From identifying accounts to closing deals",
+      "font_size": 14,
+      "font_weight": "600",
+      "fill": "#EEE7FF",
+      "text_fill": "#202124",
+      "radius": 10,
+      "padding": 14,
+      "role": "relationship_annotation"
+    },
+    {
+      "id": "connection-010-annotation",
+      "type": "card",
+      "x": 48,
+      "y": 5414,
+      "width": 1904,
+      "height": 48,
+      "text": "Steps 1\u20134 inform CRM records",
+      "font_size": 14,
+      "font_weight": "600",
+      "fill": "#EEE7FF",
+      "text_fill": "#202124",
+      "radius": 10,
+      "padding": 14,
+      "role": "relationship_annotation"
+    },
+    {
+      "id": "connection-033-annotation",
+      "type": "card",
+      "x": 48,
+      "y": 5476,
+      "width": 1904,
+      "height": 48,
+      "text": "Either/or, depending on existing tech stack",
+      "font_size": 14,
+      "font_weight": "600",
+      "fill": "#EEE7FF",
+      "text_fill": "#202124",
+      "radius": 10,
+      "padding": 14,
+      "role": "relationship_annotation"
+    },
+    {
+      "id": "connection-031-annotation",
+      "type": "card",
+      "x": 48,
+      "y": 5538,
+      "width": 1904,
+      "height": 48,
+      "text": "Related, but no fixed stage-to-tier mapping",
+      "font_size": 14,
+      "font_weight": "600",
+      "fill": "#EEE7FF",
+      "text_fill": "#202124",
+      "radius": 10,
+      "padding": 14,
+      "role": "relationship_annotation"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "conn-section-header-to-section-step-1",
+      "d": "M 1000.0 175.0 C 1000.0 250.5 1000.0 250.5 1000.0 326.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-1-to-section-step-2",
+      "d": "M 1000.0 362.0 C 1000.0 553.0 1000.0 553.0 1000.0 744.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-2-to-section-step-3",
+      "d": "M 1000.0 780.0 C 1000.0 1004.0 1000.0 1004.0 1000.0 1228.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-3-to-section-step-4",
+      "d": "M 1000.0 1264.0 C 1000.0 1323.0 1000.0 1323.0 1000.0 1382.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-4-to-section-step-5",
+      "d": "M 1000.0 1418.0 C 1000.0 1493.5 1000.0 1493.5 1000.0 1569.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-5-to-section-step-6",
+      "d": "M 1000.0 1605.0 C 1000.0 1713.5 1000.0 1713.5 1000.0 1822.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-6-to-section-step-3-first",
+      "d": "M 1000.0 1858.0 C 1000.0 1917.0 1000.0 1917.0 1000.0 1976.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-3-first-to-section-step-3-second",
+      "d": "M 1000.0 2012.0 C 1000.0 2203.0 1000.0 2203.0 1000.0 2394.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-3-second-to-section-step-3-third",
+      "d": "M 1000.0 2430.0 C 1000.0 2588.0 1000.0 2588.0 1000.0 2746.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-3-third-to-section-step-4-awareness",
+      "d": "M 1000.0 2782.0 C 1000.0 3022.5 1000.0 3022.5 1000.0 3263.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-4-awareness-to-section-step-4-tiers",
+      "d": "M 1000.0 3299.0 C 1000.0 3440.5 1000.0 3440.5 1000.0 3582.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-4-tiers-to-section-step-6-one-to-one",
+      "d": "M 1000.0 3618.0 C 1000.0 3726.5 1000.0 3726.5 1000.0 3835.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-6-one-to-one-to-section-step-6-one-to-many",
+      "d": "M 1000.0 3871.0 C 1000.0 4029.0 1000.0 4029.0 1000.0 4187.0",
+      "type": "sequence"
+    },
+    {
+      "id": "conn-section-step-6-one-to-many-to-section-downstream",
+      "d": "M 1000.0 4223.0 C 1000.0 4546.0 1000.0 4546.0 1000.0 4869.0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-001",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-002",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-003",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-004",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-005",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-006",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-007",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-008",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-009",
+      "d": "M 0 0",
+      "type": "sequence"
+    },
+    {
+      "id": "connection-010",
+      "d": "M 0 0",
+      "type": "information_flow"
+    },
+    {
+      "id": "connection-011",
+      "d": "M 0 0",
+      "type": "information_flow"
+    },
+    {
+      "id": "connection-012",
+      "d": "M 0 0",
+      "type": "information_flow"
+    },
+    {
+      "id": "connection-013",
+      "d": "M 0 0",
+      "type": "information_flow"
+    },
+    {
+      "id": "connection-014",
+      "d": "M 0 0",
+      "type": "information_flow"
+    },
+    {
+      "id": "connection-015",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-016",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-017",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-018",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-019",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-020",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-021",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-022",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-023",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-024",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-025",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-026",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-027",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-028",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-029",
+      "d": "M 0 0",
+      "type": "membership"
+    },
+    {
+      "id": "connection-030",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-031",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-032",
+      "d": "M 0 0",
+      "type": "comparison"
+    },
+    {
+      "id": "connection-033",
+      "d": "M 0 0",
+      "type": "alternative"
+    },
+    {
+      "id": "connection-034",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-035",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-036",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-037",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-038",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-039",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-040",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-041",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-042",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-043",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-044",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-045",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-046",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-047",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-048",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-049",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-050",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-051",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-052",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-053",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-054",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-055",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-056",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-057",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-058",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-059",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-060",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-061",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-062",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-063",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-064",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-065",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-066",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-067",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-068",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-069",
+      "d": "M 0 0",
+      "type": "association"
+    },
+    {
+      "id": "connection-070",
+      "d": "M 0 0",
+      "type": "association"
+    }
+  ],
+  "groups": [
+    {
+      "id": "section-header-group",
+      "x": 32,
+      "y": 139,
+      "width": 1936,
+      "height": 175,
+      "section_id": "section-header"
+    },
+    {
+      "id": "section-step-1-group",
+      "x": 32,
+      "y": 326,
+      "width": 1936,
+      "height": 406,
+      "section_id": "section-step-1"
+    },
+    {
+      "id": "section-step-2-group",
+      "x": 32,
+      "y": 744,
+      "width": 1936,
+      "height": 472,
+      "section_id": "section-step-2"
+    },
+    {
+      "id": "section-step-3-group",
+      "x": 32,
+      "y": 1228,
+      "width": 1936,
+      "height": 142,
+      "section_id": "section-step-3"
+    },
+    {
+      "id": "section-step-4-group",
+      "x": 32,
+      "y": 1382,
+      "width": 1936,
+      "height": 175,
+      "section_id": "section-step-4"
+    },
+    {
+      "id": "section-step-5-group",
+      "x": 32,
+      "y": 1569,
+      "width": 1936,
+      "height": 241,
+      "section_id": "section-step-5"
+    },
+    {
+      "id": "section-step-6-group",
+      "x": 32,
+      "y": 1822,
+      "width": 1936,
+      "height": 142,
+      "section_id": "section-step-6"
+    },
+    {
+      "id": "section-step-3-first-group",
+      "x": 32,
+      "y": 1976,
+      "width": 1936,
+      "height": 406,
+      "section_id": "section-step-3-first"
+    },
+    {
+      "id": "section-step-3-second-group",
+      "x": 32,
+      "y": 2394,
+      "width": 1936,
+      "height": 340,
+      "section_id": "section-step-3-second"
+    },
+    {
+      "id": "section-step-3-third-group",
+      "x": 32,
+      "y": 2746,
+      "width": 1936,
+      "height": 505,
+      "section_id": "section-step-3-third"
+    },
+    {
+      "id": "section-step-4-awareness-group",
+      "x": 32,
+      "y": 3263,
+      "width": 1936,
+      "height": 307,
+      "section_id": "section-step-4-awareness"
+    },
+    {
+      "id": "section-step-4-tiers-group",
+      "x": 32,
+      "y": 3582,
+      "width": 1936,
+      "height": 241,
+      "section_id": "section-step-4-tiers"
+    },
+    {
+      "id": "section-step-6-one-to-one-group",
+      "x": 32,
+      "y": 3835,
+      "width": 1936,
+      "height": 340,
+      "section_id": "section-step-6-one-to-one"
+    },
+    {
+      "id": "section-step-6-one-to-many-group",
+      "x": 32,
+      "y": 4187,
+      "width": 1936,
+      "height": 670,
+      "section_id": "section-step-6-one-to-many"
+    },
+    {
+      "id": "section-downstream-group",
+      "x": 32,
+      "y": 4869,
+      "width": 1936,
+      "height": 439,
+      "section_id": "section-downstream"
+    }
+  ],
+  "element_manifest": [
+    {
+      "id": "title",
+      "role": "title",
+      "semantic": "document_title",
+      "animatable": true
+    },
+    {
+      "id": "section-header-header",
+      "role": "section_header",
+      "semantic": "section_0_header",
+      "animatable": true
+    },
+    {
+      "id": "node-title",
+      "role": "content_card",
+      "semantic": "card_section-header_0",
+      "animatable": true
+    },
+    {
+      "id": "node-optionality-note",
+      "role": "sub_item",
+      "semantic": "item_node-title_0",
+      "animatable": true
+    },
+    {
+      "id": "section-step-1-header",
+      "role": "section_header",
+      "semantic": "section_1_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-1",
+      "role": "content_card",
+      "semantic": "card_section-step-1_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-03",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-04",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-05",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-06",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_5",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-07",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_6",
+      "animatable": true
+    },
+    {
+      "id": "node-s1-tool-08",
+      "role": "sub_item",
+      "semantic": "item_node-step-1_7",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-header-to-section-step-1",
+      "role": "connector",
+      "semantic": "sequence_0_to_1",
+      "animatable": true
+    },
+    {
+      "id": "section-step-2-header",
+      "role": "section_header",
+      "semantic": "section_2_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-2",
+      "role": "content_card",
+      "semantic": "card_section-step-2_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-03",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-04",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-05",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-06",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_5",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-07",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_6",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-08",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_7",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-09",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_8",
+      "animatable": true
+    },
+    {
+      "id": "node-s2-tool-10",
+      "role": "sub_item",
+      "semantic": "item_node-step-2_9",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-1-to-section-step-2",
+      "role": "connector",
+      "semantic": "sequence_1_to_2",
+      "animatable": true
+    },
+    {
+      "id": "section-step-3-header",
+      "role": "section_header",
+      "semantic": "section_3_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-3",
+      "role": "content_card",
+      "semantic": "card_section-step-3_0",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-2-to-section-step-3",
+      "role": "connector",
+      "semantic": "sequence_2_to_3",
+      "animatable": true
+    },
+    {
+      "id": "section-step-4-header",
+      "role": "section_header",
+      "semantic": "section_4_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-4",
+      "role": "content_card",
+      "semantic": "card_section-step-4_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-step-4_0",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-3-to-section-step-4",
+      "role": "connector",
+      "semantic": "sequence_3_to_4",
+      "animatable": true
+    },
+    {
+      "id": "section-step-5-header",
+      "role": "section_header",
+      "semantic": "section_5_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-5",
+      "role": "content_card",
+      "semantic": "card_section-step-5_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s5-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-step-5_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s5-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-step-5_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s5-crm-records",
+      "role": "sub_item",
+      "semantic": "item_node-step-5_2",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-4-to-section-step-5",
+      "role": "connector",
+      "semantic": "sequence_4_to_5",
+      "animatable": true
+    },
+    {
+      "id": "section-step-6-header",
+      "role": "section_header",
+      "semantic": "section_6_header",
+      "animatable": true
+    },
+    {
+      "id": "node-step-6",
+      "role": "content_card",
+      "semantic": "card_section-step-6_0",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-5-to-section-step-6",
+      "role": "connector",
+      "semantic": "sequence_5_to_6",
+      "animatable": true
+    },
+    {
+      "id": "section-step-3-first-header",
+      "role": "section_header",
+      "semantic": "section_7_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-group-034",
+      "role": "content_card",
+      "semantic": "card_section-step-3-first_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-047",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-048",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-049",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-050",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-051",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-052",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_5",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-053",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_6",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-054",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-034_7",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-6-to-section-step-3-first",
+      "role": "connector",
+      "semantic": "sequence_6_to_7",
+      "animatable": true
+    },
+    {
+      "id": "section-step-3-second-header",
+      "role": "section_header",
+      "semantic": "section_8_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-group-035",
+      "role": "content_card",
+      "semantic": "card_section-step-3-second_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-055",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-056",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-057",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-058",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-059",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-060",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-035_5",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-3-first-to-section-step-3-second",
+      "role": "connector",
+      "semantic": "sequence_7_to_8",
+      "animatable": true
+    },
+    {
+      "id": "section-step-3-third-header",
+      "role": "section_header",
+      "semantic": "section_9_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-group-033",
+      "role": "content_card",
+      "semantic": "card_section-step-3-third_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-036",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-037",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-038",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-039",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-040",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-041",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_5",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-042",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_6",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-043",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_7",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-044",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_8",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-045",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_9",
+      "animatable": true
+    },
+    {
+      "id": "node-s3-sig-046",
+      "role": "sub_item",
+      "semantic": "item_node-s3-group-033_10",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-3-second-to-section-step-3-third",
+      "role": "connector",
+      "semantic": "sequence_8_to_9",
+      "animatable": true
+    },
+    {
+      "id": "section-step-4-awareness-header",
+      "role": "section_header",
+      "semantic": "section_10_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-model-awareness",
+      "role": "content_card",
+      "semantic": "card_section-step-4-awareness_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-stage-1",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-awareness_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-stage-2",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-awareness_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-stage-3",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-awareness_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-stage-4",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-awareness_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-stage-5",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-awareness_4",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-3-third-to-section-step-4-awareness",
+      "role": "connector",
+      "semantic": "sequence_9_to_10",
+      "animatable": true
+    },
+    {
+      "id": "section-step-4-tiers-header",
+      "role": "section_header",
+      "semantic": "section_11_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-model-tiers",
+      "role": "content_card",
+      "semantic": "card_section-step-4-tiers_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-tier-1",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-tiers_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-tier-2",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-tiers_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s4-tier-3",
+      "role": "sub_item",
+      "semantic": "item_node-s4-model-tiers_2",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-4-awareness-to-section-step-4-tiers",
+      "role": "connector",
+      "semantic": "sequence_10_to_11",
+      "animatable": true
+    },
+    {
+      "id": "section-step-6-one-to-one-header",
+      "role": "section_header",
+      "semantic": "section_12_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-lane-one-to-one",
+      "role": "content_card",
+      "semantic": "card_section-step-6-one-to-one_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-007",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-007-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-008",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-009",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-010",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-010-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-one_5",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-4-tiers-to-section-step-6-one-to-one",
+      "role": "connector",
+      "semantic": "sequence_11_to_12",
+      "animatable": true
+    },
+    {
+      "id": "section-step-6-one-to-many-header",
+      "role": "section_header",
+      "semantic": "section_13_header",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-lane-one-to-many",
+      "role": "content_card",
+      "semantic": "card_section-step-6-one-to-many_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-011",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_0",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-012",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_1",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-013",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_2",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-013-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_3",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-013-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_4",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-013-tool-03",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_5",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-014",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_6",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-015",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_7",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-015-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_8",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-015-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_9",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-015-tool-03",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_10",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-016",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_11",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-016-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_12",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-017",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_13",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-018",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_14",
+      "animatable": true
+    },
+    {
+      "id": "node-s6-018-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-s6-lane-one-to-many_15",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-6-one-to-one-to-section-step-6-one-to-many",
+      "role": "connector",
+      "semantic": "sequence_12_to_13",
+      "animatable": true
+    },
+    {
+      "id": "section-downstream-header",
+      "role": "section_header",
+      "semantic": "section_14_header",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-1",
+      "role": "content_card",
+      "semantic": "card_section-downstream_0",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-1-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_0",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-2",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_1",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-2-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_2",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-3",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_3",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-3-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_4",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-3-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_5",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-4",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_6",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-4-tool-01",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_7",
+      "animatable": true
+    },
+    {
+      "id": "node-ds-4-tool-02",
+      "role": "sub_item",
+      "semantic": "item_node-ds-1_8",
+      "animatable": true
+    },
+    {
+      "id": "conn-section-step-6-one-to-many-to-section-downstream",
+      "role": "connector",
+      "semantic": "sequence_13_to_14",
+      "animatable": true
+    },
+    {
+      "id": "connection-001",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-002",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-003",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-004",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-005",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-006",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-007",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-008",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-009",
+      "role": "connector",
+      "semantic": "sequence",
+      "animatable": true
+    },
+    {
+      "id": "connection-010",
+      "role": "connector",
+      "semantic": "information_flow",
+      "animatable": true
+    },
+    {
+      "id": "connection-011",
+      "role": "connector",
+      "semantic": "information_flow",
+      "animatable": true
+    },
+    {
+      "id": "connection-012",
+      "role": "connector",
+      "semantic": "information_flow",
+      "animatable": true
+    },
+    {
+      "id": "connection-013",
+      "role": "connector",
+      "semantic": "information_flow",
+      "animatable": true
+    },
+    {
+      "id": "connection-014",
+      "role": "connector",
+      "semantic": "information_flow",
+      "animatable": true
+    },
+    {
+      "id": "connection-015",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-016",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-017",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-018",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-019",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-020",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-021",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-022",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-023",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-024",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-025",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-026",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-027",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-028",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-029",
+      "role": "connector",
+      "semantic": "membership",
+      "animatable": true
+    },
+    {
+      "id": "connection-030",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-031",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-032",
+      "role": "connector",
+      "semantic": "comparison",
+      "animatable": true
+    },
+    {
+      "id": "connection-033",
+      "role": "connector",
+      "semantic": "alternative",
+      "animatable": true
+    },
+    {
+      "id": "connection-034",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-035",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-036",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-037",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-038",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-039",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-040",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-041",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-042",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-043",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-044",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-045",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-046",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-047",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-048",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-049",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-050",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-051",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-052",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-053",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-054",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-055",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-056",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-057",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-058",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-059",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-060",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-061",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-062",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-063",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-064",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-065",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-066",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-067",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-068",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-069",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "connection-070",
+      "role": "connector",
+      "semantic": "association",
+      "animatable": true
+    },
+    {
+      "id": "visual-unit-001-annotation",
+      "role": "flow_indicator",
+      "semantic": "explicit_relationship",
+      "animatable": true
+    },
+    {
+      "id": "connection-010-annotation",
+      "role": "flow_indicator",
+      "semantic": "explicit_relationship",
+      "animatable": true
+    },
+    {
+      "id": "connection-033-annotation",
+      "role": "flow_indicator",
+      "semantic": "explicit_relationship",
+      "animatable": true
+    },
+    {
+      "id": "connection-031-annotation",
+      "role": "flow_indicator",
+      "semantic": "explicit_relationship",
+      "animatable": true
+    }
+  ]
+}

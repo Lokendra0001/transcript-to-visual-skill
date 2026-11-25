@@ -1,0 +1,361 @@
+{
+  "step": "04-workflow-architecture",
+  "contract_version": "1.1",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "artifact": "04-workflow-architecture.json",
+  "overall": "pass",
+  "deterministic": {
+    "command": "python3 scripts/04-workflow-architecture/validate_architecture.py --run-dir <run-dir>",
+    "exit_code": 0,
+    "valid": true,
+    "errors": [],
+    "checks": [
+      {
+        "id": "deterministic-structural",
+        "method": "validator",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": [],
+        "failure_explanation": null
+      }
+    ]
+  },
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "name": "Upstream Step 02/03 artifacts unchanged",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S02",
+      "name": "Exactly six numbered steps in recap order",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S03",
+      "name": "Sequence chain 1→6→downstream with corrected order; downstream unnumbered",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S04",
+      "name": "Single closed-won outcome; no closed-lost content",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S05",
+      "name": "No demand-gen activity or tool links directly to closed-won; tools never in sequence",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S06",
+      "name": "Tool associations exactly match Step 02 per activity; all optional",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S07",
+      "name": "Excluded items (Apollo, Pipedrive, Reddit, Email opens) have no nodes or assets",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S08",
+      "name": "Cross-step tool repeats preserved (not deduplicated)",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S09",
+      "name": "Signal taxonomy 8/6/11 preserved under Step 3, no vendors",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S10",
+      "name": "Awareness order corrected; tiers unmapped; no scores",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S11",
+      "name": "Demand generation 4 one-to-one / 8 one-to-many; video outreach one-to-many; no inbound/outbound",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S12",
+      "name": "Corrected names: Claygent, Claude Code, X (formerly Twitter)",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S13",
+      "name": "CRM hub: either/or CRMs; Steps 1–4 inform CRM records as required, flexible information flow",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S14",
+      "name": "Every connection is source-supported; every Step 02 relationship has a connection",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S15",
+      "name": "Section containment preserves the Step 02 topic hierarchy",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S16",
+      "name": "All 217 Step 02 records and all Step 03 records mapped; dispositions consistent with Step 03",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S17",
+      "name": "All 40 activity–tool associations mapped (36 nodes, 4 excluded rejections)",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S18",
+      "name": "All 11 representation constraints carried verbatim with valid section targets",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S19",
+      "name": "Six ambiguities carried; no invented tools, triggers or mappings",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S20",
+      "name": "Every node has a required label slot; optional slots are contextual and justified",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S21",
+      "name": "Layout requirements are template-independent (no pixels, colours, fonts) and levelled",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S22",
+      "name": "Nothing preserved by the prior v1.0 architecture is lost",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "S23",
+      "name": "Reading order covers every node exactly once in step order",
+      "category": "semantic",
+      "method": "claude_authored_script_assertion",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [],
+      "failure_explanation": null
+    },
+    {
+      "id": "M01",
+      "name": "Strategy matches Step 03 classification (playbook + process_flow + taxonomy, composite, 1 visual)",
+      "category": "semantic",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "architecture_strategy",
+        "step03:classification",
+        "step03:visual_unit-001"
+      ],
+      "failure_explanation": null
+    },
+    {
+      "id": "M02",
+      "name": "Spine placement left flexible (layout-req-010) because Step 02/03 record no centred-CRM or other placement decision",
+      "category": "semantic",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "layout-req-010",
+        "structure-007"
+      ],
+      "failure_explanation": null
+    },
+    {
+      "id": "M03",
+      "name": "Optional content slots limited to redundant counts, a gloss and a role hint; no meaningful content made optional for density",
+      "category": "semantic",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "content-req-109",
+        "content-req-110",
+        "content-req-111",
+        "content-req-112",
+        "content-req-113",
+        "content-req-114",
+        "content-req-115",
+        "content-req-116",
+        "content-req-117",
+        "content-req-118",
+        "content-req-119",
+        "content-req-120"
+      ],
+      "failure_explanation": null
+    },
+    {
+      "id": "M04",
+      "name": "Relationship 030 (warm intros signal vs activity) and 032 (Claygent vs Clay) set visual_representation_required=false; both instances / both names are still required nodes",
+      "category": "semantic",
+      "method": "claude_manual_review",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_references": [
+        "relationship-030",
+        "relationship-032"
+      ],
+      "failure_explanation": null
+    },
+    {
+      "id": "N01",
+      "name": "Rendered legibility and connector overlap",
+      "category": "semantic",
+      "method": "requires rendered visual (Step 08/10)",
+      "execution_status": "not_executed",
+      "result": null,
+      "affected_references": [],
+      "failure_explanation": "Out of scope for Step 04; not marked as passed."
+    }
+  ],
+  "counts": {
+    "sections": 17,
+    "nodes": 102,
+    "connections": 70,
+    "explicit_connectors": 9,
+    "connections_requiring_visual": 68,
+    "content_requirements": 120,
+    "required_content_requirements": 108,
+    "asset_requirements": 37,
+    "step02_records_mapped": 217,
+    "step03_records_mapped": 45,
+    "associations_mapped": 40
+  },
+  "notes": [
+    "Upstream Step 02/03 artifacts reused unchanged; previous steps not re-executed.",
+    "Skill implementation not modified.",
+    "Prior v1.0 architecture superseded; backup kept outside the run directory."
+  ],
+  "deterministic_after_embedding": {
+    "exit_code": 0,
+    "valid": true,
+    "errors": [],
+    "checks": [
+      {
+        "id": "deterministic-structural",
+        "method": "validator",
+        "execution_status": "executed",
+        "result": "pass",
+        "affected_references": [],
+        "failure_explanation": null
+      }
+    ]
+  }
+}

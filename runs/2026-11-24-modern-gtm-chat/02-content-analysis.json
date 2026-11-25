@@ -1,0 +1,1827 @@
+{
+  "step": "02-content-analysis",
+  "version": "2.0",
+  "status": "warning",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "context": {
+    "primary_subject": "Modern GTM strategy for 2026",
+    "domain": "go-to-market strategy",
+    "discussion_purpose": "Define a ten-stage GTM workflow and optional tools.",
+    "objectives": [
+      "Identify and prioritize accounts.",
+      "Research accounts before outreach.",
+      "Generate demand, book meetings, and close deals."
+    ],
+    "intended_audience": null,
+    "summary": "The speakers define ten GTM stages from ICP modeling through closed-won, with optional tools and explicit exclusions.",
+    "source_segment_ids": [
+      "segment-003",
+      "segment-097",
+      "segment-099"
+    ]
+  },
+  "topics": [
+    {
+      "id": "topic-001",
+      "source_segment_ids": [
+        "segment-007",
+        "segment-009",
+        "segment-013",
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "name": "ICP modeling",
+      "explanation": "Proposed GTM stage: ICP modeling.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-002",
+      "source_segment_ids": [
+        "segment-019",
+        "segment-021"
+      ],
+      "evidence_status": "explicit",
+      "name": "TAM mapping",
+      "explanation": "Proposed GTM stage: TAM mapping.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-003",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-027",
+        "segment-029"
+      ],
+      "evidence_status": "explicit",
+      "name": "AI account research",
+      "explanation": "Proposed GTM stage: AI account research.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-004",
+      "source_segment_ids": [
+        "segment-031",
+        "segment-033",
+        "segment-035"
+      ],
+      "evidence_status": "explicit",
+      "name": "Account tiering",
+      "explanation": "Proposed GTM stage: Account tiering.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-005",
+      "source_segment_ids": [
+        "segment-040",
+        "segment-042",
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "name": "Awareness scoring",
+      "explanation": "Proposed GTM stage: Awareness scoring.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-006",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-063",
+        "segment-065",
+        "segment-067",
+        "segment-071",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "name": "Contact sourcing and enrichment",
+      "explanation": "Proposed GTM stage: Contact sourcing and enrichment.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-007",
+      "source_segment_ids": [
+        "segment-047",
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-055",
+        "segment-056"
+      ],
+      "evidence_status": "explicit",
+      "name": "Demand generation",
+      "explanation": "Proposed GTM stage: Demand generation.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-008",
+      "source_segment_ids": [
+        "segment-081",
+        "segment-083",
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "name": "Meeting booked",
+      "explanation": "Proposed GTM stage: Meeting booked.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-009",
+      "source_segment_ids": [
+        "segment-085",
+        "segment-087",
+        "segment-089",
+        "segment-091"
+      ],
+      "evidence_status": "explicit",
+      "name": "Sales process",
+      "explanation": "Proposed GTM stage: Sales process.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    },
+    {
+      "id": "topic-010",
+      "source_segment_ids": [
+        "segment-093",
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "name": "Closed-won",
+      "explanation": "Proposed GTM stage: Closed-won.",
+      "importance": "primary",
+      "entity_ids": [],
+      "fact_ids": [],
+      "activity_ids": []
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-001",
+      "source_segment_ids": [
+        "segment-003",
+        "segment-105"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Modern GTM strategy",
+      "canonical_name": null,
+      "category": "strategy",
+      "description": "The proposed GTM strategy.",
+      "topic_ids": [],
+      "aliases": [],
+      "identity_ambiguity": false
+    },
+    {
+      "id": "entity-002",
+      "source_segment_ids": [
+        "segment-071",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "BetterContact",
+      "canonical_name": null,
+      "category": "tool",
+      "description": "Phone enrichment tool option.",
+      "topic_ids": [],
+      "aliases": [],
+      "identity_ambiguity": false
+    },
+    {
+      "id": "entity-003",
+      "source_segment_ids": [
+        "segment-071",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "original_name": "Findymail",
+      "canonical_name": null,
+      "category": "tool",
+      "description": "Email enrichment tool option.",
+      "topic_ids": [],
+      "aliases": [],
+      "identity_ambiguity": false
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact-001",
+      "source_segment_ids": [
+        "segment-095",
+        "segment-097",
+        "segment-099",
+        "segment-100"
+      ],
+      "evidence_status": "explicit",
+      "statement": "The proposed framework has ten stages.",
+      "statement_type": "fact",
+      "entity_ids": [],
+      "topic_ids": [],
+      "quantitative": null
+    },
+    {
+      "id": "fact-002",
+      "source_segment_ids": [
+        "segment-040",
+        "segment-042"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Awareness has five levels: identified, aware, interested, considering, and selecting.",
+      "statement_type": "proposal",
+      "entity_ids": [],
+      "topic_ids": [],
+      "quantitative": null
+    },
+    {
+      "id": "fact-003",
+      "source_segment_ids": [
+        "segment-071",
+        "segment-072",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "statement": "BetterContact is for phone numbers and Findymail is for email addresses.",
+      "statement_type": "fact",
+      "entity_ids": [
+        "entity-002",
+        "entity-003"
+      ],
+      "topic_ids": [],
+      "quantitative": null
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-001",
+      "source_segment_ids": [
+        "segment-007",
+        "segment-009",
+        "segment-013",
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "name": "ICP modeling",
+      "description": "Proposed GTM stage: ICP modeling.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [],
+      "triggers": [],
+      "dependency_refs": [],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-001"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-002",
+      "source_segment_ids": [
+        "segment-019",
+        "segment-021"
+      ],
+      "evidence_status": "explicit",
+      "name": "TAM mapping",
+      "description": "Proposed GTM stage: TAM mapping.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-001"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-001"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-002"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-003",
+      "source_segment_ids": [
+        "segment-025",
+        "segment-027",
+        "segment-029"
+      ],
+      "evidence_status": "explicit",
+      "name": "AI account research",
+      "description": "Proposed GTM stage: AI account research.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-002"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-002"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-003"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-004",
+      "source_segment_ids": [
+        "segment-031",
+        "segment-033",
+        "segment-035"
+      ],
+      "evidence_status": "explicit",
+      "name": "Account tiering",
+      "description": "Proposed GTM stage: Account tiering.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-003"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-003"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-004"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-005",
+      "source_segment_ids": [
+        "segment-040",
+        "segment-042",
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "name": "Awareness scoring",
+      "description": "Proposed GTM stage: Awareness scoring.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-004"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-004"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-005"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-006",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-063",
+        "segment-065",
+        "segment-067",
+        "segment-071",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "name": "Contact sourcing and enrichment",
+      "description": "Proposed GTM stage: Contact sourcing and enrichment.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-005"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-005"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-006"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-007",
+      "source_segment_ids": [
+        "segment-047",
+        "segment-049",
+        "segment-050",
+        "segment-051",
+        "segment-055",
+        "segment-056"
+      ],
+      "evidence_status": "explicit",
+      "name": "Demand generation",
+      "description": "Proposed GTM stage: Demand generation.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-006"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-006"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-007"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-008",
+      "source_segment_ids": [
+        "segment-081",
+        "segment-083",
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "name": "Meeting booked",
+      "description": "Proposed GTM stage: Meeting booked.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-007"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-007"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-008"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-009",
+      "source_segment_ids": [
+        "segment-085",
+        "segment-087",
+        "segment-089",
+        "segment-091"
+      ],
+      "evidence_status": "explicit",
+      "name": "Sales process",
+      "description": "Proposed GTM stage: Sales process.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-008"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-008"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-009"
+      ],
+      "entity_associations": []
+    },
+    {
+      "id": "activity-010",
+      "source_segment_ids": [
+        "segment-093",
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "name": "Closed-won",
+      "description": "Proposed GTM stage: Closed-won.",
+      "actor_entity_ids": [],
+      "input_refs": [],
+      "output_refs": [],
+      "preconditions": [
+        "activity-009"
+      ],
+      "triggers": [],
+      "dependency_refs": [
+        "activity-009"
+      ],
+      "sequence_note": "Explicit sequence in the ten-stage recap.",
+      "activity_status": "proposed",
+      "topic_ids": [
+        "topic-010"
+      ],
+      "entity_associations": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship-001",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-063"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "activity-006",
+      "target_ref": "activity-007",
+      "relationship_type": "precedes",
+      "description": "Contact sourcing and enrichment follows awareness scoring and precedes demand generation.",
+      "direction": "forward",
+      "conditions": null
+    },
+    {
+      "id": "relationship-002",
+      "source_segment_ids": [
+        "segment-071",
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "source_ref": "entity-002",
+      "target_ref": "entity-003",
+      "relationship_type": "complements",
+      "description": "The tools are assigned to phone and email enrichment respectively.",
+      "direction": "bidirectional",
+      "conditions": null
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-001",
+      "source_segment_ids": [
+        "segment-022",
+        "segment-023"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not include ZoomInfo in this version.",
+      "status": "rejected",
+      "category": "tool_selection",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-002",
+      "source_segment_ids": [
+        "segment-061",
+        "segment-063"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Place contact sourcing and enrichment after awareness scoring and before demand generation.",
+      "status": "confirmed",
+      "category": "sequence",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-003",
+      "source_segment_ids": [
+        "segment-082",
+        "segment-083"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Use Chili Piper, Cal.com, Default, and RevenueHero; exclude Calendly.",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-004",
+      "source_segment_ids": [
+        "segment-101",
+        "segment-102",
+        "segment-103"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Treat listed tools as optional choices, not a fixed stack.",
+      "status": "confirmed",
+      "category": "tool_governance",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    }
+  ],
+  "requirements": [
+    {
+      "id": "requirement-001",
+      "source_segment_ids": [
+        "segment-007"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Use both closed-won and closed-lost deal data for ICP modeling.",
+      "status": "proposed",
+      "category": "data",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-002",
+      "source_segment_ids": [
+        "segment-025"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Conduct account research before outreach.",
+      "status": "proposed",
+      "category": "sequence",
+      "related_entity_ids": []
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "ambiguity-001",
+      "source_segment_ids": [
+        "segment-097",
+        "segment-099"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "operational_definition",
+      "description": "Stage owners and entry/exit criteria are not specified.",
+      "affected_refs": [
+        "topic-001"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Define stage owners, inputs, and outcomes."
+    }
+  ],
+  "relevance_assessment": [
+    {
+      "id": "relevance-001",
+      "source_segment_ids": [
+        "segment-001"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-002",
+      "source_segment_ids": [
+        "segment-002"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-003",
+      "source_segment_ids": [
+        "segment-003"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-004",
+      "source_segment_ids": [
+        "segment-004"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-005",
+      "source_segment_ids": [
+        "segment-005"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-006",
+      "source_segment_ids": [
+        "segment-006"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-007",
+      "source_segment_ids": [
+        "segment-007"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-008",
+      "source_segment_ids": [
+        "segment-008"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-009",
+      "source_segment_ids": [
+        "segment-009"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-010",
+      "source_segment_ids": [
+        "segment-010"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-011",
+      "source_segment_ids": [
+        "segment-011"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-012",
+      "source_segment_ids": [
+        "segment-012"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-013",
+      "source_segment_ids": [
+        "segment-013"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-014",
+      "source_segment_ids": [
+        "segment-014"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-015",
+      "source_segment_ids": [
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-016",
+      "source_segment_ids": [
+        "segment-016"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-017",
+      "source_segment_ids": [
+        "segment-017"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-018",
+      "source_segment_ids": [
+        "segment-018"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-019",
+      "source_segment_ids": [
+        "segment-019"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-020",
+      "source_segment_ids": [
+        "segment-020"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-021",
+      "source_segment_ids": [
+        "segment-021"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-022",
+      "source_segment_ids": [
+        "segment-022"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-023",
+      "source_segment_ids": [
+        "segment-023"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-024",
+      "source_segment_ids": [
+        "segment-024"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-025",
+      "source_segment_ids": [
+        "segment-025"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-026",
+      "source_segment_ids": [
+        "segment-026"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-027",
+      "source_segment_ids": [
+        "segment-027"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-028",
+      "source_segment_ids": [
+        "segment-028"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-029",
+      "source_segment_ids": [
+        "segment-029"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-030",
+      "source_segment_ids": [
+        "segment-030"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-031",
+      "source_segment_ids": [
+        "segment-031"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-032",
+      "source_segment_ids": [
+        "segment-032"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-033",
+      "source_segment_ids": [
+        "segment-033"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-034",
+      "source_segment_ids": [
+        "segment-034"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-035",
+      "source_segment_ids": [
+        "segment-035"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-036",
+      "source_segment_ids": [
+        "segment-036"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-037",
+      "source_segment_ids": [
+        "segment-037"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-038",
+      "source_segment_ids": [
+        "segment-038"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-039",
+      "source_segment_ids": [
+        "segment-039"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-040",
+      "source_segment_ids": [
+        "segment-040"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-041",
+      "source_segment_ids": [
+        "segment-041"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-042",
+      "source_segment_ids": [
+        "segment-042"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-043",
+      "source_segment_ids": [
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-044",
+      "source_segment_ids": [
+        "segment-044"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-045",
+      "source_segment_ids": [
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-046",
+      "source_segment_ids": [
+        "segment-046"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-047",
+      "source_segment_ids": [
+        "segment-047"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-048",
+      "source_segment_ids": [
+        "segment-048"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-049",
+      "source_segment_ids": [
+        "segment-049"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-050",
+      "source_segment_ids": [
+        "segment-050"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-051",
+      "source_segment_ids": [
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-052",
+      "source_segment_ids": [
+        "segment-052"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-053",
+      "source_segment_ids": [
+        "segment-053"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-054",
+      "source_segment_ids": [
+        "segment-054"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-055",
+      "source_segment_ids": [
+        "segment-055"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-056",
+      "source_segment_ids": [
+        "segment-056"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-057",
+      "source_segment_ids": [
+        "segment-057"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-058",
+      "source_segment_ids": [
+        "segment-058"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-059",
+      "source_segment_ids": [
+        "segment-059"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-060",
+      "source_segment_ids": [
+        "segment-060"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-061",
+      "source_segment_ids": [
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-062",
+      "source_segment_ids": [
+        "segment-062"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-063",
+      "source_segment_ids": [
+        "segment-063"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-064",
+      "source_segment_ids": [
+        "segment-064"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-065",
+      "source_segment_ids": [
+        "segment-065"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-066",
+      "source_segment_ids": [
+        "segment-066"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-067",
+      "source_segment_ids": [
+        "segment-067"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-068",
+      "source_segment_ids": [
+        "segment-068"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-069",
+      "source_segment_ids": [
+        "segment-069"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-070",
+      "source_segment_ids": [
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-071",
+      "source_segment_ids": [
+        "segment-071"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-072",
+      "source_segment_ids": [
+        "segment-072"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-073",
+      "source_segment_ids": [
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-074",
+      "source_segment_ids": [
+        "segment-074"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-075",
+      "source_segment_ids": [
+        "segment-075"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-076",
+      "source_segment_ids": [
+        "segment-076"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-077",
+      "source_segment_ids": [
+        "segment-077"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-078",
+      "source_segment_ids": [
+        "segment-078"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-079",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-080",
+      "source_segment_ids": [
+        "segment-080"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-081",
+      "source_segment_ids": [
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-082",
+      "source_segment_ids": [
+        "segment-082"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-083",
+      "source_segment_ids": [
+        "segment-083"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-084",
+      "source_segment_ids": [
+        "segment-084"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-085",
+      "source_segment_ids": [
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-086",
+      "source_segment_ids": [
+        "segment-086"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-087",
+      "source_segment_ids": [
+        "segment-087"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-088",
+      "source_segment_ids": [
+        "segment-088"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-089",
+      "source_segment_ids": [
+        "segment-089"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-090",
+      "source_segment_ids": [
+        "segment-090"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-091",
+      "source_segment_ids": [
+        "segment-091"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-092",
+      "source_segment_ids": [
+        "segment-092"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-093",
+      "source_segment_ids": [
+        "segment-093"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-094",
+      "source_segment_ids": [
+        "segment-094"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-095",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-096",
+      "source_segment_ids": [
+        "segment-096"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-097",
+      "source_segment_ids": [
+        "segment-097"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-098",
+      "source_segment_ids": [
+        "segment-098"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-099",
+      "source_segment_ids": [
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-100",
+      "source_segment_ids": [
+        "segment-100"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-101",
+      "source_segment_ids": [
+        "segment-101"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-102",
+      "source_segment_ids": [
+        "segment-102"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-103",
+      "source_segment_ids": [
+        "segment-103"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-104",
+      "source_segment_ids": [
+        "segment-104"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-105",
+      "source_segment_ids": [
+        "segment-105"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "GTM content, clarification, correction, or confirmation."
+    },
+    {
+      "id": "relevance-106",
+      "source_segment_ids": [
+        "segment-106"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-107",
+      "source_segment_ids": [
+        "segment-107"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-108",
+      "source_segment_ids": [
+        "segment-108"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-109",
+      "source_segment_ids": [
+        "segment-109"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    },
+    {
+      "id": "relevance-110",
+      "source_segment_ids": [
+        "segment-110"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Non-GTM greeting, interruption, or personal logistics."
+    }
+  ],
+  "excluded_content": [
+    {
+      "id": "excluded-001",
+      "source_segment_ids": [
+        "segment-001",
+        "segment-002",
+        "segment-004",
+        "segment-005",
+        "segment-006",
+        "segment-016",
+        "segment-017",
+        "segment-018",
+        "segment-037",
+        "segment-038",
+        "segment-039",
+        "segment-057",
+        "segment-058",
+        "segment-059",
+        "segment-060",
+        "segment-078",
+        "segment-079",
+        "segment-080",
+        "segment-106",
+        "segment-107",
+        "segment-108",
+        "segment-109",
+        "segment-110"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, personal logistics, interruption, or closing unrelated to the GTM framework."
+    }
+  ],
+  "warnings": [
+    {
+      "code": "operational_detail_missing",
+      "message": "Stage owners, handoffs, and tool-selection criteria are not specified."
+    }
+  ],
+  "errors": [],
+  "run_id": "2026-11-24-modern-gtm-chat",
+  "coverage": {
+    "reviewed_segment_ids": [
+      "segment-001",
+      "segment-002",
+      "segment-003",
+      "segment-004",
+      "segment-005",
+      "segment-006",
+      "segment-007",
+      "segment-008",
+      "segment-009",
+      "segment-010",
+      "segment-011",
+      "segment-012",
+      "segment-013",
+      "segment-014",
+      "segment-015",
+      "segment-016",
+      "segment-017",
+      "segment-018",
+      "segment-019",
+      "segment-020",
+      "segment-021",
+      "segment-022",
+      "segment-023",
+      "segment-024",
+      "segment-025",
+      "segment-026",
+      "segment-027",
+      "segment-028",
+      "segment-029",
+      "segment-030",
+      "segment-031",
+      "segment-032",
+      "segment-033",
+      "segment-034",
+      "segment-035",
+      "segment-036",
+      "segment-037",
+      "segment-038",
+      "segment-039",
+      "segment-040",
+      "segment-041",
+      "segment-042",
+      "segment-043",
+      "segment-044",
+      "segment-045",
+      "segment-046",
+      "segment-047",
+      "segment-048",
+      "segment-049",
+      "segment-050",
+      "segment-051",
+      "segment-052",
+      "segment-053",
+      "segment-054",
+      "segment-055",
+      "segment-056",
+      "segment-057",
+      "segment-058",
+      "segment-059",
+      "segment-060",
+      "segment-061",
+      "segment-062",
+      "segment-063",
+      "segment-064",
+      "segment-065",
+      "segment-066",
+      "segment-067",
+      "segment-068",
+      "segment-069",
+      "segment-070",
+      "segment-071",
+      "segment-072",
+      "segment-073",
+      "segment-074",
+      "segment-075",
+      "segment-076",
+      "segment-077",
+      "segment-078",
+      "segment-079",
+      "segment-080",
+      "segment-081",
+      "segment-082",
+      "segment-083",
+      "segment-084",
+      "segment-085",
+      "segment-086",
+      "segment-087",
+      "segment-088",
+      "segment-089",
+      "segment-090",
+      "segment-091",
+      "segment-092",
+      "segment-093",
+      "segment-094",
+      "segment-095",
+      "segment-096",
+      "segment-097",
+      "segment-098",
+      "segment-099",
+      "segment-100",
+      "segment-101",
+      "segment-102",
+      "segment-103",
+      "segment-104",
+      "segment-105",
+      "segment-106",
+      "segment-107",
+      "segment-108",
+      "segment-109",
+      "segment-110"
+    ],
+    "unrepresented_details": []
+  }
+}

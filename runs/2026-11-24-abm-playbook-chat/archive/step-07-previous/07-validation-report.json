@@ -1,0 +1,102 @@
+{
+  "step": "07-logo-retrieval",
+  "contract_version": "1.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "execution_mode": "fresh \u2014 active Step 07 state reset before discovery; no prior cache, decisions, assets, or validations reused",
+  "overall": "pass_with_warnings",
+  "implementation_verification": {
+    "current_tests": "pass (5/5)",
+    "standard_safe_svg": "pass \u2014 standard namespace, internal gradient, and internal fragment accepted",
+    "implementation_modified": false
+  },
+  "upstream_validation": {
+    "steps_01_to_06": "pass \u2014 existing artifacts validated without rerunning them"
+  },
+  "deterministic_checks": [
+    {
+      "id": "I01",
+      "name": "Step 07 input preconditions",
+      "method": "validate_input.py",
+      "result": "pass"
+    },
+    {
+      "id": "I02",
+      "name": "Output mapping coverage",
+      "method": "validate_asset_retrieval.py",
+      "result": "pass",
+      "errors": []
+    },
+    {
+      "id": "I03",
+      "name": "All active original and prepared file signatures/fingerprints",
+      "method": "verify_assets.py",
+      "result": "pass",
+      "checked": 30,
+      "failed": 0
+    },
+    {
+      "id": "I04",
+      "name": "Current Step 07 security/deduplication test suite",
+      "method": "unittest",
+      "result": "pass",
+      "tests": 5
+    }
+  ],
+  "research_and_visual_checks": [
+    {
+      "id": "R01",
+      "name": "Official/product resource research",
+      "result": "executed",
+      "coverage": "25 unique entity decisions; official source records in step-07/research-records.json"
+    },
+    {
+      "id": "R02",
+      "name": "Candidate retrieval and alternate-source handling",
+      "result": "executed",
+      "attempts": 24,
+      "http_errors": 8,
+      "visual_rejection": 1,
+      "record": "step-07/candidate-downloads.json"
+    },
+    {
+      "id": "V01",
+      "name": "Visual inspection",
+      "result": "executed",
+      "assets": [
+        "AI Ark official SVG",
+        "Landbase initial white SVG (rejected)",
+        "Landbase dark official SVG (selected)",
+        "Tavily official SVG",
+        "Lucide custom-scrapers icon"
+      ],
+      "finding": "Selected Landbase dark mark is presentation-compatible; the generic icon is non-branded and semantically appropriate."
+    }
+  ],
+  "coverage": {
+    "asset_requirements": 37,
+    "mapped": 37,
+    "resolved_with_asset": 21,
+    "text_label_fallback": 16,
+    "required_unresolved": 0,
+    "unique_entities": 25,
+    "unique_assets_prepared": 15
+  },
+  "quality": {
+    "suitable_assets": 15,
+    "vector_assets": 12,
+    "raster_assets": 3,
+    "replacement_needed": 0,
+    "suitable_with_limitations": 0,
+    "license_status": "Brand-mark licenses/permissions remain unknown; repository availability is not a trademark license."
+  },
+  "fallbacks": {
+    "count": 10,
+    "basis": "Each is optional in the architecture and retains an authorized text-label fallback. No parent product marks were substituted."
+  },
+  "warnings": [
+    "10 optional entities use authorized text-label fallback after fresh research/retrieval did not produce an acceptable verified asset",
+    "Brand trademark/license permission is not confirmed by source availability",
+    "Rendered-size legibility remains a Step 08/10 concern"
+  ],
+  "errors": []
+}

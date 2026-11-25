@@ -1,0 +1,22 @@
+{
+  "execution": "fresh",
+  "official_discovery_pages": {
+    "AI Ark": "https://docs.ai-ark.com/",
+    "DiscoLike": "https://discolike.com/",
+    "Landbase": "https://www.landbase.com/",
+    "Sumble": "https://sumble.com/",
+    "Tavily": "https://www.tavily.com/",
+    "Freckle": "https://www.freckle.io/",
+    "BetterContact": "https://bettercontact.rocks/",
+    "Sales Navigator": "https://brand.linkedin.com/trademarks",
+    "Claygent": "https://www.clay.com/claygent",
+    "Codex": "https://developers.openai.com/learn/codex",
+    "Claude Code": "https://docs.anthropic.com/en/docs/claude-code/overview"
+  },
+  "repository_sources": {
+    "Simple Icons": "https://github.com/simple-icons/simple-icons",
+    "Lucide": "https://github.com/lucide-icons/lucide"
+  },
+  "candidate_record": "step-07/candidate-downloads.json",
+  "notes": "Search results were used only to discover sources; selected asset identity rests on the recorded official page or named repository."
+}

@@ -1,0 +1,7 @@
+{
+  "step": "08-visual-generation", "run_id": "2026-11-24-abm-playbook-chat", "validation_version": "1.0",
+  "preview": "step-08/preview.png", "sha256": "fa0be5b3866a670f25bc2dc5bdab2d1b1c233f328c4dd3fc9cdc24c644fc763a", "dimensions_px": [1024,1536],
+  "input_validation": {"status": "pass", "note": "Step 08 input validator passed structural checks; Step 07 asset visual verification remains pending."},
+  "visual_review": {"status": "incomplete", "report": "step-08/visual-review.json", "readability": "fail", "crm_placeholder": "pass", "footer_identity": "unverified", "asset_identity": "unverified", "complete_copy_audit": "not_reviewed"},
+  "overall": {"valid": false, "errors": ["Dense labels remain small at actual output dimensions.", "Full content and asset identity verification not completed."], "warnings": ["Step 07 selected asset visual inspection remains pending.", "Image generator did not expose exact dimension controls."]}
+}

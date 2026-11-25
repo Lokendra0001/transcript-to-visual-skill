@@ -1,0 +1,65 @@
+{
+  "template_id": "template-da1453805dae",
+  "reference_path": "T07-gradient-workflow.png",
+  "reference_fingerprint": "298b5650f587f25d0549695c1f044eec88517b6bbf60b8b3eda67120bd3a1f7f",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1148 portrait",
+  "structural_characteristics": {
+    "layout": "Same modular serpentine composition as T01 (ten phases), with phase pills instead of numbered tabs.",
+    "reading_direction": "Serpentine with dashed arrows; order by \"Phase N\" pills.",
+    "patterns": [
+      "phase-pill module cards",
+      "logo tile grids",
+      "checklist rows",
+      "awareness staircase with gradient bar",
+      "tier list",
+      "categorized columns",
+      "terminal card"
+    ],
+    "hierarchy": "Title > phase module > sub-panel > item.",
+    "containment": "Strong."
+  },
+  "design_characteristics": {
+    "background": "Light gray-white.",
+    "color_treatment": "Soft gradient pill accents; logos in brand colors.",
+    "typography": "Bold/regular mixed title; small labels.",
+    "containers": "Rounded soft-shadow cards without heavy outlines.",
+    "connectors": "Dashed gray arrows.",
+    "numbering": "Small \"Phase N\" pills.",
+    "icons": "Logo tiles.",
+    "decoration": "Subtle gradients."
+  },
+  "content_capacity": {
+    "level": "high",
+    "observed": "Similar item count to T01 at lower resolution.",
+    "notes": "Numbers less prominent than T01."
+  },
+  "adaptability": {
+    "adaptable": [
+      "as T01"
+    ],
+    "fixed_or_characteristic": [
+      "soft, low-contrast numbering"
+    ]
+  },
+  "limitations": [
+    "Same structural gaps as T01 (hub, connector labels, numbered final modules, closed-lost pattern).",
+    "Lower resolution; phase numbers are small."
+  ],
+  "uncertainties": [
+    "Exact colors/fonts not measured."
+  ],
+  "evidence": [
+    {
+      "region": "phase 5",
+      "observation": "Gradient-tinted numbered staircase pills."
+    },
+    {
+      "region": "phase 7",
+      "observation": "Four column categorized lists."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

@@ -1,0 +1,2845 @@
+{
+  "step": "01-input-processing",
+  "version": "1.0",
+  "status": "success",
+  "metadata": {
+    "input_type": "transcript",
+    "input_source": "chat",
+    "primary_language": null,
+    "additional_languages": [],
+    "has_speakers": true,
+    "has_timestamps": false,
+    "has_multiple_documents": false
+  },
+  "original_text": "# Transcript\n\n**Speaker 1:** Hello? Hello? Can you hear me?\n\n**Speaker 2:** Yeah, wait... yeah, now I can hear you.\n\n**Speaker 1:** Okay, perfect.\n\n**Speaker 2:** Your voice was breaking a little bit.\n\n**Speaker 1:** Might be my Wi-Fi. Anyway, how was your weekend?\n\n**Speaker 2:** Pretty good. Went out with some friends on Saturday. Sunday was mostly sleeping.\n\n**Speaker 1:** Nice. I was working almost the entire weekend.\n\n**Speaker 2:** Oh, by the way, did you receive that invoice?\n\n**Speaker 1:** Which one?\n\n**Speaker 2:** The one I sent on Friday.\n\n**Speaker 1:** Let me check later. I haven't opened my emails today.\n\n**Speaker 2:** No problem.\n\n**Speaker 1:** Okay, so basically, um, what I wanted to discuss today is our account-based marketing playbook. We need something that explains the entire process from identifying accounts to actually closing deals.\n\n**Speaker 2:** Like the GTM framework we discussed previously?\n\n**Speaker 1:** Similar, but this one is specifically ABM. Let's call it \"Our 6-Step ABM Playbook.\"\n\n**Speaker 2:** Six steps, okay.\n\n**Speaker 1:** So the first thing... actually, before that, I want to make sure we're not suggesting that everyone needs to buy every tool we mention.\n\n**Speaker 2:** Right, they're alternatives.\n\n**Speaker 1:** Exactly. They're supporting technology options, not a mandatory software stack.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** Okay, first step is TAM and stakeholder mapping. Basically identifying the total addressable market and the relevant stakeholders within target accounts.\n\n**Speaker 2:** We can use Apollo for that, right?\n\n**Speaker 1:** We could, but don't include Apollo in this particular playbook. Let's use Sales Navigator, AI Ark, Clay, and Findymail.\n\n**Speaker 2:** Findymail, okay.\n\n**Speaker 1:** Also Ocean.io, DiscoLike, Landbase, and custom scrapers.\n\n**Speaker 2:** Custom scrapers as in our own scripts?\n\n**Speaker 1:** Yeah, custom-built data collection tools wherever required.\n\n**Speaker 2:** Okay, wait, let me write that down.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Sales Navigator, AI Ark, Clay, Findymail, Ocean.io... what was the other one?\n\n**Speaker 1:** DiscoLike. And Landbase and custom scrapers.\n\n**Speaker 2:** Got it.\n\n**Speaker 1:** So eight options in that first section.\n\n**Speaker 2:** Did you order lunch already?\n\n**Speaker 1:** No, it's too early.\n\n**Speaker 2:** Okay. I thought we could order together.\n\n**Speaker 1:** Yeah, maybe after the call.\n\n**Speaker 2:** Cool.\n\n**Speaker 1:** The second stage is AI account research and enrichment.\n\n**Speaker 2:** Clay again?\n\n**Speaker 1:** Actually, Claygent specifically. Don't confuse Clay with Claygent in this section.\n\n**Speaker 2:** Okay, Claygent.\n\n**Speaker 1:** Ocean.io, Claygent, Sumble, Codex, Tavily.\n\n**Speaker 2:** Tavily is for web research, right?\n\n**Speaker 1:** Yes. Then Freckle, Claude Code, Findymail, BetterContact, and AI Ark.\n\n**Speaker 2:** Claude, okay.\n\n**Speaker 1:** No, Claude Code. Specifically Claude Code.\n\n**Speaker 2:** Oh, okay. I'll correct that.\n\n**Speaker 1:** And some tools will appear in multiple sections. That's completely fine because they have different purposes in different stages.\n\n**Speaker 2:** So we shouldn't remove Ocean.io from research just because it's already in TAM mapping?\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Wait, my laptop is showing a battery warning. Give me a second.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** I think I left my charger downstairs.\n\n**Speaker 1:** No worries.\n\n**Speaker 2:** Okay, found it. Continue.\n\n**Speaker 1:** Now, um, the third step is probably the most detailed one. It's tracking the signals.\n\n**Speaker 2:** Intent signals?\n\n**Speaker 1:** Yeah, buying signals, engagement signals, account activity, all those things.\n\n**Speaker 2:** We should probably divide them into categories.\n\n**Speaker 1:** Exactly. First-party, second-party, and third-party signals.\n\n**Speaker 2:** Let's start with third-party signals because I already have some notes.\n\n**Speaker 1:** Okay, sure.\n\n**Speaker 2:** Funding announcements, job openings, news...\n\n**Speaker 1:** Yes. Also search analytics, people data, technographic signals, and firmographic data.\n\n**Speaker 2:** What about website visits?\n\n**Speaker 1:** Website visits should be under first-party signals, not third-party signals in this framework.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** For third-party, also include web scraping, advertisement activity, social signals, and competitive signals.\n\n**Speaker 2:** So that's funding announcements, search analytics, people data, technographic signals, news, firmographic data, job openings, web scraping, advertisement activity, social signals, and competitive signals.\n\n**Speaker 1:** Correct. Eleven categories.\n\n**Speaker 2:** Did you see that news about the new iPhone?\n\n**Speaker 1:** No. What happened?\n\n**Speaker 2:** Nothing major, just some videos about the camera.\n\n**Speaker 1:** I'm probably not upgrading this year.\n\n**Speaker 2:** Same. Too expensive.\n\n**Speaker 1:** Anyway, coming back to signals, let's cover first-party.\n\n**Speaker 2:** Yeah.\n\n**Speaker 1:** Event attendance, CRM activity, meeting forms, product usage, website visits...\n\n**Speaker 2:** Email opens?\n\n**Speaker 1:** Not as a separate category for now. Include gated content, marketing sequences, and outreach replies.\n\n**Speaker 2:** Gated content means things like downloadable resources behind a form?\n\n**Speaker 1:** Exactly, things like that.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So eight first-party categories.\n\n**Speaker 2:** Sorry, someone is at the door. One minute.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Hello? Yeah, just leave it outside. Thanks.\n\n**Speaker 1:** Everything okay?\n\n**Speaker 2:** Yeah, Amazon delivery.\n\n**Speaker 1:** Okay.\n\n**Speaker 2:** Where were we?\n\n**Speaker 1:** First-party signals. We've finished those. Now second-party signals.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** Champion tracking, ad engagements, partner signals, LinkedIn engagement, review sites, and warm intros.\n\n**Speaker 2:** Warm intros? Isn't that demand generation?\n\n**Speaker 1:** It can be both. Here, we're tracking warm introductions as signals. Later, warm introductions are also a demand generation activity.\n\n**Speaker 2:** Okay, same concept but different context.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Should we specify the vendor for every signal?\n\n**Speaker 1:** No, not necessarily. We haven't finalized every provider. Preserve the categories, and don't guess the missing vendor names.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** Now let's discuss demand generation.\n\n**Speaker 2:** Isn't there scoring before demand generation?\n\n**Speaker 1:** Yeah, yeah. We still have scoring and CRM. I'm just jumping ahead because I have the demand generation notes open.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Demand generation is actually step six. We divide it into two groups: one-to-one and one-to-many.\n\n**Speaker 2:** Inbound and outbound?\n\n**Speaker 1:** No, don't organize it as inbound and outbound. One-to-one and one-to-many specifically.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** One-to-one includes warm intros, gifting campaigns, event invites, and manual outreach.\n\n**Speaker 2:** For warm intros, Gmail?\n\n**Speaker 1:** Yes, Gmail can be associated with warm intros.\n\n**Speaker 2:** And HubSpot for manual outreach?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** What about personalized videos?\n\n**Speaker 1:** Video outreach is under one-to-many in this particular framework.\n\n**Speaker 2:** Okay, although personalized video could technically be one-to-one.\n\n**Speaker 1:** Yes, but keep the classification we discussed for this playbook.\n\n**Speaker 2:** Fine.\n\n**Speaker 1:** One-to-many includes automated outbound, parallel dialing, targeted ads, public events, social content, on-site content, video outreach, and connection requests.\n\n**Speaker 2:** That's quite a lot.\n\n**Speaker 1:** Eight activities.\n\n**Speaker 2:** Which ad platforms?\n\n**Speaker 1:** LinkedIn, Meta, and Google.\n\n**Speaker 2:** Reddit?\n\n**Speaker 1:** No Reddit ads in this version.\n\n**Speaker 2:** Okay. I actually saw a Reddit ad yesterday for some AI product. It was pretty interesting.\n\n**Speaker 1:** Which product?\n\n**Speaker 2:** I don't remember the name. Something related to video generation.\n\n**Speaker 1:** Okay, send it to me if you find it.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** For social content, use YouTube, LinkedIn, and X.\n\n**Speaker 2:** Twitter?\n\n**Speaker 1:** Yeah, X, formerly Twitter. Same platform.\n\n**Speaker 2:** And Webflow for on-site content?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** LinkedIn for connection requests?\n\n**Speaker 1:** Yes.\n\n**Speaker 2:** What about the tools for parallel dialing and gifting campaigns?\n\n**Speaker 1:** We can finalize those later. Don't remove the activities just because we haven't confirmed their supporting tools.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Wait, let me check something.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** My calendar says I have another meeting at twelve.\n\n**Speaker 2:** We still have twenty minutes.\n\n**Speaker 1:** Yeah, that's enough.\n\n**Speaker 2:** Are you working from home tomorrow?\n\n**Speaker 1:** Probably. Depends on whether my car is ready.\n\n**Speaker 2:** Oh, it's still at the service center?\n\n**Speaker 1:** Yeah, they said they'll call me today.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So we skipped step four. Let's go back to account scoring and tiering.\n\n**Speaker 2:** Right, scoring.\n\n**Speaker 1:** Call it \"Score + Tier Accounts.\"\n\n**Speaker 2:** Are we doing a scoring model from zero to one hundred?\n\n**Speaker 1:** I was thinking about that initially, but no. We haven't finalized numerical scoring thresholds.\n\n**Speaker 2:** Maybe eighty to one hundred for Tier 1?\n\n**Speaker 1:** No, don't include those numbers. That's just a suggestion, not a confirmed decision.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** We have five awareness stages. Identified, aware, interested, selecting, considering...\n\n**Speaker 2:** Wait, isn't considering before selecting?\n\n**Speaker 1:** Yes, sorry. Correct order is identified, aware, interested, considering, and selecting.\n\n**Speaker 2:** Five awareness stages.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** And account tiers?\n\n**Speaker 1:** Tier 1, Tier 2, and Tier 3.\n\n**Speaker 2:** Should we map identified to Tier 3 and selecting to Tier 1?\n\n**Speaker 1:** Not directly. Awareness and account tiering are related concepts, but we haven't defined a fixed mapping between them.\n\n**Speaker 2:** Okay, no invented mapping.\n\n**Speaker 1:** HubSpot is associated with this section as well.\n\n**Speaker 2:** Fine.\n\n**Speaker 1:** Then step five is CRM components.\n\n**Speaker 2:** HubSpot, Salesforce, and Pipedrive?\n\n**Speaker 1:** Just HubSpot and Salesforce. Exclude Pipedrive for this version.\n\n**Speaker 2:** Both CRM systems are required?\n\n**Speaker 1:** No, either can be used depending on the existing technology stack.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** Basically, the account mapping, research, tracked signals, and scoring information should inform the CRM records.\n\n**Speaker 2:** And the CRM supports demand generation.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** I think my internet disconnected for a second.\n\n**Speaker 1:** Can you hear me now?\n\n**Speaker 2:** Yeah, repeat the last sentence.\n\n**Speaker 1:** The CRM connects account intelligence and prioritization with demand generation activities.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So after demand generation, we need some follow-up activities.\n\n**Speaker 2:** Is that step seven?\n\n**Speaker 1:** No. The playbook still has six numbered steps. These are downstream activities and the final outcome.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** First, a Slack notification.\n\n**Speaker 2:** Then CRM tasks?\n\n**Speaker 1:** Actually, sequence enrollment comes before CRM tasks.\n\n**Speaker 2:** Right. Slack notification, enroll in sequences, CRM tasks.\n\n**Speaker 1:** Correct. And finally, closed-won.\n\n**Speaker 2:** HubSpot for sequence enrollment?\n\n**Speaker 1:** Yes, HubSpot is one of the supporting platforms.\n\n**Speaker 2:** CRM tasks can be associated with both HubSpot and Salesforce?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** And closed-won?\n\n**Speaker 1:** That's the final outcome. HubSpot and Salesforce can also be associated with recording that outcome.\n\n**Speaker 2:** Should we show a closed-lost branch?\n\n**Speaker 1:** No, not in this version. We're illustrating the path toward closed-won.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Let's quickly recap because we discussed everything out of order.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** Number one, TAM and stakeholder mapping.\n\n**Speaker 2:** Eight supporting options.\n\n**Speaker 1:** Number two, AI account research and enrichment.\n\n**Speaker 2:** Ten tools.\n\n**Speaker 1:** Number three, track the signals.\n\n**Speaker 2:** First-party, second-party, and third-party.\n\n**Speaker 1:** Number four, score and tier accounts.\n\n**Speaker 2:** Five awareness stages and three tiers.\n\n**Speaker 1:** Number five, CRM components.\n\n**Speaker 2:** HubSpot and Salesforce.\n\n**Speaker 1:** And number six, demand generation.\n\n**Speaker 2:** One-to-one with four activities and one-to-many with eight activities.\n\n**Speaker 1:** Correct. Then Slack notification, enrollment in sequences, CRM tasks, and closed-won.\n\n**Speaker 2:** Perfect.\n\n**Speaker 1:** Remember, the tools are options. We are not recommending that every company uses all of them.\n\n**Speaker 2:** And we shouldn't invent names for the tools that haven't been finalized.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Okay, I'll prepare the documentation.\n\n**Speaker 1:** Great. Are we still ordering lunch?\n\n**Speaker 2:** Yeah, what do you want?\n\n**Speaker 1:** Anything vegetarian is fine.\n\n**Speaker 2:** Pizza?\n\n**Speaker 1:** Maybe something lighter.\n\n**Speaker 2:** Okay, I'll send you a few options.\n\n**Speaker 1:** And remind me about the invoice.\n\n**Speaker 2:** Yeah, sure.\n\n**Speaker 1:** Okay, thanks.\n\n**Speaker 2:** Thanks. Bye.\n\n**Speaker 1:** Bye.\n",
+  "normalized_text": "# Transcript\n\n**Speaker 1:** Hello? Hello? Can you hear me?\n\n**Speaker 2:** Yeah, wait... yeah, now I can hear you.\n\n**Speaker 1:** Okay, perfect.\n\n**Speaker 2:** Your voice was breaking a little bit.\n\n**Speaker 1:** Might be my Wi-Fi. Anyway, how was your weekend?\n\n**Speaker 2:** Pretty good. Went out with some friends on Saturday. Sunday was mostly sleeping.\n\n**Speaker 1:** Nice. I was working almost the entire weekend.\n\n**Speaker 2:** Oh, by the way, did you receive that invoice?\n\n**Speaker 1:** Which one?\n\n**Speaker 2:** The one I sent on Friday.\n\n**Speaker 1:** Let me check later. I haven't opened my emails today.\n\n**Speaker 2:** No problem.\n\n**Speaker 1:** Okay, so basically, um, what I wanted to discuss today is our account-based marketing playbook. We need something that explains the entire process from identifying accounts to actually closing deals.\n\n**Speaker 2:** Like the GTM framework we discussed previously?\n\n**Speaker 1:** Similar, but this one is specifically ABM. Let's call it \"Our 6-Step ABM Playbook.\"\n\n**Speaker 2:** Six steps, okay.\n\n**Speaker 1:** So the first thing... actually, before that, I want to make sure we're not suggesting that everyone needs to buy every tool we mention.\n\n**Speaker 2:** Right, they're alternatives.\n\n**Speaker 1:** Exactly. They're supporting technology options, not a mandatory software stack.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** Okay, first step is TAM and stakeholder mapping. Basically identifying the total addressable market and the relevant stakeholders within target accounts.\n\n**Speaker 2:** We can use Apollo for that, right?\n\n**Speaker 1:** We could, but don't include Apollo in this particular playbook. Let's use Sales Navigator, AI Ark, Clay, and Findymail.\n\n**Speaker 2:** Findymail, okay.\n\n**Speaker 1:** Also Ocean.io, DiscoLike, Landbase, and custom scrapers.\n\n**Speaker 2:** Custom scrapers as in our own scripts?\n\n**Speaker 1:** Yeah, custom-built data collection tools wherever required.\n\n**Speaker 2:** Okay, wait, let me write that down.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Sales Navigator, AI Ark, Clay, Findymail, Ocean.io... what was the other one?\n\n**Speaker 1:** DiscoLike. And Landbase and custom scrapers.\n\n**Speaker 2:** Got it.\n\n**Speaker 1:** So eight options in that first section.\n\n**Speaker 2:** Did you order lunch already?\n\n**Speaker 1:** No, it's too early.\n\n**Speaker 2:** Okay. I thought we could order together.\n\n**Speaker 1:** Yeah, maybe after the call.\n\n**Speaker 2:** Cool.\n\n**Speaker 1:** The second stage is AI account research and enrichment.\n\n**Speaker 2:** Clay again?\n\n**Speaker 1:** Actually, Claygent specifically. Don't confuse Clay with Claygent in this section.\n\n**Speaker 2:** Okay, Claygent.\n\n**Speaker 1:** Ocean.io, Claygent, Sumble, Codex, Tavily.\n\n**Speaker 2:** Tavily is for web research, right?\n\n**Speaker 1:** Yes. Then Freckle, Claude Code, Findymail, BetterContact, and AI Ark.\n\n**Speaker 2:** Claude, okay.\n\n**Speaker 1:** No, Claude Code. Specifically Claude Code.\n\n**Speaker 2:** Oh, okay. I'll correct that.\n\n**Speaker 1:** And some tools will appear in multiple sections. That's completely fine because they have different purposes in different stages.\n\n**Speaker 2:** So we shouldn't remove Ocean.io from research just because it's already in TAM mapping?\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Wait, my laptop is showing a battery warning. Give me a second.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** I think I left my charger downstairs.\n\n**Speaker 1:** No worries.\n\n**Speaker 2:** Okay, found it. Continue.\n\n**Speaker 1:** Now, um, the third step is probably the most detailed one. It's tracking the signals.\n\n**Speaker 2:** Intent signals?\n\n**Speaker 1:** Yeah, buying signals, engagement signals, account activity, all those things.\n\n**Speaker 2:** We should probably divide them into categories.\n\n**Speaker 1:** Exactly. First-party, second-party, and third-party signals.\n\n**Speaker 2:** Let's start with third-party signals because I already have some notes.\n\n**Speaker 1:** Okay, sure.\n\n**Speaker 2:** Funding announcements, job openings, news...\n\n**Speaker 1:** Yes. Also search analytics, people data, technographic signals, and firmographic data.\n\n**Speaker 2:** What about website visits?\n\n**Speaker 1:** Website visits should be under first-party signals, not third-party signals in this framework.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** For third-party, also include web scraping, advertisement activity, social signals, and competitive signals.\n\n**Speaker 2:** So that's funding announcements, search analytics, people data, technographic signals, news, firmographic data, job openings, web scraping, advertisement activity, social signals, and competitive signals.\n\n**Speaker 1:** Correct. Eleven categories.\n\n**Speaker 2:** Did you see that news about the new iPhone?\n\n**Speaker 1:** No. What happened?\n\n**Speaker 2:** Nothing major, just some videos about the camera.\n\n**Speaker 1:** I'm probably not upgrading this year.\n\n**Speaker 2:** Same. Too expensive.\n\n**Speaker 1:** Anyway, coming back to signals, let's cover first-party.\n\n**Speaker 2:** Yeah.\n\n**Speaker 1:** Event attendance, CRM activity, meeting forms, product usage, website visits...\n\n**Speaker 2:** Email opens?\n\n**Speaker 1:** Not as a separate category for now. Include gated content, marketing sequences, and outreach replies.\n\n**Speaker 2:** Gated content means things like downloadable resources behind a form?\n\n**Speaker 1:** Exactly, things like that.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So eight first-party categories.\n\n**Speaker 2:** Sorry, someone is at the door. One minute.\n\n**Speaker 1:** Sure.\n\n**Speaker 2:** Hello? Yeah, just leave it outside. Thanks.\n\n**Speaker 1:** Everything okay?\n\n**Speaker 2:** Yeah, Amazon delivery.\n\n**Speaker 1:** Okay.\n\n**Speaker 2:** Where were we?\n\n**Speaker 1:** First-party signals. We've finished those. Now second-party signals.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** Champion tracking, ad engagements, partner signals, LinkedIn engagement, review sites, and warm intros.\n\n**Speaker 2:** Warm intros? Isn't that demand generation?\n\n**Speaker 1:** It can be both. Here, we're tracking warm introductions as signals. Later, warm introductions are also a demand generation activity.\n\n**Speaker 2:** Okay, same concept but different context.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Should we specify the vendor for every signal?\n\n**Speaker 1:** No, not necessarily. We haven't finalized every provider. Preserve the categories, and don't guess the missing vendor names.\n\n**Speaker 2:** Makes sense.\n\n**Speaker 1:** Now let's discuss demand generation.\n\n**Speaker 2:** Isn't there scoring before demand generation?\n\n**Speaker 1:** Yeah, yeah. We still have scoring and CRM. I'm just jumping ahead because I have the demand generation notes open.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Demand generation is actually step six. We divide it into two groups: one-to-one and one-to-many.\n\n**Speaker 2:** Inbound and outbound?\n\n**Speaker 1:** No, don't organize it as inbound and outbound. One-to-one and one-to-many specifically.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** One-to-one includes warm intros, gifting campaigns, event invites, and manual outreach.\n\n**Speaker 2:** For warm intros, Gmail?\n\n**Speaker 1:** Yes, Gmail can be associated with warm intros.\n\n**Speaker 2:** And HubSpot for manual outreach?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** What about personalized videos?\n\n**Speaker 1:** Video outreach is under one-to-many in this particular framework.\n\n**Speaker 2:** Okay, although personalized video could technically be one-to-one.\n\n**Speaker 1:** Yes, but keep the classification we discussed for this playbook.\n\n**Speaker 2:** Fine.\n\n**Speaker 1:** One-to-many includes automated outbound, parallel dialing, targeted ads, public events, social content, on-site content, video outreach, and connection requests.\n\n**Speaker 2:** That's quite a lot.\n\n**Speaker 1:** Eight activities.\n\n**Speaker 2:** Which ad platforms?\n\n**Speaker 1:** LinkedIn, Meta, and Google.\n\n**Speaker 2:** Reddit?\n\n**Speaker 1:** No Reddit ads in this version.\n\n**Speaker 2:** Okay. I actually saw a Reddit ad yesterday for some AI product. It was pretty interesting.\n\n**Speaker 1:** Which product?\n\n**Speaker 2:** I don't remember the name. Something related to video generation.\n\n**Speaker 1:** Okay, send it to me if you find it.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** For social content, use YouTube, LinkedIn, and X.\n\n**Speaker 2:** Twitter?\n\n**Speaker 1:** Yeah, X, formerly Twitter. Same platform.\n\n**Speaker 2:** And Webflow for on-site content?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** LinkedIn for connection requests?\n\n**Speaker 1:** Yes.\n\n**Speaker 2:** What about the tools for parallel dialing and gifting campaigns?\n\n**Speaker 1:** We can finalize those later. Don't remove the activities just because we haven't confirmed their supporting tools.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Wait, let me check something.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** My calendar says I have another meeting at twelve.\n\n**Speaker 2:** We still have twenty minutes.\n\n**Speaker 1:** Yeah, that's enough.\n\n**Speaker 2:** Are you working from home tomorrow?\n\n**Speaker 1:** Probably. Depends on whether my car is ready.\n\n**Speaker 2:** Oh, it's still at the service center?\n\n**Speaker 1:** Yeah, they said they'll call me today.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So we skipped step four. Let's go back to account scoring and tiering.\n\n**Speaker 2:** Right, scoring.\n\n**Speaker 1:** Call it \"Score + Tier Accounts.\"\n\n**Speaker 2:** Are we doing a scoring model from zero to one hundred?\n\n**Speaker 1:** I was thinking about that initially, but no. We haven't finalized numerical scoring thresholds.\n\n**Speaker 2:** Maybe eighty to one hundred for Tier 1?\n\n**Speaker 1:** No, don't include those numbers. That's just a suggestion, not a confirmed decision.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** We have five awareness stages. Identified, aware, interested, selecting, considering...\n\n**Speaker 2:** Wait, isn't considering before selecting?\n\n**Speaker 1:** Yes, sorry. Correct order is identified, aware, interested, considering, and selecting.\n\n**Speaker 2:** Five awareness stages.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** And account tiers?\n\n**Speaker 1:** Tier 1, Tier 2, and Tier 3.\n\n**Speaker 2:** Should we map identified to Tier 3 and selecting to Tier 1?\n\n**Speaker 1:** Not directly. Awareness and account tiering are related concepts, but we haven't defined a fixed mapping between them.\n\n**Speaker 2:** Okay, no invented mapping.\n\n**Speaker 1:** HubSpot is associated with this section as well.\n\n**Speaker 2:** Fine.\n\n**Speaker 1:** Then step five is CRM components.\n\n**Speaker 2:** HubSpot, Salesforce, and Pipedrive?\n\n**Speaker 1:** Just HubSpot and Salesforce. Exclude Pipedrive for this version.\n\n**Speaker 2:** Both CRM systems are required?\n\n**Speaker 1:** No, either can be used depending on the existing technology stack.\n\n**Speaker 2:** Right.\n\n**Speaker 1:** Basically, the account mapping, research, tracked signals, and scoring information should inform the CRM records.\n\n**Speaker 2:** And the CRM supports demand generation.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** I think my internet disconnected for a second.\n\n**Speaker 1:** Can you hear me now?\n\n**Speaker 2:** Yeah, repeat the last sentence.\n\n**Speaker 1:** The CRM connects account intelligence and prioritization with demand generation activities.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** So after demand generation, we need some follow-up activities.\n\n**Speaker 2:** Is that step seven?\n\n**Speaker 1:** No. The playbook still has six numbered steps. These are downstream activities and the final outcome.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** First, a Slack notification.\n\n**Speaker 2:** Then CRM tasks?\n\n**Speaker 1:** Actually, sequence enrollment comes before CRM tasks.\n\n**Speaker 2:** Right. Slack notification, enroll in sequences, CRM tasks.\n\n**Speaker 1:** Correct. And finally, closed-won.\n\n**Speaker 2:** HubSpot for sequence enrollment?\n\n**Speaker 1:** Yes, HubSpot is one of the supporting platforms.\n\n**Speaker 2:** CRM tasks can be associated with both HubSpot and Salesforce?\n\n**Speaker 1:** Correct.\n\n**Speaker 2:** And closed-won?\n\n**Speaker 1:** That's the final outcome. HubSpot and Salesforce can also be associated with recording that outcome.\n\n**Speaker 2:** Should we show a closed-lost branch?\n\n**Speaker 1:** No, not in this version. We're illustrating the path toward closed-won.\n\n**Speaker 2:** Okay.\n\n**Speaker 1:** Let's quickly recap because we discussed everything out of order.\n\n**Speaker 2:** Sure.\n\n**Speaker 1:** Number one, TAM and stakeholder mapping.\n\n**Speaker 2:** Eight supporting options.\n\n**Speaker 1:** Number two, AI account research and enrichment.\n\n**Speaker 2:** Ten tools.\n\n**Speaker 1:** Number three, track the signals.\n\n**Speaker 2:** First-party, second-party, and third-party.\n\n**Speaker 1:** Number four, score and tier accounts.\n\n**Speaker 2:** Five awareness stages and three tiers.\n\n**Speaker 1:** Number five, CRM components.\n\n**Speaker 2:** HubSpot and Salesforce.\n\n**Speaker 1:** And number six, demand generation.\n\n**Speaker 2:** One-to-one with four activities and one-to-many with eight activities.\n\n**Speaker 1:** Correct. Then Slack notification, enrollment in sequences, CRM tasks, and closed-won.\n\n**Speaker 2:** Perfect.\n\n**Speaker 1:** Remember, the tools are options. We are not recommending that every company uses all of them.\n\n**Speaker 2:** And we shouldn't invent names for the tools that haven't been finalized.\n\n**Speaker 1:** Exactly.\n\n**Speaker 2:** Okay, I'll prepare the documentation.\n\n**Speaker 1:** Great. Are we still ordering lunch?\n\n**Speaker 2:** Yeah, what do you want?\n\n**Speaker 1:** Anything vegetarian is fine.\n\n**Speaker 2:** Pizza?\n\n**Speaker 1:** Maybe something lighter.\n\n**Speaker 2:** Okay, I'll send you a few options.\n\n**Speaker 1:** And remind me about the invoice.\n\n**Speaker 2:** Yeah, sure.\n\n**Speaker 1:** Okay, thanks.\n\n**Speaker 2:** Thanks. Bye.\n\n**Speaker 1:** Bye.",
+  "segments": [
+    {
+      "id": "segment-001",
+      "sequence": 1,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Hello? Hello? Can you hear me?",
+      "normalized_text": "Hello? Hello? Can you hear me?",
+      "source_location": {
+        "start_line": 3,
+        "end_line": 3
+      }
+    },
+    {
+      "id": "segment-002",
+      "sequence": 2,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, wait... yeah, now I can hear you.",
+      "normalized_text": "Yeah, wait... yeah, now I can hear you.",
+      "source_location": {
+        "start_line": 5,
+        "end_line": 5
+      }
+    },
+    {
+      "id": "segment-003",
+      "sequence": 3,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, perfect.",
+      "normalized_text": "Okay, perfect.",
+      "source_location": {
+        "start_line": 7,
+        "end_line": 7
+      }
+    },
+    {
+      "id": "segment-004",
+      "sequence": 4,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Your voice was breaking a little bit.",
+      "normalized_text": "Your voice was breaking a little bit.",
+      "source_location": {
+        "start_line": 9,
+        "end_line": 9
+      }
+    },
+    {
+      "id": "segment-005",
+      "sequence": 5,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Might be my Wi-Fi. Anyway, how was your weekend?",
+      "normalized_text": "Might be my Wi-Fi. Anyway, how was your weekend?",
+      "source_location": {
+        "start_line": 11,
+        "end_line": 11
+      }
+    },
+    {
+      "id": "segment-006",
+      "sequence": 6,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Pretty good. Went out with some friends on Saturday. Sunday was mostly sleeping.",
+      "normalized_text": "Pretty good. Went out with some friends on Saturday. Sunday was mostly sleeping.",
+      "source_location": {
+        "start_line": 13,
+        "end_line": 13
+      }
+    },
+    {
+      "id": "segment-007",
+      "sequence": 7,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Nice. I was working almost the entire weekend.",
+      "normalized_text": "Nice. I was working almost the entire weekend.",
+      "source_location": {
+        "start_line": 15,
+        "end_line": 15
+      }
+    },
+    {
+      "id": "segment-008",
+      "sequence": 8,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Oh, by the way, did you receive that invoice?",
+      "normalized_text": "Oh, by the way, did you receive that invoice?",
+      "source_location": {
+        "start_line": 17,
+        "end_line": 17
+      }
+    },
+    {
+      "id": "segment-009",
+      "sequence": 9,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Which one?",
+      "normalized_text": "Which one?",
+      "source_location": {
+        "start_line": 19,
+        "end_line": 19
+      }
+    },
+    {
+      "id": "segment-010",
+      "sequence": 10,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "The one I sent on Friday.",
+      "normalized_text": "The one I sent on Friday.",
+      "source_location": {
+        "start_line": 21,
+        "end_line": 21
+      }
+    },
+    {
+      "id": "segment-011",
+      "sequence": 11,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Let me check later. I haven't opened my emails today.",
+      "normalized_text": "Let me check later. I haven't opened my emails today.",
+      "source_location": {
+        "start_line": 23,
+        "end_line": 23
+      }
+    },
+    {
+      "id": "segment-012",
+      "sequence": 12,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "No problem.",
+      "normalized_text": "No problem.",
+      "source_location": {
+        "start_line": 25,
+        "end_line": 25
+      }
+    },
+    {
+      "id": "segment-013",
+      "sequence": 13,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, so basically, um, what I wanted to discuss today is our account-based marketing playbook. We need something that explains the entire process from identifying accounts to actually closing deals.",
+      "normalized_text": "Okay, so basically, um, what I wanted to discuss today is our account-based marketing playbook. We need something that explains the entire process from identifying accounts to actually closing deals.",
+      "source_location": {
+        "start_line": 27,
+        "end_line": 27
+      }
+    },
+    {
+      "id": "segment-014",
+      "sequence": 14,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Like the GTM framework we discussed previously?",
+      "normalized_text": "Like the GTM framework we discussed previously?",
+      "source_location": {
+        "start_line": 29,
+        "end_line": 29
+      }
+    },
+    {
+      "id": "segment-015",
+      "sequence": 15,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Similar, but this one is specifically ABM. Let's call it \"Our 6-Step ABM Playbook.\"",
+      "normalized_text": "Similar, but this one is specifically ABM. Let's call it \"Our 6-Step ABM Playbook.\"",
+      "source_location": {
+        "start_line": 31,
+        "end_line": 31
+      }
+    },
+    {
+      "id": "segment-016",
+      "sequence": 16,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Six steps, okay.",
+      "normalized_text": "Six steps, okay.",
+      "source_location": {
+        "start_line": 33,
+        "end_line": 33
+      }
+    },
+    {
+      "id": "segment-017",
+      "sequence": 17,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So the first thing... actually, before that, I want to make sure we're not suggesting that everyone needs to buy every tool we mention.",
+      "normalized_text": "So the first thing... actually, before that, I want to make sure we're not suggesting that everyone needs to buy every tool we mention.",
+      "source_location": {
+        "start_line": 35,
+        "end_line": 35
+      }
+    },
+    {
+      "id": "segment-018",
+      "sequence": 18,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right, they're alternatives.",
+      "normalized_text": "Right, they're alternatives.",
+      "source_location": {
+        "start_line": 37,
+        "end_line": 37
+      }
+    },
+    {
+      "id": "segment-019",
+      "sequence": 19,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly. They're supporting technology options, not a mandatory software stack.",
+      "normalized_text": "Exactly. They're supporting technology options, not a mandatory software stack.",
+      "source_location": {
+        "start_line": 39,
+        "end_line": 39
+      }
+    },
+    {
+      "id": "segment-020",
+      "sequence": 20,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Makes sense.",
+      "normalized_text": "Makes sense.",
+      "source_location": {
+        "start_line": 41,
+        "end_line": 41
+      }
+    },
+    {
+      "id": "segment-021",
+      "sequence": 21,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, first step is TAM and stakeholder mapping. Basically identifying the total addressable market and the relevant stakeholders within target accounts.",
+      "normalized_text": "Okay, first step is TAM and stakeholder mapping. Basically identifying the total addressable market and the relevant stakeholders within target accounts.",
+      "source_location": {
+        "start_line": 43,
+        "end_line": 43
+      }
+    },
+    {
+      "id": "segment-022",
+      "sequence": 22,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "We can use Apollo for that, right?",
+      "normalized_text": "We can use Apollo for that, right?",
+      "source_location": {
+        "start_line": 45,
+        "end_line": 45
+      }
+    },
+    {
+      "id": "segment-023",
+      "sequence": 23,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "We could, but don't include Apollo in this particular playbook. Let's use Sales Navigator, AI Ark, Clay, and Findymail.",
+      "normalized_text": "We could, but don't include Apollo in this particular playbook. Let's use Sales Navigator, AI Ark, Clay, and Findymail.",
+      "source_location": {
+        "start_line": 47,
+        "end_line": 47
+      }
+    },
+    {
+      "id": "segment-024",
+      "sequence": 24,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Findymail, okay.",
+      "normalized_text": "Findymail, okay.",
+      "source_location": {
+        "start_line": 49,
+        "end_line": 49
+      }
+    },
+    {
+      "id": "segment-025",
+      "sequence": 25,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Also Ocean.io, DiscoLike, Landbase, and custom scrapers.",
+      "normalized_text": "Also Ocean.io, DiscoLike, Landbase, and custom scrapers.",
+      "source_location": {
+        "start_line": 51,
+        "end_line": 51
+      }
+    },
+    {
+      "id": "segment-026",
+      "sequence": 26,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Custom scrapers as in our own scripts?",
+      "normalized_text": "Custom scrapers as in our own scripts?",
+      "source_location": {
+        "start_line": 53,
+        "end_line": 53
+      }
+    },
+    {
+      "id": "segment-027",
+      "sequence": 27,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, custom-built data collection tools wherever required.",
+      "normalized_text": "Yeah, custom-built data collection tools wherever required.",
+      "source_location": {
+        "start_line": 55,
+        "end_line": 55
+      }
+    },
+    {
+      "id": "segment-028",
+      "sequence": 28,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, wait, let me write that down.",
+      "normalized_text": "Okay, wait, let me write that down.",
+      "source_location": {
+        "start_line": 57,
+        "end_line": 57
+      }
+    },
+    {
+      "id": "segment-029",
+      "sequence": 29,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 59,
+        "end_line": 59
+      }
+    },
+    {
+      "id": "segment-030",
+      "sequence": 30,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sales Navigator, AI Ark, Clay, Findymail, Ocean.io... what was the other one?",
+      "normalized_text": "Sales Navigator, AI Ark, Clay, Findymail, Ocean.io... what was the other one?",
+      "source_location": {
+        "start_line": 61,
+        "end_line": 61
+      }
+    },
+    {
+      "id": "segment-031",
+      "sequence": 31,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "DiscoLike. And Landbase and custom scrapers.",
+      "normalized_text": "DiscoLike. And Landbase and custom scrapers.",
+      "source_location": {
+        "start_line": 63,
+        "end_line": 63
+      }
+    },
+    {
+      "id": "segment-032",
+      "sequence": 32,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Got it.",
+      "normalized_text": "Got it.",
+      "source_location": {
+        "start_line": 65,
+        "end_line": 65
+      }
+    },
+    {
+      "id": "segment-033",
+      "sequence": 33,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So eight options in that first section.",
+      "normalized_text": "So eight options in that first section.",
+      "source_location": {
+        "start_line": 67,
+        "end_line": 67
+      }
+    },
+    {
+      "id": "segment-034",
+      "sequence": 34,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Did you order lunch already?",
+      "normalized_text": "Did you order lunch already?",
+      "source_location": {
+        "start_line": 69,
+        "end_line": 69
+      }
+    },
+    {
+      "id": "segment-035",
+      "sequence": 35,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, it's too early.",
+      "normalized_text": "No, it's too early.",
+      "source_location": {
+        "start_line": 71,
+        "end_line": 71
+      }
+    },
+    {
+      "id": "segment-036",
+      "sequence": 36,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. I thought we could order together.",
+      "normalized_text": "Okay. I thought we could order together.",
+      "source_location": {
+        "start_line": 73,
+        "end_line": 73
+      }
+    },
+    {
+      "id": "segment-037",
+      "sequence": 37,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, maybe after the call.",
+      "normalized_text": "Yeah, maybe after the call.",
+      "source_location": {
+        "start_line": 75,
+        "end_line": 75
+      }
+    },
+    {
+      "id": "segment-038",
+      "sequence": 38,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Cool.",
+      "normalized_text": "Cool.",
+      "source_location": {
+        "start_line": 77,
+        "end_line": 77
+      }
+    },
+    {
+      "id": "segment-039",
+      "sequence": 39,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "The second stage is AI account research and enrichment.",
+      "normalized_text": "The second stage is AI account research and enrichment.",
+      "source_location": {
+        "start_line": 79,
+        "end_line": 79
+      }
+    },
+    {
+      "id": "segment-040",
+      "sequence": 40,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Clay again?",
+      "normalized_text": "Clay again?",
+      "source_location": {
+        "start_line": 81,
+        "end_line": 81
+      }
+    },
+    {
+      "id": "segment-041",
+      "sequence": 41,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Actually, Claygent specifically. Don't confuse Clay with Claygent in this section.",
+      "normalized_text": "Actually, Claygent specifically. Don't confuse Clay with Claygent in this section.",
+      "source_location": {
+        "start_line": 83,
+        "end_line": 83
+      }
+    },
+    {
+      "id": "segment-042",
+      "sequence": 42,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, Claygent.",
+      "normalized_text": "Okay, Claygent.",
+      "source_location": {
+        "start_line": 85,
+        "end_line": 85
+      }
+    },
+    {
+      "id": "segment-043",
+      "sequence": 43,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Ocean.io, Claygent, Sumble, Codex, Tavily.",
+      "normalized_text": "Ocean.io, Claygent, Sumble, Codex, Tavily.",
+      "source_location": {
+        "start_line": 87,
+        "end_line": 87
+      }
+    },
+    {
+      "id": "segment-044",
+      "sequence": 44,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Tavily is for web research, right?",
+      "normalized_text": "Tavily is for web research, right?",
+      "source_location": {
+        "start_line": 89,
+        "end_line": 89
+      }
+    },
+    {
+      "id": "segment-045",
+      "sequence": 45,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes. Then Freckle, Claude Code, Findymail, BetterContact, and AI Ark.",
+      "normalized_text": "Yes. Then Freckle, Claude Code, Findymail, BetterContact, and AI Ark.",
+      "source_location": {
+        "start_line": 91,
+        "end_line": 91
+      }
+    },
+    {
+      "id": "segment-046",
+      "sequence": 46,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Claude, okay.",
+      "normalized_text": "Claude, okay.",
+      "source_location": {
+        "start_line": 93,
+        "end_line": 93
+      }
+    },
+    {
+      "id": "segment-047",
+      "sequence": 47,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, Claude Code. Specifically Claude Code.",
+      "normalized_text": "No, Claude Code. Specifically Claude Code.",
+      "source_location": {
+        "start_line": 95,
+        "end_line": 95
+      }
+    },
+    {
+      "id": "segment-048",
+      "sequence": 48,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Oh, okay. I'll correct that.",
+      "normalized_text": "Oh, okay. I'll correct that.",
+      "source_location": {
+        "start_line": 97,
+        "end_line": 97
+      }
+    },
+    {
+      "id": "segment-049",
+      "sequence": 49,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "And some tools will appear in multiple sections. That's completely fine because they have different purposes in different stages.",
+      "normalized_text": "And some tools will appear in multiple sections. That's completely fine because they have different purposes in different stages.",
+      "source_location": {
+        "start_line": 99,
+        "end_line": 99
+      }
+    },
+    {
+      "id": "segment-050",
+      "sequence": 50,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "So we shouldn't remove Ocean.io from research just because it's already in TAM mapping?",
+      "normalized_text": "So we shouldn't remove Ocean.io from research just because it's already in TAM mapping?",
+      "source_location": {
+        "start_line": 101,
+        "end_line": 101
+      }
+    },
+    {
+      "id": "segment-051",
+      "sequence": 51,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 103,
+        "end_line": 103
+      }
+    },
+    {
+      "id": "segment-052",
+      "sequence": 52,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Wait, my laptop is showing a battery warning. Give me a second.",
+      "normalized_text": "Wait, my laptop is showing a battery warning. Give me a second.",
+      "source_location": {
+        "start_line": 105,
+        "end_line": 105
+      }
+    },
+    {
+      "id": "segment-053",
+      "sequence": 53,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 107,
+        "end_line": 107
+      }
+    },
+    {
+      "id": "segment-054",
+      "sequence": 54,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "I think I left my charger downstairs.",
+      "normalized_text": "I think I left my charger downstairs.",
+      "source_location": {
+        "start_line": 109,
+        "end_line": 109
+      }
+    },
+    {
+      "id": "segment-055",
+      "sequence": 55,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No worries.",
+      "normalized_text": "No worries.",
+      "source_location": {
+        "start_line": 111,
+        "end_line": 111
+      }
+    },
+    {
+      "id": "segment-056",
+      "sequence": 56,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, found it. Continue.",
+      "normalized_text": "Okay, found it. Continue.",
+      "source_location": {
+        "start_line": 113,
+        "end_line": 113
+      }
+    },
+    {
+      "id": "segment-057",
+      "sequence": 57,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Now, um, the third step is probably the most detailed one. It's tracking the signals.",
+      "normalized_text": "Now, um, the third step is probably the most detailed one. It's tracking the signals.",
+      "source_location": {
+        "start_line": 115,
+        "end_line": 115
+      }
+    },
+    {
+      "id": "segment-058",
+      "sequence": 58,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Intent signals?",
+      "normalized_text": "Intent signals?",
+      "source_location": {
+        "start_line": 117,
+        "end_line": 117
+      }
+    },
+    {
+      "id": "segment-059",
+      "sequence": 59,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, buying signals, engagement signals, account activity, all those things.",
+      "normalized_text": "Yeah, buying signals, engagement signals, account activity, all those things.",
+      "source_location": {
+        "start_line": 119,
+        "end_line": 119
+      }
+    },
+    {
+      "id": "segment-060",
+      "sequence": 60,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "We should probably divide them into categories.",
+      "normalized_text": "We should probably divide them into categories.",
+      "source_location": {
+        "start_line": 121,
+        "end_line": 121
+      }
+    },
+    {
+      "id": "segment-061",
+      "sequence": 61,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly. First-party, second-party, and third-party signals.",
+      "normalized_text": "Exactly. First-party, second-party, and third-party signals.",
+      "source_location": {
+        "start_line": 123,
+        "end_line": 123
+      }
+    },
+    {
+      "id": "segment-062",
+      "sequence": 62,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Let's start with third-party signals because I already have some notes.",
+      "normalized_text": "Let's start with third-party signals because I already have some notes.",
+      "source_location": {
+        "start_line": 125,
+        "end_line": 125
+      }
+    },
+    {
+      "id": "segment-063",
+      "sequence": 63,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, sure.",
+      "normalized_text": "Okay, sure.",
+      "source_location": {
+        "start_line": 127,
+        "end_line": 127
+      }
+    },
+    {
+      "id": "segment-064",
+      "sequence": 64,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Funding announcements, job openings, news...",
+      "normalized_text": "Funding announcements, job openings, news...",
+      "source_location": {
+        "start_line": 129,
+        "end_line": 129
+      }
+    },
+    {
+      "id": "segment-065",
+      "sequence": 65,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes. Also search analytics, people data, technographic signals, and firmographic data.",
+      "normalized_text": "Yes. Also search analytics, people data, technographic signals, and firmographic data.",
+      "source_location": {
+        "start_line": 131,
+        "end_line": 131
+      }
+    },
+    {
+      "id": "segment-066",
+      "sequence": 66,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What about website visits?",
+      "normalized_text": "What about website visits?",
+      "source_location": {
+        "start_line": 133,
+        "end_line": 133
+      }
+    },
+    {
+      "id": "segment-067",
+      "sequence": 67,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Website visits should be under first-party signals, not third-party signals in this framework.",
+      "normalized_text": "Website visits should be under first-party signals, not third-party signals in this framework.",
+      "source_location": {
+        "start_line": 135,
+        "end_line": 135
+      }
+    },
+    {
+      "id": "segment-068",
+      "sequence": 68,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right.",
+      "normalized_text": "Right.",
+      "source_location": {
+        "start_line": 137,
+        "end_line": 137
+      }
+    },
+    {
+      "id": "segment-069",
+      "sequence": 69,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "For third-party, also include web scraping, advertisement activity, social signals, and competitive signals.",
+      "normalized_text": "For third-party, also include web scraping, advertisement activity, social signals, and competitive signals.",
+      "source_location": {
+        "start_line": 139,
+        "end_line": 139
+      }
+    },
+    {
+      "id": "segment-070",
+      "sequence": 70,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "So that's funding announcements, search analytics, people data, technographic signals, news, firmographic data, job openings, web scraping, advertisement activity, social signals, and competitive signals.",
+      "normalized_text": "So that's funding announcements, search analytics, people data, technographic signals, news, firmographic data, job openings, web scraping, advertisement activity, social signals, and competitive signals.",
+      "source_location": {
+        "start_line": 141,
+        "end_line": 141
+      }
+    },
+    {
+      "id": "segment-071",
+      "sequence": 71,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct. Eleven categories.",
+      "normalized_text": "Correct. Eleven categories.",
+      "source_location": {
+        "start_line": 143,
+        "end_line": 143
+      }
+    },
+    {
+      "id": "segment-072",
+      "sequence": 72,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Did you see that news about the new iPhone?",
+      "normalized_text": "Did you see that news about the new iPhone?",
+      "source_location": {
+        "start_line": 145,
+        "end_line": 145
+      }
+    },
+    {
+      "id": "segment-073",
+      "sequence": 73,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No. What happened?",
+      "normalized_text": "No. What happened?",
+      "source_location": {
+        "start_line": 147,
+        "end_line": 147
+      }
+    },
+    {
+      "id": "segment-074",
+      "sequence": 74,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Nothing major, just some videos about the camera.",
+      "normalized_text": "Nothing major, just some videos about the camera.",
+      "source_location": {
+        "start_line": 149,
+        "end_line": 149
+      }
+    },
+    {
+      "id": "segment-075",
+      "sequence": 75,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "I'm probably not upgrading this year.",
+      "normalized_text": "I'm probably not upgrading this year.",
+      "source_location": {
+        "start_line": 151,
+        "end_line": 151
+      }
+    },
+    {
+      "id": "segment-076",
+      "sequence": 76,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Same. Too expensive.",
+      "normalized_text": "Same. Too expensive.",
+      "source_location": {
+        "start_line": 153,
+        "end_line": 153
+      }
+    },
+    {
+      "id": "segment-077",
+      "sequence": 77,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Anyway, coming back to signals, let's cover first-party.",
+      "normalized_text": "Anyway, coming back to signals, let's cover first-party.",
+      "source_location": {
+        "start_line": 155,
+        "end_line": 155
+      }
+    },
+    {
+      "id": "segment-078",
+      "sequence": 78,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah.",
+      "normalized_text": "Yeah.",
+      "source_location": {
+        "start_line": 157,
+        "end_line": 157
+      }
+    },
+    {
+      "id": "segment-079",
+      "sequence": 79,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Event attendance, CRM activity, meeting forms, product usage, website visits...",
+      "normalized_text": "Event attendance, CRM activity, meeting forms, product usage, website visits...",
+      "source_location": {
+        "start_line": 159,
+        "end_line": 159
+      }
+    },
+    {
+      "id": "segment-080",
+      "sequence": 80,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Email opens?",
+      "normalized_text": "Email opens?",
+      "source_location": {
+        "start_line": 161,
+        "end_line": 161
+      }
+    },
+    {
+      "id": "segment-081",
+      "sequence": 81,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Not as a separate category for now. Include gated content, marketing sequences, and outreach replies.",
+      "normalized_text": "Not as a separate category for now. Include gated content, marketing sequences, and outreach replies.",
+      "source_location": {
+        "start_line": 163,
+        "end_line": 163
+      }
+    },
+    {
+      "id": "segment-082",
+      "sequence": 82,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Gated content means things like downloadable resources behind a form?",
+      "normalized_text": "Gated content means things like downloadable resources behind a form?",
+      "source_location": {
+        "start_line": 165,
+        "end_line": 165
+      }
+    },
+    {
+      "id": "segment-083",
+      "sequence": 83,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly, things like that.",
+      "normalized_text": "Exactly, things like that.",
+      "source_location": {
+        "start_line": 167,
+        "end_line": 167
+      }
+    },
+    {
+      "id": "segment-084",
+      "sequence": 84,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 169,
+        "end_line": 169
+      }
+    },
+    {
+      "id": "segment-085",
+      "sequence": 85,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So eight first-party categories.",
+      "normalized_text": "So eight first-party categories.",
+      "source_location": {
+        "start_line": 171,
+        "end_line": 171
+      }
+    },
+    {
+      "id": "segment-086",
+      "sequence": 86,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sorry, someone is at the door. One minute.",
+      "normalized_text": "Sorry, someone is at the door. One minute.",
+      "source_location": {
+        "start_line": 173,
+        "end_line": 173
+      }
+    },
+    {
+      "id": "segment-087",
+      "sequence": 87,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 175,
+        "end_line": 175
+      }
+    },
+    {
+      "id": "segment-088",
+      "sequence": 88,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Hello? Yeah, just leave it outside. Thanks.",
+      "normalized_text": "Hello? Yeah, just leave it outside. Thanks.",
+      "source_location": {
+        "start_line": 177,
+        "end_line": 177
+      }
+    },
+    {
+      "id": "segment-089",
+      "sequence": 89,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Everything okay?",
+      "normalized_text": "Everything okay?",
+      "source_location": {
+        "start_line": 179,
+        "end_line": 179
+      }
+    },
+    {
+      "id": "segment-090",
+      "sequence": 90,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, Amazon delivery.",
+      "normalized_text": "Yeah, Amazon delivery.",
+      "source_location": {
+        "start_line": 181,
+        "end_line": 181
+      }
+    },
+    {
+      "id": "segment-091",
+      "sequence": 91,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 183,
+        "end_line": 183
+      }
+    },
+    {
+      "id": "segment-092",
+      "sequence": 92,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Where were we?",
+      "normalized_text": "Where were we?",
+      "source_location": {
+        "start_line": 185,
+        "end_line": 185
+      }
+    },
+    {
+      "id": "segment-093",
+      "sequence": 93,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "First-party signals. We've finished those. Now second-party signals.",
+      "normalized_text": "First-party signals. We've finished those. Now second-party signals.",
+      "source_location": {
+        "start_line": 187,
+        "end_line": 187
+      }
+    },
+    {
+      "id": "segment-094",
+      "sequence": 94,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right.",
+      "normalized_text": "Right.",
+      "source_location": {
+        "start_line": 189,
+        "end_line": 189
+      }
+    },
+    {
+      "id": "segment-095",
+      "sequence": 95,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Champion tracking, ad engagements, partner signals, LinkedIn engagement, review sites, and warm intros.",
+      "normalized_text": "Champion tracking, ad engagements, partner signals, LinkedIn engagement, review sites, and warm intros.",
+      "source_location": {
+        "start_line": 191,
+        "end_line": 191
+      }
+    },
+    {
+      "id": "segment-096",
+      "sequence": 96,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Warm intros? Isn't that demand generation?",
+      "normalized_text": "Warm intros? Isn't that demand generation?",
+      "source_location": {
+        "start_line": 193,
+        "end_line": 193
+      }
+    },
+    {
+      "id": "segment-097",
+      "sequence": 97,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "It can be both. Here, we're tracking warm introductions as signals. Later, warm introductions are also a demand generation activity.",
+      "normalized_text": "It can be both. Here, we're tracking warm introductions as signals. Later, warm introductions are also a demand generation activity.",
+      "source_location": {
+        "start_line": 195,
+        "end_line": 195
+      }
+    },
+    {
+      "id": "segment-098",
+      "sequence": 98,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, same concept but different context.",
+      "normalized_text": "Okay, same concept but different context.",
+      "source_location": {
+        "start_line": 197,
+        "end_line": 197
+      }
+    },
+    {
+      "id": "segment-099",
+      "sequence": 99,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 199,
+        "end_line": 199
+      }
+    },
+    {
+      "id": "segment-100",
+      "sequence": 100,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Should we specify the vendor for every signal?",
+      "normalized_text": "Should we specify the vendor for every signal?",
+      "source_location": {
+        "start_line": 201,
+        "end_line": 201
+      }
+    },
+    {
+      "id": "segment-101",
+      "sequence": 101,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, not necessarily. We haven't finalized every provider. Preserve the categories, and don't guess the missing vendor names.",
+      "normalized_text": "No, not necessarily. We haven't finalized every provider. Preserve the categories, and don't guess the missing vendor names.",
+      "source_location": {
+        "start_line": 203,
+        "end_line": 203
+      }
+    },
+    {
+      "id": "segment-102",
+      "sequence": 102,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Makes sense.",
+      "normalized_text": "Makes sense.",
+      "source_location": {
+        "start_line": 205,
+        "end_line": 205
+      }
+    },
+    {
+      "id": "segment-103",
+      "sequence": 103,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Now let's discuss demand generation.",
+      "normalized_text": "Now let's discuss demand generation.",
+      "source_location": {
+        "start_line": 207,
+        "end_line": 207
+      }
+    },
+    {
+      "id": "segment-104",
+      "sequence": 104,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Isn't there scoring before demand generation?",
+      "normalized_text": "Isn't there scoring before demand generation?",
+      "source_location": {
+        "start_line": 209,
+        "end_line": 209
+      }
+    },
+    {
+      "id": "segment-105",
+      "sequence": 105,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, yeah. We still have scoring and CRM. I'm just jumping ahead because I have the demand generation notes open.",
+      "normalized_text": "Yeah, yeah. We still have scoring and CRM. I'm just jumping ahead because I have the demand generation notes open.",
+      "source_location": {
+        "start_line": 211,
+        "end_line": 211
+      }
+    },
+    {
+      "id": "segment-106",
+      "sequence": 106,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 213,
+        "end_line": 213
+      }
+    },
+    {
+      "id": "segment-107",
+      "sequence": 107,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Demand generation is actually step six. We divide it into two groups: one-to-one and one-to-many.",
+      "normalized_text": "Demand generation is actually step six. We divide it into two groups: one-to-one and one-to-many.",
+      "source_location": {
+        "start_line": 215,
+        "end_line": 215
+      }
+    },
+    {
+      "id": "segment-108",
+      "sequence": 108,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Inbound and outbound?",
+      "normalized_text": "Inbound and outbound?",
+      "source_location": {
+        "start_line": 217,
+        "end_line": 217
+      }
+    },
+    {
+      "id": "segment-109",
+      "sequence": 109,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, don't organize it as inbound and outbound. One-to-one and one-to-many specifically.",
+      "normalized_text": "No, don't organize it as inbound and outbound. One-to-one and one-to-many specifically.",
+      "source_location": {
+        "start_line": 219,
+        "end_line": 219
+      }
+    },
+    {
+      "id": "segment-110",
+      "sequence": 110,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 221,
+        "end_line": 221
+      }
+    },
+    {
+      "id": "segment-111",
+      "sequence": 111,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "One-to-one includes warm intros, gifting campaigns, event invites, and manual outreach.",
+      "normalized_text": "One-to-one includes warm intros, gifting campaigns, event invites, and manual outreach.",
+      "source_location": {
+        "start_line": 223,
+        "end_line": 223
+      }
+    },
+    {
+      "id": "segment-112",
+      "sequence": 112,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "For warm intros, Gmail?",
+      "normalized_text": "For warm intros, Gmail?",
+      "source_location": {
+        "start_line": 225,
+        "end_line": 225
+      }
+    },
+    {
+      "id": "segment-113",
+      "sequence": 113,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes, Gmail can be associated with warm intros.",
+      "normalized_text": "Yes, Gmail can be associated with warm intros.",
+      "source_location": {
+        "start_line": 227,
+        "end_line": 227
+      }
+    },
+    {
+      "id": "segment-114",
+      "sequence": 114,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And HubSpot for manual outreach?",
+      "normalized_text": "And HubSpot for manual outreach?",
+      "source_location": {
+        "start_line": 229,
+        "end_line": 229
+      }
+    },
+    {
+      "id": "segment-115",
+      "sequence": 115,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct.",
+      "normalized_text": "Correct.",
+      "source_location": {
+        "start_line": 231,
+        "end_line": 231
+      }
+    },
+    {
+      "id": "segment-116",
+      "sequence": 116,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What about personalized videos?",
+      "normalized_text": "What about personalized videos?",
+      "source_location": {
+        "start_line": 233,
+        "end_line": 233
+      }
+    },
+    {
+      "id": "segment-117",
+      "sequence": 117,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Video outreach is under one-to-many in this particular framework.",
+      "normalized_text": "Video outreach is under one-to-many in this particular framework.",
+      "source_location": {
+        "start_line": 235,
+        "end_line": 235
+      }
+    },
+    {
+      "id": "segment-118",
+      "sequence": 118,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, although personalized video could technically be one-to-one.",
+      "normalized_text": "Okay, although personalized video could technically be one-to-one.",
+      "source_location": {
+        "start_line": 237,
+        "end_line": 237
+      }
+    },
+    {
+      "id": "segment-119",
+      "sequence": 119,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes, but keep the classification we discussed for this playbook.",
+      "normalized_text": "Yes, but keep the classification we discussed for this playbook.",
+      "source_location": {
+        "start_line": 239,
+        "end_line": 239
+      }
+    },
+    {
+      "id": "segment-120",
+      "sequence": 120,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Fine.",
+      "normalized_text": "Fine.",
+      "source_location": {
+        "start_line": 241,
+        "end_line": 241
+      }
+    },
+    {
+      "id": "segment-121",
+      "sequence": 121,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "One-to-many includes automated outbound, parallel dialing, targeted ads, public events, social content, on-site content, video outreach, and connection requests.",
+      "normalized_text": "One-to-many includes automated outbound, parallel dialing, targeted ads, public events, social content, on-site content, video outreach, and connection requests.",
+      "source_location": {
+        "start_line": 243,
+        "end_line": 243
+      }
+    },
+    {
+      "id": "segment-122",
+      "sequence": 122,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "That's quite a lot.",
+      "normalized_text": "That's quite a lot.",
+      "source_location": {
+        "start_line": 245,
+        "end_line": 245
+      }
+    },
+    {
+      "id": "segment-123",
+      "sequence": 123,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Eight activities.",
+      "normalized_text": "Eight activities.",
+      "source_location": {
+        "start_line": 247,
+        "end_line": 247
+      }
+    },
+    {
+      "id": "segment-124",
+      "sequence": 124,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Which ad platforms?",
+      "normalized_text": "Which ad platforms?",
+      "source_location": {
+        "start_line": 249,
+        "end_line": 249
+      }
+    },
+    {
+      "id": "segment-125",
+      "sequence": 125,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "LinkedIn, Meta, and Google.",
+      "normalized_text": "LinkedIn, Meta, and Google.",
+      "source_location": {
+        "start_line": 251,
+        "end_line": 251
+      }
+    },
+    {
+      "id": "segment-126",
+      "sequence": 126,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Reddit?",
+      "normalized_text": "Reddit?",
+      "source_location": {
+        "start_line": 253,
+        "end_line": 253
+      }
+    },
+    {
+      "id": "segment-127",
+      "sequence": 127,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No Reddit ads in this version.",
+      "normalized_text": "No Reddit ads in this version.",
+      "source_location": {
+        "start_line": 255,
+        "end_line": 255
+      }
+    },
+    {
+      "id": "segment-128",
+      "sequence": 128,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay. I actually saw a Reddit ad yesterday for some AI product. It was pretty interesting.",
+      "normalized_text": "Okay. I actually saw a Reddit ad yesterday for some AI product. It was pretty interesting.",
+      "source_location": {
+        "start_line": 257,
+        "end_line": 257
+      }
+    },
+    {
+      "id": "segment-129",
+      "sequence": 129,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Which product?",
+      "normalized_text": "Which product?",
+      "source_location": {
+        "start_line": 259,
+        "end_line": 259
+      }
+    },
+    {
+      "id": "segment-130",
+      "sequence": 130,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "I don't remember the name. Something related to video generation.",
+      "normalized_text": "I don't remember the name. Something related to video generation.",
+      "source_location": {
+        "start_line": 261,
+        "end_line": 261
+      }
+    },
+    {
+      "id": "segment-131",
+      "sequence": 131,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, send it to me if you find it.",
+      "normalized_text": "Okay, send it to me if you find it.",
+      "source_location": {
+        "start_line": 263,
+        "end_line": 263
+      }
+    },
+    {
+      "id": "segment-132",
+      "sequence": 132,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 265,
+        "end_line": 265
+      }
+    },
+    {
+      "id": "segment-133",
+      "sequence": 133,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "For social content, use YouTube, LinkedIn, and X.",
+      "normalized_text": "For social content, use YouTube, LinkedIn, and X.",
+      "source_location": {
+        "start_line": 267,
+        "end_line": 267
+      }
+    },
+    {
+      "id": "segment-134",
+      "sequence": 134,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Twitter?",
+      "normalized_text": "Twitter?",
+      "source_location": {
+        "start_line": 269,
+        "end_line": 269
+      }
+    },
+    {
+      "id": "segment-135",
+      "sequence": 135,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, X, formerly Twitter. Same platform.",
+      "normalized_text": "Yeah, X, formerly Twitter. Same platform.",
+      "source_location": {
+        "start_line": 271,
+        "end_line": 271
+      }
+    },
+    {
+      "id": "segment-136",
+      "sequence": 136,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And Webflow for on-site content?",
+      "normalized_text": "And Webflow for on-site content?",
+      "source_location": {
+        "start_line": 273,
+        "end_line": 273
+      }
+    },
+    {
+      "id": "segment-137",
+      "sequence": 137,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct.",
+      "normalized_text": "Correct.",
+      "source_location": {
+        "start_line": 275,
+        "end_line": 275
+      }
+    },
+    {
+      "id": "segment-138",
+      "sequence": 138,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "LinkedIn for connection requests?",
+      "normalized_text": "LinkedIn for connection requests?",
+      "source_location": {
+        "start_line": 277,
+        "end_line": 277
+      }
+    },
+    {
+      "id": "segment-139",
+      "sequence": 139,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes.",
+      "normalized_text": "Yes.",
+      "source_location": {
+        "start_line": 279,
+        "end_line": 279
+      }
+    },
+    {
+      "id": "segment-140",
+      "sequence": 140,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "What about the tools for parallel dialing and gifting campaigns?",
+      "normalized_text": "What about the tools for parallel dialing and gifting campaigns?",
+      "source_location": {
+        "start_line": 281,
+        "end_line": 281
+      }
+    },
+    {
+      "id": "segment-141",
+      "sequence": 141,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "We can finalize those later. Don't remove the activities just because we haven't confirmed their supporting tools.",
+      "normalized_text": "We can finalize those later. Don't remove the activities just because we haven't confirmed their supporting tools.",
+      "source_location": {
+        "start_line": 283,
+        "end_line": 283
+      }
+    },
+    {
+      "id": "segment-142",
+      "sequence": 142,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 285,
+        "end_line": 285
+      }
+    },
+    {
+      "id": "segment-143",
+      "sequence": 143,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Wait, let me check something.",
+      "normalized_text": "Wait, let me check something.",
+      "source_location": {
+        "start_line": 287,
+        "end_line": 287
+      }
+    },
+    {
+      "id": "segment-144",
+      "sequence": 144,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 289,
+        "end_line": 289
+      }
+    },
+    {
+      "id": "segment-145",
+      "sequence": 145,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "My calendar says I have another meeting at twelve.",
+      "normalized_text": "My calendar says I have another meeting at twelve.",
+      "source_location": {
+        "start_line": 291,
+        "end_line": 291
+      }
+    },
+    {
+      "id": "segment-146",
+      "sequence": 146,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "We still have twenty minutes.",
+      "normalized_text": "We still have twenty minutes.",
+      "source_location": {
+        "start_line": 293,
+        "end_line": 293
+      }
+    },
+    {
+      "id": "segment-147",
+      "sequence": 147,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, that's enough.",
+      "normalized_text": "Yeah, that's enough.",
+      "source_location": {
+        "start_line": 295,
+        "end_line": 295
+      }
+    },
+    {
+      "id": "segment-148",
+      "sequence": 148,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Are you working from home tomorrow?",
+      "normalized_text": "Are you working from home tomorrow?",
+      "source_location": {
+        "start_line": 297,
+        "end_line": 297
+      }
+    },
+    {
+      "id": "segment-149",
+      "sequence": 149,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Probably. Depends on whether my car is ready.",
+      "normalized_text": "Probably. Depends on whether my car is ready.",
+      "source_location": {
+        "start_line": 299,
+        "end_line": 299
+      }
+    },
+    {
+      "id": "segment-150",
+      "sequence": 150,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Oh, it's still at the service center?",
+      "normalized_text": "Oh, it's still at the service center?",
+      "source_location": {
+        "start_line": 301,
+        "end_line": 301
+      }
+    },
+    {
+      "id": "segment-151",
+      "sequence": 151,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yeah, they said they'll call me today.",
+      "normalized_text": "Yeah, they said they'll call me today.",
+      "source_location": {
+        "start_line": 303,
+        "end_line": 303
+      }
+    },
+    {
+      "id": "segment-152",
+      "sequence": 152,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 305,
+        "end_line": 305
+      }
+    },
+    {
+      "id": "segment-153",
+      "sequence": 153,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So we skipped step four. Let's go back to account scoring and tiering.",
+      "normalized_text": "So we skipped step four. Let's go back to account scoring and tiering.",
+      "source_location": {
+        "start_line": 307,
+        "end_line": 307
+      }
+    },
+    {
+      "id": "segment-154",
+      "sequence": 154,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right, scoring.",
+      "normalized_text": "Right, scoring.",
+      "source_location": {
+        "start_line": 309,
+        "end_line": 309
+      }
+    },
+    {
+      "id": "segment-155",
+      "sequence": 155,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Call it \"Score + Tier Accounts.\"",
+      "normalized_text": "Call it \"Score + Tier Accounts.\"",
+      "source_location": {
+        "start_line": 311,
+        "end_line": 311
+      }
+    },
+    {
+      "id": "segment-156",
+      "sequence": 156,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Are we doing a scoring model from zero to one hundred?",
+      "normalized_text": "Are we doing a scoring model from zero to one hundred?",
+      "source_location": {
+        "start_line": 313,
+        "end_line": 313
+      }
+    },
+    {
+      "id": "segment-157",
+      "sequence": 157,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "I was thinking about that initially, but no. We haven't finalized numerical scoring thresholds.",
+      "normalized_text": "I was thinking about that initially, but no. We haven't finalized numerical scoring thresholds.",
+      "source_location": {
+        "start_line": 315,
+        "end_line": 315
+      }
+    },
+    {
+      "id": "segment-158",
+      "sequence": 158,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Maybe eighty to one hundred for Tier 1?",
+      "normalized_text": "Maybe eighty to one hundred for Tier 1?",
+      "source_location": {
+        "start_line": 317,
+        "end_line": 317
+      }
+    },
+    {
+      "id": "segment-159",
+      "sequence": 159,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, don't include those numbers. That's just a suggestion, not a confirmed decision.",
+      "normalized_text": "No, don't include those numbers. That's just a suggestion, not a confirmed decision.",
+      "source_location": {
+        "start_line": 319,
+        "end_line": 319
+      }
+    },
+    {
+      "id": "segment-160",
+      "sequence": 160,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 321,
+        "end_line": 321
+      }
+    },
+    {
+      "id": "segment-161",
+      "sequence": 161,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "We have five awareness stages. Identified, aware, interested, selecting, considering...",
+      "normalized_text": "We have five awareness stages. Identified, aware, interested, selecting, considering...",
+      "source_location": {
+        "start_line": 323,
+        "end_line": 323
+      }
+    },
+    {
+      "id": "segment-162",
+      "sequence": 162,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Wait, isn't considering before selecting?",
+      "normalized_text": "Wait, isn't considering before selecting?",
+      "source_location": {
+        "start_line": 325,
+        "end_line": 325
+      }
+    },
+    {
+      "id": "segment-163",
+      "sequence": 163,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes, sorry. Correct order is identified, aware, interested, considering, and selecting.",
+      "normalized_text": "Yes, sorry. Correct order is identified, aware, interested, considering, and selecting.",
+      "source_location": {
+        "start_line": 327,
+        "end_line": 327
+      }
+    },
+    {
+      "id": "segment-164",
+      "sequence": 164,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Five awareness stages.",
+      "normalized_text": "Five awareness stages.",
+      "source_location": {
+        "start_line": 329,
+        "end_line": 329
+      }
+    },
+    {
+      "id": "segment-165",
+      "sequence": 165,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 331,
+        "end_line": 331
+      }
+    },
+    {
+      "id": "segment-166",
+      "sequence": 166,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And account tiers?",
+      "normalized_text": "And account tiers?",
+      "source_location": {
+        "start_line": 333,
+        "end_line": 333
+      }
+    },
+    {
+      "id": "segment-167",
+      "sequence": 167,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Tier 1, Tier 2, and Tier 3.",
+      "normalized_text": "Tier 1, Tier 2, and Tier 3.",
+      "source_location": {
+        "start_line": 335,
+        "end_line": 335
+      }
+    },
+    {
+      "id": "segment-168",
+      "sequence": 168,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Should we map identified to Tier 3 and selecting to Tier 1?",
+      "normalized_text": "Should we map identified to Tier 3 and selecting to Tier 1?",
+      "source_location": {
+        "start_line": 337,
+        "end_line": 337
+      }
+    },
+    {
+      "id": "segment-169",
+      "sequence": 169,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Not directly. Awareness and account tiering are related concepts, but we haven't defined a fixed mapping between them.",
+      "normalized_text": "Not directly. Awareness and account tiering are related concepts, but we haven't defined a fixed mapping between them.",
+      "source_location": {
+        "start_line": 339,
+        "end_line": 339
+      }
+    },
+    {
+      "id": "segment-170",
+      "sequence": 170,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, no invented mapping.",
+      "normalized_text": "Okay, no invented mapping.",
+      "source_location": {
+        "start_line": 341,
+        "end_line": 341
+      }
+    },
+    {
+      "id": "segment-171",
+      "sequence": 171,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "HubSpot is associated with this section as well.",
+      "normalized_text": "HubSpot is associated with this section as well.",
+      "source_location": {
+        "start_line": 343,
+        "end_line": 343
+      }
+    },
+    {
+      "id": "segment-172",
+      "sequence": 172,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Fine.",
+      "normalized_text": "Fine.",
+      "source_location": {
+        "start_line": 345,
+        "end_line": 345
+      }
+    },
+    {
+      "id": "segment-173",
+      "sequence": 173,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Then step five is CRM components.",
+      "normalized_text": "Then step five is CRM components.",
+      "source_location": {
+        "start_line": 347,
+        "end_line": 347
+      }
+    },
+    {
+      "id": "segment-174",
+      "sequence": 174,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "HubSpot, Salesforce, and Pipedrive?",
+      "normalized_text": "HubSpot, Salesforce, and Pipedrive?",
+      "source_location": {
+        "start_line": 349,
+        "end_line": 349
+      }
+    },
+    {
+      "id": "segment-175",
+      "sequence": 175,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Just HubSpot and Salesforce. Exclude Pipedrive for this version.",
+      "normalized_text": "Just HubSpot and Salesforce. Exclude Pipedrive for this version.",
+      "source_location": {
+        "start_line": 351,
+        "end_line": 351
+      }
+    },
+    {
+      "id": "segment-176",
+      "sequence": 176,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Both CRM systems are required?",
+      "normalized_text": "Both CRM systems are required?",
+      "source_location": {
+        "start_line": 353,
+        "end_line": 353
+      }
+    },
+    {
+      "id": "segment-177",
+      "sequence": 177,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, either can be used depending on the existing technology stack.",
+      "normalized_text": "No, either can be used depending on the existing technology stack.",
+      "source_location": {
+        "start_line": 355,
+        "end_line": 355
+      }
+    },
+    {
+      "id": "segment-178",
+      "sequence": 178,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right.",
+      "normalized_text": "Right.",
+      "source_location": {
+        "start_line": 357,
+        "end_line": 357
+      }
+    },
+    {
+      "id": "segment-179",
+      "sequence": 179,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Basically, the account mapping, research, tracked signals, and scoring information should inform the CRM records.",
+      "normalized_text": "Basically, the account mapping, research, tracked signals, and scoring information should inform the CRM records.",
+      "source_location": {
+        "start_line": 359,
+        "end_line": 359
+      }
+    },
+    {
+      "id": "segment-180",
+      "sequence": 180,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And the CRM supports demand generation.",
+      "normalized_text": "And the CRM supports demand generation.",
+      "source_location": {
+        "start_line": 361,
+        "end_line": 361
+      }
+    },
+    {
+      "id": "segment-181",
+      "sequence": 181,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 363,
+        "end_line": 363
+      }
+    },
+    {
+      "id": "segment-182",
+      "sequence": 182,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "I think my internet disconnected for a second.",
+      "normalized_text": "I think my internet disconnected for a second.",
+      "source_location": {
+        "start_line": 365,
+        "end_line": 365
+      }
+    },
+    {
+      "id": "segment-183",
+      "sequence": 183,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Can you hear me now?",
+      "normalized_text": "Can you hear me now?",
+      "source_location": {
+        "start_line": 367,
+        "end_line": 367
+      }
+    },
+    {
+      "id": "segment-184",
+      "sequence": 184,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, repeat the last sentence.",
+      "normalized_text": "Yeah, repeat the last sentence.",
+      "source_location": {
+        "start_line": 369,
+        "end_line": 369
+      }
+    },
+    {
+      "id": "segment-185",
+      "sequence": 185,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "The CRM connects account intelligence and prioritization with demand generation activities.",
+      "normalized_text": "The CRM connects account intelligence and prioritization with demand generation activities.",
+      "source_location": {
+        "start_line": 371,
+        "end_line": 371
+      }
+    },
+    {
+      "id": "segment-186",
+      "sequence": 186,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 373,
+        "end_line": 373
+      }
+    },
+    {
+      "id": "segment-187",
+      "sequence": 187,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "So after demand generation, we need some follow-up activities.",
+      "normalized_text": "So after demand generation, we need some follow-up activities.",
+      "source_location": {
+        "start_line": 375,
+        "end_line": 375
+      }
+    },
+    {
+      "id": "segment-188",
+      "sequence": 188,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Is that step seven?",
+      "normalized_text": "Is that step seven?",
+      "source_location": {
+        "start_line": 377,
+        "end_line": 377
+      }
+    },
+    {
+      "id": "segment-189",
+      "sequence": 189,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No. The playbook still has six numbered steps. These are downstream activities and the final outcome.",
+      "normalized_text": "No. The playbook still has six numbered steps. These are downstream activities and the final outcome.",
+      "source_location": {
+        "start_line": 379,
+        "end_line": 379
+      }
+    },
+    {
+      "id": "segment-190",
+      "sequence": 190,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 381,
+        "end_line": 381
+      }
+    },
+    {
+      "id": "segment-191",
+      "sequence": 191,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "First, a Slack notification.",
+      "normalized_text": "First, a Slack notification.",
+      "source_location": {
+        "start_line": 383,
+        "end_line": 383
+      }
+    },
+    {
+      "id": "segment-192",
+      "sequence": 192,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Then CRM tasks?",
+      "normalized_text": "Then CRM tasks?",
+      "source_location": {
+        "start_line": 385,
+        "end_line": 385
+      }
+    },
+    {
+      "id": "segment-193",
+      "sequence": 193,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Actually, sequence enrollment comes before CRM tasks.",
+      "normalized_text": "Actually, sequence enrollment comes before CRM tasks.",
+      "source_location": {
+        "start_line": 387,
+        "end_line": 387
+      }
+    },
+    {
+      "id": "segment-194",
+      "sequence": 194,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Right. Slack notification, enroll in sequences, CRM tasks.",
+      "normalized_text": "Right. Slack notification, enroll in sequences, CRM tasks.",
+      "source_location": {
+        "start_line": 389,
+        "end_line": 389
+      }
+    },
+    {
+      "id": "segment-195",
+      "sequence": 195,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct. And finally, closed-won.",
+      "normalized_text": "Correct. And finally, closed-won.",
+      "source_location": {
+        "start_line": 391,
+        "end_line": 391
+      }
+    },
+    {
+      "id": "segment-196",
+      "sequence": 196,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "HubSpot for sequence enrollment?",
+      "normalized_text": "HubSpot for sequence enrollment?",
+      "source_location": {
+        "start_line": 393,
+        "end_line": 393
+      }
+    },
+    {
+      "id": "segment-197",
+      "sequence": 197,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Yes, HubSpot is one of the supporting platforms.",
+      "normalized_text": "Yes, HubSpot is one of the supporting platforms.",
+      "source_location": {
+        "start_line": 395,
+        "end_line": 395
+      }
+    },
+    {
+      "id": "segment-198",
+      "sequence": 198,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "CRM tasks can be associated with both HubSpot and Salesforce?",
+      "normalized_text": "CRM tasks can be associated with both HubSpot and Salesforce?",
+      "source_location": {
+        "start_line": 397,
+        "end_line": 397
+      }
+    },
+    {
+      "id": "segment-199",
+      "sequence": 199,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct.",
+      "normalized_text": "Correct.",
+      "source_location": {
+        "start_line": 399,
+        "end_line": 399
+      }
+    },
+    {
+      "id": "segment-200",
+      "sequence": 200,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And closed-won?",
+      "normalized_text": "And closed-won?",
+      "source_location": {
+        "start_line": 401,
+        "end_line": 401
+      }
+    },
+    {
+      "id": "segment-201",
+      "sequence": 201,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "That's the final outcome. HubSpot and Salesforce can also be associated with recording that outcome.",
+      "normalized_text": "That's the final outcome. HubSpot and Salesforce can also be associated with recording that outcome.",
+      "source_location": {
+        "start_line": 403,
+        "end_line": 403
+      }
+    },
+    {
+      "id": "segment-202",
+      "sequence": 202,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Should we show a closed-lost branch?",
+      "normalized_text": "Should we show a closed-lost branch?",
+      "source_location": {
+        "start_line": 405,
+        "end_line": 405
+      }
+    },
+    {
+      "id": "segment-203",
+      "sequence": 203,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "No, not in this version. We're illustrating the path toward closed-won.",
+      "normalized_text": "No, not in this version. We're illustrating the path toward closed-won.",
+      "source_location": {
+        "start_line": 407,
+        "end_line": 407
+      }
+    },
+    {
+      "id": "segment-204",
+      "sequence": 204,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay.",
+      "normalized_text": "Okay.",
+      "source_location": {
+        "start_line": 409,
+        "end_line": 409
+      }
+    },
+    {
+      "id": "segment-205",
+      "sequence": 205,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Let's quickly recap because we discussed everything out of order.",
+      "normalized_text": "Let's quickly recap because we discussed everything out of order.",
+      "source_location": {
+        "start_line": 411,
+        "end_line": 411
+      }
+    },
+    {
+      "id": "segment-206",
+      "sequence": 206,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Sure.",
+      "normalized_text": "Sure.",
+      "source_location": {
+        "start_line": 413,
+        "end_line": 413
+      }
+    },
+    {
+      "id": "segment-207",
+      "sequence": 207,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Number one, TAM and stakeholder mapping.",
+      "normalized_text": "Number one, TAM and stakeholder mapping.",
+      "source_location": {
+        "start_line": 415,
+        "end_line": 415
+      }
+    },
+    {
+      "id": "segment-208",
+      "sequence": 208,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Eight supporting options.",
+      "normalized_text": "Eight supporting options.",
+      "source_location": {
+        "start_line": 417,
+        "end_line": 417
+      }
+    },
+    {
+      "id": "segment-209",
+      "sequence": 209,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Number two, AI account research and enrichment.",
+      "normalized_text": "Number two, AI account research and enrichment.",
+      "source_location": {
+        "start_line": 419,
+        "end_line": 419
+      }
+    },
+    {
+      "id": "segment-210",
+      "sequence": 210,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Ten tools.",
+      "normalized_text": "Ten tools.",
+      "source_location": {
+        "start_line": 421,
+        "end_line": 421
+      }
+    },
+    {
+      "id": "segment-211",
+      "sequence": 211,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Number three, track the signals.",
+      "normalized_text": "Number three, track the signals.",
+      "source_location": {
+        "start_line": 423,
+        "end_line": 423
+      }
+    },
+    {
+      "id": "segment-212",
+      "sequence": 212,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "First-party, second-party, and third-party.",
+      "normalized_text": "First-party, second-party, and third-party.",
+      "source_location": {
+        "start_line": 425,
+        "end_line": 425
+      }
+    },
+    {
+      "id": "segment-213",
+      "sequence": 213,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Number four, score and tier accounts.",
+      "normalized_text": "Number four, score and tier accounts.",
+      "source_location": {
+        "start_line": 427,
+        "end_line": 427
+      }
+    },
+    {
+      "id": "segment-214",
+      "sequence": 214,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Five awareness stages and three tiers.",
+      "normalized_text": "Five awareness stages and three tiers.",
+      "source_location": {
+        "start_line": 429,
+        "end_line": 429
+      }
+    },
+    {
+      "id": "segment-215",
+      "sequence": 215,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Number five, CRM components.",
+      "normalized_text": "Number five, CRM components.",
+      "source_location": {
+        "start_line": 431,
+        "end_line": 431
+      }
+    },
+    {
+      "id": "segment-216",
+      "sequence": 216,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "HubSpot and Salesforce.",
+      "normalized_text": "HubSpot and Salesforce.",
+      "source_location": {
+        "start_line": 433,
+        "end_line": 433
+      }
+    },
+    {
+      "id": "segment-217",
+      "sequence": 217,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "And number six, demand generation.",
+      "normalized_text": "And number six, demand generation.",
+      "source_location": {
+        "start_line": 435,
+        "end_line": 435
+      }
+    },
+    {
+      "id": "segment-218",
+      "sequence": 218,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "One-to-one with four activities and one-to-many with eight activities.",
+      "normalized_text": "One-to-one with four activities and one-to-many with eight activities.",
+      "source_location": {
+        "start_line": 437,
+        "end_line": 437
+      }
+    },
+    {
+      "id": "segment-219",
+      "sequence": 219,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Correct. Then Slack notification, enrollment in sequences, CRM tasks, and closed-won.",
+      "normalized_text": "Correct. Then Slack notification, enrollment in sequences, CRM tasks, and closed-won.",
+      "source_location": {
+        "start_line": 439,
+        "end_line": 439
+      }
+    },
+    {
+      "id": "segment-220",
+      "sequence": 220,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Perfect.",
+      "normalized_text": "Perfect.",
+      "source_location": {
+        "start_line": 441,
+        "end_line": 441
+      }
+    },
+    {
+      "id": "segment-221",
+      "sequence": 221,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Remember, the tools are options. We are not recommending that every company uses all of them.",
+      "normalized_text": "Remember, the tools are options. We are not recommending that every company uses all of them.",
+      "source_location": {
+        "start_line": 443,
+        "end_line": 443
+      }
+    },
+    {
+      "id": "segment-222",
+      "sequence": 222,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "And we shouldn't invent names for the tools that haven't been finalized.",
+      "normalized_text": "And we shouldn't invent names for the tools that haven't been finalized.",
+      "source_location": {
+        "start_line": 445,
+        "end_line": 445
+      }
+    },
+    {
+      "id": "segment-223",
+      "sequence": 223,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Exactly.",
+      "normalized_text": "Exactly.",
+      "source_location": {
+        "start_line": 447,
+        "end_line": 447
+      }
+    },
+    {
+      "id": "segment-224",
+      "sequence": 224,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, I'll prepare the documentation.",
+      "normalized_text": "Okay, I'll prepare the documentation.",
+      "source_location": {
+        "start_line": 449,
+        "end_line": 449
+      }
+    },
+    {
+      "id": "segment-225",
+      "sequence": 225,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Great. Are we still ordering lunch?",
+      "normalized_text": "Great. Are we still ordering lunch?",
+      "source_location": {
+        "start_line": 451,
+        "end_line": 451
+      }
+    },
+    {
+      "id": "segment-226",
+      "sequence": 226,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, what do you want?",
+      "normalized_text": "Yeah, what do you want?",
+      "source_location": {
+        "start_line": 453,
+        "end_line": 453
+      }
+    },
+    {
+      "id": "segment-227",
+      "sequence": 227,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Anything vegetarian is fine.",
+      "normalized_text": "Anything vegetarian is fine.",
+      "source_location": {
+        "start_line": 455,
+        "end_line": 455
+      }
+    },
+    {
+      "id": "segment-228",
+      "sequence": 228,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Pizza?",
+      "normalized_text": "Pizza?",
+      "source_location": {
+        "start_line": 457,
+        "end_line": 457
+      }
+    },
+    {
+      "id": "segment-229",
+      "sequence": 229,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Maybe something lighter.",
+      "normalized_text": "Maybe something lighter.",
+      "source_location": {
+        "start_line": 459,
+        "end_line": 459
+      }
+    },
+    {
+      "id": "segment-230",
+      "sequence": 230,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Okay, I'll send you a few options.",
+      "normalized_text": "Okay, I'll send you a few options.",
+      "source_location": {
+        "start_line": 461,
+        "end_line": 461
+      }
+    },
+    {
+      "id": "segment-231",
+      "sequence": 231,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "And remind me about the invoice.",
+      "normalized_text": "And remind me about the invoice.",
+      "source_location": {
+        "start_line": 463,
+        "end_line": 463
+      }
+    },
+    {
+      "id": "segment-232",
+      "sequence": 232,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Yeah, sure.",
+      "normalized_text": "Yeah, sure.",
+      "source_location": {
+        "start_line": 465,
+        "end_line": 465
+      }
+    },
+    {
+      "id": "segment-233",
+      "sequence": 233,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Okay, thanks.",
+      "normalized_text": "Okay, thanks.",
+      "source_location": {
+        "start_line": 467,
+        "end_line": 467
+      }
+    },
+    {
+      "id": "segment-234",
+      "sequence": 234,
+      "speaker": "Speaker 2",
+      "timestamp": null,
+      "original_text": "Thanks. Bye.",
+      "normalized_text": "Thanks. Bye.",
+      "source_location": {
+        "start_line": 469,
+        "end_line": 469
+      }
+    },
+    {
+      "id": "segment-235",
+      "sequence": 235,
+      "speaker": "Speaker 1",
+      "timestamp": null,
+      "original_text": "Bye.",
+      "normalized_text": "Bye.",
+      "source_location": {
+        "start_line": 471,
+        "end_line": 471
+      }
+    }
+  ],
+  "statistics": {
+    "character_count": 14120,
+    "word_count": 2122,
+    "segment_count": 235
+  },
+  "warnings": [],
+  "errors": []
+}

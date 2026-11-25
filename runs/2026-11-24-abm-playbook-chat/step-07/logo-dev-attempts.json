@@ -1,0 +1,47 @@
+{
+  "provider": "Logo.dev API v2 adapter",
+  "credential_configured": true,
+  "attempts": [
+    {
+      "asset_request_id": "asset-request-5",
+      "name": "Ocean.io",
+      "outcome": "resolved",
+      "domain": "ocean.io",
+      "brand_id": "brand_a1ws0bsvnh7c3811srjjhmggvw",
+      "source_format": "svg"
+    },
+    {
+      "asset_request_id": "asset-request-6",
+      "name": "DiscoLike",
+      "outcome": "resolved",
+      "domain": "discolike.com",
+      "brand_id": "brand_rmst80xtbn1bsfe26ee2fyat7w",
+      "source_format": "png"
+    },
+    {
+      "asset_request_id": "asset-request-11",
+      "name": "Codex",
+      "outcome": "resolved",
+      "domain": "codex.io",
+      "brand_id": "brand_qpxkvj15kd2xvf7zva5pqdxfx8",
+      "source_format": "png"
+    },
+    {
+      "asset_request_id": "asset-request-14",
+      "name": "Claude Code",
+      "outcome": "resolved",
+      "domain": "claudecode.app",
+      "brand_id": "brand_p36rr1ntkh60f5er4z3prxmd2r",
+      "source_format": "png"
+    },
+    {
+      "asset_request_id": "asset-request-19",
+      "name": "LinkedIn",
+      "outcome": "resolved",
+      "domain": "linkedin.com",
+      "brand_id": "brand_en3zsmjbbd5878kg4ww2hevfmc",
+      "source_format": "svg"
+    }
+  ],
+  "fallback_required": false
+}

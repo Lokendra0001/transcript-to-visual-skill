@@ -1,0 +1,57 @@
+{
+  "template_id": "template-e74170bee43d",
+  "reference_path": "T08-timeline.png",
+  "reference_fingerprint": "127aed1298e42bfa6dcb6cdded77743a3c76b2b0bfaf51aa12310d1b7b14f6fe",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1000 portrait",
+  "structural_characteristics": {
+    "layout": "Two-column comparison table (left list → right list) with a dated vertical timeline rail.",
+    "reading_direction": "Top-to-bottom rows.",
+    "patterns": [
+      "row pairs with arrow and value pill",
+      "timeline rail with date ticks"
+    ],
+    "hierarchy": "Flat rows.",
+    "containment": "Two column panels."
+  },
+  "design_characteristics": {
+    "background": "Horizontal gradient (yellow-green to blue).",
+    "color_treatment": "Two-tone halves.",
+    "typography": "Large bold title; large row labels.",
+    "containers": "Rounded row cells.",
+    "connectors": "Row arrows.",
+    "numbering": "None.",
+    "icons": "Logo per row.",
+    "decoration": "Gradient."
+  },
+  "content_capacity": {
+    "level": "medium",
+    "observed": "16 rows, two items each.",
+    "notes": "Flat list capacity only."
+  },
+  "adaptability": {
+    "adaptable": [
+      "row count"
+    ],
+    "fixed_or_characteristic": [
+      "pairwise two-column table",
+      "timeline rail"
+    ]
+  },
+  "limitations": [
+    "No hierarchy, grouping or modules.",
+    "Cannot represent taxonomy, lanes, hub or nested tools."
+  ],
+  "uncertainties": [
+    "None material."
+  ],
+  "evidence": [
+    {
+      "region": "body",
+      "observation": "Rows pair a left item with a right item via an arrow and value pill."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

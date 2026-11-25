@@ -1,0 +1,170 @@
+{
+  "version": "fresh-step07",
+  "entries": [
+    {
+      "asset_id": "asset-001",
+      "entity_id": "entity-007",
+      "fingerprint": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842",
+      "cache_key": [
+        "entity-007",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-002",
+      "entity_id": "entity-008",
+      "fingerprint": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6",
+      "cache_key": [
+        "entity-008",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-003",
+      "entity_id": "entity-012",
+      "fingerprint": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022",
+      "cache_key": [
+        "entity-012",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-004",
+      "entity_id": "entity-013",
+      "fingerprint": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
+      "cache_key": [
+        "entity-013",
+        "generic_icon",
+        "generic_concept_icon",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-005",
+      "entity_id": "entity-015",
+      "fingerprint": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76",
+      "cache_key": [
+        "entity-015",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-006",
+      "entity_id": "entity-017",
+      "fingerprint": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c",
+      "cache_key": [
+        "entity-017",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-007",
+      "entity_id": "entity-018",
+      "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c",
+      "cache_key": [
+        "entity-018",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-008",
+      "entity_id": "entity-020",
+      "fingerprint": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4",
+      "cache_key": [
+        "entity-020",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-009",
+      "entity_id": "entity-021",
+      "fingerprint": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9",
+      "cache_key": [
+        "entity-021",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-010",
+      "entity_id": "entity-024",
+      "fingerprint": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f",
+      "cache_key": [
+        "entity-024",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-011",
+      "entity_id": "entity-026",
+      "fingerprint": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e",
+      "cache_key": [
+        "entity-026",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-012",
+      "entity_id": "entity-027",
+      "fingerprint": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01",
+      "cache_key": [
+        "entity-027",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-013",
+      "entity_id": "entity-029",
+      "fingerprint": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "cache_key": [
+        "entity-029",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-014",
+      "entity_id": "entity-030",
+      "fingerprint": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "cache_key": [
+        "entity-030",
+        "brand_logo",
+        "icon_mark",
+        "labeled_tool_tile"
+      ]
+    },
+    {
+      "asset_id": "asset-015",
+      "entity_id": "entity-031",
+      "fingerprint": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a",
+      "cache_key": [
+        "entity-031",
+        "brand_logo",
+        "wordmark",
+        "labeled_tool_tile"
+      ]
+    }
+  ]
+}

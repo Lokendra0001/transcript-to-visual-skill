@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "preview": "step-08/preview.png",
+  "preview_sha256": "fa0be5b3866a670f25bc2dc5bdab2d1b1c233f328c4dd3fc9cdc24c644fc763a",
+  "dimensions_px": [1024, 1536],
+  "inspection": {
+    "overall": {"status": "reviewed", "evidence": "Inspected the actual second generated image at conversation display size."},
+    "crm": {"status": "pass", "evidence": "CRM Records block and Steps 1–4 relationship visible; no gray skeleton rows observed."},
+    "signals": {"status": "fail", "evidence": "Three signal groups are tightly packed and small; intended larger canvas was not produced."},
+    "footer": {"status": "partial", "evidence": "Creator name, badge and company wordmark are visible; generated portrait and marks not verified as exact source assets."},
+    "brand_assets": {"status": "unverified", "evidence": "Several generated brand symbols resemble contact-sheet references; not compared occurrence by occurrence to source files. DiscoLike is text-only and its Step 07 contact-sheet tile appeared blank."},
+    "content": {"status": "not_reviewed_completely", "evidence": "Major six stages and downstream labels visible; exact full copy and relationships not audited item by item."},
+    "native_resolution_crops": {"status": "not_reviewed", "evidence": "No separate native-resolution crop files created or inspected."}
+  },
+  "decision": "incomplete",
+  "limitations": ["Actual output is 1024x1536; tool does not expose direct width/height selection.", "AI-generated logo and footer marks are not certified authentic.", "Flat raster; no editable SVG layers or animation handoff."]
+}

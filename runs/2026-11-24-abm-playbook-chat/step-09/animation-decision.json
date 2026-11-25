@@ -1,0 +1,8 @@
+{
+  "step": "09-animation",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "decision": "blocked",
+  "requested_mode": "animated",
+  "source": "step-08/preview.png",
+  "reason": "Step 08 validation is incomplete and the approved master is a flat PNG with no reliable semantic element IDs or editable layers."
+}

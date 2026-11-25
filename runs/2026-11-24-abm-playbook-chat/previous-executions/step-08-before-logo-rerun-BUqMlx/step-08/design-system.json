@@ -1,0 +1,11 @@
+{
+  "reference": "references/templates/T01-modular-gtm.png",
+  "quality_reference": "references/visual-quality/abm-playbook-concept.png",
+  "reference_observations": "Portrait modular infographic, warm dotted background, purple title band, black outlines, alternating mint and purple numbered tabs, compact logo tiles, creator and company footer.",
+  "planned_canvas_px": {"width": 2048, "height": 3600, "purpose": "Target for spacious full-size reading; not a supported tool parameter"},
+  "requested_size_control": "Unavailable in this tool interface; portrait orientation and greater vertical room requested in prompt.",
+  "actual_canvas_px": {"width": 1024, "height": 1536},
+  "viewing_assumption": "View at native resolution, with zoom for dense content.",
+  "typography_targets": {"style": "bold geometric sans-serif headers; clear sans-serif body", "title_px": "70–110", "headers_px": "28–40", "body_px": "20–28", "note": "Targets for planned canvas; generated typeface and sizes are not measured."},
+  "adaptation": "CRM checklist box replaced by a single records block; full approved taxonomy and two demand lanes retain their grouping. Actual dimensions remained limited."
+}

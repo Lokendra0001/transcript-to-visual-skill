@@ -1,0 +1,375 @@
+{
+  "executed_at": "2026-11-24T15:45:00+05:30",
+  "attempts": [
+    {
+      "attempt_id": "fresh-attempt-001",
+      "entity": "AI Ark",
+      "source_category": "official_site",
+      "url": "https://files.readme.io/3777df5e3978954edab39b9edfd2c005e83d8e77c81af39865082fb22b217331-ai-ark.svg",
+      "destination": "assets/originals/ai-ark.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/ai-ark.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 1763,
+          "fingerprint": "2f7415083a517fbe316006fe545c2e46294b06524220dc1c626da6bbc74ac842"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-002",
+      "entity": "DiscoLike",
+      "source_category": "official_site",
+      "url": "https://discolike.com/images/logo-dark.svg",
+      "destination": "assets/originals/discolike.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-003",
+      "entity": "Landbase",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/66b7d1ed300d381ca5ef090d_Logo%20Landbase.svg",
+      "destination": "assets/originals/landbase.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/landbase.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 168375,
+          "fingerprint": "86f1ed22ca25c0214d25377a8d030a9818aa6462eabcedc38f1ab57eb91b1eb0"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-004",
+      "entity": "Sumble",
+      "source_category": "official_site",
+      "url": "https://sumble.com/img/sumble-wordmark.svg",
+      "destination": "assets/originals/sumble.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/sumble.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 1870,
+          "fingerprint": "cd80ae8287ccd211ed83e25fc25df33bbbdec134795e545b52454171ac43fe76"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-005",
+      "entity": "Tavily",
+      "source_category": "official_site",
+      "url": "https://www.tavily.com/logos/tavily-full.svg",
+      "destination": "assets/originals/tavily.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/tavily.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 6969,
+          "fingerprint": "a482ea651b406945d488570ae195410aa70a41745e6b99b5fe4734ea394c296c"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-006",
+      "entity": "BetterContact",
+      "source_category": "official_site",
+      "url": "https://bettercontact.rocks/assets/bettercontact-logo.png",
+      "destination": "assets/originals/bettercontact.png",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/bettercontact.png",
+        "verify": {
+          "valid": true,
+          "format": "png",
+          "byte_size": 15537,
+          "fingerprint": "847c84031bd4d3b7154f2becda30488f6901e393ad78af854f3a49f4b9d08ee4"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-007",
+      "entity": "Freckle",
+      "source_category": "official_site",
+      "url": "https://framerusercontent.com/images/qRclO3OiHuFBnbHhkWg9DTLTluc.png",
+      "destination": "assets/originals/freckle.png",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/freckle.png",
+        "verify": {
+          "valid": true,
+          "format": "png",
+          "byte_size": 64497,
+          "fingerprint": "1541b445bce8c79bc8ac027df2c33a6a3e1e2c13736245ce82fd080d72cf0c6c"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-008",
+      "entity": "Clay",
+      "source_category": "official_site",
+      "url": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab2ebcb50096cbd51a_dot-com_favicon_2026_512.png",
+      "destination": "assets/originals/clay.png",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/clay.png",
+        "verify": {
+          "valid": true,
+          "format": "png",
+          "byte_size": 267230,
+          "fingerprint": "9b58d69fd3686ab080b990fcf417caa579a7d5bca197976aa70c8b9c7c3426b6"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-009",
+      "entity": "HubSpot",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+      "destination": "assets/originals/hubspot.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/hubspot.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 663,
+          "fingerprint": "f96cfb6bba27c8e70a03e782f07d4d649e9f39d2fb8bea7136b370ab2c3f04a9"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-010",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/salesforce.svg",
+      "destination": "assets/originals/salesforce.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-011",
+      "entity": "Gmail",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg",
+      "destination": "assets/originals/gmail.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/gmail.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 339,
+          "fingerprint": "a537f5d85d9a27efa3a5d6086e8df6072ee93f76b4d176639a5e483f74b74b9f"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-012",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg",
+      "destination": "assets/originals/linkedin.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-013",
+      "entity": "Meta",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg",
+      "destination": "assets/originals/meta.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/meta.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 1324,
+          "fingerprint": "e3e9db62f59dc477e5917687349b8aa9685b841d40300c1afad60ad85075cd2e"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-014",
+      "entity": "Google",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg",
+      "destination": "assets/originals/google.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/google.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 457,
+          "fingerprint": "d8cf9fb2d5e234e03254f1d6400d8cc8160c309b010d031a64f37084b5a21d01"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-015",
+      "entity": "YouTube",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/youtube.svg",
+      "destination": "assets/originals/youtube.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/youtube.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 459,
+          "fingerprint": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-016",
+      "entity": "X",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg",
+      "destination": "assets/originals/x.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/x.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 299,
+          "fingerprint": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-017",
+      "entity": "Webflow",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/webflow.svg",
+      "destination": "assets/originals/webflow.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/webflow.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 294,
+          "fingerprint": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-018",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/slack.svg",
+      "destination": "assets/originals/slack.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-019",
+      "entity": "Custom scrapers",
+      "source_category": "approved_icon_repository",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+      "destination": "assets/originals/custom-scrapers.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/custom-scrapers.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 431,
+          "fingerprint": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e"
+        }
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-020",
+      "entity": "Salesforce",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/salesforce",
+      "destination": "assets/originals/salesforce.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-021",
+      "entity": "LinkedIn",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/linkedin",
+      "destination": "assets/originals/linkedin.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-022",
+      "entity": "Slack",
+      "source_category": "trusted_logo_repository",
+      "url": "https://cdn.simpleicons.org/slack",
+      "destination": "assets/originals/slack.svg",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-023",
+      "entity": "DiscoLike",
+      "source_category": "official_site_favicon_after_logo_block",
+      "url": "https://discolike.com/images/favicon-light.png",
+      "destination": "assets/originals/discolike.png",
+      "result": {
+        "ok": false,
+        "reason": "HTTPError",
+        "verify": null
+      }
+    },
+    {
+      "attempt_id": "fresh-attempt-024",
+      "entity": "Landbase",
+      "source_category": "official_site_alternative_after_visual_review",
+      "url": "https://cdn.prod.website-files.com/663db35157fcd223250841ff/6a286e2fb6b1e6fed791b086_landbase-logo-dark.svg",
+      "destination": "assets/originals/landbase.svg",
+      "result": {
+        "ok": true,
+        "path": "runs/2026-11-24-abm-playbook-chat/assets/originals/landbase.svg",
+        "verify": {
+          "valid": true,
+          "format": "svg",
+          "byte_size": 3072,
+          "fingerprint": "01c5829f81f5dc46cd88fcd37ca03246b12554fd33c1c7c53b9865339614f022"
+        }
+      },
+      "replaces": "step-07/rejected-candidates/landbase-white.svg",
+      "rejection_reason": "white-only wordmark was not presentation-compatible on a light template background"
+    }
+  ]
+}

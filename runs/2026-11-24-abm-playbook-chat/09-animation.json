@@ -1,0 +1,13 @@
+{
+  "step": "09-animation",
+  "version": "1.0",
+  "status": "blocked",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "source": {"step_08_contract": "08-visual-generation.json", "master": "step-08/preview.png"},
+  "decision": "blocked",
+  "reason": "The active Step 08 output is a flat raster PNG and is not approved for downstream use; no element-level animation can be truthfully rendered.",
+  "animation_handoff": {"available": false},
+  "artifacts": [],
+  "warnings": ["Steps 10 and 11 were not executed."],
+  "errors": ["No animated GIF was generated."]
+}

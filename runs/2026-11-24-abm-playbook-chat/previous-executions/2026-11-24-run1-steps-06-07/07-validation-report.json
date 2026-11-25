@@ -1,0 +1,155 @@
+{
+  "step": "07-logo-retrieval",
+  "contract_version": "1.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "overall": "pass",
+  "deterministic_checks": [
+    {
+      "id": "validate-input",
+      "method": "validate_input.py",
+      "result": "pass"
+    },
+    {
+      "id": "validate-asset-retrieval",
+      "method": "validate_asset_retrieval.py",
+      "result": "pass",
+      "errors": []
+    }
+  ],
+  "semantic_and_visual_checks": [
+    {
+      "id": "S01",
+      "name": "Upstream Step 02/04/05/06 artifacts unchanged",
+      "method": "sha1 comparison",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S02",
+      "name": "Every prepared asset passes verify_assets.py and fingerprints match files",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S03",
+      "name": "Every asset requirement mapped once with its Step 04 target",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S04",
+      "name": "No parent logo substituted for a product entity; no asset for excluded entities or signal categories",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S05",
+      "name": "Repeated tools reuse one asset (dedup by entity only)",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S06",
+      "name": "Paths are relative to the run directory and inside assets/",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "S07",
+      "name": "Approved display names come from the Step 05 terminology registry",
+      "method": "script",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    },
+    {
+      "id": "V01",
+      "name": "Visual identity review of every selected logo (20 images)",
+      "method": "Claude visual inspection",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "asset-001",
+        "asset-002",
+        "asset-003",
+        "asset-004",
+        "asset-005",
+        "asset-006",
+        "asset-007",
+        "asset-008",
+        "asset-009",
+        "asset-010",
+        "asset-011",
+        "asset-012",
+        "asset-013",
+        "asset-014",
+        "asset-015",
+        "asset-016",
+        "asset-017",
+        "asset-018",
+        "asset-019",
+        "asset-020"
+      ]
+    },
+    {
+      "id": "V02",
+      "name": "Product-vs-parent icon review for Sales Navigator, Claygent, Codex, Claude Code",
+      "method": "Claude review of each product page's declared icons",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": [
+        "entity-006",
+        "entity-014",
+        "entity-016",
+        "entity-019"
+      ]
+    },
+    {
+      "id": "V03",
+      "name": "Prepared files not recolored, resized or redesigned",
+      "method": "byte copy (PNG) / container conversion (Meta WebP→PNG) reviewed",
+      "execution_status": "executed",
+      "result": "pass",
+      "affected_ids": []
+    }
+  ],
+  "unexecuted_checks": [
+    {
+      "id": "N01",
+      "name": "Logo license/usage-rights confirmation",
+      "reason": "No brand guidelines or licenses supplied; cannot be established automatically."
+    },
+    {
+      "id": "N02",
+      "name": "Rendered size/legibility of logos in the infographic",
+      "reason": "Belongs to Steps 08 and 10."
+    }
+  ],
+  "coverage": {
+    "asset_requirements": 37,
+    "mapped": 37,
+    "resolved_with_asset": 32,
+    "text_label_fallback": 5,
+    "required_unresolved": 0,
+    "unique_entities": 25,
+    "unique_assets_prepared": 20
+  },
+  "warnings": [
+    "Step 06 no longer passes its own validator: references/templates/T04-comparison.png was deleted after Step 06 ran. The selected template (T01) is unaffected; re-run Step 06 to refresh its inventory.",
+    "Low-resolution logos: Salesforce 32px, Slack 35x34, LinkedIn 64px, BetterContact 101px. Step 08 should use the text-only fallback if these would be visibly upscaled.",
+    "Findymail identity could not be confirmed from its website (403); the mark matched visually.",
+    "License/usage rights are unknown for all logos; they are trademarks of their owners.",
+    "Skill issue: verify_assets.py rejects standard SVGs because the SVG namespace URL matches its \"https?://\" pattern."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "template_id": "template-6146b326e934",
+  "reference_path": "T01-modular-gtm.png",
+  "reference_fingerprint": "21f363cb0a0f0f06acac33a4db624148792723524d34a79d8c2b0b8b4fcc282e",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "1398x2048 portrait (~2:3)",
+  "structural_characteristics": {
+    "layout": "Ten numbered modular cards on a two-column grid that snakes: row 1 full width, row 2 right-to-left, then rows alternate; final row ends in a highlighted terminal card.",
+    "reading_direction": "Serpentine; order carried by large numbered badges plus dashed arrow connectors between modules.",
+    "patterns": [
+      "numbered tabbed module cards",
+      "logo tile grids (icon tile + label below)",
+      "labelled chip/checklist rows inside a sub-panel",
+      "stepped awareness staircase with numbered pills",
+      "stacked tier list",
+      "multi-column categorized lists (header + icon/label rows)",
+      "paired logo mini-cards",
+      "small branching start node inside module 01",
+      "highlighted filled terminal card",
+      "dashed connectors with arrowheads in margins"
+    ],
+    "hierarchy": "Title band > numbered module > sub-panel/column > item row or tile.",
+    "containment": "Strong: every item sits in a module; sub-panels nest inside modules."
+  },
+  "design_characteristics": {
+    "background": "Light warm off-white with subtle dot texture; layered tab shapes behind the title.",
+    "color_treatment": "Mostly neutral; one saturated accent on title band and some badges; a mint/green accent on number badges and the terminal card; brand logos in original colors.",
+    "typography": "Very heavy condensed display title; bold all-caps module titles; small sans-serif labels (exact fonts not determinable).",
+    "containers": "Rounded rectangles with thin dark outline and offset solid shadow; tabbed header on each module.",
+    "connectors": "Thin dashed gray lines with small arrowheads routed in gutters; no connector labels.",
+    "numbering": "Two-digit numerals in high-contrast badges at each module tab.",
+    "icons": "Rounded-square logo tiles; small monochrome line icons in list rows.",
+    "decoration": "Minimal; footer band with creator identity (not to be reused)."
+  },
+  "content_capacity": {
+    "level": "high",
+    "observed": "~10 modules, ~100 visible labelled items including ~45 logo tiles; legible at native resolution.",
+    "notes": "Capacity comparable to this run (102 nodes); qualitative, not a hard limit."
+  },
+  "adaptability": {
+    "adaptable": [
+      "module count and grid placement",
+      "column count in categorized lists",
+      "chip rows per sub-panel",
+      "logo tiles vs text labels",
+      "accent colors",
+      "terminal card content"
+    ],
+    "fixed_or_characteristic": [
+      "tabbed numbered module language",
+      "outlined cards with offset shadow",
+      "dashed gutter connectors"
+    ]
+  },
+  "limitations": [
+    "No pattern for a hub with converging inputs; would need adaptation.",
+    "No connector labels.",
+    "Final modules are numbered; unnumbered downstream items need adaptation.",
+    "Includes a closed-lost branch pattern that must not be reused here."
+  ],
+  "uncertainties": [
+    "Exact fonts, colors and spacing values not measured.",
+    "Whether the dot texture is part of the design system or export artifact."
+  ],
+  "evidence": [
+    {
+      "region": "top band",
+      "observation": "Large two-line title with category breadcrumb and icon box."
+    },
+    {
+      "region": "module 01",
+      "observation": "Start node branching to two outcome mini-cards, a tool list, and labelled checklist chip rows."
+    },
+    {
+      "region": "modules 02–04",
+      "observation": "Logo tile grids and a stacked tier list, read right-to-left with dashed arrows."
+    },
+    {
+      "region": "module 05",
+      "observation": "Five numbered pills in a descending staircase above a gradient bar."
+    },
+    {
+      "region": "module 07",
+      "observation": "Four column cards each with a header and icon+label rows."
+    },
+    {
+      "region": "module 10",
+      "observation": "Filled accent terminal card with three logo tiles."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

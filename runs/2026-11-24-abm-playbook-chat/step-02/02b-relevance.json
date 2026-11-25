@@ -1,0 +1,2213 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02B-relevance-assessment",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "relevance_assessment": [
+    {
+      "id": "relevance-001",
+      "source_segment_ids": [
+        "segment-001"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-002",
+      "source_segment_ids": [
+        "segment-002"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-003",
+      "source_segment_ids": [
+        "segment-003"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-004",
+      "source_segment_ids": [
+        "segment-004"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-005",
+      "source_segment_ids": [
+        "segment-005"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-006",
+      "source_segment_ids": [
+        "segment-006"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-007",
+      "source_segment_ids": [
+        "segment-007"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-008",
+      "source_segment_ids": [
+        "segment-008"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-009",
+      "source_segment_ids": [
+        "segment-009"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-010",
+      "source_segment_ids": [
+        "segment-010"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-011",
+      "source_segment_ids": [
+        "segment-011"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-012",
+      "source_segment_ids": [
+        "segment-012"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-013",
+      "source_segment_ids": [
+        "segment-013"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-014",
+      "source_segment_ids": [
+        "segment-014"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-015",
+      "source_segment_ids": [
+        "segment-015"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-016",
+      "source_segment_ids": [
+        "segment-016"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-017",
+      "source_segment_ids": [
+        "segment-017"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-018",
+      "source_segment_ids": [
+        "segment-018"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-019",
+      "source_segment_ids": [
+        "segment-019"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-020",
+      "source_segment_ids": [
+        "segment-020"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-021",
+      "source_segment_ids": [
+        "segment-021"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-022",
+      "source_segment_ids": [
+        "segment-022"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-023",
+      "source_segment_ids": [
+        "segment-023"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-024",
+      "source_segment_ids": [
+        "segment-024"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-025",
+      "source_segment_ids": [
+        "segment-025"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-026",
+      "source_segment_ids": [
+        "segment-026"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-027",
+      "source_segment_ids": [
+        "segment-027"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-028",
+      "source_segment_ids": [
+        "segment-028"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-029",
+      "source_segment_ids": [
+        "segment-029"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-030",
+      "source_segment_ids": [
+        "segment-030"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-031",
+      "source_segment_ids": [
+        "segment-031"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-032",
+      "source_segment_ids": [
+        "segment-032"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-033",
+      "source_segment_ids": [
+        "segment-033"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-034",
+      "source_segment_ids": [
+        "segment-034"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-035",
+      "source_segment_ids": [
+        "segment-035"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-036",
+      "source_segment_ids": [
+        "segment-036"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-037",
+      "source_segment_ids": [
+        "segment-037"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-038",
+      "source_segment_ids": [
+        "segment-038"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-039",
+      "source_segment_ids": [
+        "segment-039"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-040",
+      "source_segment_ids": [
+        "segment-040"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-041",
+      "source_segment_ids": [
+        "segment-041"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-042",
+      "source_segment_ids": [
+        "segment-042"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-043",
+      "source_segment_ids": [
+        "segment-043"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-044",
+      "source_segment_ids": [
+        "segment-044"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-045",
+      "source_segment_ids": [
+        "segment-045"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-046",
+      "source_segment_ids": [
+        "segment-046"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-047",
+      "source_segment_ids": [
+        "segment-047"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-048",
+      "source_segment_ids": [
+        "segment-048"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-049",
+      "source_segment_ids": [
+        "segment-049"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-050",
+      "source_segment_ids": [
+        "segment-050"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-051",
+      "source_segment_ids": [
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-052",
+      "source_segment_ids": [
+        "segment-052"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-053",
+      "source_segment_ids": [
+        "segment-053"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-054",
+      "source_segment_ids": [
+        "segment-054"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-055",
+      "source_segment_ids": [
+        "segment-055"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-056",
+      "source_segment_ids": [
+        "segment-056"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-057",
+      "source_segment_ids": [
+        "segment-057"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-058",
+      "source_segment_ids": [
+        "segment-058"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-059",
+      "source_segment_ids": [
+        "segment-059"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-060",
+      "source_segment_ids": [
+        "segment-060"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-061",
+      "source_segment_ids": [
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-062",
+      "source_segment_ids": [
+        "segment-062"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-063",
+      "source_segment_ids": [
+        "segment-063"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-064",
+      "source_segment_ids": [
+        "segment-064"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-065",
+      "source_segment_ids": [
+        "segment-065"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-066",
+      "source_segment_ids": [
+        "segment-066"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-067",
+      "source_segment_ids": [
+        "segment-067"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-068",
+      "source_segment_ids": [
+        "segment-068"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-069",
+      "source_segment_ids": [
+        "segment-069"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-070",
+      "source_segment_ids": [
+        "segment-070"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-071",
+      "source_segment_ids": [
+        "segment-071"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-072",
+      "source_segment_ids": [
+        "segment-072"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-073",
+      "source_segment_ids": [
+        "segment-073"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-074",
+      "source_segment_ids": [
+        "segment-074"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-075",
+      "source_segment_ids": [
+        "segment-075"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-076",
+      "source_segment_ids": [
+        "segment-076"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-077",
+      "source_segment_ids": [
+        "segment-077"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-078",
+      "source_segment_ids": [
+        "segment-078"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-079",
+      "source_segment_ids": [
+        "segment-079"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-080",
+      "source_segment_ids": [
+        "segment-080"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-081",
+      "source_segment_ids": [
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-082",
+      "source_segment_ids": [
+        "segment-082"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-083",
+      "source_segment_ids": [
+        "segment-083"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-084",
+      "source_segment_ids": [
+        "segment-084"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-085",
+      "source_segment_ids": [
+        "segment-085"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-086",
+      "source_segment_ids": [
+        "segment-086"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-087",
+      "source_segment_ids": [
+        "segment-087"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-088",
+      "source_segment_ids": [
+        "segment-088"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-089",
+      "source_segment_ids": [
+        "segment-089"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-090",
+      "source_segment_ids": [
+        "segment-090"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-091",
+      "source_segment_ids": [
+        "segment-091"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-092",
+      "source_segment_ids": [
+        "segment-092"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-093",
+      "source_segment_ids": [
+        "segment-093"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-094",
+      "source_segment_ids": [
+        "segment-094"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-095",
+      "source_segment_ids": [
+        "segment-095"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-096",
+      "source_segment_ids": [
+        "segment-096"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-097",
+      "source_segment_ids": [
+        "segment-097"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-098",
+      "source_segment_ids": [
+        "segment-098"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-099",
+      "source_segment_ids": [
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-100",
+      "source_segment_ids": [
+        "segment-100"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-101",
+      "source_segment_ids": [
+        "segment-101"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-102",
+      "source_segment_ids": [
+        "segment-102"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-103",
+      "source_segment_ids": [
+        "segment-103"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-104",
+      "source_segment_ids": [
+        "segment-104"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-105",
+      "source_segment_ids": [
+        "segment-105"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-106",
+      "source_segment_ids": [
+        "segment-106"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-107",
+      "source_segment_ids": [
+        "segment-107"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-108",
+      "source_segment_ids": [
+        "segment-108"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-109",
+      "source_segment_ids": [
+        "segment-109"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-110",
+      "source_segment_ids": [
+        "segment-110"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-111",
+      "source_segment_ids": [
+        "segment-111"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-112",
+      "source_segment_ids": [
+        "segment-112"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-113",
+      "source_segment_ids": [
+        "segment-113"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-114",
+      "source_segment_ids": [
+        "segment-114"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-115",
+      "source_segment_ids": [
+        "segment-115"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-116",
+      "source_segment_ids": [
+        "segment-116"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-117",
+      "source_segment_ids": [
+        "segment-117"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-118",
+      "source_segment_ids": [
+        "segment-118"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-119",
+      "source_segment_ids": [
+        "segment-119"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-120",
+      "source_segment_ids": [
+        "segment-120"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-121",
+      "source_segment_ids": [
+        "segment-121"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-122",
+      "source_segment_ids": [
+        "segment-122"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-123",
+      "source_segment_ids": [
+        "segment-123"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-124",
+      "source_segment_ids": [
+        "segment-124"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-125",
+      "source_segment_ids": [
+        "segment-125"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-126",
+      "source_segment_ids": [
+        "segment-126"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-127",
+      "source_segment_ids": [
+        "segment-127"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-128",
+      "source_segment_ids": [
+        "segment-128"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-129",
+      "source_segment_ids": [
+        "segment-129"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-130",
+      "source_segment_ids": [
+        "segment-130"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-131",
+      "source_segment_ids": [
+        "segment-131"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-132",
+      "source_segment_ids": [
+        "segment-132"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-133",
+      "source_segment_ids": [
+        "segment-133"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-134",
+      "source_segment_ids": [
+        "segment-134"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-135",
+      "source_segment_ids": [
+        "segment-135"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-136",
+      "source_segment_ids": [
+        "segment-136"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-137",
+      "source_segment_ids": [
+        "segment-137"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-138",
+      "source_segment_ids": [
+        "segment-138"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-139",
+      "source_segment_ids": [
+        "segment-139"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-140",
+      "source_segment_ids": [
+        "segment-140"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-141",
+      "source_segment_ids": [
+        "segment-141"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-142",
+      "source_segment_ids": [
+        "segment-142"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-143",
+      "source_segment_ids": [
+        "segment-143"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-144",
+      "source_segment_ids": [
+        "segment-144"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-145",
+      "source_segment_ids": [
+        "segment-145"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-146",
+      "source_segment_ids": [
+        "segment-146"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-147",
+      "source_segment_ids": [
+        "segment-147"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-148",
+      "source_segment_ids": [
+        "segment-148"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-149",
+      "source_segment_ids": [
+        "segment-149"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-150",
+      "source_segment_ids": [
+        "segment-150"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-151",
+      "source_segment_ids": [
+        "segment-151"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-152",
+      "source_segment_ids": [
+        "segment-152"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-153",
+      "source_segment_ids": [
+        "segment-153"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-154",
+      "source_segment_ids": [
+        "segment-154"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-155",
+      "source_segment_ids": [
+        "segment-155"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-156",
+      "source_segment_ids": [
+        "segment-156"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-157",
+      "source_segment_ids": [
+        "segment-157"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-158",
+      "source_segment_ids": [
+        "segment-158"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-159",
+      "source_segment_ids": [
+        "segment-159"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-160",
+      "source_segment_ids": [
+        "segment-160"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-161",
+      "source_segment_ids": [
+        "segment-161"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-162",
+      "source_segment_ids": [
+        "segment-162"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-163",
+      "source_segment_ids": [
+        "segment-163"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-164",
+      "source_segment_ids": [
+        "segment-164"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-165",
+      "source_segment_ids": [
+        "segment-165"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-166",
+      "source_segment_ids": [
+        "segment-166"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-167",
+      "source_segment_ids": [
+        "segment-167"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-168",
+      "source_segment_ids": [
+        "segment-168"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-169",
+      "source_segment_ids": [
+        "segment-169"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-170",
+      "source_segment_ids": [
+        "segment-170"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-171",
+      "source_segment_ids": [
+        "segment-171"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-172",
+      "source_segment_ids": [
+        "segment-172"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-173",
+      "source_segment_ids": [
+        "segment-173"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-174",
+      "source_segment_ids": [
+        "segment-174"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-175",
+      "source_segment_ids": [
+        "segment-175"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-176",
+      "source_segment_ids": [
+        "segment-176"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-177",
+      "source_segment_ids": [
+        "segment-177"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-178",
+      "source_segment_ids": [
+        "segment-178"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-179",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-180",
+      "source_segment_ids": [
+        "segment-180"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-181",
+      "source_segment_ids": [
+        "segment-181"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-182",
+      "source_segment_ids": [
+        "segment-182"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-183",
+      "source_segment_ids": [
+        "segment-183"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-184",
+      "source_segment_ids": [
+        "segment-184"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-185",
+      "source_segment_ids": [
+        "segment-185"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-186",
+      "source_segment_ids": [
+        "segment-186"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-187",
+      "source_segment_ids": [
+        "segment-187"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-188",
+      "source_segment_ids": [
+        "segment-188"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-189",
+      "source_segment_ids": [
+        "segment-189"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-190",
+      "source_segment_ids": [
+        "segment-190"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-191",
+      "source_segment_ids": [
+        "segment-191"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-192",
+      "source_segment_ids": [
+        "segment-192"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-193",
+      "source_segment_ids": [
+        "segment-193"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-194",
+      "source_segment_ids": [
+        "segment-194"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-195",
+      "source_segment_ids": [
+        "segment-195"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-196",
+      "source_segment_ids": [
+        "segment-196"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-197",
+      "source_segment_ids": [
+        "segment-197"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-198",
+      "source_segment_ids": [
+        "segment-198"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-199",
+      "source_segment_ids": [
+        "segment-199"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-200",
+      "source_segment_ids": [
+        "segment-200"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-201",
+      "source_segment_ids": [
+        "segment-201"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-202",
+      "source_segment_ids": [
+        "segment-202"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-203",
+      "source_segment_ids": [
+        "segment-203"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-204",
+      "source_segment_ids": [
+        "segment-204"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-205",
+      "source_segment_ids": [
+        "segment-205"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-206",
+      "source_segment_ids": [
+        "segment-206"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-207",
+      "source_segment_ids": [
+        "segment-207"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-208",
+      "source_segment_ids": [
+        "segment-208"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-209",
+      "source_segment_ids": [
+        "segment-209"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-210",
+      "source_segment_ids": [
+        "segment-210"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-211",
+      "source_segment_ids": [
+        "segment-211"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-212",
+      "source_segment_ids": [
+        "segment-212"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-213",
+      "source_segment_ids": [
+        "segment-213"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-214",
+      "source_segment_ids": [
+        "segment-214"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-215",
+      "source_segment_ids": [
+        "segment-215"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-216",
+      "source_segment_ids": [
+        "segment-216"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-217",
+      "source_segment_ids": [
+        "segment-217"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-218",
+      "source_segment_ids": [
+        "segment-218"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-219",
+      "source_segment_ids": [
+        "segment-219"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-220",
+      "source_segment_ids": [
+        "segment-220"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-221",
+      "source_segment_ids": [
+        "segment-221"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-222",
+      "source_segment_ids": [
+        "segment-222"
+      ],
+      "evidence_status": "explicit",
+      "classification": "core",
+      "reason": "States playbook structure, steps, tools, categories, decisions, corrections or constraints."
+    },
+    {
+      "id": "relevance-223",
+      "source_segment_ids": [
+        "segment-223"
+      ],
+      "evidence_status": "explicit",
+      "classification": "supporting",
+      "reason": "Question, proposal or confirmation that prompts or validates a core playbook statement (including rejected proposals)."
+    },
+    {
+      "id": "relevance-224",
+      "source_segment_ids": [
+        "segment-224"
+      ],
+      "evidence_status": "explicit",
+      "classification": "peripheral",
+      "reason": "Acknowledgement or transition with no new playbook content."
+    },
+    {
+      "id": "relevance-225",
+      "source_segment_ids": [
+        "segment-225"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-226",
+      "source_segment_ids": [
+        "segment-226"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-227",
+      "source_segment_ids": [
+        "segment-227"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-228",
+      "source_segment_ids": [
+        "segment-228"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-229",
+      "source_segment_ids": [
+        "segment-229"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-230",
+      "source_segment_ids": [
+        "segment-230"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-231",
+      "source_segment_ids": [
+        "segment-231"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-232",
+      "source_segment_ids": [
+        "segment-232"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-233",
+      "source_segment_ids": [
+        "segment-233"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-234",
+      "source_segment_ids": [
+        "segment-234"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    },
+    {
+      "id": "relevance-235",
+      "source_segment_ids": [
+        "segment-235"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    }
+  ],
+  "excluded_content": [
+    {
+      "id": "excluded-001",
+      "source_segment_ids": [
+        "segment-001",
+        "segment-002",
+        "segment-003",
+        "segment-004",
+        "segment-005",
+        "segment-006",
+        "segment-007",
+        "segment-008",
+        "segment-009",
+        "segment-010",
+        "segment-011",
+        "segment-012",
+        "segment-034",
+        "segment-035",
+        "segment-036",
+        "segment-037",
+        "segment-038",
+        "segment-052",
+        "segment-053",
+        "segment-054",
+        "segment-055",
+        "segment-056",
+        "segment-072",
+        "segment-073",
+        "segment-074",
+        "segment-075",
+        "segment-076",
+        "segment-086",
+        "segment-087",
+        "segment-088",
+        "segment-089",
+        "segment-090",
+        "segment-091",
+        "segment-092",
+        "segment-128",
+        "segment-129",
+        "segment-130",
+        "segment-131",
+        "segment-132",
+        "segment-143",
+        "segment-144",
+        "segment-145",
+        "segment-146",
+        "segment-147",
+        "segment-148",
+        "segment-149",
+        "segment-150",
+        "segment-151",
+        "segment-152",
+        "segment-182",
+        "segment-183",
+        "segment-184",
+        "segment-225",
+        "segment-226",
+        "segment-227",
+        "segment-228",
+        "segment-229",
+        "segment-230",
+        "segment-231",
+        "segment-232",
+        "segment-233",
+        "segment-234",
+        "segment-235"
+      ],
+      "evidence_status": "explicit",
+      "classification": "irrelevant",
+      "reason": "Greeting, connectivity check, personal logistics (weekend, invoice, lunch, delivery, phone news, car, calendar) or closing unrelated to the ABM playbook."
+    }
+  ],
+  "coverage": {
+    "segment_count": 235,
+    "classified": 235,
+    "by_class": {
+      "core": 79,
+      "irrelevant": 63,
+      "peripheral": 26,
+      "supporting": 67
+    }
+  },
+  "warnings": [],
+  "errors": []
+}

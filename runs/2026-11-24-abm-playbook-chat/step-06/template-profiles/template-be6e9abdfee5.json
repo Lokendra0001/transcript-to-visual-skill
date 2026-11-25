@@ -1,0 +1,67 @@
+{
+  "template_id": "template-be6e9abdfee5",
+  "reference_path": "T05-composite-framework.png",
+  "reference_fingerprint": "e3edc0f32b738f4fe786be162cfe01c6b358ea80e727257c2b8baeb8e644b96e",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1095 portrait",
+  "structural_characteristics": {
+    "layout": "Five numbered regions: left column panel, wide top-right panel, process panel, and a lead-generation flowchart; examples band at bottom.",
+    "reading_direction": "Numbered regions with dashed arrows between them.",
+    "patterns": [
+      "numbered region headers",
+      "cylinder/stack metaphor",
+      "people/avatar grids",
+      "four-column persona lists",
+      "nested process boxes",
+      "branching flowchart with merge"
+    ],
+    "hierarchy": "Region > panel > list.",
+    "containment": "Nested dashed sub-panels."
+  },
+  "design_characteristics": {
+    "background": "Light, with tinted region panels (blue, green, orange).",
+    "color_treatment": "Soft per-region tints.",
+    "typography": "Mixed weight title; small labels.",
+    "containers": "Rounded tinted panels, dashed inner groups.",
+    "connectors": "Dashed arrows between regions; solid flowchart lines in region 5.",
+    "numbering": "Circled numbers in region pills.",
+    "icons": "Small logos inline; many photos.",
+    "decoration": "Avatar photos."
+  },
+  "content_capacity": {
+    "level": "very_high",
+    "observed": "Dense and small at native size.",
+    "notes": "Photo-heavy areas consume space irrelevant here."
+  },
+  "adaptability": {
+    "adaptable": [
+      "region count",
+      "flowchart region"
+    ],
+    "fixed_or_characteristic": [
+      "irregular region sizes",
+      "photo grids"
+    ]
+  },
+  "limitations": [
+    "Irregular composition makes a six-step order less obvious.",
+    "Photo/persona patterns have no counterpart in this run.",
+    "Low resolution for its density."
+  ],
+  "uncertainties": [
+    "Exact colors and fonts not measured."
+  ],
+  "evidence": [
+    {
+      "region": "region 5",
+      "observation": "Flowchart with four branches merging into enrichment and notification steps."
+    },
+    {
+      "region": "region 2",
+      "observation": "Four-column persona list cards."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

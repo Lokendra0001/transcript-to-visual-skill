@@ -1,0 +1,67 @@
+{
+  "template_id": "template-11a4035c6411",
+  "reference_path": "T06-vertical-playbook.png",
+  "reference_fingerprint": "cd8ce9723b1fe659cd60f29b119770489878184107f90279dbee47ce3c9e1983",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "711x2047 tall portrait (~1:2.9)",
+  "structural_characteristics": {
+    "layout": "Ten numbered sections stacked strictly vertically, each a wide card joined by short vertical connectors.",
+    "reading_direction": "Top-to-bottom single column.",
+    "patterns": [
+      "circled number pills centred on section tops",
+      "multi-cell grids inside sections",
+      "logo row",
+      "five-column stage cards with color-coded headers",
+      "convergent routing diagram (many inputs → process → CRM)",
+      "report card row"
+    ],
+    "hierarchy": "Title > numbered section > cells.",
+    "containment": "Each section a tinted rounded card."
+  },
+  "design_characteristics": {
+    "background": "White with soft colored glows behind sections.",
+    "color_treatment": "Per-section pastel gradient glows; colored stage headers.",
+    "typography": "Bold title with brand-colored word; small labels.",
+    "containers": "Rounded white cards on tinted section panels.",
+    "connectors": "Short vertical lines between sections; bracket-style convergence lines in routing section.",
+    "numbering": "Circled numerals in pill labels.",
+    "icons": "Logos inline.",
+    "decoration": "Gradient glows."
+  },
+  "content_capacity": {
+    "level": "high",
+    "observed": "Wide sections hold grids comfortably, but text is small at native width.",
+    "notes": "Height grows quickly with content."
+  },
+  "adaptability": {
+    "adaptable": [
+      "section count",
+      "grid columns per section"
+    ],
+    "fixed_or_characteristic": [
+      "strict single-column vertical stack",
+      "very tall aspect"
+    ]
+  },
+  "limitations": [
+    "Strict vertical stack gives no natural hub position for the CRM step.",
+    "Very tall aspect; 102 nodes would push height further.",
+    "Low native resolution."
+  ],
+  "uncertainties": [
+    "Exact colors/fonts not measured."
+  ],
+  "evidence": [
+    {
+      "region": "section 6",
+      "observation": "Five stage columns with color-coded numbered headers and a cold-to-warm bar."
+    },
+    {
+      "region": "section 8",
+      "observation": "Six inputs converge via brackets into one process, then into CRM."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

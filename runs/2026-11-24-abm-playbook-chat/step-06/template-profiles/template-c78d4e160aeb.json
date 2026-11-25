@@ -1,0 +1,64 @@
+{
+  "template_id": "template-c78d4e160aeb",
+  "reference_path": "T09-branching-workflow.png",
+  "reference_fingerprint": "689b9af0a56a8a3d0d2fd267091a617500fb1edb37be13344228023548a6471c",
+  "profile_schema_version": "1.0",
+  "visual_analysis_status": "success",
+  "analysis_method": "Claude visual inspection of the full image",
+  "observed_dimensions": "800x1000 portrait",
+  "structural_characteristics": {
+    "layout": "Single central vertical flowchart with branches and merges, side feedback loops with dashed arrows.",
+    "reading_direction": "Top-to-bottom.",
+    "patterns": [
+      "branch and merge brackets",
+      "node pills with inline logos",
+      "two-column split lists",
+      "three-way tier split",
+      "dashed feedback loops"
+    ],
+    "hierarchy": "Flat nodes along a spine.",
+    "containment": "Weak; few containers."
+  },
+  "design_characteristics": {
+    "background": "Very light gray.",
+    "color_treatment": "Near monochrome; highlighter-yellow title chip; pale tinted outcome pills.",
+    "typography": "Bold title; small labels.",
+    "containers": "Soft blurred pill/boxes.",
+    "connectors": "Thin solid bracket lines; dashed loops.",
+    "numbering": "None.",
+    "icons": "Few inline logos.",
+    "decoration": "Soft blur."
+  },
+  "content_capacity": {
+    "level": "low",
+    "observed": "~30 short labels.",
+    "notes": "Visibly blurred/compressed; bottom of composition is cut off."
+  },
+  "adaptability": {
+    "adaptable": [
+      "spine length"
+    ],
+    "fixed_or_characteristic": [
+      "sparse flowchart"
+    ]
+  },
+  "limitations": [
+    "Reference appears cropped at the bottom and is blurry, so its full structure cannot be observed.",
+    "Low capacity for 25 signal categories and 37 tool chips.",
+    "No numbering pattern."
+  ],
+  "uncertainties": [
+    "Remaining lower portion of the reference is unknown."
+  ],
+  "evidence": [
+    {
+      "region": "top",
+      "observation": "CRM node branching to two outcomes that merge into a model node."
+    },
+    {
+      "region": "bottom edge",
+      "observation": "A node is cut off at the image edge."
+    }
+  ],
+  "content_isolation": "Reference text, names, logos, claims and creator branding are not carried into this run; only layout/design patterns are profiled."
+}

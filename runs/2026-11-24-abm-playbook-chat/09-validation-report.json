@@ -1,0 +1,12 @@
+{
+  "step": "09-animation",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "status": "blocked",
+  "checks": {
+    "step_08_validation_passed": false,
+    "approved_editable_svg_available": false,
+    "semantic_element_mapping_available": false
+  },
+  "errors": ["Animation requires a passing Step 08 validation report and an independently approved editable SVG with reliable semantic mappings."],
+  "artifacts": []
+}

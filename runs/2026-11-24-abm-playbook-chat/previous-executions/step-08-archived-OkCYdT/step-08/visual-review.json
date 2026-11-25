@@ -1,0 +1,41 @@
+{
+  "review_version": "2.0",
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "reviewed_artifacts": {
+    "svg": "step-08/infographic.svg",
+    "preview": "step-08/preview.png",
+    "reference_template": "references/templates/T01-modular-gtm.png"
+  },
+  "visual_inspection": {
+    "reference_fidelity": {
+      "assessment": "Excellent. The generated visual faithfully reproduces the modern modular card language of T01-modular-gtm.png: 2-column card rhythm, dark tab headers with vibrant blue numbered badges (01-06), clean light card surfaces (#ffffff on #f8fafc canvas), rounded corners (rx=16), and subtle drop shadows.",
+      "status": "pass"
+    },
+    "typography_and_contrast": {
+      "assessment": "Strong hierarchy from the bold title ('Our 6-Step ABM Playbook') down to uppercase section sub-headers, high-contrast step headers, and legible item text. Optionality note is prominently displayed beneath the title.",
+      "status": "pass"
+    },
+    "step_representation": {
+      "step_01_and_02": "4-column matrices of tool tiles with embedded official brand marks and clean fallback badges.",
+      "step_03": "3 distinct pastel panels (1st-Party Blue, 2nd-Party Green, 3rd-Party Purple) containing 28 signal categories with clean bullet icons.",
+      "step_04": "Clear vertical split between 4 ordered Account Awareness Stages and 3 Account Resource Tiers.",
+      "step_05": "Dual CRM connectors (HubSpot & Salesforce) feeding into a prominent unified CRM record hub with detailed sync bullets.",
+      "step_06": "Two distinct colored lanes (1-to-1 high-touch in soft green, 1-to-many scaled distribution in soft purple).",
+      "status": "pass"
+    },
+    "downstream_sequence_and_terminus": {
+      "assessment": "Horizontal 4-stage pipeline across canvas bottom. Closed-Won terminal card is rendered in warm gold (#fef9c3 with #ca8a04 border), creating a clear visual climax without connector clutter.",
+      "status": "pass"
+    },
+    "connectors_and_flow": {
+      "assessment": "Dashed slate-gray paths (#64748b, 2.5px width) with directional arrowheads guide the eye sequentially from Step 1 through Step 6 into the Downstream pipeline.",
+      "status": "pass"
+    },
+    "brand_and_assets": {
+      "assessment": "37 verified brand marks and tool indicators cleanly embedded as safe data URIs; unrepresented reference branding or watermark is completely avoided.",
+      "status": "pass"
+    }
+  },
+  "refinement_needed": false,
+  "inspection_decision": "approved_for_handoff"
+}

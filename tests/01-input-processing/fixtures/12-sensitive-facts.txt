@@ -1,0 +1,2 @@
+Ria: We will not reduce the $5,000 budget on 2026-04-30 if https://example.com/plan reaches 90%.
+Tom: The conditional approval remains valid.

@@ -1,0 +1,3 @@
+We discussed the migration timeline.
+
+The release is planned for Friday.

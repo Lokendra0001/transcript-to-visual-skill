@@ -1,0 +1,821 @@
+{
+  "run_id": "2026-11-24-abm-playbook-chat",
+  "phase": "02E-decisions-requirements",
+  "version": "2.0",
+  "status": "success",
+  "source": {
+    "step": "01-input-processing",
+    "input_type": "transcript",
+    "input_source": "chat"
+  },
+  "decisions": [
+    {
+      "id": "decision-001",
+      "source_segment_ids": [
+        "segment-015",
+        "segment-016"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Name the deliverable \"Our 6-Step ABM Playbook\".",
+      "status": "confirmed",
+      "category": "naming",
+      "related_entity_ids": [
+        "entity-001"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-002",
+      "source_segment_ids": [
+        "segment-017",
+        "segment-018",
+        "segment-019",
+        "segment-221"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Tools are alternatives / supporting technology options, not a mandatory software stack.",
+      "status": "confirmed",
+      "category": "tool_policy",
+      "related_entity_ids": [
+        "entity-001"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-003",
+      "source_segment_ids": [
+        "segment-022"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Proposal: use Apollo for TAM and stakeholder mapping.",
+      "status": "rejected",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-005"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-004",
+      "source_segment_ids": [
+        "segment-023"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not include Apollo in this playbook.",
+      "status": "confirmed",
+      "category": "tool_exclusion",
+      "related_entity_ids": [
+        "entity-005"
+      ],
+      "supersedes_ids": [
+        "decision-003"
+      ]
+    },
+    {
+      "id": "decision-005",
+      "source_segment_ids": [
+        "segment-023",
+        "segment-025",
+        "segment-031",
+        "segment-033"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Step 1 options: Sales Navigator, AI Ark, Clay, Findymail, Ocean.io, DiscoLike, Landbase, custom scrapers.",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-006",
+        "entity-007",
+        "entity-008",
+        "entity-009",
+        "entity-010",
+        "entity-011",
+        "entity-012",
+        "entity-013"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-006",
+      "source_segment_ids": [
+        "segment-040",
+        "segment-041",
+        "segment-042"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Use Claygent (not Clay) in Step 2.",
+      "status": "confirmed",
+      "category": "correction",
+      "related_entity_ids": [
+        "entity-014",
+        "entity-008"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-007",
+      "source_segment_ids": [
+        "segment-046"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Speaker 2's note \"Claude\" for Step 2.",
+      "status": "superseded",
+      "category": "tool_selection",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-008",
+      "source_segment_ids": [
+        "segment-047",
+        "segment-048"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Correction: specifically Claude Code, not Claude, in Step 2.",
+      "status": "confirmed",
+      "category": "correction",
+      "related_entity_ids": [
+        "entity-019"
+      ],
+      "supersedes_ids": [
+        "decision-007"
+      ]
+    },
+    {
+      "id": "decision-009",
+      "source_segment_ids": [
+        "segment-049",
+        "segment-050",
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Tools may appear in multiple sections; keep Ocean.io in Step 2 even though it is in Step 1.",
+      "status": "confirmed",
+      "category": "tool_policy",
+      "related_entity_ids": [
+        "entity-010"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-010",
+      "source_segment_ids": [
+        "segment-060",
+        "segment-061"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Divide signals into first-party, second-party and third-party categories.",
+      "status": "confirmed",
+      "category": "structure",
+      "related_entity_ids": [
+        "entity-033",
+        "entity-034",
+        "entity-035"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-011",
+      "source_segment_ids": [
+        "segment-066",
+        "segment-067",
+        "segment-068"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Website visits belong to first-party signals, not third-party.",
+      "status": "confirmed",
+      "category": "classification",
+      "related_entity_ids": [
+        "entity-051"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-012",
+      "source_segment_ids": [
+        "segment-080",
+        "segment-081"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Email opens are not a separate first-party category for now.",
+      "status": "rejected",
+      "category": "classification",
+      "related_entity_ids": [
+        "entity-061"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-013",
+      "source_segment_ids": [
+        "segment-096",
+        "segment-097",
+        "segment-098",
+        "segment-099"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Warm intros are both a second-party signal and a one-to-one demand-generation activity.",
+      "status": "confirmed",
+      "category": "classification",
+      "related_entity_ids": [
+        "entity-060"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-014",
+      "source_segment_ids": [
+        "segment-100",
+        "segment-101",
+        "segment-102"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not specify or guess vendors for signal categories; preserve the categories.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-015",
+      "source_segment_ids": [
+        "segment-108"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Proposal: organize demand generation as inbound and outbound.",
+      "status": "rejected",
+      "category": "structure",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-016",
+      "source_segment_ids": [
+        "segment-107",
+        "segment-109"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Organize demand generation as one-to-one and one-to-many.",
+      "status": "confirmed",
+      "category": "structure",
+      "related_entity_ids": [],
+      "supersedes_ids": [
+        "decision-015"
+      ]
+    },
+    {
+      "id": "decision-017",
+      "source_segment_ids": [
+        "segment-116",
+        "segment-117",
+        "segment-118",
+        "segment-119",
+        "segment-120"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Video outreach is classified under one-to-many for this playbook.",
+      "status": "confirmed",
+      "category": "classification",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-018",
+      "source_segment_ids": [
+        "segment-124",
+        "segment-125"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Ad platforms: LinkedIn, Meta and Google.",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-025",
+        "entity-026",
+        "entity-027"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-019",
+      "source_segment_ids": [
+        "segment-126",
+        "segment-127"
+      ],
+      "evidence_status": "explicit",
+      "statement": "No Reddit ads in this version.",
+      "status": "rejected",
+      "category": "tool_exclusion",
+      "related_entity_ids": [
+        "entity-028"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-020",
+      "source_segment_ids": [
+        "segment-133",
+        "segment-134",
+        "segment-135"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Social content platforms: YouTube, LinkedIn and X (formerly Twitter).",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-029",
+        "entity-025",
+        "entity-030"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-021",
+      "source_segment_ids": [
+        "segment-112",
+        "segment-113",
+        "segment-114",
+        "segment-115",
+        "segment-136",
+        "segment-137",
+        "segment-138",
+        "segment-139"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Webflow for on-site content; LinkedIn for connection requests; Gmail for warm intros; HubSpot for manual outreach.",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-031",
+        "entity-025",
+        "entity-024",
+        "entity-021"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-022",
+      "source_segment_ids": [
+        "segment-140",
+        "segment-141"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Keep parallel dialing and gifting campaigns; finalize their tools later.",
+      "status": "deferred",
+      "category": "tool_selection",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-023",
+      "source_segment_ids": [
+        "segment-153",
+        "segment-155"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Name Step 4 \"Score + Tier Accounts\".",
+      "status": "confirmed",
+      "category": "naming",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-024",
+      "source_segment_ids": [
+        "segment-156",
+        "segment-158"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Proposal: 0–100 scoring model / 80–100 for Tier 1.",
+      "status": "rejected",
+      "category": "scoring",
+      "related_entity_ids": [
+        "entity-069"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-025",
+      "source_segment_ids": [
+        "segment-157",
+        "segment-159"
+      ],
+      "evidence_status": "explicit",
+      "statement": "No numerical scoring thresholds; do not include proposed numbers.",
+      "status": "confirmed",
+      "category": "scoring",
+      "related_entity_ids": [],
+      "supersedes_ids": [
+        "decision-024"
+      ]
+    },
+    {
+      "id": "decision-026",
+      "source_segment_ids": [
+        "segment-161"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Initial awareness order: identified, aware, interested, selecting, considering.",
+      "status": "superseded",
+      "category": "correction",
+      "related_entity_ids": [
+        "entity-062"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-027",
+      "source_segment_ids": [
+        "segment-162",
+        "segment-163",
+        "segment-164",
+        "segment-165"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Corrected awareness order: identified, aware, interested, considering, selecting.",
+      "status": "confirmed",
+      "category": "correction",
+      "related_entity_ids": [
+        "entity-062"
+      ],
+      "supersedes_ids": [
+        "decision-026"
+      ]
+    },
+    {
+      "id": "decision-028",
+      "source_segment_ids": [
+        "segment-168"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Proposal: map identified to Tier 3 and selecting to Tier 1.",
+      "status": "rejected",
+      "category": "scoring",
+      "related_entity_ids": [
+        "entity-063",
+        "entity-067",
+        "entity-069",
+        "entity-071"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-029",
+      "source_segment_ids": [
+        "segment-169",
+        "segment-170"
+      ],
+      "evidence_status": "explicit",
+      "statement": "No fixed mapping between awareness stages and tiers.",
+      "status": "confirmed",
+      "category": "scoring",
+      "related_entity_ids": [
+        "entity-062",
+        "entity-068"
+      ],
+      "supersedes_ids": [
+        "decision-028"
+      ]
+    },
+    {
+      "id": "decision-030",
+      "source_segment_ids": [
+        "segment-174"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Proposal: HubSpot, Salesforce and Pipedrive as CRMs.",
+      "status": "rejected",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-023"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-031",
+      "source_segment_ids": [
+        "segment-175",
+        "segment-176",
+        "segment-177"
+      ],
+      "evidence_status": "explicit",
+      "statement": "CRM: HubSpot and Salesforce only (either/or); exclude Pipedrive for this version.",
+      "status": "confirmed",
+      "category": "tool_selection",
+      "related_entity_ids": [
+        "entity-021",
+        "entity-022",
+        "entity-023"
+      ],
+      "supersedes_ids": [
+        "decision-030"
+      ]
+    },
+    {
+      "id": "decision-032",
+      "source_segment_ids": [
+        "segment-188",
+        "segment-189"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Downstream activities are not step seven; the playbook keeps six numbered steps.",
+      "status": "confirmed",
+      "category": "structure",
+      "related_entity_ids": [
+        "entity-001"
+      ],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-033",
+      "source_segment_ids": [
+        "segment-192"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Speaker 2's proposed order: Slack notification then CRM tasks.",
+      "status": "superseded",
+      "category": "correction",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    },
+    {
+      "id": "decision-034",
+      "source_segment_ids": [
+        "segment-193",
+        "segment-194",
+        "segment-195"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Sequence enrollment comes before CRM tasks.",
+      "status": "confirmed",
+      "category": "correction",
+      "related_entity_ids": [],
+      "supersedes_ids": [
+        "decision-033"
+      ]
+    },
+    {
+      "id": "decision-035",
+      "source_segment_ids": [
+        "segment-202",
+        "segment-203"
+      ],
+      "evidence_status": "explicit",
+      "statement": "No closed-lost branch in this version; show the path toward closed-won.",
+      "status": "rejected",
+      "category": "scope",
+      "related_entity_ids": [],
+      "supersedes_ids": []
+    }
+  ],
+  "requirements": [
+    {
+      "id": "requirement-001",
+      "source_segment_ids": [
+        "segment-013"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Explain the entire process from identifying accounts to closing deals.",
+      "status": "confirmed",
+      "category": "scope",
+      "related_entity_ids": [
+        "entity-001"
+      ]
+    },
+    {
+      "id": "requirement-002",
+      "source_segment_ids": [
+        "segment-017",
+        "segment-019",
+        "segment-221"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not suggest that everyone needs to buy every tool; present tools as options.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": [
+        "entity-001"
+      ]
+    },
+    {
+      "id": "requirement-003",
+      "source_segment_ids": [
+        "segment-049",
+        "segment-050",
+        "segment-051"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Allow the same tool in multiple sections; do not deduplicate across steps.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": [
+        "entity-010"
+      ]
+    },
+    {
+      "id": "requirement-004",
+      "source_segment_ids": [
+        "segment-101"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Preserve all signal categories and do not guess missing vendor names.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-005",
+      "source_segment_ids": [
+        "segment-141"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not remove demand-generation activities whose supporting tools are unconfirmed.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-006",
+      "source_segment_ids": [
+        "segment-157",
+        "segment-159"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not include numerical scoring thresholds.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-007",
+      "source_segment_ids": [
+        "segment-169",
+        "segment-170"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not invent a mapping between awareness stages and tiers.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": [
+        "entity-062",
+        "entity-068"
+      ]
+    },
+    {
+      "id": "requirement-008",
+      "source_segment_ids": [
+        "segment-179"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Account mapping, research, tracked signals and scoring information should inform CRM records.",
+      "status": "confirmed",
+      "category": "data_flow",
+      "related_entity_ids": [
+        "entity-072"
+      ]
+    },
+    {
+      "id": "requirement-009",
+      "source_segment_ids": [
+        "segment-189"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Keep six numbered steps; show downstream activities and closed-won as unnumbered.",
+      "status": "confirmed",
+      "category": "structure",
+      "related_entity_ids": [
+        "entity-001"
+      ]
+    },
+    {
+      "id": "requirement-010",
+      "source_segment_ids": [
+        "segment-203"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Illustrate only the path toward closed-won (no closed-lost branch).",
+      "status": "confirmed",
+      "category": "scope",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-011",
+      "source_segment_ids": [
+        "segment-222",
+        "segment-223"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not invent names for tools that have not been finalized.",
+      "status": "confirmed",
+      "category": "content_constraint",
+      "related_entity_ids": []
+    },
+    {
+      "id": "requirement-012",
+      "source_segment_ids": [
+        "segment-109"
+      ],
+      "evidence_status": "explicit",
+      "statement": "Do not organize demand generation as inbound/outbound.",
+      "status": "confirmed",
+      "category": "structure",
+      "related_entity_ids": []
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "ambiguity-001",
+      "source_segment_ids": [
+        "segment-140",
+        "segment-141"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "pending_decision",
+      "description": "Supporting tools for parallel dialing and gifting campaigns are not finalized.",
+      "affected_refs": [
+        "activity-008",
+        "activity-012"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Confirm tools later; keep activities without tool names until then."
+    },
+    {
+      "id": "ambiguity-002",
+      "source_segment_ids": [
+        "segment-100",
+        "segment-101"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "pending_decision",
+      "description": "Vendors for signal categories are not finalized.",
+      "affected_refs": [
+        "activity-003"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Confirm vendors later; do not guess."
+    },
+    {
+      "id": "ambiguity-003",
+      "source_segment_ids": [
+        "segment-111",
+        "segment-121"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "unspecified_detail",
+      "description": "No tools were named for event invites, automated outbound, public events or video outreach; it is not stated whether tools are pending or unnecessary.",
+      "affected_refs": [
+        "activity-009",
+        "activity-011",
+        "activity-014",
+        "activity-017"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Ask whether these activities need tool options."
+    },
+    {
+      "id": "ambiguity-004",
+      "source_segment_ids": [
+        "segment-157",
+        "segment-169"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "unspecified_detail",
+      "description": "Scoring criteria and how accounts are assigned to tiers are not defined beyond the stage/tier lists.",
+      "affected_refs": [
+        "activity-004"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Define criteria if the visual needs them; otherwise show lists only."
+    },
+    {
+      "id": "ambiguity-005",
+      "source_segment_ids": [
+        "segment-191"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "unspecified_detail",
+      "description": "What triggers the Slack notification after demand generation is not stated.",
+      "affected_refs": [
+        "activity-019"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Confirm the trigger event if it should be shown."
+    },
+    {
+      "id": "ambiguity-006",
+      "source_segment_ids": [
+        "segment-171"
+      ],
+      "evidence_status": "uncertain",
+      "issue_type": "unspecified_detail",
+      "description": "The role of HubSpot in Step 4 is stated only as 'associated'.",
+      "affected_refs": [
+        "activity-004"
+      ],
+      "blocks_downstream": false,
+      "suggested_clarification": "Show as an associated option without a specific function."
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}
