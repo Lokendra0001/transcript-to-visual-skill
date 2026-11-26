@@ -16,7 +16,7 @@ from pathlib import Path
 QA_PATH = Path(__file__).resolve().parents[1] / '10-quality-assurance' / 'qa.py'
 spec = importlib.util.spec_from_file_location('step10qa', QA_PATH)
 qa_module = importlib.util.module_from_spec(spec); spec.loader.exec_module(qa_module)
-FORMATS = {'png':'PNG', 'jpg':'JPEG', 'jpeg':'JPEG', 'webp':'WEBP', 'gif':'GIF'}
+FORMATS = {'png':'PNG', 'jpg':'JPEG', 'jpeg':'JPEG', 'webp':'WEBP', 'gif':'GIF', 'svg':'SVG'}
 ALLOWED_REQUIREMENTS = {'width','height','aspect_ratio','transparent','max_bytes'}
 
 
@@ -60,17 +60,18 @@ def validated_approval(run, report):
     if report['decision']=='approved_with_warnings' and not warnings:
         raise ValueError('QA warnings missing or not identified as non-blocking')
     sources={}
-    for kind in ('static','animation'):
+    for kind in ('static','svg','animation'):
         entry=report['handoff'].get(kind)
         if not entry: continue
         if not isinstance(entry,dict) or not entry.get('path') or not entry.get('sha256'): raise ValueError('incomplete approved artifact entry')
         path=Path(entry['path']); path=(path if path.is_absolute() else run/path).resolve()
         if not path.is_relative_to(run) or not path.is_file(): raise ValueError('approved artifact outside run or missing')
         if sha(path)!=entry['sha256']: raise ValueError('approved artifact hash mismatch')
-        info=qa_module.inspect_artifact(path)
+        info=qa_module.inspect_svg_master(path) if kind=='svg' else qa_module.inspect_artifact(path)
         if info.get('status')!='passed': raise ValueError(f'approved {kind} artifact did not decode or validate: {info.get("errors",info.get("limitations"))}')
         if kind=='animation' and info.get('format')!='GIF': raise ValueError('approved animation is not a supported animated GIF')
         if kind=='static' and info.get('format') not in ('PNG','JPEG','WEBP'): raise ValueError('approved static format unsupported')
+        if kind=='svg' and info.get('format')!='SVG': raise ValueError('approved SVG format unsupported')
         sources[kind]={'path':path,'sha256':entry['sha256'],'info':info}
     if 'static' not in sources: raise ValueError('approved static artifact missing')
     if 'animation' in sources:
@@ -111,6 +112,7 @@ def satisfies(source, constraints):
     if constraints.get('width',w)!=w or constraints.get('height',h)!=h: return 'requested dimensions require unsupported resize'
     if 'aspect_ratio' in constraints and abs(w/h-constraints['aspect_ratio'])>0.001: return 'requested aspect ratio conflicts with approved image'
     if constraints.get('transparent',False):
+        if info['format']=='SVG': return 'SVG transparency cannot be verified by this exporter'
         from PIL import Image
         with Image.open(source['path']) as image:
             if image.convert('RGBA').getchannel('A').getextrema()[0] == 255: return 'requested transparency is unavailable'
@@ -126,7 +128,7 @@ def export(run, report, plan):
     if any(x.exists() for x in (final,summary,validation)): raise ValueError('export output already exists; preserve it before rerunning')
     selected=[]; unavailable=[]
     for fmt in formats:
-        canonical=FORMATS.get(fmt);kind='animation' if canonical=='GIF' else 'static'
+        canonical=FORMATS.get(fmt);kind='animation' if canonical=='GIF' else ('svg' if canonical=='SVG' else 'static')
         source=sources.get(kind); reason=None
         if not canonical: reason='format conversion is unsupported'
         elif not source: reason='approved artifact unavailable'
@@ -149,7 +151,7 @@ def export(run, report, plan):
             if sha(source['path'])!=source['sha256']: raise ValueError('approved artifact changed before copy')
             shutil.copyfile(source['path'],dest)
             if sha(dest)!=source['sha256'] or sha(source['path'])!=source['sha256']: raise ValueError('copy or source fingerprint mismatch')
-            checked=qa_module.inspect_artifact(dest)
+            checked=qa_module.inspect_svg_master(dest) if kind=='svg' else qa_module.inspect_artifact(dest)
             if checked.get('status')!='passed': raise ValueError('exported file failed decoding')
             artifacts.append({'format':fmt,'kind':kind,'path':str(Path('final')/directory.name/filename),'sha256':sha(dest),'bytes':dest.stat().st_size,'dimensions':checked['dimensions'],'source_sha256':source['sha256'],'frame_count':checked.get('frame_count'),'duration_ms':sum(checked.get('durations_ms',[])) if kind=='animation' else None,'loop':checked.get('loop') if kind=='animation' else None})
         if plan.get('package_zip'):
@@ -158,7 +160,7 @@ def export(run, report, plan):
                     file=stage/Path(item['path']).relative_to('final');bundle.write(file,arcname=str(file.relative_to(stage)))
             with zipfile.ZipFile(stage/'deliverables.zip') as bundle:
                 if bundle.testzip() is not None: raise ValueError('ZIP validation failed')
-        manifest={'step':'11-final-export','version':'1.0','run_id':run.name,'timestamp':datetime.now(timezone.utc).isoformat(),'status':status,'decision_mode':plan['mode'],'rationale':plan['reason'],'requested_formats':formats,'requirements':req,'qa_decision':report['decision'],'artifacts':artifacts,'unavailable_formats':unavailable,'warnings':warnings,'package':'final/deliverables.zip' if plan.get('package_zip') else None,'limitations':['Lossless copies only; SVG, PDF, resizing, source export and format conversions are not implemented.']}
+        manifest={'step':'11-final-export','version':'1.0','run_id':run.name,'timestamp':datetime.now(timezone.utc).isoformat(),'status':status,'decision_mode':plan['mode'],'rationale':plan['reason'],'requested_formats':formats,'requirements':req,'qa_decision':report['decision'],'artifacts':artifacts,'unavailable_formats':unavailable,'warnings':warnings,'package':'final/deliverables.zip' if plan.get('package_zip') else None,'limitations':['Lossless copies only; PDF, resizing and format conversions are not implemented.']}
         (stage/'export-manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
         (stage/'delivery-summary.md').write_text('# Delivery summary\n\nStatus: '+status.replace('_',' ')+'.\n\n'+''.join('- '+a['path']+'\n' for a in artifacts)+('' if not unavailable else '\nSome requested formats or constraints could not be fulfilled; see the export manifest.\n'))
         os.rename(stage,final)

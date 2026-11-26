@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import math
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -75,6 +76,32 @@ def inspect_artifact(path):
     return info
 
 
+def inspect_svg_master(path):
+    """Conservative portability checks; visual equivalence still needs human review."""
+    info=inspect_artifact(path)
+    if info.get('format') != 'SVG' or info.get('status') == 'failed': return info
+    try:
+        root=ET.fromstring(Path(path).read_bytes())
+        width=float(root.get('width','')); height=float(root.get('height',''))
+        if not all(math.isfinite(x) and x > 0 for x in (width,height)) or not root.get('viewBox'): raise ValueError('invalid SVG dimensions or viewBox')
+        ids=[]; vector=False
+        for element in root.iter():
+            tag=element.tag.split('}')[-1].lower()
+            if tag in ('script','foreignobject','animate','animatetransform','set'): raise ValueError('active SVG element')
+            if tag in ('text','path','rect','circle','ellipse','line','polyline','polygon'): vector=True
+            if element.get('id'): ids.append(element.get('id'))
+            for key,value in element.attrib.items():
+                name=key.split('}')[-1].lower(); val=value.strip()
+                if name.startswith('on'): raise ValueError('event handler')
+                if name in ('href','src') and not (val.startswith('#') or val.startswith('data:image/png;base64,') or val.startswith('data:image/jpeg;base64,') or val.startswith('data:image/webp;base64,')): raise ValueError('external or unsupported asset reference')
+                if re.search(r'url\(\s*["\']?(?!#|data:)',val,re.I): raise ValueError('external URL')
+            if tag == 'style' and element.text and (re.search(r'@import|url\(\s*["\']?(?!#|data:)',element.text,re.I)): raise ValueError('external style reference')
+        if len(ids)!=len(set(ids)) or not vector: raise ValueError('duplicate IDs or no vector elements')
+        info.update(status='passed',dimensions=[width,height],limitations=['Structural portability checks do not prove safety, editability or visual equivalence.'])
+    except (ValueError,ET.ParseError,OSError) as exc: info.update(status='failed',errors=[str(exc)])
+    return info
+
+
 def expected_ids(architecture, writing, assets):
     return {
         'content_items': [x['id'] for x in writing.get('content_items',[]) if x.get('required') and x.get('status') != 'omitted_optional'],
@@ -93,13 +120,21 @@ def route_issue(issue):
             'status':'planned_not_executed'}
 
 
-def evaluate(run_id, artifact, review, architecture, writing, assets, animation=None, animation_requested=False, attempts_remaining=0):
+def evaluate(run_id, artifact, review, architecture, writing, assets, animation=None, animation_requested=False, attempts_remaining=0, svg=None):
     """Validate review completeness and policy; does not verify the review's assertions."""
     errors=[]; failed_checks=[]; issues=review.get('issues',[]); technical=inspect_artifact(artifact)
     if technical.get('status') != 'passed': errors.append('actual static artifact technical inspection did not pass')
     if technical.get('format') not in ('PNG','JPEG','WEBP','SVG'): errors.append('unsupported static visual format')
     if review.get('run_id') != run_id: errors.append('review run ID mismatch')
     if review.get('artifact_sha256') != technical.get('sha256'): errors.append('stale or mismatched review hash')
+    svg_info=None
+    if svg is not None:
+        svg_info=inspect_svg_master(svg)
+        svg_review=review.get('svg_review',{})
+        if svg_info.get('status')!='passed': errors.append('SVG master inspection failed')
+        if svg_review.get('sha256')!=svg_info.get('sha256') or svg_review.get('status')!='passed' or svg_review.get('method')!='visual_inspection' or not str(svg_review.get('evidence','')).strip(): errors.append('SVG master visual equivalence and editability review missing or stale')
+        a=svg_info.get('dimensions'); b=technical.get('dimensions')
+        if a and b and abs(a[0]/a[1]-b[0]/b[1])>0.001: errors.append('SVG and preview aspect ratios differ')
     preference=review.get('animation_preference')
     if preference not in ('static','animated','auto'): errors.append('animation preference missing or invalid')
     if preference == 'animated': animation_requested=True
@@ -158,10 +193,11 @@ def evaluate(run_id, artifact, review, architecture, writing, assets, animation=
     elif open_issues or any(isinstance(c,dict) and c.get('status')=='warning' for c in checks.values()): decision='approved_with_warnings'
     else: decision='approved'
     return {'step':'10-quality-assurance','version':'1.0','run_id':run_id,'decision':decision,
-            'reviewed_artifacts':{'static':technical,'animation':animation_info},'checks':checks,'issues':issues,
+            'reviewed_artifacts':{'static':technical,'svg':svg_info,'animation':animation_info},'checks':checks,'issues':issues,
             'errors':errors,'failed_checks':failed_checks,'method':'deterministic technical and evidence-completeness checks; agent observations are not independently verified',
             'handoff':{'approved':decision in ('approved','approved_with_warnings'),
                        'static': {'path':str(artifact),'sha256':technical.get('sha256')} if decision in ('approved','approved_with_warnings') else None,
+                       'svg': {'path':str(svg),'sha256':svg_info.get('sha256')} if svg_info and decision in ('approved','approved_with_warnings') else None,
                        'animation': {'path':str(animation),'sha256':animation_info.get('sha256')} if animation_info and decision in ('approved','approved_with_warnings') else None,
                        'step_11':'implementation_pending'},
             'limitations':['No automatic visual, semantic, brand identity or playback judgments.', 'Correction routes are plans, not automatic invocations.']}
@@ -190,7 +226,7 @@ def verify_handoff(report):
     handoff=report.get('handoff',{})
     if not handoff.get('approved') or report.get('decision') not in ('approved','approved_with_warnings'):
         return False
-    for name in ('static','animation'):
+    for name in ('static','svg','animation'):
         entry=handoff.get(name)
         if entry:
             try:
@@ -202,20 +238,33 @@ def verify_handoff(report):
 if __name__ == '__main__':
     p=argparse.ArgumentParser(description=__doc__); sub=p.add_subparsers(dest='action',required=True)
     i=sub.add_parser('inspect');i.add_argument('--artifact',type=Path,required=True)
-    e=sub.add_parser('evaluate');e.add_argument('--run-dir',type=Path,required=True);e.add_argument('--artifact',type=Path,required=True);e.add_argument('--review',type=Path,required=True);e.add_argument('--animation',type=Path);e.add_argument('--animation-requested',action='store_true');e.add_argument('--attempts-remaining',type=int,default=0);e.add_argument('--write',action='store_true',help='write new Step 10 output files without overwriting existing artifacts')
+    e=sub.add_parser('evaluate');e.add_argument('--run-dir',type=Path,required=True);e.add_argument('--artifact',type=Path,required=True);e.add_argument('--svg',type=Path);e.add_argument('--review',type=Path,required=True);e.add_argument('--animation',type=Path);e.add_argument('--animation-requested',action='store_true');e.add_argument('--attempts-remaining',type=int,default=0);e.add_argument('--write',action='store_true',help='write new Step 10 output files without overwriting existing artifacts')
     args=p.parse_args()
     try:
         if args.action=='inspect': result=inspect_artifact(args.artifact); ok=result['status']=='passed'
         else:
             run=args.run_dir.resolve(); artifact=args.artifact.resolve(); anim=args.animation.resolve() if args.animation else None
-            if not artifact.is_relative_to(run) or (anim and not anim.is_relative_to(run)): raise ValueError('reviewed artifacts must be inside the run directory')
+            svg=args.svg.resolve() if args.svg else None
+            if not artifact.is_relative_to(run) or (anim and not anim.is_relative_to(run)) or (svg and not svg.is_relative_to(run)): raise ValueError('reviewed artifacts must be inside the run directory')
             upstream, upstream_errors=validate_upstream(run)
             if upstream_errors: raise ValueError('; '.join(upstream_errors))
+            if upstream['08-visual-generation.json'].get('generation_method')=='code_render_react_svg':
+                if svg is None: raise ValueError('code-rendered Step 08 requires SVG master review')
+                render_report=load(run/'step-08/render-report.json')
+                if render_report.get('status')!='rendered': raise ValueError('Step 08 render report did not pass')
+                for kind,path in [('png',artifact),('svg',svg)]:
+                    entry=render_report['outputs'][kind]
+                    if (run/entry['path']).resolve()!=path or entry['sha256']!=digest(path): raise ValueError(f'Step 08 {kind} differs from render report')
             docs=[upstream[f] for f in ('04-workflow-architecture.json','05-content-writing.json','07-logo-retrieval.json')]
             if args.attempts_remaining < 0: raise ValueError('attempts remaining cannot be negative')
-            result=evaluate(run.name,artifact,load(args.review),*docs,animation=anim,animation_requested=args.animation_requested,attempts_remaining=args.attempts_remaining)
+            result=evaluate(run.name,artifact,load(args.review),*docs,animation=anim,animation_requested=args.animation_requested,attempts_remaining=args.attempts_remaining,svg=svg)
             result['upstream_refs']=[{'path':name,'sha256':digest(run/name),'status':upstream[name].get('status')} for name,_,_ in UPSTREAM]
             animation_status=upstream['09-animation.json'].get('status')
+            if animation_status=='success' and upstream['09-animation.json'].get('method')=='gsap_playwright':
+                animation_artifacts=upstream['09-animation.json'].get('artifacts',{})
+                if anim is None or animation_artifacts.get('sha256')!=digest(anim) or (run/animation_artifacts.get('gif','')).resolve()!=anim:
+                    result['errors'].append('Step 09 approved GIF does not match reviewed animation')
+                    result['decision']='blocked'; result['handoff']={'approved':False,'static':None,'svg':None,'animation':None,'step_11':'implementation_pending'}
             if animation_status not in ('success','skipped') or (animation_status == 'success' and anim is None):
                 result['errors'].append('Step 09 has no usable animation outcome or its animated artifact is missing')
                 result['decision']='blocked'; result['handoff']={'approved':False,'static':None,'animation':None,'step_11':'implementation_pending'}

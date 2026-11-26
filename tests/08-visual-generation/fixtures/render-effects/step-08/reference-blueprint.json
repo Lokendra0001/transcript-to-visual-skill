@@ -1,0 +1,15 @@
+{
+  "reference": {"path": "fixture: capability showcase (no reference template)", "sha256": null},
+  "rendering_plan": [
+    {"component": "Background", "traits": ["patterns", "texture", "organic_shapes", "decorative_boundaries"], "technology": "svg"},
+    {"component": "HeaderMesh", "traits": ["mesh_background", "glassmorphism", "badges_ribbons", "gloss", "floating_decoration"], "technology": "svg"},
+    {"component": "FinishCards", "traits": ["rounded_containers", "neo_brutalism", "soft_shadow", "neumorphism", "inner_shadow", "glassmorphism", "gloss", "bevel", "glow"], "technology": "svg"},
+    {"component": "StageBlocks", "traits": ["extruded_blocks", "gradients"], "technology": "svg"},
+    {"component": "Databases", "traits": ["cylinders"], "technology": "svg"},
+    {"component": "ServerStack", "traits": ["isometric_illustration"], "technology": "zdog"},
+    {"component": "Pill3D", "traits": ["rounded_3d_objects"], "technology": "zdog"},
+    {"component": "HeroObjects", "traits": ["realistic_3d"], "technology": "three"},
+    {"component": "ProcessRow", "traits": ["structured_component"], "technology": "antv"},
+    {"component": "Gear", "traits": ["path_construction", "gradients"], "technology": "svgjs"}
+  ]
+}

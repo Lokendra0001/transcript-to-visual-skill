@@ -14,9 +14,10 @@ def digest(path):
     return h.hexdigest()
 def source_error(artifact, step, version, run_id):
     return artifact.get("step") != step or artifact.get("version") != version or artifact.get("run_id") != run_id or artifact.get("status") not in {"success","warning"} or bool(artifact.get("errors"))
-def valid_profile(profile, item, template_id):
-    required=("structural_characteristics","design_characteristics","content_capacity","adaptability","limitations","uncertainties","evidence")
-    return (profile.get("template_id")==template_id and profile.get("reference_path")==item.get("reference_path") and profile.get("reference_fingerprint")==item.get("fingerprint") and profile.get("profile_schema_version")=="1.0" and profile.get("visual_analysis_status")=="success" and all(key in profile for key in required))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from manage_template_profiles import valid_profile  # one definition of a reusable profile
+# Better first. Selecting a lower-ranked template than an eligible alternative needs an explicit override reason.
+RANK = {"highly_compatible": 0, "compatible": 1, "compatible_with_adaptations": 2, "weakly_compatible": 3, "incompatible": 4, "unable_to_evaluate": 5}
 
 def validate(run_dir: Path, templates_dir: Path):
     errors=[]
@@ -37,6 +38,8 @@ def validate(run_dir: Path, templates_dir: Path):
         if not path.is_file(): errors.append(f"template file missing: {tid}")
         elif item.get("fingerprint") != digest(path): errors.append(f"template fingerprint changed: {tid}")
     analyzed={x.get("template_id"):x for x in library.get("analyzed_templates",[]) if isinstance(x,dict)}
+    for tid in discovered:
+        if tid not in analyzed: errors.append(f"discovered template not profiled or evaluated: {tid}")
     profiles_dir=run_dir/"step-06"/"template-profiles"
     for tid,item in analyzed.items():
         if tid not in discovered: errors.append(f"analyzed unknown template: {tid}"); continue
@@ -54,8 +57,14 @@ def validate(run_dir: Path, templates_dir: Path):
             if (unit,tid) not in evaluations: errors.append(f"candidate evaluation missing: {unit}/{tid}")
     for key,evaluation in evaluations.items():
         if key[0] not in unit_ids or key[1] not in analyzed or evaluation.get("assessment") not in ASSESSMENTS or not isinstance(evaluation.get("selection_eligible"),bool): errors.append("invalid candidate evaluation")
+    for (unit,tid),evaluation in evaluations.items():
+        if not any(isinstance(r,str) and r.strip() for r in evaluation.get("reasons") or []): errors.append(f"candidate evaluation without reasons: {unit}/{tid}")
     for unit,selection in selection_by_unit.items():
         tid=selection.get("template_id"); evaluation=evaluations.get((unit,tid))
+        if evaluation and not selection.get("override_reason"):
+            better=[t for (u,t),e in evaluations.items() if u==unit and t!=tid and e.get("selection_eligible") and RANK.get(e.get("assessment"),9) < RANK.get(evaluation.get("assessment"),9)]
+            if better: errors.append(f"selection ranks below eligible alternative without override_reason: {unit} ({', '.join(sorted(better))})")
+        if not selection.get("content_fit"): errors.append(f"selection missing content_fit: {unit}")
         if unit not in unit_ids or tid not in analyzed or not evaluation or not evaluation.get("selection_eligible"): errors.append(f"ineligible selection: {unit}")
         if selection.get("reference_path") != discovered.get(tid,{}).get("reference_path") or not selection.get("profile_id") or not selection.get("selection_rationale"): errors.append(f"incomplete selection: {unit}")
     required={

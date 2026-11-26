@@ -3,6 +3,7 @@
 import ipaddress,socket,urllib.error,urllib.parse,urllib.request
 from pathlib import Path
 MIME_EXTENSIONS={'image/svg+xml':'.svg','image/png':'.png','image/jpeg':'.jpg','image/webp':'.webp','image/gif':'.gif','image/x-icon':'.ico','image/vnd.microsoft.icon':'.ico','image/avif':'.avif'}
+USER_AGENT='transcript-to-visual-asset-retriever/1.0 (logo retrieval; bounded downloads)'
 def safe_url(url):
  p=urllib.parse.urlparse(url)
  if p.scheme not in {'http','https'} or not p.hostname:return False
@@ -19,11 +20,14 @@ def image_extension(data,content_type=''):
  if data.startswith(b'RIFF') and data[8:12]==b'WEBP':return '.webp'
  if data.startswith((b'GIF87a',b'GIF89a')):return '.gif'
  if data.startswith(b'\x00\x00\x01\x00'):return '.ico'
+ if data[4:8]==b'ftyp' and data[8:12] in {b'avif',b'avis'}:return '.avif'
  return MIME_EXTENSIONS.get(content_type.split(';',1)[0].strip().lower(),'.bin')
 def retrieve(url,destination,timeout=15,max_bytes=5_000_000):
  if not safe_url(url):return {'ok':False,'reason':'unsafe network destination'}
  try:
-  with urllib.request.urlopen(url,timeout=timeout) as r:
+  # Some public repositories (e.g. Wikimedia) reject the default urllib agent.
+  request=urllib.request.Request(url,headers={'User-Agent':USER_AGENT})
+  with urllib.request.urlopen(request,timeout=timeout) as r:
    data=r.read(max_bytes+1)
    content_type=r.headers.get_content_type() if r.headers else ''
   if len(data)>max_bytes:return {'ok':False,'reason':'download too large'}

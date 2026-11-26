@@ -21,8 +21,13 @@ def verify(path):
     low=str(value).strip().lower(); name=key.lower()
     if name.startswith('on') or low.startswith('javascript:'):return {'valid':False,'reason':'unsafe SVG attribute'}
     if name.endswith('href') and low and not low.startswith('#') and not low.startswith('data:image/'):return {'valid':False,'reason':'external SVG reference'}
+ elif ext=='.avif':
+  if data[4:8]!=b'ftyp' or data[8:12] not in {b'avif',b'avis'}:return {'valid':False,'reason':'unsupported or invalid signature'}
  elif ext not in sig or not data.startswith(sig[ext]):return {'valid':False,'reason':'unsupported or invalid signature'}
  result={'valid':True,'format':ext[1:],'byte_size':len(data),'fingerprint':hashlib.sha256(data).hexdigest()}
+ if ext=='.png' and len(data)>=24 and data[12:16]==b'IHDR':
+  width,height=int.from_bytes(data[16:20],'big'),int.from_bytes(data[20:24],'big')
+  if width and height:result.update({'width':width,'height':height,'aspect_ratio':width/height})
  if ext=='.svg' and view_box:
   try:
    _,_,width,height=map(float,re.split(r'[ ,]+',view_box.strip()))

@@ -1,25 +1,81 @@
-# 08d — Inspection and Refinement
+# 08d — Visual Review Against the Reference
 
-Inspect the actual final PNG, not a prior draft, alongside the actual selected reference. Inspect representative crops at native and realistic publication/mobile sizes. Record file SHA-256, actual pixel dimensions, crop regions and actual findings. Compare the result to the complete inventory: required meaning, essential visible text and values, actual visual representations, component counts, categories, relationships and directions, verified asset identities and occurrence mappings, repeated and unauthorized logos, disclaimers and user-specified branding. Check for invented claims, duplicated or missing content, visual hierarchy, meaningful component variety, typography, legibility, whitespace, alignment, contrast, connector routing, clipping and placeholder content.
+The render report only proves technical soundness. Whether the image matches the template and carries the right content is a visual judgment, made by looking at the actual PNG.
 
-Inspect every content-bearing box and logo occurrence: text and marks must fit inside their intended boundaries with visible padding, without overlapping, clipping or touching adjacent elements. Check each visible panel outline for missing or broken border segments and each connector for continuity and correct endpoint, direction and meaning. Compare each placed logo to its correct verified source, including repeated occurrences and transparent outer background; apparent similarity is not proof of identity. Inspect a bottom crop for the entire explicitly requested footer, accurate attribution and marks. Record defects as failures and refine them; do not mark uninspected regions or uncertain brand identities as passed.
+## Each iteration
 
-Compare the actual background with the selected direction and explicit user requirements. Check deliberate effect placement, opacity, visual balance and interference with text, logos and connectors; a clean background is valid when appropriate. Record actual evidence and refine distracting or missing required treatments.
+1. Copy `src/`, `infographic.svg`, `infographic.png` and `render-report.json` into `history/vN/`.
+2. Make a side-by-side sheet at the same height:
+   ```bash
+   uv run --quiet --with pillow python scripts/08-visual-generation/reference_tools.py side-by-side --left <reference> --right step-08/infographic.png --out step-08/review/vN-side-by-side.png
+   ```
+3. Crop matching regions from the reference and the render at native size, for example the header, one module of each component type, logo tiles, connectors and the bottom edge. Compare them in pairs.
+4. Write down every observed defect. Fix it in tokens, layout or components, never by editing the output SVG by hand. Re-render and review the whole image again, because a local change can move everything below it.
 
-Use targeted image edits for defects and reinspect the complete changed image after each edit. Record attempted changes and bound the refinement loop to at most three cycles unless the user asks otherwise. If the image or its dimensions change, prior reviews and crops become stale. A blank, blurred, uninspected or approximate mark is not a verified brand asset. If exact asset-preserving placement is unavailable, accurately report the limitation rather than approving a generated approximation.
+The default is at most four iterations. Stop early once nothing is left to fix, and say what remains if the limit is reached.
 
-Write `step-08/visual-review.json` with `image_sha256`, `dimensions` [width,height], `checks` entries for `design_quality`, `reference_fit`, `readability`, `content_accuracy`, `relationship_accuracy`, `asset_identity`, `asset_placement`, `unauthorized_content`, and per-ID lists `content`, `assets`, `relationships`. Each entry has `status` and specific inspection `evidence`; use `not_applicable` with explanation when a check genuinely does not apply. Each required content item, asset occurrence and required visible relationship needs its own disposition. Identify reliable approximate regions only when actually observed; do not invent IDs or editable layers. Any unresolved required failure or unreviewed check makes the output incomplete.
+## What to compare
 
-For each required item cite its actual visible text, verified logo, icon with unambiguous meaning, group or connector and region; distinguish the plan from what was observed. Check unnecessary repeated copy, oversized containers, repetitive cards and visual clutter against the communication purpose. An absent or ambiguous visual representation is not a pass even when its plan exists. Flag both excessive and misleadingly sparse simplification.
+**Reference fidelity.** For each locked trait in the blueprint, check:
 
-Check the final image against every required Step 07 occurrence, including repeats; record occurrence ID, inspected region and comparison with the verified original. Text-only labels, reserved blank slots, generated lookalikes and planned placements do not satisfy a required logo. A missing or unverified required occurrence blocks success unless an explicitly authorized fallback actually appears and is verified. Compare the actual image side by side with the attached reference, identify observed retained design traits and justified adaptations, and mark reference fit uncertain or failed if the reference or final image cannot be inspected. No claimed reference use or visual fidelity may rely on the prompt alone.
+- canvas proportion and margins
+- the background pattern
+- header construction
+- module anatomy: tabs, number blocks, slants and paper layers
+- palette roles and sampled colours (use `sample` on the render too)
+- type sizes, weights and case
+- stroke widths, radii and shadows
+- connector style
+- logo tile style
+- surface finish, depth and lighting: gradient smoothness and direction, shadow softness and consistency between components, highlight placement, corner smoothness
+- 3D and decorative elements: projection, proportions, placement, and whether each one appears in the reference
+- overall density and whitespace
 
-At the intended display size check whether brand tiles are actually logo-led: each required mark should be recognizable and visually prominent relative to its accompanying smaller, regular-weight readable label. Flag tiny or illegible marks, oversized bold brand names, unnecessary repeated explanations, and long uniform text rows when compact components would communicate the same meaning more clearly. Correct these with a targeted layout edit and reinspection; a passing placement count alone is not visual approval. Keep essential text readable and do not remove source-backed details merely to reduce word count.
+Crop every library layer (SVG.js, Zdog, Three.js, AntV) at native size. Check Three.js edges against the background for halos, and AntV text against Step 05.
 
-Inspect whether the actual image conveys a coherent neo-brutalist style, uses a purposeful harmonious color system and prioritizes icons and logos without losing meaning. Compare relevant included transcript brands and products with every required Step 07 occurrence; missing or unverified marks are not a pass. Evaluate actual visual evidence, not the written style brief alone.
+A viewer should see the same template. Record each approved adaptation from the blueprint and confirm that it keeps the reference's visual language.
 
-At full resolution and intended display size inspect every dense region for padding, gaps, crowding and overlap; compare concept-icon sizing with adjacent labels and keep brand-logo sizing a separate assessment. Flag oversized concept icons, cramped tiles, touched borders, illegible labels or insufficient connector clearance as defects. Reorganize into appropriately sized columns or a taller composition and inspect again where the tool supports it; do not declare success based only on requested pixel dimensions.
+**Content.** Check every required Step 05 item character by character, including qualifiers, values, order and grouping. Look for any text that isn't in Step 05.
 
-Check that visually adjacent elements have breathing room across the entire image, not merely that their bounding boxes do not intersect: inspect text line spacing, internal card padding, gaps between cards and panels, and clear space around logos and connector endpoints. Text or components that visually run together, touch or appear cramped fail the readability/design review even when technically in bounds. Record the actual PNG dimensions and viewing size; if the generator cannot produce a spacious and legible result at its supported dimensions, mark the output incomplete rather than claiming that a requested taller canvas was generated.
+**Relationships.** For every Step 04 connection, trace the path from its source to its target. Check that it is attached at both ends, that dashed segments remain visibly continuous as a path, and that any arrowhead points the stated way. Verify the requested or reference line style, or the dashed default when neither specifies one. Check that no connector suggests a relationship Step 04 doesn't contain.
 
-Compare the actual reference and result for proportions, component treatment, visual hierarchy and connector character—not just palette. Inspect whether a small group has left a large purposeless empty region while another area is cramped, whether outlines overpower the page, and whether body labels have become unnecessarily bold. Review dotted/dashed connectors as complete intentional paths with correct endpoints and direction. Inspect the entire bottom edge for every explicitly requested footer element and its authorized source; a missing or cropped required footer blocks success. If the user explicitly forbids the footer, do not add it. Record observed regions and repair meaningful defects before approval.
+**Assets.** For every occurrence, check:
+
+- it is the correct Step 07 file and identity, in the right context
+- its proportions, padding and size within the tile
+- it has no halo or wrong background
+
+For each person photo, compare the actual placement with the 08b portrait manifest and inspect identity evidence, image provenance, permitted use and appearance. Record unverified or mismatched identity as a defect; do not treat a search result or planned image as proof.
+
+**Quality.**
+
+- No clipping, overlap or cramped padding.
+- Text is readable at native size and at the intended viewing size. Check a 50% downscale for social feeds.
+- Alignment and spacing are consistent between neighbouring modules.
+- Inspect the complete bottom edge against T01: footer band and divider, portrait, name, badge, Pipelin.ai mark and wordmark, alignment, spacing, legibility and cropping. Confirm the default asset and T01 fingerprints; do not claim independent verification of the extracted identities. For explicit replacements compare authorized content and verified assets. Record missing or incorrect required items as blocking defects.
+- No empty region sits next to compressed content.
+
+**Motion** (when `motion.ts` exists):
+
+- Capture frames from `build/motion.html#t=<seconds>` at the start, at key beats and at the end.
+- Confirm the order matches Step 04 and that required content is readable when the animation finishes.
+- Confirm the render report shows `final_frame_matches_static: true`.
+
+## Record
+
+Write `step-08/visual-review.json` with these fields:
+
+- `image_sha256` and `dimensions` of the final PNG
+- `reference`: path and sha256
+- `checks`: one entry for each of `design_quality`, `reference_fit`, `readability`, `content_accuracy`, `relationship_accuracy`, `asset_identity`, `asset_placement` and `unauthorized_content`, each with a `status` and specific `evidence`
+- `content`, `assets` and `relationships`: one row per required ID, with a `status` and observed `evidence` that names the region where it was seen
+- `iterations`: each version's hashes, the defects found and the fixes made
+- `remaining_issues`
+
+Then run:
+
+```bash
+python3 scripts/08-visual-generation/raster_workflow.py check-review --image <run-dir>/step-08/infographic.png --review <run-dir>/step-08/visual-review.json --inventory <run-dir>/step-08/content-asset-inventory.json
+```
+
+It checks that the review is complete and up to date, not whether its judgments are true. Never mark an item as passed unless you actually inspected it.

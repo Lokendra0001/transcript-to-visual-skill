@@ -48,6 +48,11 @@ class ExportTests(unittest.TestCase):
   gif=self.run/'approved.gif';Image.new('RGB',(30,20),'red').save(gif,save_all=True,append_images=[Image.new('RGB',(30,20),'blue')],duration=100,loop=0)
   self.report['handoff']['animation']={'path':str(gif),'sha256':exp.sha(gif)};self.plan['formats']=['gif'];self.report['checks']['animation']={'status':'passed','method':'playback_inspection'}
   result=exp.export(self.run,self.report,self.plan);self.assertEqual(result['artifacts'][0]['frame_count'],2);self.assertEqual(result['artifacts'][0]['duration_ms'],200)
+ def test_export_separately_approved_svg_with_png(self):
+  svg=self.run/'master.svg';svg.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20"><text x="1" y="10">Hello</text></svg>')
+  self.report['handoff']['svg']={'path':str(svg),'sha256':exp.sha(svg)};self.plan['formats']=['svg','png']
+  result=exp.export(self.run,self.report,self.plan);self.assertEqual(result['status'],'success')
+  self.assertEqual(exp.sha(self.run/result['artifacts'][0]['path']),exp.sha(svg))
  def test_outside_run_and_corrupt_source_rejected(self):
   external=Path(self.tmp.name)/'outside.png';Image.new('RGB',(2,2),'black').save(external)
   self.report['handoff']['static']={'path':str(external),'sha256':exp.sha(external)}

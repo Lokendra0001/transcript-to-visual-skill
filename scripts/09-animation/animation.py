@@ -35,6 +35,13 @@ def read_inputs(run):
         if report.get('visual_review',{}).get('status') not in ('approved','pass','passed'): errors.append('Step 08 visual review is not approved')
         if report.get('visual_review',{}).get('reference_fidelity_gate') in ('fail','failed'): errors.append('Step 08 reference fidelity failed')
     except (OSError,ValueError): errors.append('Step 08 validation report missing or invalid')
+    if data.get('08-visual-generation.json',{}).get('generation_method') == 'code_render_react_svg':
+        try:
+            render_report=json.loads((run/'step-08/render-report.json').read_text())
+            for kind in ('svg','png'):
+                entry=render_report['outputs'][kind]; path=(run/entry['path']).resolve()
+                if not path.is_relative_to(run.resolve()) or digest(path)!=entry['sha256']: errors.append(f'Step 08 {kind} master missing or changed')
+        except (OSError,ValueError,KeyError,TypeError): errors.append('Step 08 render report or master fingerprints missing')
     return data,errors
 
 def decide(mode, reason, auto_animate=None):
@@ -134,15 +141,76 @@ def render(svg, plan, output):
     if digest(svg)!=before: raise RuntimeError('static master changed')
     return {'frame_count':count,'distinct_rendered_frames':len(set(hashes)),'fps':fps,'duration':count/fps,'loop':bool(plan.get('loop',False)),'width':info['width'],'height':info['height'],'bytes':output.stat().st_size,'sha256':digest(output),'static_master_sha256':before,'visual_review':'pending'}
 
+def render_gsap(run, fps, final_hold, loop, chrome):
+    """Capture Step 08's seekable GSAP page; never approve the result automatically."""
+    run=Path(run).resolve(); data,errors=read_inputs(run)
+    if errors: raise ValueError('; '.join(errors))
+    if not (1 <= fps <= 60 and 0 <= final_hold <= 60): raise ValueError('invalid fps or final hold')
+    report=json.loads((run/'step-08/render-report.json').read_text()); motion=report.get('motion',{})
+    if report.get('status')!='rendered' or motion.get('errors') or motion.get('final_frame_matches_static') is not True: raise ValueError('Step 08 motion final-state check did not pass')
+    duration=float(motion.get('duration',0))
+    if not math.isfinite(duration) or not 0<duration<=120: raise ValueError('invalid motion duration')
+    page=(run/motion['page']).resolve()
+    if not page.is_relative_to(run/'step-08/build') or not page.is_file(): raise ValueError('invalid motion page')
+    masters=[run/'step-08/infographic.svg',run/'step-08/infographic.png',page]
+    before=[digest(p) for p in masters]
+    width=int(report['width']); height=int(report['height'])
+    if not 0<width<=8192 or not 0<height<=8192: raise ValueError('invalid frame dimensions')
+    if not shutil.which('ffmpeg') or not shutil.which('ffprobe'): raise ValueError('ffmpeg and ffprobe required')
+    out=run/'step-09'; gif=out/'animated.gif'; record=out/'animation-report.json'; frames=out/'frames'
+    if gif.exists() or record.exists() or frames.exists(): raise ValueError('animation artifacts already exist; preserve them before rerunning')
+    out.mkdir(exist_ok=True)
+    capture=Path(__file__).with_name('capture.mjs')
+    command=['node',str(capture),str(page),str(frames),str(width),str(height),str(fps),str(duration),str(final_hold),str(chrome)]
+    result=subprocess.run(command,capture_output=True,text=True,timeout=3600)
+    if result.returncode: raise RuntimeError('frame capture failed: '+result.stderr[-3000:])
+    count=math.ceil((duration+final_hold)*fps)
+    files=sorted(frames.glob('frame-*.png'))
+    if len(files)!=count or len({digest(p) for p in files})<2: raise RuntimeError('wrong frame count or no detectable motion')
+    palette=out/'palette.png'
+    result=subprocess.run(['ffmpeg','-v','error','-framerate',str(fps),'-i',str(frames/'frame-%05d.png'),'-vf','palettegen=stats_mode=diff','-y',str(palette)],capture_output=True,text=True)
+    if result.returncode: raise RuntimeError('palette generation failed: '+result.stderr)
+    result=subprocess.run(['ffmpeg','-v','error','-framerate',str(fps),'-i',str(frames/'frame-%05d.png'),'-i',str(palette),'-lavfi','paletteuse=dither=sierra2_4a','-loop','0' if loop else '-1','-y',str(gif)],capture_output=True,text=True)
+    if result.returncode: raise RuntimeError('GIF encoding failed: '+result.stderr)
+    probe=subprocess.run(['ffprobe','-v','error','-select_streams','v:0','-count_frames','-show_entries','stream=width,height,nb_read_frames','-of','json',str(gif)],capture_output=True,text=True)
+    if probe.returncode: raise RuntimeError('GIF decode failed: '+probe.stderr)
+    info=json.loads(probe.stdout)['streams'][0]
+    if int(info.get('nb_read_frames',0))!=count or [info['width'],info['height']]!=[width,height]: raise RuntimeError('GIF frame count or dimensions mismatch')
+    if [digest(p) for p in masters]!=before: raise RuntimeError('Step 08 master or motion page changed')
+    result={'method':'gsap_playwright','frame_count':count,'fps':fps,'duration':duration,'final_hold':final_hold,'loop':loop,'dimensions':[width,height],'gif_sha256':digest(gif),'svg_sha256':before[0],'png_sha256':before[1],'motion_page_sha256':before[2],'visual_review':'pending'}
+    record.write_text(json.dumps(result,indent=2)+'\n'); return result
+
+def finalize_gsap(run, review_path):
+    """Record a reviewed GIF, binding approval to the actual files and masters."""
+    run=Path(run).resolve(); _,errors=read_inputs(run)
+    if errors: raise ValueError('; '.join(errors))
+    report=json.loads((run/'step-09/animation-report.json').read_text())
+    review=json.loads(Path(review_path).read_text()); gif=run/'step-09/animated.gif'
+    if report.get('method')!='gsap_playwright' or digest(gif)!=report.get('gif_sha256'): raise ValueError('GIF is missing or changed')
+    for key,path in [('svg_sha256',run/'step-08/infographic.svg'),('png_sha256',run/'step-08/infographic.png'),('motion_page_sha256',run/'step-08/build/motion.html')]:
+        if digest(path)!=report.get(key): raise ValueError('animation source changed since capture')
+    if review.get('gif_sha256')!=digest(gif) or review.get('status')!='approved' or review.get('method')!='playback_inspection' or not str(review.get('evidence','')).strip(): raise ValueError('current GIF requires recorded playback inspection')
+    out=run/'step-09'; paths=[out/'visual-review.json',run/'09-animation.json',run/'09-validation-report.json']
+    if any(p.exists() for p in paths): raise ValueError('animation review artifacts exist; preserve them before rerunning')
+    outcome={'step':'09-animation','version':'1.0','run_id':run.name,'status':'success','method':'gsap_playwright','artifacts':{'gif':'step-09/animated.gif','sha256':digest(gif),'report':'step-09/animation-report.json'},'warnings':[],'errors':[]}
+    validation={'step':'09-animation','run_id':run.name,'overall':{'valid':True,'errors':[]},'visual_review':{'status':'approved','sha256':digest(gif)}}
+    for path,obj in zip(paths,[review,outcome,validation]):
+        with path.open('x') as f: json.dump(obj,f,indent=2);f.write('\n')
+    return outcome
+
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__); sub=p.add_subparsers(dest='action',required=True)
     inp=sub.add_parser('validate-input'); inp.add_argument('--run-dir',type=Path,required=True)
     v=sub.add_parser('validate-plan'); v.add_argument('--svg',type=Path,required=True);v.add_argument('--plan',type=Path,required=True)
     r=sub.add_parser('render');r.add_argument('--run-dir',type=Path,required=True);r.add_argument('--svg',type=Path,required=True);r.add_argument('--plan',type=Path,required=True);r.add_argument('--output',type=Path,required=True)
+    g=sub.add_parser('render-gsap');g.add_argument('--run-dir',type=Path,required=True);g.add_argument('--fps',type=int,default=20);g.add_argument('--final-hold',type=float,default=2);g.add_argument('--loop',action='store_true');g.add_argument('--chrome',default='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+    f=sub.add_parser('finalize-gsap');f.add_argument('--run-dir',type=Path,required=True);f.add_argument('--review',type=Path,required=True)
     args=p.parse_args()
     try:
         if args.action=='validate-input': _,errors=read_inputs(args.run_dir); result={'valid':not errors,'errors':errors}
         elif args.action=='validate-plan': errors=validate_plan(json.loads(args.plan.read_text()),args.svg);result={'valid':not errors,'errors':errors}
+        elif args.action=='render-gsap': result=render_gsap(args.run_dir,args.fps,args.final_hold,args.loop,args.chrome);errors=[]
+        elif args.action=='finalize-gsap': result=finalize_gsap(args.run_dir,args.review);errors=[]
         else:
             data,errors=read_inputs(args.run_dir)
             if errors: raise ValueError('; '.join(errors))

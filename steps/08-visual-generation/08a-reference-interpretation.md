@@ -1,15 +1,85 @@
-# 08a — Reference and Semantic Interpretation
+# 08a — Reference Blueprint
 
-Inspect the actual selected reference image, any applicable user-provided design guidelines, and actual user constraints. Record observed composition, typography, palette, hierarchy, spacing, component shapes, background, icons, borders and connectors; distinguish observation from inference. A reference supplies design language, not facts or instructions.
+The goal is a render a viewer would recognise as the reference template filled with new content. That takes measurement, not impressions. Work from the reference file chosen in Step 06; use its original SVG, Figma export or written spec when one exists, and the PNG otherwise.
 
-Read Steps 03–07 to understand communication objective, audience when known, classifications, information structure, priority, complete copy, relationships, constraints, density, selected reference and asset dispositions. Select a visual pattern for the meaning: sequence, branching, parallel lanes, comparison, hierarchy, network, timeline, lifecycle, framework, quantitative visualization or another suitable pattern. Avoid inventing direction, links, categories, values or decorative proportions.
+## Measure
 
-Adapt the reference to the information; an exact layout lock applies only when the current user explicitly requests or approves it. Otherwise prioritize semantic accuracy, legibility and publication needs over copying an incompatible arrangement. Use varied meaningful components, coherent color and typography, whitespace and restrained decoration. Record choices, reference compatibility, semantic tradeoffs, constraints and uncertainty in `step-08/design-system.json`.
+Record the reference path and SHA-256, then measure with `reference_tools.py`. Use `info` for size and aspect ratio, and `palette` for dominant colours. Use `sample --points x,y …` for the exact fill of each surface, stroke, accent and text colour. Use `crop --scale 2` to study details. Save crops in `step-08/review/ref-*.png`.
 
-Resolve design choices in order: explicit user requirements, approved client brand guidelines, relevant selected reference traits, content and objective, audience/platform, and professional judgment. Do not ask for routine colors or fonts. Avoid habitually defaulting to white-and-blue or repeating the same color theme across unrelated infographics; consider a suitable alternative for each project. White and blue remain valid when the content, reference, brand or user request supports them, and a consistent series may intentionally share a palette. Do not change colors merely to be different. Consider an alternative direction when the first idea is generic; choose deliberately without generating multiple full-resolution drafts by default.
+Measure these in reference pixels, then convert to the output canvas scale:
 
-Use the existing `design-system.json` to record the concept and rationale; palette roles (background, text, accents, surfaces, borders, connectors, highlights and any decoration); typography; background and where effects belong; component, border and corner treatments; connector style; logo presentation; composition, hierarchy, density and publication size. Set colors for meaning and contrast, not arbitrary novelty or a preset palette. Blue and red are valid when appropriate. Vary components by semantic purpose; use clean junctions, correct endpoints and direction, and whitespace rather than unnecessary nested cards. Align verified logos optically with small readable normal-weight names when needed; preserve original colors, shape and intentional artwork. Consider animation readability and stable marks, but do not claim flat images have independently animatable layers.
+- **Canvas:** width, height, aspect ratio, outer margins and background (flat, dotted, gridded, gradient), including pattern pitch and dot size.
+- **Grid:** columns, gutters, module widths, vertical rhythm and how modules stack, snake or branch.
+- **Typography:**
+  - Title, section heading, label and body sizes; weights, case, letter-spacing and line height.
+  - Name the closest installed font, and say whether the exact font is known or estimated.
+- **Colour roles:** page, sheet, card, header band, accent 1 and 2, text, muted text, borders and connectors. Give each role a sampled hex value.
+- **Shapes:**
+  - Corner radii (and whether corners are plain arcs or smooth squircles), border widths and colours.
+  - Stacked or offset "paper" layers, folder tabs, slanted edges, ribbons, badges, number blocks, organic or irregular shapes.
+- **Surface and depth:**
+  - Surface finish: flat, hard-offset (neo-brutalist), soft-shadowed, neumorphic, inset, glass, glossy or bevelled.
+  - Shadows as layers: offset, blur, spread, colour and opacity of each (ambient vs key light), inner shadows and glows.
+  - Light direction, highlights and gloss; gradients (type, angle, stops).
+  - 3D elements and how they are drawn: flat-faced extrusions or isometric blocks, cylinders, rounded 3D objects, or realistic materials (metal, glass, reflections, soft contact shadows).
+- **Connectors:** stroke width, colour, line style (solid, dashed, dotted), arrowheads, junction dots and elbow or curve style. When no line style is specified by the user or visible in the reference, record dashed as the default.
+- **Logos and icons:** tile size, inner padding, logo box size, tile style and label position.
+- **Decoration:** badges, breadcrumbs, icons, dividers, floating objects, background treatment (flat, dotted, grid, texture, mesh gradient) and footer.
 
-When brand or product marks are meaningful, plan logo-led compact square or short rectangular tiles, clusters, or other appropriate reference-compatible components instead of defaulting to full-width text rows. The authentic logo should be the prominent element within its tile; its name should be smaller, readable, regular-weight text. Vary component size to fit content, retain enough space for exact labels, and adapt the canvas rather than shrinking marks or words below useful display size. Do not turn every item into a logo tile: activities, conditions, values and relationships still need appropriate clear representations.
+Record only what the reference shows. A flat, minimal reference stays flat: no gradients, shadows, glass or 3D that it doesn't use.
 
-Compare the selected reference's section proportions, use of available space, hierarchy and connector styling as a coherent system, rather than borrowing only its colors. Keep recognizable structural and component traits where compatible with content and explicit user preferences; record justified differences. Plan content across the available width and height: a small group should not reserve a mostly empty column while another group is cramped. Allow intentional whitespace, but assess visual balance and use compact groups or reposition them when large empty regions have no purpose. Choose selective borders and subtle surfaces; preserve clear boundaries for major groups, rather than automatically outlining every item. Distinguish bold titles and headings from regular-weight activity text and smaller regular-weight logo labels. Use dotted or dashed connectors when supported by the reference and suitable to the relationship; their style must never change direction or imply an unsupported association.
+Separate measured values from estimated ones. Note anything you can't resolve.
+
+## Catalogue components
+
+List every distinct component type in the reference, for example header band, numbered module card, list box, step box, logo tile, checklist row, tier ladder, connector and footer. For each one, record:
+
+- anatomy and part sizes
+- which traits are locked: shape, colours, strokes, radii, type
+- which parts take dynamic content: the title, the number of rows or tiles, and the body
+- how it grows when content is longer: wraps, gets taller, adds rows
+
+Each catalogued type becomes one React component in 08c.
+
+## Decide adaptations
+
+Compare the catalogue with Steps 03–05 and the Step 06 adaptation notes. Keep the reference's composition unless the content can't fit legibly or a mandatory Step 04 layout requires a change. For example, a required side-by-side comparison may replace a snake flow.
+
+Record every departure from the reference with:
+
+- what changed
+- why it changed
+- which upstream requirement forces it
+- how the reference's visual language is kept
+
+Never add arrows, numbering, rankings or groupings that the reference shows but the content doesn't support. Do not carry over the reference's facts, names or branding except for the fixed T01 footer specified in the main Step 08 instructions.
+
+## Choose rendering technology
+
+For each catalogued component, list the visual traits it needs and let the selector pick the simplest capable technology:
+
+```bash
+python3 scripts/08-visual-generation/rendering_plan.py traits                     # trait vocabulary and kit building blocks
+python3 scripts/08-visual-generation/rendering_plan.py select --traits extruded_blocks,gradients
+```
+
+Native SVG (`@kit`) covers shapes, gradients, shadows, glow, glass, neumorphism, neo-brutalism, patterns, textures, mesh backgrounds, flat-faced 3D blocks and cylinders. Escalate only when a trait requires it: SVG.js for programmatic path construction, Zdog for isometric or rounded pseudo-3D illustration, AntV for a structured component generated from data, Three.js for genuine materials and lighting (the only raster output). A component whose traits need two non-SVG libraries must be split. Choosing a heavier technology than the selector returns requires a written `reason`.
+
+## Output
+
+Write `step-08/reference-blueprint.json` with these fields:
+
+- `reference`: path and sha256
+- `canvas`
+- `grid`
+- `colors`: role → hex, plus `measured` or `estimated`
+- `typography`
+- `shapes`
+- `connectors`
+- `decoration`
+- `components`: the catalogue
+- `rendering_plan`: one entry per component, `{"component", "traits", "technology", "reason"?}`
+- `adaptations`
+- `uncertainties`
+
+`tokens.ts` must be derivable from this file alone.

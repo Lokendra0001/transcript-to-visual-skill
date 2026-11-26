@@ -1,32 +1,109 @@
-# 08c — AI Image Generation and Authentic Assets
+# 08c — React + SVG Composition
 
-The historical filename is retained for compatibility. Use the available AI image-generation or image-editing tool for the infographic's visual composition; do not generate a coded graphical layout. Provide the actual selected reference, compatible verified assets, and a context-specific prompt built from the complete inventory and design brief. Record the actual prompt, input files, tool, attempts, requested controls and output paths. If the tool cannot consume all asset files, record that limitation and do not pretend it did.
+Write TypeScript React components that output plain SVG. The renderer bundles `step-08/src/Infographic.tsx` with esbuild, mounts it in headless Chrome after fonts load, and serializes the live `<svg>` element. Whatever the browser shows is exactly what ships.
 
-Attach the actual selected Step 06 reference image, not merely its name or a textual description, to the image-generation call. Record the selected path, SHA-256, actual tool name and call evidence in `step-08/reference-input.json`: `reference_sha256`, `attached_to_generation` (boolean), `tool`, and `call_evidence` (a truthful description or usable call record reference). Run `raster_workflow.py check-reference --reference <selected-reference> --record <reference-input.json>` against the same reference whose path and fingerprint Step 06 selected. The helper verifies the file hash and completeness of the agent's record; it cannot prove what a remote model saw. Confirm the actual call inputs separately. If the tool cannot accept the image or usage cannot be established, mark the run incomplete/blocked and disclose it; a reference inspection or mention in a prompt is not an attachment. An explicit user authorization for a reference-free draft permits a clearly labeled draft only, not a reference-backed success.
+## Structure
 
-The prompt must specify communication objective, audience when known, essential visible copy and exact numeric values, the semantic meaning and intended visual representation of every requirement, context-only material explicitly marked as not for display, component counts, visual grouping, directional and non-directional relationships, source image, design direction, branding, publication format, desired canvas and type hierarchy, and prohibitions on invented content. Choose varied components by semantic purpose and maintain consistent styling. Use borders, shading, icons, illustrations and decorations only where they improve communication. Keep related information proximate; keep unrelated groups distinct and avoid crossings, overlaps, clipping, unreadable text and empty placeholders. Use a larger or reorganized composition when required and supported. Do not impose a preset format unless requested or necessary.
+- **`src/tokens.ts`:** every visual constant from `reference-blueprint.json`, such as `colors`, `fonts`, `type`, `stroke`, `radius`, `space`, `shadow` and `pattern`. Components never hard-code a colour or size that belongs in tokens.
+- **`src/content.ts`:** loads the approved inputs by importing the upstream JSON directly, for example `import writing from '../../05-content-writing.json'`. It exposes a lookup such as `text('cnt-…')` that returns `representation.visible_text` and throws when an ID is missing. Never retype copy into components.
+- **`src/layout.ts`:** pure functions that turn content, tokens and the layout plan into positioned boxes.
+  - Wrap text with `wrapText(text, font, maxWidth)` from `@kit`, which measures with the browser's real fonts.
+  - Size every box from its content plus the blueprint padding.
+  - Place modules on the blueprint grid and compute connector endpoints from the boxes they join.
+  - Each module's height grows with its content. The canvas height is the sum.
+- **`src/components/*.tsx`:** one component per catalogued reference component type, for example `HeaderBand`, `ModuleCard`, `ListBox`, `StepBox`, `LogoTile`, `CheckRow`, `TierLadder` and `Connector`. Props carry content and positions. Shape, colour and stroke come from tokens.
+- **`src/Infographic.tsx`:** the default export. It renders `<svg id="infographic" xmlns="http://www.w3.org/2000/svg" width={W} height={H} viewBox={`0 0 ${W} ${H}`}>`. `defs` hold the patterns, markers, gradients, clip paths and font faces, followed by the components in reading order.
 
-Allocate enough space inside each component for its necessary text and mapped transparent-background logo, preserving padding and preventing collisions, clipped labels and overflow. Require visible logo slots for all required occurrences and appropriate small normal-weight labels; do not replace a required logo with its text name alone. Make panel and tile borders continuous and legible; ensure connector paths visibly reach their intended endpoints without broken strokes, ambiguous gaps or crossings through unrelated content. Include the complete user-requested footer in a reserved bottom area. Preserve the reference's intentional visual style and approved relationships.
+Import shared helpers from `@kit` and library layers from `@kit/svgjs`, `@kit/zdog`, `@kit/three` and `@kit/antv`. Import `react`, `gsap` and image or font files normally; the renderer resolves them from its own `node_modules`. Image and font imports become embedded data URIs.
 
-Specify the selected background treatment and deliberate locations in the prompt. Localized or fading dots are options, not a universal requirement; respect an explicit user requirement or approved locked reference, including a full-canvas pattern when requested. Keep any effects subordinate to legibility.
+## Composition kit
 
-Brand marks must be the correctly mapped, verified original files, not AI-redrawn approximations. Where the image tool cannot preserve originals, use a supported asset-preserving editing or compositing operation limited to placing those verified files into agent-identified regions of the AI-generated design. This is an authorized supporting operation, not permission to generate the layout programmatically. Record source hashes, target occurrence IDs, actual placement and output hash. Preserve proportions and identity and do not add unauthorized logos. If an exact placement cannot be achieved or verified, disclose it and mark the output incomplete; use only authorized fallbacks. Do not claim a compositing capability or guarantee that was not actually executed.
+Build with the kit instead of re-implementing effects per run. Every component takes its colours, sizes, radii, depth and light from props, so feed it from `tokens.ts`; nothing in the kit is tied to one template. Use only what the blueprint's `rendering_plan` lists.
 
-For supported PNG/JPEG/WebP assets, `scripts/08-visual-generation/place_assets.py --base <ai-image.png> --run-dir <run-dir> --plan <placements.json> --output <new.png>` can place files without changing the AI-authored composition. It requires Pillow and an agent-authored plan `{"placements":[{"occurrence_id":"...","source":"run-relative path","sha256":"...","bounds":[x,y,width,height]}]}`. The agent must verify the occurrence mapping, file identity, provenance, safety and the region before calling it; the helper checks bounds, paths and fingerprints only, not identity, semantics or appearance. It supports raster assets only, preserves source aspect ratios and refuses overlaps or overwrite. For unsupported SVGs, use a separately validated safe raster derivative or a suitable supported tool; disclose limitations. Inspect the actual resulting image and repeat all affected checks.
+| Module | Provides |
+| --- | --- |
+| `@kit` shapes | `roundedRect` (per-corner radii), `squircle`, `tabbedPanel`, `ribbon`, `polygon`/`roundedPolygon` (stars, hexagons), `scallop`, `blob` and `smoothClosed` (seeded, deterministic), `wave`, `chevron`, `curve`, `orth`, `extrusion` |
+| `@kit` effects (place in `<defs>`) | `LinearGradient` (angle, multi-stop), `RadialGradient`, `Shadow` with `shadowLayers.soft/ambient/lifted/hard`, `Glow`, `InnerShadow`, `Bevel`, `Blur`, `Noise`, `DotPattern`, `GridPattern`, `StripePattern`, `KitDefs` |
+| `@kit` surfaces | `Surface` (finishes `flat`, `brutalist`, `soft`, `neumorphic`, `inset`, `glass`, `glossy`, `bevel`; radius or squircle `smooth`; `depth`, `light`, `shadow`, `tint`), `Block3D` (oblique or isometric extrusion), `Cylinder`, `Orb`, `Stack`, `Ribbon`, `Badge`, `Blob`, `MeshBackground` |
+| `@kit` colour | `mix`, `lighten`, `darken`, `contrast`: derive faces, highlights and shadows from one token colour, and check text contrast |
+| `@kit/svgjs` | `SvgJsLayer` (draw with the SVG.js API; inlined as native SVG), `fitPath` (fit any path into a box, proportions kept) |
+| `@kit/zdog` | `ZdogLayer` (build a Zdog scene; `ISO` rotation for isometric), output as native `<path>` |
+| `@kit/three` | `ThreeLayer` with `studioLights`, `environment` (reflections), `groundShadow`, `roundedBox`; renders a transparent PNG at the capture scale × `supersample` |
+| `@kit/antv` | `AntvLayer` (AntV Infographic syntax in a box; text converted to native `<text>`; pass an installed `font`, no `icon` fields) |
 
-Keep a user-approved layout stable during a requested local refinement; do not copy unsupported content from it. If no user instruction requires a locked layout, adapt the reference rather than forcing a misleading structure. Use supported image edits to refine defects; do not silently replace AI image generation with a coded design.
+Rules for the kit:
 
-## Visual-first generation brief
+- Put `<KitDefs />` in `<defs>` whenever a `Surface` finish other than `flat` or `brutalist`, a `MeshBackground` or a kit blur is used. The renderer fails on any unresolved `url(#…)`.
+- Library layers render into a nested `<svg id=… data-render="svgjs|zdog|antv">`, or an `<image data-render="three" data-raster="three">`. Ids they generate are prefixed with the layer id. Animate the layer by its id. Inner library elements have no stable ids.
+- Text that must stay editable and checkable (`data-fit`) belongs in native `<text>`, not inside a Zdog or Three.js layer.
+- **Brand logos:** only outer effects may wrap a logo: `Shadow` or `Glow`, which draw the element unchanged on top. Never put a logo under `InnerShadow`, `Bevel`, `Noise`, a mask, opacity below 1, a skew or a non-uniform scale. The renderer rejects all of these.
+- Three.js is raster. Use it only for traits that need it (`realistic_3d`), never for text, logos or connectors. Keep its background transparent.
+- AntV: use it for one structured region at a time inside the composition, never as the whole infographic. Map its colours to tokens with `options` (theme, palette) and check its text against Step 05 like any other text.
 
-Before the tool call create `step-08/generation-brief.json` from the inventory and the agent-authored design direction using `raster_workflow.py brief --inventory <inventory.json> --design-system <design-system.json>`. The returned brief is a planning input, not a visual review. Review every proposed representation against approved Step 04/05 meaning and Step 07 mappings; repair an upstream issue rather than silently removing a condition. Legacy items without representation remain essential text. Create the actual tool prompt from this reviewed brief including its `creative_direction`, and attach the full approved inventory as context only when the tool permits; do not instruct it to put internal metadata or all canonical fallback copy on the canvas. Record the exact prompt, design direction, input files and evidence they were passed to the tool, or report the tool call as unexecuted; a brief alone does not prove consumption.
+## Rules the renderer enforces
 
-Communicate essential text, visual representations, required assets and relationships, reference traits and explicit user preferences separately. Favor meaningful grouping, hierarchy, space and connected branches over repeated text and uniform outlined cards, while retaining boxes and borders where useful or explicitly requested. Select composition from the semantics, not a fixed template; never invent relationships. Avoid gratuitous badges, headings, decoration, heavy shadows, oversized containers and backgrounds. Keep logo labels small, normal weight and readable when needed. A clear label is preferable to an ambiguous icon. Adapt dimensions and type for actual content and publication size, not an arbitrary word-count target. User requirements, approved layout locks and requested footer remain authoritative.
+- **Root:** a single root `<svg id="infographic">` with numeric `width`, `height` and a `viewBox`.
+- **IDs:**
+  - Every `id` is unique, stable and meaningful.
+  - Use Step 04 IDs for nodes, sections and connections, Step 07 asset requirement IDs for logos, and suffixes such as `-box`, `-label` and `-logo` for parts.
+- **Data attributes:**
+  - `data-node="<Step 04 node id>"` on each node's group.
+  - `data-connection="<Step 04 connection id>"` on each connector.
+  - `data-asset="<asset requirement id>"` on each logo `<image>`.
+- **Text fit:** `data-fit="<box element id>"` on every text block that must stay inside a box. The renderer fails the run when the text's rendered bounds leave that box.
+- **Canvas bounds:** every `data-node`, `data-connection` and `data-asset` element must sit inside the canvas.
+- **Images:** embedded data URIs only. Never use `preserveAspectRatio="none"`.
+- **Forbidden elements:** no `foreignObject`, no `<script>`, and no HTML inside the SVG.
+- **References:** every `url(#…)` and `href="#…"` resolves to an element in the SVG.
+- **Brand logos:** no filter other than an outer shadow or glow on the logo or any ancestor, no mask, no transparency, no skew, rotation or non-uniform scale.
+- **Rasters:** every `data-raster` image (Three.js) has at least the PNG capture scale in pixel density.
+- **No network:** Chrome resolves no hosts, so remote fonts, icons or images never load. Embed everything.
 
-Include the planned logo-led hierarchy explicitly in the actual image-tool prompt: create appropriately sized compact square or short rectangular logo components where useful, reserve a visually prominent area for each authentic mark and set the accompanying brand label in smaller, normal-weight readable type. Do not make every item a long horizontal row or reduce logos to tiny decorations beside bold text. Use concise labels, visual grouping and accurate connectors to reduce repetition while retaining all essential names, numbers, qualifications and relationships. Increase or reorganize the canvas when needed. The logo emphasis applies within relevant brand components, not at the expense of legible essential workflow text.
+## Rules you are responsible for
 
-Explicitly instruct the image tool to apply neo-brutalist visual treatment throughout, guided by the actual selected reference and a cohesive purposeful palette, with varied compact components, crisp selective outlines, bold major headings and regular-weight readable labels. Avoid turning the style into heavy borders on every object or random multicolor decoration. Identify every relevant included transcript brand and its mapped authentic logo occurrence in the prompt and placement plan. Prioritize visual meaning and icons over redundant prose, without substituting ambiguous graphics for essential names, conditions, numbers or relationships.
+- **Fidelity:** every component reproduces its reference counterpart's measured traits, including tabs, slants, offset paper layers, hard shadows, number blocks, dotted backgrounds and connector style. Build these from SVG primitives (`rect`, `path`, `circle`, `pattern`, `marker`), never from bitmaps of the reference.
+- **Text:**
+  - Use real `<text>` and `<tspan>`, so the result stays editable.
+  - Use the blueprint type scale only.
+  - Body text is never as heavy as headings.
+- **Portable styling:**
+  - Use SVG attributes or a `<style>` inside the SVG.
+  - CSS files imported into the page don't travel with `infographic.svg`, so don't use them for visual styling.
+  - For a custom font, import the font file and declare `@font-face` with that data URI inside the SVG `<style>`.
+  - Otherwise use installed fonts, and record the font names from `render-report.json` in the review.
+- **Relationships:** draw a connector only for a Step 04 connection. Use the user's requested line style first, then the reference's connector style; if neither specifies one, use a dashed stroke (for example `strokeDasharray` with spacing scaled to the line width). Draw an arrowhead only when Step 04 gives a direction, and point it from source to target. Show grouping with containers, not arrows.
+- **People:** use a locally embedded, identity-verified and suitable real portrait from the 08b portrait manifest when available and appropriate; preserve its proportions and never substitute an unverified likeness. Otherwise use the documented neutral fallback or block if a portrait was mandatory.
+- **Logos:** keep the original proportions. Size the logo box from the blueprint tile and keep the padding.
+- **Footer:** import `Footer` and `footerHeight` from `@kit`; reserve `footerHeight(width)` at the bottom and render `<Footer width={width} y={footerY} />`. The default embeds the exact T01-derived raster strip. Override only requested fields, for example `<Footer width={width} y={footerY} content={{name: 'New Name'}} />`; optional fields are `name`, `portraitHref`, `brandHref`, `brandLabel` and `badgeHref` (set `badgeHref: null` to remove the badge). Unspecified fields retain T01 artwork; changed text is editable. Verify retained portrait, name, badge and branding remain appropriate together, and supply authorized, verified embedded replacement assets when needed. The customized version is an adaptation, not an exact T01 pixel match. An explicit no-footer instruction takes precedence.
+- **Determinism:** no `Date`, unseeded randomness or network calls. Use the kit's seeded `rng`, `blob` and `Noise`. The same inputs must produce the same SVG.
+- **Restraint:** apply effects, depth and decoration only where the reference has them. If a render looks flat, generic or repetitive compared with the reference, refine the components. Don't add effects the reference lacks.
 
-In the actual prompt distinguish concept icons from brand logos: use modest, consistently sized concept icons with breathing room beside readable labels; do not scale them up to the size intended for prominent brand marks. Give every component clear internal padding and every neighboring component a visible gap; prohibit text, icons, borders and connectors from touching or overlapping. Use compact square/short rectangular tiles and column-based groups where the content benefits, expanding the canvas vertically or adding rows instead of compressing the content. If tool size limits prevent readable layout, record the limitation and do not claim a passing output.
+## Motion layer (GSAP)
 
-Specify reference-observed proportions, component hierarchy, spacing, connector and border treatment in the tool prompt. Balance content throughout the canvas: avoid reserving a large sparse column for a small logo group beside a compressed section; compact or reposition the group and distribute the content instead. Use whitespace and subtle surface differences in place of unnecessary outlines, while retaining legible major boundaries and any explicitly required reference treatment. Distinguish title, section heading, activity and supporting-label weights; use regular-weight readable activity and brand labels, not bold throughout. When dotted connectors fit the reference and the approved semantics, use continuous dotted/dashed paths with clear endpoints and arrowheads where needed. Reserve and render the entire user-requested footer with verified authorized contents; do not add a footer where the user explicitly forbids it.
+The static SVG is the master and the last frame of any animation. Write `src/motion.ts` only when the user asked for animation, or when Step 09 is planned and the user approved it. It exports:
 
+```ts
+export function buildTimeline(svg: SVGSVGElement, gsap: typeof import('gsap').gsap): gsap.core.Timeline
+```
+
+Rules:
+
+- **End state:** use `from` and `fromTo` tweens that end exactly at the static state, or tweens that return to it.
+  - The renderer runs `#check`: it jumps the timeline to its end and fails if any element's position, size, opacity, visibility or dash offset differs from the static render.
+- **Targets:** select by element ID inside `svg` only. Every animated element must have an `id`.
+- **What to animate:**
+  - Opacity, translate and scale on groups.
+  - `strokeDasharray` with `strokeDashoffset` to draw connectors.
+  - Small emphasis pulses that return to rest.
+- **What not to animate:**
+  - Never change text content, logo colours or proportions, or layout.
+  - Never animate anything into a state that hides required content at the end.
+- **Reading order:** follow the Step 04 reading order. Move along a connector only in its Step 04 direction, and never move along non-directional groupings.
+
+The renderer also writes `step-08/build/motion.html`:
+
+- Opened plainly, it plays the timeline, so you can watch it.
+- With `#t=<seconds>` it pauses at that time, so headless Chrome can capture exact frames.
+- With `#check` it runs the final-frame test.
+
+Step 09 decides whether the deliverable is animated and owns any exported animation format. Step 08 only guarantees that the master is ready for motion and that the timeline returns to it.

@@ -8,7 +8,24 @@ Resolve, retrieve, verify, prepare, cache, and map authentic assets required by 
 
 Require matching successful/warning Step 02 v2.0, Step 04 v1.1, Step 05 v1.0, and Step 06 v1.0 artifacts. Run `validate_input.py`, then `discover_assets.py` to preserve every upstream asset requirement and deduplicate only by canonical entity identity, asset type, variant, and compatible usage constraints. Resolve product identities separately from parents; do not infer that related products share a logo.
 
-For every unresolved brand or product identity, Claude must conduct bounded research and keep candidate records; search results only discover sources, never prove identity. Prefer, in order: authorized user assets, verified cache, official brand/press/media resources, official product sites/docs/repositories, trusted logo repositories, permitted external logo services, verified high-quality favicons, then an authorized fallback. Generate contextual queries from the entity/product identity and ambiguity; after a repository failure, research genuinely independent sources—not only alternate CDNs or delivery endpoints of that repository. Record 403, 404, rate-limit, and network failures distinctly. Stop only after a candidate satisfies identity, authority, quality, security, usage, and presentation requirements, or the configured research budget ends.
+## Source ladder (fixed order)
+
+Every brand goes through the same ladder. The coordinator stops at the first source that passes the checks:
+
+1. **Official domain (Claude).** For each entity, Claude writes the company's official domain into the candidate record (`"domain": "clay.com"`). Use what you already know. Confirm it is the right company (for example the GTM tool, not a namesake), and note product/parent relationships. Search results only help find the domain; they never prove identity.
+2. **Hunter Logos:** `https://logos.hunter.io/{domain}`. Free and keyless. It returns PNG/AVIF/WebP rasters; AVIF and WebP are re-encoded losslessly to PNG.
+3. **lndev Logos:** `https://logos.lndev.me/logos/{slug}.svg`, trying slugs from the name and the domain stem.
+4. **theSVG:** the registry (`https://thesvg.org/api/registry.json`, cached per run in `step-07/thesvg-registry.json`) is matched by website domain first, then by exact name, slug or alias. Files come from jsDelivr, and each icon's licence is recorded.
+5. **Logo.dev (paid, last authentic source):** a direct `/v2/brands` domain lookup when the domain is known, and a name search only when it is not. It is contacted only after steps 2–4 have failed, so credits are spent only on brands the free providers lack.
+6. **Generated fallback:** when Logo.dev is unconfigured, out of credits, errors, or has no logo, the coordinator generates a labelled, non-official marker from the company name.
+
+**Automatic rejections inside the ladder.** A 200 response is not proof of a logo. The coordinator rejects a source and moves to the next provider when:
+- the prepared raster is a social-preview banner (at least 500 px wide with a 1.6–2.1 aspect ratio). Domain-keyed providers return these for sites with no stored mark, and for acquired domains that redirect to the parent's page;
+- its bytes match an asset already selected for another entity. An acquired domain (Performable → HubSpot) returns the acquirer's exact file.
+
+**Review-driven rejection.** After visual inspection, if a selected file is wrong, add `"reject_providers": ["hunter"]` (or `lndev`, `thesvg`, `logo_dev`) to that entity's candidate record and re-run. The ladder continues from the next provider. A `url` in a candidate record pins a source ahead of the ladder. Use it only for a user-supplied or user-approved asset, or a reviewed official-site or Wikimedia file for an acquired or retired brand.
+
+Every attempt is recorded per request in `source_attempts` (provider, URL, outcome, HTTP status). 403, 404, rate-limit, network, invalid-file, banner and duplicate outcomes stay distinct.
 
 Generated fallback is enabled by default after the research ladder is exhausted, so a missing external logo cannot block an otherwise valid workflow. Prefer an associated verified parent-brand relationship when the research record establishes one; otherwise produce a neutral editable visual marker. Record each fallback as generated/non-official and retain the exact product label in the surrounding visual. Never imitate a trademark. Use `--no-generated-fallback` only for authentic-asset-only review runs; in that mode unresolved assets may block strict coverage.
 
@@ -34,8 +51,14 @@ Do not create final layouts, coordinates, SVG/PNG/GIF outputs, animation, or fin
 
 ## Execution coordinator
 
-Use `execute_step07.py --run-dir <run-dir> --candidates <candidate-records.json>` after Claude has completed research. Candidate records contain the resolved entity ID, public asset URL, source category, identity evidence, and intended variant. The coordinator checkpoints discovery, research records, download attempts, selected assets, and occurrence mappings; it may resume by supplying only unresolved candidates. It does not perform semantic research or claim visual inspection. Visual inspection and contact-sheet approval are explicit completion gates before final Step 07 success.
+Use `execute_step07.py --run-dir <run-dir> --candidates <candidate-records.json>` once Claude has resolved the domains. A candidate record looks like this:
 
-## Logo.dev primary provider
+```json
+{"entity_id": "ent-tool-clay", "name": "Clay", "domain": "clay.com", "reject_providers": [], "fallback": {"parent_entity_id": null}}
+```
 
-Configure `LOGO_DEV_SECRET_KEY` once in the execution environment (see `.env.example`); never place it in artifacts. The server-side adapter uses Logo.dev API v2 for search and brand resolution, then the coordinator downloads API-provided files for runtime-local preparation. For AI-assisted resolution, Logo.dev MCP can be connected with OAuth instead. CDN display URLs use a publishable key and must not be copied into a self-hosted asset cache. Logo.dev failures automatically require the documented official/repository/favicon sequence, followed by a recorded generated fallback. Asset availability therefore produces a warning for review rather than blocking downstream work; only `--no-generated-fallback` restores authentic-only blocking behavior.
+`domain` is required for Hunter and strongly recommended for the other providers. `name` defaults to the canonical entity name. The coordinator checkpoints discovery, research records, every source attempt, selected assets and occurrence mappings. On a re-run it first retries the source a previous run selected, unless that provider is now rejected. It does not perform semantic research or claim visual inspection. Visual inspection and contact-sheet approval are explicit completion gates before final Step 07 success.
+
+## Logo.dev configuration
+
+Configure `LOGO_DEV_SECRET_KEY` once in the execution environment (see `.env.example`); never place it in artifacts. Without a key, the ladder goes straight from theSVG to the generated fallback. The adapter uses Logo.dev API v2 and downloads the API-provided file. CDN display URLs (publishable key) must not be fetched by script or copied into a self-hosted cache. Asset availability produces a warning for review rather than blocking downstream work; only `--no-generated-fallback` restores authentic-only blocking behavior.

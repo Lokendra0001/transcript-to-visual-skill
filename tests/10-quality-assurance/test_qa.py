@@ -70,6 +70,13 @@ class TestQualityAssurance(unittest.TestCase):
  def test_svg_raster_wrapper_not_vector(self):
   svg=self.dir/'wrapped.svg';svg.write_text('<svg xmlns="http://www.w3.org/2000/svg"><image href="data:image/png;base64,AA"/></svg>')
   self.assertEqual(qa.inspect_artifact(svg)['classification'],'raster_wrapped')
+ def test_svg_master_requires_hash_bound_review_and_portable_assets(self):
+  svg=self.dir/'master.svg';svg.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text x="1" y="12">Approved</text></svg>')
+  r=self.review();self.assertEqual(self.evaluate(r,svg=svg)['decision'],'blocked')
+  r['svg_review']={'sha256':qa.digest(svg),'status':'passed','method':'visual_inspection','evidence':'Vector text and preview compared'}
+  result=self.evaluate(r,svg=svg);self.assertEqual(result['decision'],'approved');self.assertTrue(qa.verify_handoff(result))
+  svg.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text>Changed</text><image href="https://example.com/a.png"/></svg>')
+  self.assertFalse(qa.verify_handoff(result));self.assertEqual(qa.inspect_svg_master(svg)['status'],'failed')
  def test_diverse_structures_do_not_override_review(self):
   for kind in ('sequence','branch','comparison','hierarchy','architecture','timeline','framework','composite','dense','minimal'):
    self.arch['connections'][0]['relationship_type']=kind
