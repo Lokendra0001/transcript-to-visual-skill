@@ -1,28 +1,17 @@
-# 08b — Asset Preparation & Text Measurement
+# 08b — Content, Assets and Design Brief
 
-## Objective
+Create `step-08/content-asset-inventory.json` using `raster_workflow.py inventory`. Treat it as extracted data, not proof of rendered coverage. Check every required Step 05 item and Step 04 relationship against its target; preserve qualifiers, numbers, counts, sequence and uncertainty. Map each Step 07 occurrence to its exact verified file or an authorized fallback. Retain repeated uses only where their target contexts require them; do not assume one mark represents a distinct product.
 
-Prepare a traceable content and asset inventory for direct AI image generation and later visual verification.
+Verify files, fingerprints, provenance, identity and security using existing Step 07 evidence and validators; warnings and missing visual verification cannot be silently upgraded. Give compatible actual asset files to the image tool where supported and record omissions or input limits. A reference image is not proof the generator used the original file.
 
-## Input
+Before generation make an occurrence-level plan from the Step 07 mappings: occurrence ID, intended context, verified source path and hash or authorized fallback, and a visible slot suitable for the logo and any needed small readable name. Repeated occurrences need separate slots. Instruct the generator to reserve clear space, without drawing substitute brand marks. After generation the agent identifies actual placement regions and uses the approved asset-preserving operation where needed; planning a slot does not mean an asset is present. A missing required asset or unsupported placement must remain incomplete, not be dropped to simplify the layout.
 
-- Verified assets and mappings from Step 07 (`<run-dir>/07-logo-retrieval.json`).
-- Approved copy and terminology from Step 05 (`<run-dir>/05-content-writing.json`).
+Plan slots large enough for recognizable marks at the intended publication size, not tiny icon-sized afterthoughts beside oversized text. For related tools consider a compact grid of square or short rectangular logo tiles with the brand name beneath or beside each mark in small, regular-weight, readable text. Record the planned visual hierarchy and the viewing size in the design direction. Preserve meaningful logo occurrences, optionality and their relationships to activities; do not add tool tiles to unrelated content.
 
-## Execution
+Distinguish concept icons from brand logos: size concept icons modestly and consistently so they support rather than dominate their labels, while preserving prominent, correctly proportioned brand marks. Plan sufficient padding on all sides of every icon, label and connector, plus clear gaps between neighboring components. Use compact square or short rectangular tiles in columns when suitable. Choose a taller canvas or split dense groups into additional rows as needed; do not shrink text or crowd content merely to fit a preset aspect ratio. Respect actual image-tool dimension limits and report when the requested density cannot fit legibly.
 
-1. **Asset references**:
-   - List verified Step 07 files and their occurrence-level mappings. Supply compatible files to the image tool when possible and note any that cannot be supplied.
-   - Record approved fallback labels and verify generated marks visually; a generated approximation is not proof of an authentic logo.
-   - Plan an icon-forward tile for every mapped tool occurrence: the verified mark is the visual focus and the exact tool name is a smaller readable label. Record which actual files can be provided to the image tool and any marks that are missing, unverified or illegible. Avoid silently substituting text for a suitable available logo.
+For dense portrait visuals, allow a canvas height of 2,000 pixels or more when the image tool supports it, and choose width for readable multi-column composition. Treat those dimensions as an example, not a fixed requirement or a promise of tool output. Allocate space for outer margins, panel gaps, connector clearance, line spacing and internal padding before generation; make adjacent components visibly distinct rather than touching. If one generated image cannot hold all required information legibly, report the limitation or propose a user-approved multi-panel output; enlarging a crowded image after generation alone does not fix overlap.
 
-2. **Content inventory**:
-   - Record exact required Step 05 copy, Step 04 grouping and relationships, and Step 07 mapping for every occurrence. Use this checklist to prepare the prompt and inspect the resulting image.
+The AI selects a canvas and approximate typography hierarchy using actual content density, intended publication and mobile sizes, selected design direction and tool capabilities. Record planned pixel dimensions, aspect ratio, title/heading/body/label hierarchy, spacing, contrast, intended viewing size, available controls and any assumptions. Generated font names and sizes are targets until independently verified; upscaling alone cannot repair unreadable text.
 
-3. **Canvas and typography plan**:
-   - AI selects an appropriate width and height in pixels based on the number of content items, label lengths, grouping, reference style, required footer, and intended viewing or sharing size. Increase height or width where needed; avoid squeezing dense content into a preset aspect ratio. Choose a readable font style and a hierarchy for title, panel headings, body text and labels, with estimated size ranges in pixels and sufficient line spacing, padding and contrast.
-   - Discover the available image generator's actual dimension and aspect-ratio controls. Record planned dimensions, supported options, requested settings where available, and expected constraints in `step-08/design-system.json`. If the user has not stated display size, choose a reasonable assumption and record it. A requested font or pixel size is a design target, not proof that a generative model rendered it exactly.
-
-## Output
-
-- `<run-dir>/step-08/content-asset-inventory.json` with target IDs, exact copy, relationships, asset references and fallback dispositions.
+Plan a footer before the image call when the user requests one: record its exact authorized contents, source asset paths and dedicated bottom region, plus the reference's relevant footer styling. Do not import a reference person's name, photo or company logo without user authorization. An explicit request for no footer or no attribution for the current run takes precedence. If requested contents or verified assets are unavailable, record the limitation and do not invent them.

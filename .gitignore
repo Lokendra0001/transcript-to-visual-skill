@@ -1,2 +1,8 @@
 .env
 .env.example
+
+# Generated execution data and Python test caches
+/runs/
+__pycache__/
+*.py[cod]
+.pytest_cache/

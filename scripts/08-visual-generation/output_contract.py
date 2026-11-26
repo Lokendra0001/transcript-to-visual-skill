@@ -113,10 +113,14 @@ def build_output_contract(
     component_registry=None,
 ):
     """Build the Step 08 output contract dict conforming to downstream requirements."""
+    overall = validation.get("overall", {}) if isinstance(validation, dict) else {}
+    explicit_valid = validation.get("valid") if isinstance(validation, dict) else None
+    visual = validation.get("visual_review", {}) if isinstance(validation, dict) else {}
+    validated = (overall.get("valid") is True or explicit_valid is True) and visual.get("status") == "approved"
     contract = {
         "step": "08-visual-generation",
         "version": "1.0",
-        "status": "error" if errors else ("warning" if warnings else "success"),
+        "status": "error" if errors else ("incomplete" if not validated else ("warning" if warnings else "success")),
         "run_id": run_id,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "sources": sources,
@@ -190,11 +194,11 @@ def build_validation_report(
             "status": render_status,
         },
         "visual_review": {
-            "status": "approved",
-            "note": "Visual inspection performed by the execution AI comparing rendered PNG against reference template.",
+            "status": "pending",
+            "note": "Visual inspection must be performed and recorded against the actual output.",
         },
         "overall": {
-            "valid": len(all_errors) == 0,
+            "valid": False,
             "errors": all_errors,
             "warnings": all_warnings,
         },

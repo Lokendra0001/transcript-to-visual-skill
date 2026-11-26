@@ -275,7 +275,7 @@ class TestOutputContract(unittest.TestCase):
             validation={"valid": True},
         )
         self.assertEqual(contract["step"], "08-visual-generation")
-        self.assertEqual(contract["status"], "success")
+        self.assertEqual(contract["status"], "incomplete")
         self.assertEqual(contract["run_id"], "test-run")
 
 
@@ -372,7 +372,8 @@ class TestSyntheticAIWorkflowIntegration(unittest.TestCase):
                 coverage_result=cov,
                 render_result=render_res,
             )
-            self.assertTrue(report["overall"]["valid"])
+            self.assertFalse(report["overall"]["valid"])
+            self.assertEqual(report["visual_review"]["status"], "pending")
 
             # 7. Output contract assembly
             contract = out_mod.build_output_contract(
@@ -385,7 +386,7 @@ class TestSyntheticAIWorkflowIntegration(unittest.TestCase):
                 animation_handoff=handoff,
                 validation=report,
             )
-            self.assertEqual(contract["status"], "success")
+            self.assertEqual(contract["status"], "incomplete")
             self.assertEqual(contract["step"], "08-visual-generation")
 
 

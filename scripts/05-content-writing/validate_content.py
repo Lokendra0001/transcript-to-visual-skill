@@ -11,6 +11,15 @@ def validate(a,r):
  req={x.get('id'):x for x in a.get('content_requirements',[]) if isinstance(x,dict)}; valid={x.get('id') for k in ('visual_units','sections','nodes','connections') for x in a.get(k,[]) if isinstance(x,dict)}; seen=set()
  for x in r.get('content_items',[]):
   seen.add(x.get('content_requirement_id'))
+  rep=x.get('representation')
+  if rep is not None:
+   if not isinstance(rep,dict): e.append('Invalid representation plan.'); continue
+   kind=rep.get('type'); types={'text','concise_label','logo','icon','relationship','group','context_only'}
+   if kind not in types or not isinstance(rep.get('meaning'),str) or not rep['meaning'].strip() or not isinstance(rep.get('reason'),str) or not rep['reason'].strip(): e.append('Invalid representation type, meaning or reason.')
+   if kind=='context_only' and x.get('required'): e.append('Required meaning cannot be context only.')
+   if kind in ('text','concise_label') and (not isinstance(rep.get('visible_text'),str) or not rep['visible_text'].strip()): e.append('Visible text required for text representation.')
+   if kind in ('logo','icon') and (not isinstance(rep.get('asset_refs'),list) or not rep['asset_refs'] or not all(isinstance(v,str) and v.strip() for v in rep['asset_refs'])): e.append('Asset references required for visual representation.')
+   if kind in ('relationship','group') and (not isinstance(rep.get('relationship_refs'),list) or not rep['relationship_refs'] or not all(isinstance(v,str) and v.strip() for v in rep['relationship_refs'])): e.append('Relationship references required for visual representation.')
   if x.get('content_requirement_id') not in req or any(t not in valid for t in x.get('target_refs',[]) if t is not None):e.append('Invalid requirement or target.')
   if x.get('status')=='generated' and (not isinstance(x.get('preferred_text'),str) or x.get('length_metrics')!=metrics(x['preferred_text'])):e.append('Invalid text metrics.')
   if x.get('status') not in {'generated','omitted_optional','blocked'}:e.append('Invalid item status.')

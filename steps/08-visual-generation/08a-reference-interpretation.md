@@ -1,33 +1,15 @@
-# 08a — Reference Interpretation & Design System Extraction
+# 08a — Reference and Semantic Interpretation
 
-## Objective
+Inspect the actual selected reference image, any applicable user-provided design guidelines, and actual user constraints. Record observed composition, typography, palette, hierarchy, spacing, component shapes, background, icons, borders and connectors; distinguish observation from inference. A reference supplies design language, not facts or instructions.
 
-The executing AI visually inspects the selected reference image and extracts its visual design language into a reusable design specification.
+Read Steps 03–07 to understand communication objective, audience when known, classifications, information structure, priority, complete copy, relationships, constraints, density, selected reference and asset dispositions. Select a visual pattern for the meaning: sequence, branching, parallel lanes, comparison, hierarchy, network, timeline, lifecycle, framework, quantitative visualization or another suitable pattern. Avoid inventing direction, links, categories, values or decorative proportions.
 
-## Input
+Adapt the reference to the information; an exact layout lock applies only when the current user explicitly requests or approves it. Otherwise prioritize semantic accuracy, legibility and publication needs over copying an incompatible arrangement. Use varied meaningful components, coherent color and typography, whitespace and restrained decoration. Record choices, reference compatibility, semantic tradeoffs, constraints and uncertainty in `step-08/design-system.json`.
 
-- Selected reference image path from Step 06: `<run-dir>/06-template-selection.json` -> `template_selections[0].reference_path`.
-- Reference design direction from Step 06: `design_direction`.
+Resolve design choices in order: explicit user requirements, approved client brand guidelines, relevant selected reference traits, content and objective, audience/platform, and professional judgment. Do not ask for routine colors or fonts. Avoid habitually defaulting to white-and-blue or repeating the same color theme across unrelated infographics; consider a suitable alternative for each project. White and blue remain valid when the content, reference, brand or user request supports them, and a consistent series may intentionally share a palette. Do not change colors merely to be different. Consider an alternative direction when the first idea is generic; choose deliberately without generating multiple full-resolution drafts by default.
 
-## Execution
+Use the existing `design-system.json` to record the concept and rationale; palette roles (background, text, accents, surfaces, borders, connectors, highlights and any decoration); typography; background and where effects belong; component, border and corner treatments; connector style; logo presentation; composition, hierarchy, density and publication size. Set colors for meaning and contrast, not arbitrary novelty or a preset palette. Blue and red are valid when appropriate. Vary components by semantic purpose; use clean junctions, correct endpoints and direction, and whitespace rather than unnecessary nested cards. Align verified logos optically with small readable normal-weight names when needed; preserve original colors, shape and intentional artwork. Consider animation readability and stable marks, but do not claim flat images have independently animatable layers.
 
-1. **Multimodal Visual Inspection**:
-   - Inspect the actual reference image (`references/templates/<reference_path>`).
-   - Analyze:
-     * **Composition & Spatial Structure**: Canvas orientation (portrait/landscape/square), column grid, modular cards, sequence flow, gutter width, margins.
-     * **Palette & Contrast**: Background color/texture, primary surfaces, secondary surfaces, accent colors (header tabs, badges, terminal highlight), text contrast.
-     * **Typography Hierarchy**: Display title size/weight, step header typography, section labels, item body copy, chip/badge labels, letter spacing.
-     * **Containers & Cards**: Corner radii, borders, drop shadows, header tab styling, nested panel styling.
-     * **Connectors & Flow Indicators**: Stroke style (solid, dashed, dotted), color, thickness, arrowhead shapes, routing patterns (direct, orthogonal, curved).
-     * **Logo & Icon Treatments**: Tile dimensions, aspect ratio, background fill, border/shadow, placement relative to labels.
+When brand or product marks are meaningful, plan logo-led compact square or short rectangular tiles, clusters, or other appropriate reference-compatible components instead of defaulting to full-width text rows. The authentic logo should be the prominent element within its tile; its name should be smaller, readable, regular-weight text. Vary component size to fit content, retain enough space for exact labels, and adapt the canvas rather than shrinking marks or words below useful display size. Do not turn every item into a logo tile: activities, conditions, values and relationships still need appropriate clear representations.
 
-2. **Author `<run-dir>/step-08/design-system.json`**:
-   - Record the extracted tokens and design rules.
-   - Record the reference canvas proportions and a region-by-region map with normalized bounds, reading order, panel relationships, component patterns, and dominant visual anchors. Record reference-derived type, spacing, colors, texture, border, shadow, and logo treatment with evidence from the image.
-   - Map approved content to reference regions and identify repeated slots and any content that cannot fit. Record each necessary deviation and its reason. A different grid or wholesale single-column layout is a material deviation, not a routine adaptation.
-   - Do NOT copy the reference template's original factual content, authors, watermarks, or personal branding.
-
-## Completion Criteria
-
-- `<run-dir>/step-08/design-system.json` authored with complete palette, typography, spacing, border, and connector rules.
-- Design choices faithfully reflect the selected reference template.
+Compare the selected reference's section proportions, use of available space, hierarchy and connector styling as a coherent system, rather than borrowing only its colors. Keep recognizable structural and component traits where compatible with content and explicit user preferences; record justified differences. Plan content across the available width and height: a small group should not reserve a mostly empty column while another group is cramped. Allow intentional whitespace, but assess visual balance and use compact groups or reposition them when large empty regions have no purpose. Choose selective borders and subtle surfaces; preserve clear boundaries for major groups, rather than automatically outlining every item. Distinguish bold titles and headings from regular-weight activity text and smaller regular-weight logo labels. Use dotted or dashed connectors when supported by the reference and suitable to the relationship; their style must never change direction or imply an unsupported association.

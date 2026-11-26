@@ -5,6 +5,8 @@ description: Convert Granola call transcripts and written requirements into prof
 
 # Transcript to Visual
 
+Use a cohesive neo-brutalist visual direction for generated infographics, guided by the selected reference: strong hierarchy, crisp forms, intentional contrast and restrained graphic accents. Favor visual communication and recognizable authentic logos with small readable labels, while retaining essential meaning. Follow any explicit user direction for a particular output.
+
 Steps 01–08 are implemented. For every workflow input, choose a unique caller-controlled run directory. Step 07 exhausts authentic logo sources and then records generated visual fallbacks, so missing external logos do not block the workflow; review its warnings before publishing. Step 08 uses an available AI image-generation tool to create and review a raster infographic from approved architecture, copy, reference design, and prepared assets. Editable SVG and animation-ready elements are not implied by a generated image. Continue only when each artifact meets its completion criteria; otherwise stop and request usable input. In standalone operation, stop after Step 08. Steps 09–11 remain implementation pending.
 
 1. [Input processing](steps/01-input-processing.md)
@@ -18,3 +20,4 @@ Steps 01–08 are implemented. For every workflow input, choose a unique caller-
 9. [Animation](steps/09-animation.md)
 10. [Quality assurance](steps/10-quality-assurance.md)
 11. [Final export](steps/11-final-export.md)
+
